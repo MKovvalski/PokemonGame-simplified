@@ -1,8 +1,7 @@
 let a = require('../../imgs/Pokemon_ORAS_Brendan.png');
 let b = require('../../imgs/Green_leaf.png');
 
-export default function () {
-    return [
+const characters =  [
         {
             id:"male",
             img_front: "wstawić img",
@@ -15,5 +14,6 @@ export default function () {
             img_back: "wstawić img",
             img_full_scale: b
         }
-    ]
-}
+    ];
+
+export default characters

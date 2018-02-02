@@ -4,14 +4,14 @@ import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 
 //importing actions
-import SentAttack from "../actions/attack-sending-action.jsx";
+import actions from "../actions/all-actions.jsx";
 
 //classes
 class Battle extends React.Component {
 
     attackListGenerator = () => {
         return this.props.listener.pokemon1.attacks.map((attack) => {
-            return <button className="btn2" onClick = {() => this.props.sentAttack(attack)} key = {attack.id}>{attack.id}</button>
+            return <button className="btn2" onClick = {() => this.props.clickedAttack(attack)} key = {attack.id}>{attack.id}</button>
         })
     };
 
@@ -55,15 +55,13 @@ class Battle extends React.Component {
 
 function mapStateToProps(state) {
     return {
-        genders: state.characterGender,
-        pokemons: state.pokemonList,
         listener: state.reducerListener
     }
 }
 
 function matchDispatchToProps(dispatch) {
     return bindActionCreators({
-        sentAttack:SentAttack,
+        clickedAttack: actions.clickedAttack
     }, dispatch)
 }
 

@@ -3,15 +3,18 @@ import React from "react";
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 
-//importing actions
-import GenderID from "../actions/gender-change-action.jsx";
+//importing game-data
+import characters from "../game-data/characters.jsx";
+
+//importing action
+import actions from "../actions/all-actions.jsx";
 
 //classes
 class PickCharacter extends React.Component {
 
     createListOfGenders() {
-      return this.props.characterGender.map((gender) => {
-        return <div className = "gender-titles" key={gender.id} onClick = {() => this.props.selectGender(gender)}>{gender.id}</div>
+      return characters.map((gender) => {
+        return <div className = "gender-titles" key={gender.id} onClick = {() => this.props.clickedGender(gender)}>{gender.id}</div>
       })
     };
 
@@ -21,7 +24,7 @@ class PickCharacter extends React.Component {
                 <div className = "genderList">
                     {this.createListOfGenders()}
                 </div>
-                <div>{!this.props.listener.gender1 ? <img className= "genderImgSize" src = {this.props.characterGender[0].img_full_scale}/> : <img className= "genderImgSize" src = {this.props.listener.gender1.img_full_scale}/>}</div>
+                <div>{!this.props.listener.gender1 ? <img className= "genderImgSize" src = {characters[0].img_full_scale}/> : <img className= "genderImgSize" src = {this.props.listener.gender1.img_full_scale}/>}</div>
             </div>
         </div>
     }
@@ -29,14 +32,15 @@ class PickCharacter extends React.Component {
 
 function mapStateToProps(state) {
     return {
-        characterGender: state.characterGender,
         listener: state.reducerListener
-
     }
 }
 
 function matchDispatchToProps(dispatch) {
-    return bindActionCreators({selectGender:GenderID}, dispatch)
+    return bindActionCreators(
+        {
+            clickedGender: actions.clickedGender
+        }, dispatch)
 }
 
 export default connect(mapStateToProps, matchDispatchToProps)(PickCharacter);

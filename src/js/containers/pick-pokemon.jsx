@@ -3,12 +3,14 @@ import React from "react";
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 
+//importing game-data
+import pokemons from "../game-data/pokemons.jsx";
+
 //importing other components/containers
 import PickCharacter from "./pick-character.jsx";
 
 //importing actions
-import PokemonData from "../actions/pokemon-sending-action.jsx";
-import SendPokemon2 from "../actions/pokemon2-sending-action.jsx";
+import actions from "../actions/all-actions.jsx";
 
 //classes and renders
 class PickPokemon extends React.Component {
@@ -16,13 +18,13 @@ class PickPokemon extends React.Component {
     handleClick = () => {
         if (typeof this.props.onConfirm === "function") {
             this.props.onConfirm();
-            this.props.sendPokemon2(this.props.pokemons[Math.floor(Math.random()*8)])
+            this.props.randomPokemon(pokemons[Math.floor(Math.random()*6)])
         }
     };
 
     generateList () {
-      return this.props.pokemons.map((pokemon) => {
-          return <li key={pokemon.id} onClick ={() => this.props.pokemonData(pokemon)}><div className= "background-col"><img src = {pokemon.gif_attack}/><div className = "pokemonName">{pokemon.id}</div></div></li>
+      return pokemons.map((pokemon) => {
+          return <li key={pokemon.id} onClick ={() => this.props.clickedPokemon(pokemon)}><div className= "background-col"><img src = {pokemon.gif_attack}/><div className = "pokemonName">{pokemon.id}</div></div></li>
       })
     };
 
@@ -37,16 +39,16 @@ class PickPokemon extends React.Component {
                         </div>
                         <div>
                             <div>
-                            <h2>{!this.props.listener.pokemon1 ? this.props.pokemons[0].id : this.props.listener.pokemon1.id}</h2>
-                            <div>{!this.props.listener.pokemon1 ? <img className= "img" src ={this.props.pokemons[0].gif_calm}/> : <img className= "img" src = {this.props.listener.pokemon1.gif_calm}/>}</div>
+                            <h2>{!this.props.listener.pokemon1 ? pokemons[0].id : this.props.listener.pokemon1.id}</h2>
+                            <div>{!this.props.listener.pokemon1 ? <img className= "img" src ={pokemons[0].gif_calm}/> : <img className= "img" src = {this.props.listener.pokemon1.gif_calm}/>}</div>
                             </div>
                             <ul>
-                                <li>Attack:{!this.props.listener.pokemon1 ?<span className = "move-right">{this.props.pokemons[0].atk}</span> : <span className = "move-right">{this.props.listener.pokemon1.atk}</span>}</li>
-                                <li>Defense:{!this.props.listener.pokemon1  ? <span className = "move-right">{this.props.pokemons[0].def}</span> : <span className = "move-right">{this.props.listener.pokemon1.def}</span>}</li>
-                                <li>Special-Attack:{!this.props.listener.pokemon1 ? <span className = "move-right">{this.props.pokemons[0].specAtk}</span> : <span className = "move-right">{this.props.listener.pokemon1.specAtk}</span>}</li>
-                                <li>Special-Defense:{!this.props.listener.pokemon1 ? <span className = "move-right">{this.props.pokemons[0].specDef}</span> : <span className = "move-right">{this.props.listener.pokemon1.specDef}</span>}</li>
-                                <li>Speed:{!this.props.listener.pokemon1 ? <span className = "move-right">{this.props.pokemons[0].speed}</span> : <span className = "move-right">{this.props.listener.pokemon1.speed}</span>}</li>
-                                <li>Stamina:{!this.props.listener.pokemon1  ? <span className = "move-right">{this.props.pokemons[0].stamina}</span> : <span className = "move-right">{this.props.listener.pokemon1.stamina}</span>}</li>
+                                <li>Attack:{!this.props.listener.pokemon1 ?<span className = "move-right">{pokemons[0].atk}</span> : <span className = "move-right">{this.props.listener.pokemon1.atk}</span>}</li>
+                                <li>Defense:{!this.props.listener.pokemon1  ? <span className = "move-right">{pokemons[0].def}</span> : <span className = "move-right">{this.props.listener.pokemon1.def}</span>}</li>
+                                <li>Special-Attack:{!this.props.listener.pokemon1 ? <span className = "move-right">{pokemons[0].specAtk}</span> : <span className = "move-right">{this.props.listener.pokemon1.specAtk}</span>}</li>
+                                <li>Special-Defense:{!this.props.listener.pokemon1 ? <span className = "move-right">{pokemons[0].specDef}</span> : <span className = "move-right">{this.props.listener.pokemon1.specDef}</span>}</li>
+                                <li>Speed:{!this.props.listener.pokemon1 ? <span className = "move-right">{pokemons[0].speed}</span> : <span className = "move-right">{this.props.listener.pokemon1.speed}</span>}</li>
+                                <li>Stamina:{!this.props.listener.pokemon1  ? <span className = "move-right">{pokemons[0].stamina}</span> : <span className = "move-right">{this.props.listener.pokemon1.stamina}</span>}</li>
                             </ul>
                         </div>
                     </div>
@@ -58,15 +60,14 @@ class PickPokemon extends React.Component {
 
 function mapStateToProps(state) {
     return {
-        pokemons: state.pokemonList,
         listener: state.reducerListener,
     }
 }
 
 function matchDispatchToProps(dispatch) {
     return bindActionCreators({
-        pokemonData:PokemonData,
-        sendPokemon2: SendPokemon2,
+        clickedPokemon: actions.clickedPokemon,
+        randomPokemon: actions.randomPokemon
     }, dispatch)
 }
 

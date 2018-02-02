@@ -15,8 +15,7 @@ let ff = require('../../imgs/butterfly-calm.gif');
 let fff = require('../../imgs/Butterfree_back.gif');
 
 
-export default function () {
-    return [
+const pokemons =  [
         {
             id: "bulbasaur",
             lvl: 10,
@@ -342,5 +341,6 @@ export default function () {
 
         },
 
-    ]
-}
+    ];
+
+export default pokemons;
