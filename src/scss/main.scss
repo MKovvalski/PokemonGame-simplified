@@ -1,0 +1,252 @@
+@import './reset.css';
+
+/* global classes */
+
+.container1 {
+  height: 340px;
+  width: 530px;
+  background-image: url("../imgs/main-page-start-screen.png");
+  background-size: cover;
+  font-family: 'VT323', monospace;
+  border: 5px solid gold;
+  border-radius: 8px;
+}
+
+.container {
+  height: 340px;
+  width: 530px;
+  border-radius: 18px;
+  font-family: 'VT323', monospace;
+  border: 5px solid gold;
+}
+
+/* styling main-page */
+
+.main-page-title {
+  font-weight: 900;
+  font-size: 45px;
+  color: #ffcc00;
+  padding-top: 100px;
+  padding-left: 150px;
+}
+
+/* styling pick character */
+
+
+.genderList {
+  display: flex;
+  flex-direction: row;
+  background-color: lightcoral;
+  color: white;
+  border-radius: 4px 4px 0 0;
+}
+
+.gender-titles {
+  width: 40px;
+  margin-left: 19px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.genderImgSize {
+  width: 140px;
+  height: 261px;
+  margin-top: 4px;
+  margin-left: 7px;
+}
+
+.character-border {
+  border: 4px solid lightskyblue;
+  border-radius: 8px;
+  background-image: url("../imgs/character-background.png");
+  background-size: cover;
+  height: 297px;
+}
+
+/* styling pick pokemon */
+
+.row1 {
+  display: flex;
+  background-color: #999999;
+  border-radius: 11px 11px 0 0 ;
+}
+
+.col1-3-2 {
+  border: 5px solid #999999;
+  border-right: 2px;
+  border-left: 2px;
+  border-radius: 0;
+  overflow-y: scroll;
+  height: 306px;
+  width: 33.33%;
+}
+
+.col1-3a {
+  border: 5px solid #999999;
+  border-radius: 13px 13px 13px 13px;
+  height: 306px;
+  width: 33.33%;
+  background-color: lightyellow;
+}
+
+.col1-3b {
+  border: 5px solid #999999;
+  border-radius: 13px 13px 13px 13px;
+  height: 306px;
+  width: 33.33%;
+}
+
+.pokemonList li {
+  border: 5px solid lightskyblue;
+  border-radius: 8px;
+  text-align: center;
+  height: 189px;
+  background-color: lightcoral;
+}
+
+.pokemonList li img {
+  background-image: url("../imgs/background of pokemon.png");
+  background-size: cover;
+  border-radius: 3px 3px 0 0;
+}
+
+.pokemonName {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.background-col {
+  border-radius: 4px;
+}
+
+.pokemonTitle {
+  color: white;
+  font-size: 27px;
+  font-weight: 700;
+  background-color: lightcoral;
+  border-radius: 3px 3px 0 0;
+  text-align: center;
+}
+
+.pokemon-border {
+  border: 5px solid lightskyblue;
+  border-radius: 8px;
+  background-color: lightyellow;
+  height: 188px;
+}
+
+.stat-list {
+  border: 4px solid lightskyblue;
+  border-radius: 8px;
+  background-color: lightcoral;
+  color: white;
+  height: 108px;
+}
+
+.move-right {
+  float: right;
+}
+
+.img {
+  background-image: url("../imgs/background of pokemon.png");
+  background-size: cover;
+  border-radius: 0 0 4px 4px;
+}
+
+.btn1 {
+  border: 3px solid lightskyblue;
+  border-radius: 0 0 12px 12px;
+  font-family: 'VT323', monospace;
+  font-size: 15px;
+  font-weight: 700;
+  width: 520px;
+  color: green;
+  background-color: white;
+
+}
+
+.btn1:disabled {
+  border: 3px solid lightskyblue;
+  border-radius: 0 0 12px 12px;
+  font-family: 'VT323', monospace;
+  font-size: 15px;
+  font-weight: 700;
+  width: 520px;
+  color: #ff4d4d;
+}
+/* styling main battle */
+
+.row1-2 {
+   display: flex;
+   height: 170px;
+ }
+
+.row1-2a {
+  display: flex;
+  height: 75px;
+}
+
+.background {
+  background-image: url("../imgs/battle-background3.png");
+  background-size: cover;
+  height: 250px;
+  border-radius: 8px 8px 0 0;
+  border-bottom: 3px solid gold;
+}
+
+.col1-2-1 {
+  width: 280px;
+}
+
+.col1-2-2 {
+  height: 168px;
+  width: 192px;
+}
+
+.col1-2-1a {
+  margin-left: 25px;
+  width: 192px;
+  height: 74px;
+}
+
+.col1-2-2a {
+  margin-left: 90px;
+  position: relative;
+}
+
+.player-pokemon {
+  position: absolute;
+  left: 95px;
+}
+
+.life-bar {
+  border-radius: 4px;
+  width: 100px;
+  background-color: green;
+}
+
+.life-bar-overbar1 {
+  margin-top: 80px;
+  margin-left: 56px;
+  width: 140px;
+  border: 4px solid silver;
+  border-radius: 4px;
+  background-color: black;
+}
+
+.life-bar-overbar2 {
+  margin-top: 35px;
+  width: 140px;
+  border: 4px solid silver;
+  border-radius: 4px;
+  background-color: black;
+}
+
+.btn2 {
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+  height: 80px;
+  width: 127px;
+  border-radius: 5px;
+}
