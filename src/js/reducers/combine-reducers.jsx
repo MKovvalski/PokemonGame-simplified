@@ -2,13 +2,13 @@
 import {combineReducers} from "redux";
 
 // importing reducers
-
-
-// importing action-listeners
-import reducerListener from "./reducer-listener.jsx";
+import {selectedGender, selectedPokemon, selectedRandoPokemon, selectedAttack} from "./reducers.jsx";
 
 const allReducers = combineReducers({
-        reducerListener: reducerListener,
+        selectedGender,
+        selectedPokemon,
+        selectedRandoPokemon,
+        selectedAttack,
     });
 
 export default allReducers;

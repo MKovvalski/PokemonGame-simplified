@@ -24,7 +24,7 @@ class PickCharacter extends React.Component {
                 <div className = "genderList">
                     {this.createListOfGenders()}
                 </div>
-                <div>{!this.props.listener.gender1 ? <img className= "genderImgSize" src = {characters[0].img_full_scale}/> : <img className= "genderImgSize" src = {this.props.listener.gender1.img_full_scale}/>}</div>
+                <div><img className= "genderImgSize" src = {this.props.gender.img_full_scale}/></div>
             </div>
         </div>
     }
@@ -32,15 +32,13 @@ class PickCharacter extends React.Component {
 
 function mapStateToProps(state) {
     return {
-        listener: state.reducerListener
+        gender: state.selectedGender
     }
 }
 
 function matchDispatchToProps(dispatch) {
     return bindActionCreators(
-        {
-            clickedGender: actions.clickedGender
-        }, dispatch)
+        {clickedGender: actions.clickedGender}, dispatch)
 }
 
 export default connect(mapStateToProps, matchDispatchToProps)(PickCharacter);

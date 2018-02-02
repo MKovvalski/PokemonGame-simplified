@@ -16,7 +16,7 @@ function clickedPokemon(pokemon) {
 
 function randomPokemon(pokemon) {
     return {
-            type: "POKEMON2_SELECTED",
+            type: "RANDOM_POKEMON_SELECTED",
             pokemon
         }
 }
