@@ -2,12 +2,21 @@
 import {combineReducers} from "redux";
 
 // importing reducers
-import {selectedGender, selectedPokemon, selectedRandoPokemon, selectedAttack} from "./reducers.jsx";
+import {
+    selectedGender,
+    selectedPokemon,
+    selectedRandomPokemon,
+    selectedAttack,
+    playerPokemonSentToBattle,
+    randomPokemonSentToBattle
+} from "./reducers.jsx";
 
 const allReducers = combineReducers({
         selectedGender,
         selectedPokemon,
-        selectedRandoPokemon,
+        selectedRandomPokemon,
+        playerPokemonSentToBattle,
+        randomPokemonSentToBattle,
         selectedAttack,
     });
 

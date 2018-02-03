@@ -11,17 +11,18 @@ import PickCharacter from "./pick-character.jsx";
 
 //importing actions
 import actions from "../actions/all-actions.jsx";
-import {selectedPokemon} from "../reducers/reducers.jsx";
 
 //classes and renders
 class PickPokemon extends React.Component {
     componentDidMount () {
-        this.props.randomPokemon(pokemons[Math.floor(Math.random()*6)])
+        this.props.randomPokemonGenerator(pokemons[Math.floor(Math.random()*6)]);
     }
 
     handleClick = () => {
         if (typeof this.props.onConfirm === "function") {
             this.props.onConfirm();
+            this.props.passPlayerPokemon(this.props.pokemon);
+            this.props.passRandomPokemon(this.props.randomPokemon)
         }
     };
 
@@ -55,7 +56,7 @@ class PickPokemon extends React.Component {
                             </ul>
                         </div>
                     </div>
-                        <div className = "row2"><button className = "btn1" disabled = {(!this.props.gender || !this.props.pokemon)? true : false} onClick = {this.handleClick} >Zatwierdź wybór pokemona</button></div>
+                        <div><button disabled = {false} onClick = { this.handleClick} >Zatwierdź wybór pokemona</button></div>
 
                 </div>
     }
@@ -64,14 +65,17 @@ class PickPokemon extends React.Component {
 function mapStateToProps(state) {
     return {
         pokemon: state.selectedPokemon,
-        gender: state.selectedGender
+        randomPokemon: state.selectedRandomPokemon,
+        gender: state.selectedGender,
     }
 }
 
 function matchDispatchToProps(dispatch) {
     return bindActionCreators({
         clickedPokemon: actions.clickedPokemon,
-        randomPokemon: actions.randomPokemon
+        randomPokemonGenerator: actions.randomPokemon,
+        passPlayerPokemon: actions.passPlayerPokemon,
+        passRandomPokemon: actions.passRandomPokemon
     }, dispatch)
 }
 

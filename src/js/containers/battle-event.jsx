@@ -10,7 +10,7 @@ import actions from "../actions/all-actions.jsx";
 class Battle extends React.Component {
 
     attackListGenerator = () => {
-        return this.props.listener.pokemon1.attacks.map((attack) => {
+        return this.props.playerPokemonState.playerPokemon.attacks.map((attack) => {
             return <button className="btn2" onClick = {() => this.props.clickedAttack(attack)} key = {attack.id}>{attack.id}</button>
         })
     };
@@ -31,14 +31,14 @@ class Battle extends React.Component {
                                </div>
                            </div>
                            <div className= "col1-2-2">
-                               <img src={this.props.listener.pokemon2.gif_calm} alt=""/>
-                               {this.props.listener.pokemon2.stamina}
+                               <img src={this.props.randomPokemonState.randomPokemon.gif_calm} alt=""/>
+                               {this.props.randomPokemonState.randomPokemon.stamina}
                            </div>
                        </div>
                        <div className= "row1-2a">
                           <div className= "col1-2-1a">
-                              <img className="player-pokemon" src={this.props.listener.pokemon1.gif_back} alt=""/>
-                              {this.props.listener.pokemon1.stamina}
+                              <img className="player-pokemon" src={this.props.playerPokemonState.playerPokemon.gif_back} alt=""/>
+                              {this.props.playerPokemonState.playerPokemon.stamina}
                           </div>
                            <div className= "col1-2-2a">
                                <div className= "life-bar-overbar2">
@@ -55,7 +55,9 @@ class Battle extends React.Component {
 
 function mapStateToProps(state) {
     return {
-        listener: state.reducerListener
+        playerPokemonState: state.playerPokemonSentToBattle,
+        randomPokemonState: state.randomPokemonSentToBattle
+
     }
 }
 
