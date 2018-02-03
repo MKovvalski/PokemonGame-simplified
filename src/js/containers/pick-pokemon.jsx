@@ -22,7 +22,7 @@ class PickPokemon extends React.Component {
         if (typeof this.props.onConfirm === "function") {
             this.props.onConfirm();
             this.props.passPlayerPokemon(this.props.pokemon);
-            this.props.passRandomPokemon(this.props.randomPokemon)
+            this.props.passRandomPokemon(this.props.randomPokemon);
         }
     };
 
@@ -56,7 +56,7 @@ class PickPokemon extends React.Component {
                             </ul>
                         </div>
                     </div>
-                        <div><button disabled = {false} onClick = { this.handleClick} >Zatwierdź wybór pokemona</button></div>
+                        <div><button disabled = {false} onClick = {this.handleClick} >Zatwierdź wybór pokemona</button></div>
 
                 </div>
     }

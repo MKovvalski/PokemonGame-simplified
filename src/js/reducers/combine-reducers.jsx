@@ -6,18 +6,17 @@ import {
     selectedGender,
     selectedPokemon,
     selectedRandomPokemon,
-    selectedAttack,
-    playerPokemonSentToBattle,
-    randomPokemonSentToBattle
+    battleReducer,
+    incrementedCounter
 } from "./reducers.jsx";
 
+// combined reducers
 const allReducers = combineReducers({
         selectedGender,
         selectedPokemon,
         selectedRandomPokemon,
-        playerPokemonSentToBattle,
-        randomPokemonSentToBattle,
-        selectedAttack,
+        battleReducer,
+        incrementedCounter
     });
 
 export default allReducers;

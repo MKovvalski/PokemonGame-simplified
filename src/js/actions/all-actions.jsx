@@ -16,13 +16,12 @@ function clickedPokemon(pokemon) {
 
 function randomPokemon(pokemon) {
     return {
-            type: "RANDOM_POKEMON_SELECTED",
-            pokemon
+        type: "RANDOM_POKEMON_SELECTED",
+        pokemon
         }
 }
 
 function passPlayerPokemon (playerPokemon) {
-    console.log(playerPokemon);
     return {
         type: "PASS_PLAYER_POKEMON_TO_BATTLE",
         playerPokemon
@@ -30,17 +29,31 @@ function passPlayerPokemon (playerPokemon) {
 }
 
 function passRandomPokemon (randomPokemon) {
-    console.log(randomPokemon);
     return {
         type: "PASS_RANDOM_POKEMON_TO_BATTLE",
         randomPokemon
     }
 }
 
-function clickedAttack(attack) {
+function playerClickedAttack(attack) {
+    console.log(attack);
     return {
-        type: "ATTACK_SELECTED",
+        type: "PLAYER_POKEMON_ATTACK_SELECTED",
         attack
+    }
+}
+
+function randomSelectedAttack(attack) {
+    console.log(attack);
+    return {
+        type: "RANDOM_POKEMON_ATTACK_SELECTED",
+        attack
+    }
+}
+
+function incrementingCounter() {
+    return {
+        type: "CHANGE_COUNTER",
     }
 }
 
@@ -48,7 +61,9 @@ export default {
     clickedGender,
     clickedPokemon,
     randomPokemon,
-    clickedAttack,
+    playerClickedAttack,
+    randomSelectedAttack,
     passPlayerPokemon,
-    passRandomPokemon
+    passRandomPokemon,
+    incrementingCounter
 }

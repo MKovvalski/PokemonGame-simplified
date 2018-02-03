@@ -9,9 +9,16 @@ import actions from "../actions/all-actions.jsx";
 //classes
 class Battle extends React.Component {
 
+    handleAttackAction (attack) {
+        this.props.playerClickedAttack(attack);
+        this.timeoutID = setTimeout(() => {
+            this.props.randomSelectedAttack(this.props.battleReducer.randomPokemon.attacks[Math.floor(Math.random()*3)])
+        },2000);
+    };
+
     attackListGenerator = () => {
-        return this.props.playerPokemonState.playerPokemon.attacks.map((attack) => {
-            return <button className="btn2" onClick = {() => this.props.clickedAttack(attack)} key = {attack.id}>{attack.id}</button>
+        return this.props.battleReducer.playerPokemon.attacks.map((attack) => {
+            return <button className="btn2" onClick = {() => this.handleAttackAction(attack)} key = {attack.id}>{attack.id}</button>
         })
     };
 
@@ -31,18 +38,17 @@ class Battle extends React.Component {
                                </div>
                            </div>
                            <div className= "col1-2-2">
-                               <img src={this.props.randomPokemonState.randomPokemon.gif_calm} alt=""/>
-                               {this.props.randomPokemonState.randomPokemon.stamina}
+                               <img src={this.props.battleReducer.randomPokemon.gif_calm} alt=""/>
+                               {this.props.battleReducer.randomPokemon.stamina}
                            </div>
                        </div>
                        <div className= "row1-2a">
                           <div className= "col1-2-1a">
-                              <img className="player-pokemon" src={this.props.playerPokemonState.playerPokemon.gif_back} alt=""/>
-                              {this.props.playerPokemonState.playerPokemon.stamina}
+                              <img className="player-pokemon" src={this.props.battleReducer.playerPokemon.gif_back} alt=""/>
+                              {this.props.battleReducer.playerPokemon.stamina}
                           </div>
                            <div className= "col1-2-2a">
                                <div className= "life-bar-overbar2">
-
                                </div>
                        </div>
                        </div>
@@ -55,15 +61,16 @@ class Battle extends React.Component {
 
 function mapStateToProps(state) {
     return {
-        playerPokemonState: state.playerPokemonSentToBattle,
-        randomPokemonState: state.randomPokemonSentToBattle
-
+        battleReducer: state.battleReducer,
+        counter: state.incrementedCounter
     }
 }
 
 function matchDispatchToProps(dispatch) {
     return bindActionCreators({
-        clickedAttack: actions.clickedAttack
+        playerClickedAttack: actions.playerClickedAttack,
+        randomSelectedAttack: actions.randomSelectedAttack,
+        incrementingCounter: actions.incrementingCounter
     }, dispatch)
 }
 
