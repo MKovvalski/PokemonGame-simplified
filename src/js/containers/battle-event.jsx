@@ -8,25 +8,66 @@ import actions from "../actions/all-actions.jsx";
 
 //classes
 class Battle extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            display: "block",
+            textArea: ""
+        };
+    };
 
     handleAttackAction (attack) {
-        this.props.playerClickedAttack(attack);
-        this.timeoutID = setTimeout(() => {
-            this.props.randomSelectedAttack(this.props.battleReducer.randomPokemon.attacks[Math.floor(Math.random()*3)])
+        this.setState ({
+            display: "none",
+            textArea: this.props.battleReducer.playerPokemon.id + " attacks with " + attack.id
+        });
+        setTimeout(() => { //jak to zoptymalizować?!
+            this.props.playerClickedAttack(attack);
+            if (this.props.battleReducer.randomPokemon.stamina > 0) {
+                this.timeoutId = setTimeout(() => {
+                    let randomAttack = this.props.battleReducer.randomPokemon.attacks[Math.floor(Math.random()*3)];
+                    this.setState ({
+                        textArea: this.props.battleReducer.randomPokemon.id + " attacks with " + randomAttack.id
+                    });
+                    this.timeoutId1 = setTimeout(() => {
+                        this.props.randomSelectedAttack(randomAttack);
+                        if (this.props.battleReducer.playerPokemon.stamina < 0) {
+                            this.timeoutId2 = setTimeout(() => {
+                                this.setState ({
+                                    display: "none",
+                                    textArea: this.props.battleReducer.playerPokemon.id + " fainted"
+                                });
+                                this.timeoutId3 = setTimeout(() => {
+                                    this.props.onConfirm();
+                                },2500);
+                            },2000)
+                        }
+                        this.timeoutId4 = setTimeout(() => {
+                            this.setState ({
+                                display: "block",
+                                textArea: "waiting for next move"
+                            })
+                        },1000);
+                    },2000);
+                },2000);
+            } else {
+                setTimeout(() => {
+                    this.setState ({
+                        display: "none",
+                        textArea: this.props.battleReducer.randomPokemon.id + " fainted"
+                    });
+                    setTimeout(() => {
+                        this.props.onConfirm();
+                    },2500);
+                },2000)
+            }
         },2000);
     };
 
     attackListGenerator = () => {
         return this.props.battleReducer.playerPokemon.attacks.map((attack) => {
-            return <button className="btn2" onClick = {() => this.handleAttackAction(attack)} key = {attack.id}>{attack.id}</button>
+            return <button disabled = {this.state.disabled} className="btn2" onClick = {() => this.handleAttackAction(attack)} key = {attack.id}>{attack.id}</button>
         })
-    };
-
-    handleClick = () => {
-        if (typeof this.props.onConfirm === "function") {
-            this.props.onConfirm();
-
-        }
     };
 
     render () {
@@ -53,7 +94,8 @@ class Battle extends React.Component {
                        </div>
                        </div>
                     </div>
-                    {this.attackListGenerator()}
+                    <ul style = {{display: this.state.display}}>{this.attackListGenerator()}</ul>
+                    {this.state.textArea}
                </div>
 
     }
