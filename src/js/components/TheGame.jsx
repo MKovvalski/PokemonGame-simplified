@@ -5,7 +5,7 @@ import React from "react";
 import StartGameScreen from "../components/start-game.jsx";
 import PickPokemon from "../containers/pick-pokemon.jsx";
 import BattleEvent from "../containers/battle-event.jsx";
-import EndGameScreen from "../components/end-game-screen.jsx";
+import EndGameScreen from "../containers/end-game-screen.jsx";
 
 class TheGame extends React.Component {
     constructor(props) {

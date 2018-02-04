@@ -38,6 +38,7 @@ class Battle extends React.Component {
                                     textArea: this.props.battleReducer.playerPokemon.id + " fainted"
                                 });
                                 this.timeoutId3 = setTimeout(() => {
+                                    this.props.passingWinnerInfo(this.props.battleReducer.randomPokemon);
                                     this.props.onConfirm();
                                 },2500);
                             },2000)
@@ -58,6 +59,7 @@ class Battle extends React.Component {
                     });
                     setTimeout(() => {
                         this.props.onConfirm();
+                        this.props.passingWinnerInfo(this.props.battleReducer.playerPokemon);
                     },2500);
                 },2000)
             }
@@ -112,7 +114,7 @@ function matchDispatchToProps(dispatch) {
     return bindActionCreators({
         playerClickedAttack: actions.playerClickedAttack,
         randomSelectedAttack: actions.randomSelectedAttack,
-        incrementingCounter: actions.incrementingCounter
+        passingWinnerInfo: actions.passingWinnerInfo
     }, dispatch)
 }
 

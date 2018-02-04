@@ -51,12 +51,12 @@ function randomSelectedAttack(attack) {
     }
 }
 
-function incrementingCounter() {
+function passingWinnerInfo(pokemon) {
     return {
-        type: "CHANGE_COUNTER",
+        type: "PASSING_WINNER_INFO",
+        pokemon
     }
 }
-
 export default {
     clickedGender,
     clickedPokemon,
@@ -65,5 +65,5 @@ export default {
     randomSelectedAttack,
     passPlayerPokemon,
     passRandomPokemon,
-    incrementingCounter
+    passingWinnerInfo
 }

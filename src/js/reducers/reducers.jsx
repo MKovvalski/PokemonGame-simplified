@@ -57,10 +57,19 @@ export function selectedRandomPokemon(state = null, action) {
 
 export function incrementedCounter(state = {count: 0}, action) {
     switch (action.type) {
-        case"CHANGE_COUNTER":
+        case "CHANGE_COUNTER":
             return {count: state.count + 1};
         default:
             return state
     }
     
+}
+
+export function passedWinnerInfo(state = null, action) {
+    switch (action.type) {
+        case "PASSING_WINNER_INFO":
+            return action.pokemon;
+        default:
+            return state
+    }
 }
