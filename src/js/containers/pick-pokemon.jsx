@@ -6,9 +6,6 @@ import {connect} from "react-redux";
 //importing game-data
 import pokemons from "../game-data/pokemons.jsx";
 
-//importing other components/containers
-import PickCharacter from "./pick-character.jsx";
-
 //importing actions
 import actions from "../actions/all-actions.jsx";
 
@@ -26,7 +23,7 @@ class PickPokemon extends React.Component {
         }
     };
 
-    generateList () {
+    generateList = () => {
       return pokemons.map((pokemon) => {
           return <li key={pokemon.id} onClick ={() => this.props.clickedPokemon(pokemon)}><div className= "background-col"><img src = {pokemon.gif_attack}/><div className = "pokemonName">{pokemon.id}</div></div></li>
       })
@@ -35,7 +32,6 @@ class PickPokemon extends React.Component {
     render () {
         return <div>
                     <div>
-                            <PickCharacter/>
                         <div>
                             <ul>
                                 {this.generateList()}
@@ -66,7 +62,6 @@ function mapStateToProps(state) {
     return {
         pokemon: state.selectedPokemon,
         randomPokemon: state.selectedRandomPokemon,
-        gender: state.selectedGender,
     }
 }
 

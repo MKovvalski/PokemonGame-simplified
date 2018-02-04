@@ -1,12 +1,5 @@
 //all actions in one file
 
-function clickedGender(gender) {
-    return {
-        type: "GENDER_SELECTED",
-        gender
-    }
-}
-
 function clickedPokemon(pokemon) {
     return {
         type: "POKEMON_SELECTED",
@@ -36,7 +29,6 @@ function passRandomPokemon (randomPokemon) {
 }
 
 function playerClickedAttack(attack) {
-    console.log(attack);
     return {
         type: "PLAYER_POKEMON_ATTACK_SELECTED",
         attack
@@ -44,7 +36,6 @@ function playerClickedAttack(attack) {
 }
 
 function randomSelectedAttack(attack) {
-    console.log(attack);
     return {
         type: "RANDOM_POKEMON_ATTACK_SELECTED",
         attack
@@ -58,7 +49,6 @@ function passingWinnerInfo(pokemon) {
     }
 }
 export default {
-    clickedGender,
     clickedPokemon,
     randomPokemon,
     playerClickedAttack,

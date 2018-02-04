@@ -1,15 +1,5 @@
 import dmgCalc from "../DamageCalculator.jsx";
-import characters from "../game-data/characters.jsx";
 import pokemons from "../game-data/pokemons.jsx";
-
-export function selectedGender(state = characters[0], action) {
-    switch (action.type) {
-        case "GENDER_SELECTED":
-            return action.gender;
-        default:
-            return state;
-    }
-}
 
 export function selectedPokemon(state = pokemons[0], action) {
     switch (action.type) {

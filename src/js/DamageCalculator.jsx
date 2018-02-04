@@ -2,7 +2,6 @@
 function calculateDmg(attack, pokemon1, pokemon2) {
     const hitRatio = Math.floor((Math.random()*10) + 1);
     if (hitRatio > attack.accuracy) {
-        console.log("missied " + pokemon1);
         return 0
     } else {
         if (attack.type === "heal") {
@@ -16,5 +15,4 @@ function calculateDmg(attack, pokemon1, pokemon2) {
         }
     }
 }
-
 export default calculateDmg;
