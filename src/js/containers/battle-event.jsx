@@ -14,7 +14,7 @@ class Battle extends React.Component {
         const randomBaseStamina = this.props.battleReducer.randomPokemon.stamina;
         this.state = {
             display: "block",
-            textArea: "",
+            textArea: "battle begins!",
             playerBaseStamina: playerBaseStamina,
             randomBaseStamina: randomBaseStamina
 
@@ -122,7 +122,6 @@ class Battle extends React.Component {
                     </div>
                     <ul style = {{display: this.state.display}}>{this.attackListGenerator()}</ul>
                     {this.state.textArea}
-
                </div>
 
     }

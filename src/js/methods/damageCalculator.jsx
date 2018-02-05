@@ -1,10 +1,10 @@
 
 function calculateDmg(attack, pokemon1, pokemon2) {
-    const hitRatio = Math.floor((Math.random()*10) + 1);
+    const hitRatio = Math.floor((Math.random()*100) + 1);
     if (hitRatio > attack.accuracy) {
         return 0
     } else {
-        if (attack.type === "heal") {
+        if (attack.type === "modifying_myself" && attack.type === "modifying_enemy") {
             return attack.power
         } else {
             if (attack.type === "special") {

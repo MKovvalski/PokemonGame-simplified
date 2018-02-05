@@ -74,53 +74,42 @@ const pokemons =  [
         {
             id: "charmander",
             lvl: 10,
-            atk: 100,
-            def: 80,
-            specAtk: 120,
-            specDef: 80,
-            speed: 80,
-            stamina: 10,
-            img_back_view: "fill that spot later",
-            img_front_view: "fill that spot later",
-            img_thumbnail: "fill that later as well",
+            atk: 52,
+            def: 43,
+            specAtk: 60,
+            specDef: 50,
+            speed: 65,
+            stamina: 39,
             gif_attack: b,
             gif_calm: bb,
             gif_back: bbb,
             attacks: [
                 {
-
-                        id: "fireAttack",
-                        power: 20,
-                        charges: 15,
+                        id: "ember",
+                        power: 40,
                         type: "special",
-                        accuracy: 7 //z 10 na mathRandom
-
+                        accuracy: 100
                 },
                 {
-
-                        id: "punch",
-                        power: 4000,
-                        charges: 20,
+                        id: "scratch",
+                        power: 40,
                         type: "normal",
-                        accuracy: 9.5
-
+                        accuracy: 100
+                },
+                {
+                        id: "growl",
+                        power: 4,
+                        target: "atk",
+                        type: "modifying_myself",
+                        accuracy: 100
                 },
                 {
 
-                        id: "recover",
-                        power: 20,
-                        charges: 5,
-                        type: "heal",
-                        accuracy: 11
-
-                },
-                {
-
-                        id: "superPunch",
-                        power: 35,
-                        charges: 3,
-                        type: "normal",
-                        accuracy: 3.0
+                        id: "smoke screen",
+                        power: 4,
+                        target: "def",
+                        type: "modifying_enemy",
+                        accuracy: 100
 
                 }
               ]
