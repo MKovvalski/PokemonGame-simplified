@@ -38,7 +38,7 @@ const pokemons =  [
                     power: 20,
                     charges: 15,
                     type: "special",
-                    accuracy: 7 //z 10 na mathRandom
+                    accuracy: 7.0 //z 10 na mathRandom
 
                 },
                 {
@@ -65,7 +65,7 @@ const pokemons =  [
                     power: 35,
                     charges: 3,
                     type: "normal",
-                    accuracy: 3
+                    accuracy: 3.0
 
                 }
             ]
@@ -120,7 +120,7 @@ const pokemons =  [
                         power: 35,
                         charges: 3,
                         type: "normal",
-                        accuracy: 3
+                        accuracy: 3.0
 
                 }
               ]
@@ -146,7 +146,7 @@ const pokemons =  [
                     power: 20,
                     charges: 15,
                     type: "special",
-                    accuracy: 7
+                    accuracy: 7.0
 
                 },
                 {
