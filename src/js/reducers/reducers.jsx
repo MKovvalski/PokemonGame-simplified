@@ -1,6 +1,7 @@
 import dmgCalc from "../methods/damageCalculator.jsx";
 import pokemons from "../game-data/pokemons.jsx";
 
+
 export function selectedPokemon(state = pokemons[0], action) {
     switch (action.type) {
         case "POKEMON_SELECTED":
@@ -19,13 +20,37 @@ export function battleReducer(state = null, action) {
             return {...state, randomPokemon: action.randomPokemon};
             break;
         case "PLAYER_POKEMON_ATTACK_SELECTED":
-            if (action.attack.type === "modifying_myself") {
+            if (action.attack.type === "modifying_myself") { //jak przekazać to do jakieś funkcji?!
                 if (action.attack.target === "atk") {
                     return {...state, playerPokemon: {...state.playerPokemon, atk: state.playerPokemon.atk + action.attack.power}}
                 }
+                if (action.attack.target === "def") {
+                    return {...state, playerPokemon: {...state.playerPokemon, def: state.playerPokemon.def + action.attack.power}}
+                }
+                if (action.attack.target === "specAtk") {
+                    return {...state, playerPokemon: {...state.playerPokemon, specAtk: state.playerPokemon.specAtk + action.attack.power}}
+                }
+                if (action.attack.target === "specDef") {
+                    return {...state, playerPokemon: {...state.playerPokemon, specDef: state.playerPokemon.specDef + action.attack.power}}
+                }
+                if (action.attack.target === "speed") {
+                    return {...state, playerPokemon: {...state.playerPokemon, speed: state.playerPokemon.speed + action.attack.power}}
+                }
             } else if (action.attack.type === "modifying_enemy") {
+                if (action.attack.target === "atk") {
+                    return {...state, randomPokemon: {...state.randomPokemon, atk: state.randomPokemon.atk - action.attack.power}}
+                }
                 if (action.attack.target === "def") {
                     return {...state, randomPokemon: {...state.randomPokemon, def: state.randomPokemon.def - action.attack.power}}
+                }
+                if (action.attack.target === "specAtk") {
+                    return {...state, randomPokemon: {...state.randomPokemon, specAtk: state.randomPokemon.specAtk - action.attack.power}}
+                }
+                if (action.attack.target === "specDef") {
+                    return {...state, randomPokemon: {...state.randomPokemon, specDef: state.randomPokemon.specDef - action.attack.power}}
+                }
+                if (action.attack.target === "speed") {
+                    return {...state, randomPokemon: {...state.randomPokemon, speed: state.randomPokemon.speed - action.attack.power}}
                 }
             } else {
                 return {...state, randomPokemon: {...state.randomPokemon, stamina: state.randomPokemon.stamina - dmgCalc(action.attack, state.playerPokemon, state.randomPokemon)}};
@@ -34,11 +59,35 @@ export function battleReducer(state = null, action) {
         case "RANDOM_POKEMON_ATTACK_SELECTED":
             if (action.attack.type === "modifying_myself") {
                 if (action.attack.target === "atk") {
-                    return {...state, randomPokemon: {...state.randomPokemon, atk: state.randomPokemon.atk + action.attack.power}}
+                    return {...state, randomPokemon: {...state.randomPokemon, atk: state.randomPokemon.atk - action.attack.power}}
+                }
+                if (action.attack.target === "def") {
+                    return {...state, randomPokemon: {...state.randomPokemon, def: state.randomPokemon.def - action.attack.power}}
+                }
+                if (action.attack.target === "specAtk") {
+                    return {...state, randomPokemon: {...state.randomPokemon, specAtk: state.randomPokemon.specAtk - action.attack.power}}
+                }
+                if (action.attack.target === "specDef") {
+                    return {...state, randomPokemon: {...state.randomPokemon, specDef: state.randomPokemon.specDef - action.attack.power}}
+                }
+                if (action.attack.target === "speed") {
+                    return {...state, randomPokemon: {...state.randomPokemon, speed: state.randomPokemon.speed - action.attack.power}}
                 }
             } else if (action.attack.type === "modifying_enemy") {
+                if (action.attack.target === "atk") {
+                    return {...state, playerPokemon: {...state.playerPokemon, atk: state.playerPokemon.atk + action.attack.power}}
+                }
                 if (action.attack.target === "def") {
-                    return {...state, playerPokemon: {...state.playerPokemon, def: state.playerPokemon.def - action.attack.power}}
+                    return {...state, playerPokemon: {...state.playerPokemon, def: state.playerPokemon.def + action.attack.power}}
+                }
+                if (action.attack.target === "specAtk") {
+                    return {...state, playerPokemon: {...state.playerPokemon, specAtk: state.playerPokemon.specAtk + action.attack.power}}
+                }
+                if (action.attack.target === "specDef") {
+                    return {...state, playerPokemon: {...state.playerPokemon, specDef: state.playerPokemon.specDef + action.attack.power}}
+                }
+                if (action.attack.target === "speed") {
+                    return {...state, playerPokemon: {...state.playerPokemon, speed: state.playerPokemon.speed + action.attack.power}}
                 }
             } else {
                 return {...state, playerPokemon: {...state.playerPokemon, stamina: state.playerPokemon.stamina - dmgCalc(action.attack, state.randomPokemon, state.playerPokemon)}};
@@ -56,16 +105,6 @@ export function selectedRandomPokemon(state = null, action) {
         default:
             return state;
     }
-}
-
-export function incrementedCounter(state = {count: 0}, action) {
-    switch (action.type) {
-        case "CHANGE_COUNTER":
-            return {count: state.count + 1};
-        default:
-            return state
-    }
-    
 }
 
 export function passedWinnerInfo(state = null, action) {

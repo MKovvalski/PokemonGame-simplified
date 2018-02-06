@@ -6,7 +6,6 @@ import {
     selectedPokemon,
     selectedRandomPokemon,
     battleReducer,
-    incrementedCounter,
     passedWinnerInfo
 } from "./reducers.jsx";
 
@@ -15,7 +14,6 @@ const allReducers = combineReducers({
         selectedPokemon,
         selectedRandomPokemon,
         battleReducer,
-        incrementedCounter,
         passedWinnerInfo
     });
 

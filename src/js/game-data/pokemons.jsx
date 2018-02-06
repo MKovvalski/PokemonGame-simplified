@@ -33,43 +33,40 @@ const pokemons =  [
             gif_back: aaa,
             attacks: [
                 {
-
-                    id: "leafattack",
-                    power: 20,
-                    charges: 15,
-                    type: "special",
-                    accuracy: 7.0 //z 10 na mathRandom
-
-                },
-                {
-
-                    id: "stomp",
-                    power: 20,
-                    charges: 20,
-                    type: "normal",
-                    accuracy: 8.0
-
-                },
-                {
-
-                    id: "super-recover",
+                    id: "ember",
                     power: 40,
-                    charges: 2,
-                    type: "heal",
-                    accuracy: 7.0
-
+                    nature: "fire",
+                    type: "special",
+                    accuracy: 100
+                },
+                {
+                    id: "scratch",
+                    power: 40,
+                    nature: "physical",
+                    type: "normal",
+                    accuracy: 100
+                },
+                {
+                    id: "growl",
+                    power: 4,
+                    nature: "none",
+                    target: "atk",
+                    targetName: "attack",
+                    type: "modifying_myself",
+                    accuracy: 100
                 },
                 {
 
-                    id: "superPunch",
-                    power: 35,
-                    charges: 3,
-                    type: "normal",
-                    accuracy: 3.0
+                    id: "smoke screen",
+                    power: 4,
+                    nature: "none",
+                    target: "def",
+                    targetName: "defence",
+                    type: "modifying_enemy",
+                    accuracy: 100
 
                 }
             ]
-
         },
         {
             id: "charmander",
@@ -87,19 +84,23 @@ const pokemons =  [
                 {
                         id: "ember",
                         power: 40,
+                        nature: "fire",
                         type: "special",
                         accuracy: 100
                 },
                 {
                         id: "scratch",
                         power: 40,
+                        nature: "physical",
                         type: "normal",
                         accuracy: 100
                 },
                 {
                         id: "growl",
                         power: 4,
+                        nature: "none",
                         target: "atk",
+                        targetName: "attack",
                         type: "modifying_myself",
                         accuracy: 100
                 },
@@ -107,7 +108,9 @@ const pokemons =  [
 
                         id: "smoke screen",
                         power: 4,
+                        nature: "none",
                         target: "def",
+                        targetName: "defence",
                         type: "modifying_enemy",
                         accuracy: 100
 
@@ -130,43 +133,40 @@ const pokemons =  [
             gif_calm: cc,
             attacks: [
                 {
-
-                    id: "watergun",
-                    power: 20,
-                    charges: 15,
-                    type: "special",
-                    accuracy: 7.0
-
-                },
-                {
-
-                    id: "scrach",
-                    power: 20,
-                    charges: 20,
-                    type: "normal",
-                    accuracy: 8.0
-
-                },
-                {
-
-                    id: "water-recover",
+                    id: "ember",
                     power: 40,
-                    charges: 2,
-                    type: "heal",
-                    accuracy: 7.0
-
+                    nature: "fire",
+                    type: "special",
+                    accuracy: 100
+                },
+                {
+                    id: "scratch",
+                    power: 40,
+                    nature: "physical",
+                    type: "normal",
+                    accuracy: 100
+                },
+                {
+                    id: "growl",
+                    power: 4,
+                    nature: "none",
+                    target: "atk",
+                    targetName: "attack",
+                    type: "modifying_myself",
+                    accuracy: 100
                 },
                 {
 
-                    id: "tailsmack",
-                    power: 35,
-                    charges: 3,
-                    type: "normal",
-                    accuracy: 3
+                    id: "smoke screen",
+                    power: 4,
+                    nature: "none",
+                    target: "def",
+                    targetName: "defence",
+                    type: "modifying_enemy",
+                    accuracy: 100
 
                 }
             ]
-
         },
         {
             id: "Pikachu",
@@ -184,43 +184,40 @@ const pokemons =  [
             gif_calm: dd,
             attacks: [
                 {
-
-                    id: "leafattack",
-                    power: 20,
-                    charges: 15,
-                    type: "special",
-                    accuracy: 7 //z 10 na mathRandom
-
-                },
-                {
-
-                    id: "stomp",
-                    power: 20,
-                    charges: 20,
-                    type: "normal",
-                    accuracy: 8.0
-
-                },
-                {
-
-                    id: "super-recover",
+                    id: "ember",
                     power: 40,
-                    charges: 2,
-                    type: "heal",
-                    accuracy: 7.0
-
+                    nature: "fire",
+                    type: "special",
+                    accuracy: 100
+                },
+                {
+                    id: "scratch",
+                    power: 40,
+                    nature: "physical",
+                    type: "normal",
+                    accuracy: 100
+                },
+                {
+                    id: "growl",
+                    power: 4,
+                    nature: "none",
+                    target: "atk",
+                    targetName: "attack",
+                    type: "modifying_myself",
+                    accuracy: 100
                 },
                 {
 
-                    id: "superPunch",
-                    power: 35,
-                    charges: 3,
-                    type: "normal",
-                    accuracy: 3
+                    id: "smoke screen",
+                    power: 4,
+                    nature: "none",
+                    target: "def",
+                    targetName: "defence",
+                    type: "modifying_enemy",
+                    accuracy: 100
 
                 }
             ]
-
         },
         {
             id: "Butterfly",
@@ -238,43 +235,40 @@ const pokemons =  [
             gif_back: fff,
             attacks: [
                 {
-
-                    id: "leafattack",
-                    power: 20,
-                    charges: 15,
-                    type: "special",
-                    accuracy: 7 //z 10 na mathRandom
-
-                },
-                {
-
-                    id: "stomp",
-                    power: 20,
-                    charges: 20,
-                    type: "normal",
-                    accuracy: 8.0
-
-                },
-                {
-
-                    id: "super-recover",
+                    id: "ember",
                     power: 40,
-                    charges: 2,
-                    type: "heal",
-                    accuracy: 7.0
-
+                    nature: "fire",
+                    type: "special",
+                    accuracy: 100
+                },
+                {
+                    id: "scratch",
+                    power: 40,
+                    nature: "physical",
+                    type: "normal",
+                    accuracy: 100
+                },
+                {
+                    id: "growl",
+                    power: 4,
+                    nature: "none",
+                    target: "atk",
+                    targetName: "attack",
+                    type: "modifying_myself",
+                    accuracy: 100
                 },
                 {
 
-                    id: "superPunch",
-                    power: 35,
-                    charges: 3,
-                    type: "normal",
-                    accuracy: 3
+                    id: "smoke screen",
+                    power: 4,
+                    nature: "none",
+                    target: "def",
+                    targetName: "defence",
+                    type: "modifying_enemy",
+                    accuracy: 100
 
                 }
             ]
-
         },
         {
             id: "Togepi",
@@ -291,43 +285,40 @@ const pokemons =  [
             gif_calm: ee,
             attacks: [
                 {
-
-                    id: "leafattack",
-                    power: 20,
-                    charges: 15,
-                    type: "special",
-                    accuracy: 7 //z 10 na mathRandom
-
-                },
-                {
-
-                    id: "stomp",
-                    power: 20,
-                    charges: 20,
-                    type: "normal",
-                    accuracy: 8.0
-
-                },
-                {
-
-                    id: "super-recover",
+                    id: "ember",
                     power: 40,
-                    charges: 2,
-                    type: "heal",
-                    accuracy: 7.0
-
+                    nature: "fire",
+                    type: "special",
+                    accuracy: 100
+                },
+                {
+                    id: "scratch",
+                    power: 40,
+                    nature: "physical",
+                    type: "normal",
+                    accuracy: 100
+                },
+                {
+                    id: "growl",
+                    power: 4,
+                    nature: "none",
+                    target: "atk",
+                    targetName: "attack",
+                    type: "modifying_myself",
+                    accuracy: 100
                 },
                 {
 
-                    id: "superPunch",
-                    power: 35,
-                    charges: 3,
-                    type: "normal",
-                    accuracy: 3
+                    id: "smoke screen",
+                    power: 4,
+                    nature: "none",
+                    target: "def",
+                    targetName: "defence",
+                    type: "modifying_enemy",
+                    accuracy: 100
 
                 }
             ]
-
         },
 
     ];
