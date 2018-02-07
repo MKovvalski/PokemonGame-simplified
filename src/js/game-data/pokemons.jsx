@@ -96,11 +96,11 @@ const pokemons =  [
                         accuracy: 100
                 },
                 {
-                        id: "growl",
+                        id: "growl-heal",
                         power: 4,
                         nature: "none",
-                        target: "atk",
-                        targetName: "attack",
+                        target: "stamina",
+                        targetName: "stamina",
                         type: "modifying_myself",
                         accuracy: 100
                 },

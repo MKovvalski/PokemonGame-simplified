@@ -19,8 +19,9 @@ export function battleReducer(state = null, action) {
         case "PASS_RANDOM_POKEMON_TO_BATTLE":
             return {...state, randomPokemon: action.randomPokemon};
             break;
+
         case "PLAYER_POKEMON_ATTACK_SELECTED":
-            if (action.attack.type === "modifying_myself") { //jak przekazać to do jakieś funkcji?!
+            if (action.attack.type === "modifying_myself") { //jak przekazać to do jakieś funkcji?
                 if (action.attack.target === "atk") {
                     return {...state, playerPokemon: {...state.playerPokemon, atk: state.playerPokemon.atk + action.attack.power}}
                 }
@@ -35,6 +36,12 @@ export function battleReducer(state = null, action) {
                 }
                 if (action.attack.target === "speed") {
                     return {...state, playerPokemon: {...state.playerPokemon, speed: state.playerPokemon.speed + action.attack.power}}
+                }
+                if (action.attack.target === "stamina") {
+                  if (state.playerPokemon.stamina + action.attack.power > action.stamina) {
+                      return {...state, playerPokemon: {...state.playerPokemon, stamina: action.stamina}}
+                  }
+                    return {...state, playerPokemon: {...state.playerPokemon, stamina: state.playerPokemon.stamina + action.attack.power}}
                 }
             } else if (action.attack.type === "modifying_enemy") {
                 if (action.attack.target === "atk") {
@@ -72,6 +79,15 @@ export function battleReducer(state = null, action) {
                 }
                 if (action.attack.target === "speed") {
                     return {...state, randomPokemon: {...state.randomPokemon, speed: state.randomPokemon.speed - action.attack.power}}
+                }
+                if (action.attack.target === "stamina") {
+                    return {...state, randomPokemon: {...state.randomPokemon, stamina: state.randomPokemon.stamina - action.attack.power}}
+                }
+                if (action.attack.target === "stamina") {
+                    if (state.randomPokemon.stamina + action.attack.power > action.stamina) {
+                        return {...state, randomPokemon: {...state.randomPokemon, stamina: action.stamina}}
+                    }
+                    return {...state, randomPokemon: {...state.playerPokemon, stamina: state.randomPokemon.stamina + action.attack.power}}
                 }
             } else if (action.attack.type === "modifying_enemy") {
                 if (action.attack.target === "atk") {

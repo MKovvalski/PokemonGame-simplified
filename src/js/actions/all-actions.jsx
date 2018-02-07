@@ -28,17 +28,20 @@ function passRandomPokemon (randomPokemon) {
     }
 }
 
-function playerClickedAttack(attack) {
+function playerClickedAttack(attack, stamina) {
     return {
         type: "PLAYER_POKEMON_ATTACK_SELECTED",
-        attack
+        attack,
+        stamina
+
     }
 }
 
-function randomSelectedAttack(attack) {
+function randomSelectedAttack(attack, stamina) {
     return {
         type: "RANDOM_POKEMON_ATTACK_SELECTED",
-        attack
+        attack,
+        stamina
     }
 }
 
@@ -55,5 +58,5 @@ export default {
     randomSelectedAttack,
     passPlayerPokemon,
     passRandomPokemon,
-    passingWinnerInfo
+    passingWinnerInfo,
 }

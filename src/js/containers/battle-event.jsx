@@ -42,7 +42,7 @@ class Battle extends React.Component {
         }
         setTimeout(() => {
             let randomPokemonStamina = this.props.battleReducer.randomPokemon.stamina;
-            this.props.playerClickedAttack(attack);
+            this.props.playerClickedAttack(attack, this.state.playerBaseStamina );
             if (attack.type === "modifying_myself") {
                 this.setState ({
                     textArea: playerPokemon.id + " " + attack.targetName + " rose!"
@@ -72,12 +72,12 @@ class Battle extends React.Component {
                     }
                     setTimeout(() => {
                         let playerPokemonStamina = this.props.battleReducer.playerPokemon.stamina;
-                        this.props.randomSelectedAttack(randomAttack);
-                        if (attack.type === "modifying_myself") {
+                        this.props.randomSelectedAttack(randomAttack, this.state.randomBaseStamina);
+                        if (randomAttack.type === "modifying_myself") {
                             this.setState ({
                                 textArea: randomPokemon.id + " " + randomAttack.targetName + " rose!"
                             })
-                        } else if (attack.type === "modifying_enemy") {
+                        } else if (randomAttack.type === "modifying_enemy") {
                             this.setState ({
                                 textArea: playerPokemon.id + " " + randomAttack.targetName + " fell!"
                             })
@@ -125,12 +125,19 @@ class Battle extends React.Component {
     };
 
     handleLifeBarChange = (staminaValue, pokemonStamina) => {
-        return ((pokemonStamina * 132) / staminaValue);
+        const lifeBarLength = ((pokemonStamina * 132) / staminaValue);
+        if (lifeBarLength <= 0) {
+            return 0
+        } else if (lifeBarLength > 132) {
+            return 132;
+        } else {
+            return lifeBarLength;
+        }
     };
 
     render () {
-        let playerPokeStamina = this.props.battleReducer.playerPokemon.stamina;
-        let randomPokeStamina = this.props.battleReducer.randomPokemon.stamina;
+        const playerPokeStamina = this.props.battleReducer.playerPokemon.stamina;
+        const randomPokeStamina = this.props.battleReducer.randomPokemon.stamina;
         return <div className= "container">
                     <div className= "background">
                        <div className="row1-2">
@@ -171,7 +178,7 @@ function matchDispatchToProps(dispatch) {
     return bindActionCreators({
         playerClickedAttack: actions.playerClickedAttack,
         randomSelectedAttack: actions.randomSelectedAttack,
-        passingWinnerInfo: actions.passingWinnerInfo
+        passingWinnerInfo: actions.passingWinnerInfo,
     }, dispatch)
 }
 
