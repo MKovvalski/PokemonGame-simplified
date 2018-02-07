@@ -44,9 +44,21 @@ class Battle extends React.Component {
             let randomPokemonStamina = this.props.battleReducer.randomPokemon.stamina;
             this.props.playerClickedAttack(attack, this.state.playerBaseStamina );
             if (attack.type === "modifying_myself") {
-                this.setState ({
-                    textArea: playerPokemon.id + " " + attack.targetName + " rose!"
-                })
+                if (attack.targetName === "stamina") {
+                    if (this.state.playerBaseStamina === playerPokemon.stamina) {
+                        this.setState ({
+                            textArea: playerPokemon.id + " cannot regenerate more stamina then it already has"
+                        })
+                    } else {
+                        this.setState ({
+                            textArea: playerPokemon.id + " regenerated " + attack.power + " points of stamina"
+                        })
+                    }
+                } else {
+                    this.setState ({
+                        textArea: playerPokemon.id + " " + attack.targetName + " rose!"
+                    })
+                }
             } else if (attack.type === "modifying_enemy") {
                 this.setState ({
                     textArea: randomPokemon.id + " " + attack.targetName + " fell!"
@@ -74,9 +86,21 @@ class Battle extends React.Component {
                         let playerPokemonStamina = this.props.battleReducer.playerPokemon.stamina;
                         this.props.randomSelectedAttack(randomAttack, this.state.randomBaseStamina);
                         if (randomAttack.type === "modifying_myself") {
-                            this.setState ({
-                                textArea: randomPokemon.id + " " + randomAttack.targetName + " rose!"
-                            })
+                            if (attack.targetName === "stamina") {
+                                if (this.state.randomBaseStamina === randomPokemon.stamina) {
+                                    this.setState ({
+                                        textArea: randomPokemon.id + " cannot regenerate more stamina then it already has"
+                                    })
+                                } else {
+                                    this.setState ({
+                                        textArea: randomPokemon.id + " regenerated " + attack.power + " points of stamina"
+                                    })
+                                }
+                            } else {
+                                this.setState ({
+                                    textArea: randomPokemon.id + " " + attack.targetName + " rose!"
+                                })
+                            }
                         } else if (randomAttack.type === "modifying_enemy") {
                             this.setState ({
                                 textArea: playerPokemon.id + " " + randomAttack.targetName + " fell!"

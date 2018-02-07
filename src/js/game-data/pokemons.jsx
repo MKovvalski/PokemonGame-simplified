@@ -25,9 +25,6 @@ const pokemons =  [
             specDef: 90,
             speed: 60,
             stamina: 10,
-            img_back_view: "fill that spot later",
-            img_front_view: "fill that spot later",
-            img_thumbnail: "fill that later as well",
             gif_attack: a,
             gif_calm: aa,
             gif_back: aaa,
@@ -96,20 +93,20 @@ const pokemons =  [
                         accuracy: 100
                 },
                 {
-                        id: "growl-heal",
-                        power: 4,
+                        id: "growl",
+                        power: 3,
                         nature: "none",
-                        target: "stamina",
-                        targetName: "stamina",
+                        target: "atk",
+                        targetName: "attack",
                         type: "modifying_myself",
                         accuracy: 100
                 },
                 {
 
                         id: "smoke screen",
-                        power: 4,
+                        power: 5,
                         nature: "none",
-                        target: "def",
+                        target: "specDef",
                         targetName: "defence",
                         type: "modifying_enemy",
                         accuracy: 100
