@@ -6,9 +6,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/main.bundle.js" afterPath="$PROJECT_DIR$/dist/main.bundle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/style.css" afterPath="$PROJECT_DIR$/dist/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/components/TheGame.jsx" afterPath="$PROJECT_DIR$/src/js/components/TheGame.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/containers/battle-event.jsx" afterPath="$PROJECT_DIR$/src/js/containers/battle-event.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/reducers/reducers.jsx" afterPath="$PROJECT_DIR$/src/js/reducers/reducers.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scss/main.scss" afterPath="$PROJECT_DIR$/src/scss/main.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -26,13 +24,14 @@
       <file leaf-file-name="battle-event.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/containers/battle-event.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="223" column="14" lean-forward="true" selection-start-line="223" selection-start-column="14" selection-end-line="223" selection-end-column="14" />
+            <state relative-caret-position="925">
+              <caret line="227" column="1" lean-forward="true" selection-start-line="227" selection-start-column="1" selection-end-line="227" selection-end-column="1" />
               <folding>
                 <element signature="e#10#36#0" expanded="true" />
+                <element signature="e#732#964#0" expanded="false" />
                 <element signature="n#!!block;n#handleAttackAction#0;n#Battle#0" expanded="false" />
-                <element signature="e#7361#7635#0" expanded="false" />
-                <element signature="e#7677#7855#0" expanded="false" />
+                <element signature="e#7359#7633#0" expanded="false" />
+                <element signature="e#7675#7853#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -41,8 +40,8 @@
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="264" column="16" lean-forward="false" selection-start-line="264" selection-start-column="16" selection-end-line="264" selection-end-column="16" />
+            <state relative-caret-position="308">
+              <caret line="173" column="0" lean-forward="true" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -79,8 +78,8 @@
         <option value="$PROJECT_DIR$/src/js/game-data/pokemons.jsx" />
         <option value="$PROJECT_DIR$/src/js/components/TheGame.jsx" />
         <option value="$PROJECT_DIR$/src/js/reducers/reducers.jsx" />
-        <option value="$PROJECT_DIR$/src/scss/main.scss" />
         <option value="$PROJECT_DIR$/src/js/containers/battle-event.jsx" />
+        <option value="$PROJECT_DIR$/src/scss/main.scss" />
       </list>
     </option>
   </component>
@@ -184,12 +183,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1517565627460</updated>
-      <workItem from="1517565629910" duration="82226000" />
+      <workItem from="1517565629910" duration="83575000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82226000" />
+    <option name="totallyTimeSpent" value="83575000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -481,21 +480,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="264" column="16" lean-forward="false" selection-start-line="264" selection-start-column="16" selection-end-line="264" selection-end-column="16" />
+        <state relative-caret-position="308">
+          <caret line="173" column="0" lean-forward="true" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/containers/battle-event.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="223" column="14" lean-forward="true" selection-start-line="223" selection-start-column="14" selection-end-line="223" selection-end-column="14" />
+        <state relative-caret-position="925">
+          <caret line="227" column="1" lean-forward="true" selection-start-line="227" selection-start-column="1" selection-end-line="227" selection-end-column="1" />
           <folding>
             <element signature="e#10#36#0" expanded="true" />
+            <element signature="e#732#964#0" expanded="false" />
             <element signature="n#!!block;n#handleAttackAction#0;n#Battle#0" expanded="false" />
-            <element signature="e#7361#7635#0" expanded="false" />
-            <element signature="e#7677#7855#0" expanded="false" />
+            <element signature="e#7359#7633#0" expanded="false" />
+            <element signature="e#7675#7853#0" expanded="false" />
           </folding>
         </state>
       </provider>

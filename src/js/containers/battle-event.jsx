@@ -23,7 +23,7 @@ class Battle extends React.Component {
 
     attackListGenerator = () => {
         return this.props.battleReducer.playerPokemon.attacks.map((attack) => {
-            return <div className="attack-button" onClick = {() => this.handleAttackAction(attack)} key = {attack.id}>{attack.id}</div>
+            return <li className="attack-button" onClick = {() => this.handleAttackAction(attack)} key = {attack.id}>{attack.id}</li>
         })
     };
 
@@ -211,13 +211,15 @@ class Battle extends React.Component {
                                </div>
                             </div>
                         <div className = "row1-2b">
-                            <div className = "battle-menu-border">
-                                <div className = "battle-menu-inner-border">
-                                    <div className = "list-of-attack-buttons" style = {{display: this.state.displayAttacks}}>
-                                        {this.attackListGenerator()}
-                                        </div>
-                                    <div className = "battle-commentary" style = {{display: this.state.displayText}}>{this.state.textArea}</div>
+                            <div style = {{display: this.state.displayAttacks}}>
+                                <div className = "list-of-attack-buttons">
+                                    {this.attackListGenerator()}
                                 </div>
+                            </div>
+                            <div className = "battle-menu-border" style = {{display: this.state.displayText}}>
+                                <div className = "battle-menu-inner-border">
+                                        <div className = "battle-commentary">{this.state.textArea}</div>
+                                    </div>
                             </div>
                         </div>
                     </div>

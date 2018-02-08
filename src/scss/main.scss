@@ -171,13 +171,12 @@
 .row1-2 {
    display: flex;
    height: 170px;
-   border: 1px solid red;
+
  }
 
 .row1-2a {
   display: flex;
   height: 75px;
-  border: 1px solid red;
 }
 
 .row1-2b {
@@ -190,13 +189,12 @@
 
 .col1-2-1 {
   width: 280px;
-  border: 1px solid red;
 }
 
 .col1-2-2 {
   height: 168px;
   width: 192px;
-  border: 1px solid red;
+
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -207,13 +205,11 @@
   margin-left: 25px;
   width: 192px;
   height: 74px;
-  border: 1px solid red;
 }
 
 .col1-2-2a {
   margin-left: 90px;
   position: relative;
-  border: 1px solid red;
 }
 
 .player-pokemon {
@@ -256,22 +252,29 @@
   border-radius: 2px;
   background-color: #2d5986;
   height: 65px;
-  display: flex;
 }
 
 .list-of-attack-buttons {
-  width: 200px;
+  height: 75px;
+  width: 465px;
+  border: 4px solid #7575a3;
+  border-radius: 3px;
   background-color: whitesmoke;
   display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .attack-button {
+  padding: 10px;
   font-size: 20px;
   color: black;
-
+  font-family: 'VT323', monospace;
 }
 
 .battle-commentary {
+  padding-left: 3px;
   font-size: 23px;
   color: white;
 }
