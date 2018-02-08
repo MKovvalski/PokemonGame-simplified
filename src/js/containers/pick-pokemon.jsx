@@ -12,7 +12,7 @@ import actions from "../actions/all-actions.jsx";
 //classes and renders
 class PickPokemon extends React.Component {
     componentDidMount () {
-        this.props.randomPokemonGenerator(pokemons[Math.floor(Math.random()*6)]);
+        this.props.randomPokemonGenerator(pokemons[0]);
     }
 
     handleClick = () => {
@@ -25,7 +25,7 @@ class PickPokemon extends React.Component {
 
     generateList = () => {
       return pokemons.map((pokemon) => {
-          return <li key={pokemon.id} onClick ={() => this.props.clickedPokemon(pokemon)}><div className= "background-col"><img src = {pokemon.gif_attack}/><div className = "pokemonName">{pokemon.id}</div></div></li>
+          return <li className = "listImgs" key={pokemon.id} onClick ={() => this.props.clickedPokemon(pokemon)}><div className= "background-col"><img src = {pokemon.gif_attack}/><div className = "pokemonName">{pokemon.id}</div></div></li>
       })
     };
 
@@ -38,7 +38,7 @@ class PickPokemon extends React.Component {
                             </ul>
                         </div>
                         <div>
-                            <div>
+                            <div className = "frame">
                             <h2>{this.props.pokemon.id}</h2>
                             <div><img className= "img" src = {this.props.pokemon.gif_calm}/></div>
                             </div>

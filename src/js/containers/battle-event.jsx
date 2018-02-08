@@ -7,17 +7,19 @@ import {connect} from "react-redux";
 import actions from "../actions/all-actions.jsx";
 
 //classes
+
 class Battle extends React.Component {
     constructor(props) {
         super(props);
         const playerBaseStamina = this.props.battleReducer.playerPokemon.stamina;
         const randomBaseStamina = this.props.battleReducer.randomPokemon.stamina;
         this.state = {
-            display: "block",
+            displayAttacks: "block",
+            displayText: "none",
             textArea: "battle begins!",
             playerBaseStamina: playerBaseStamina,
-            randomBaseStamina: randomBaseStamina
-
+            randomBaseStamina: randomBaseStamina,
+            lifeBarColour: "green",
         };
     };
 
@@ -32,11 +34,13 @@ class Battle extends React.Component {
         let randomPokemon = this.props.battleReducer.randomPokemon;
         if (attack.type === "modifying_myself" || attack.type === "modifying_enemy") {
             this.setState({
-                display: "none",
-                textArea: playerPokemon.id + " uses " + attack.id
+                displayText: "block",
+                displayAttacks: "none",
+                textArea: playerPokemon.id  + " uses " + attack.id
             })
         } else {this.setState ({
-            display: "none",
+            displayText: "block",
+            displayAttacks: "none",
             textArea: playerPokemon.id + " attacks with " + attack.id
         })
         }
@@ -126,7 +130,8 @@ class Battle extends React.Component {
                         } else {
                             setTimeout(() => {
                                 this.setState({
-                                    display: "block",
+                                    displayText: "none",
+                                    displayAttacks: "block",
                                     textArea: "waiting for next move"
                                 })
                             }, 2000);
@@ -136,7 +141,7 @@ class Battle extends React.Component {
             } else {
                 setTimeout(() => {
                     this.setState ({
-                        display: "none",
+                        displayAttacks: "none",
                         textArea: randomPokemon.id + " fainted"
                     });
                     setTimeout(() => {
@@ -159,19 +164,31 @@ class Battle extends React.Component {
         }
     };
 
+    handleColorChange = (functionA) => {
+       if (functionA <= 20) {
+           return "red";
+       } else if (functionA <= 60) {
+           return "yellow"
+        } else {
+           return "green"
+       }
+    };
+
     render () {
         const playerPokeStamina = this.props.battleReducer.playerPokemon.stamina;
         const randomPokeStamina = this.props.battleReducer.randomPokemon.stamina;
+        let handleLifeBar1 = this.handleLifeBarChange(this.state.randomBaseStamina,randomPokeStamina);
+        let handleLifeBar2 = this.handleLifeBarChange(this.state.playerBaseStamina,playerPokeStamina);
         return <div className= "container">
                     <div className= "background">
                        <div className="row1-2">
                            <div className= "col1-2-1">
                                <div className= "life-bar-overbar1">
-                                   <div style = {{backgroundColor: "green", height: "3px", width: this.handleLifeBarChange(this.state.randomBaseStamina,randomPokeStamina)}}></div>
+                                   <div className = "life-bar" style = {{transition: "all 1s ease-out", backgroundColor: this.handleColorChange(handleLifeBar1), height: "3px", width: handleLifeBar1}}></div>
                                </div>
                            </div>
                            <div className= "col1-2-2">
-                               <img src={this.props.battleReducer.randomPokemon.gif_calm} alt=""/>
+                               <img className = "imgFit" src={this.props.battleReducer.randomPokemon.gif_calm} alt=""/>
                            </div>
                        </div>
                        <div className= "row1-2a">
@@ -180,13 +197,13 @@ class Battle extends React.Component {
                           </div>
                            <div className= "col1-2-2a">
                                <div className= "life-bar-overbar2">
-                                   <div style = {{backgroundColor: "green", height: "3px", width: this.handleLifeBarChange(this.state.playerBaseStamina,playerPokeStamina)}}></div>
+                                   <div style = {{transition: "all 1s ease-out", backgroundColor: this.handleColorChange(handleLifeBar2), height: "3px", width: handleLifeBar2}}></div>
                                </div>
                        </div>
                        </div>
                     </div>
-                    <ul style = {{display: this.state.display}}>{this.attackListGenerator()}</ul>
-                    {this.state.textArea}
+                    <ul style = {{display: this.state.displayAttacks}}>{this.attackListGenerator()}</ul>
+                    <div style = {{fontSize: "28px", display: this.state.displayText}}>{this.state.textArea}</div>
                </div>
 
     }
