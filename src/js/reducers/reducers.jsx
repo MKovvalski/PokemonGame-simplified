@@ -11,7 +11,12 @@ export function selectedPokemon(state = pokemons[0], action) {
     }
 }
 
-export function battleReducer(state = null, action) {
+const initialState = {
+    playerPokemon: pokemons[1],
+    randomPokemon: pokemons[0]
+};
+
+export function battleReducer(state = initialState, action) {
     switch (action.type) {
         case "PASS_PLAYER_POKEMON_TO_BATTLE":
             return {...state, playerPokemon: action.playerPokemon};

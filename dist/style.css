@@ -148,12 +148,21 @@ input[type=button] {width: auto; overflow: visible;}
   border: 5px solid gold;
   border-radius: 8px; }
 
-.container {
-  height: 340px;
+.game-framing {
   width: 530px;
-  border-radius: 18px;
+  border-radius: 15px;
   font-family: 'VT323', monospace;
-  border: 5px solid gold; }
+  border-left: 15px solid silver;
+  border-right: 15px solid silver;
+  border-top: 25px solid silver;
+  border-bottom: 30px solid silver;
+  background-color: silver; }
+
+.border {
+  border: 15px solid black;
+  border-bottom: 30px solid black;
+  border-radius: 8px;
+  position: relative; }
 
 /* styling main-page */
 .main-page-title {
@@ -283,12 +292,12 @@ input[type=button] {width: auto; overflow: visible;}
   height: 75px;
   border: 1px solid red; }
 
-.background {
-  background-image: url(0021b161d45c006aac15278aa095b2b1.png);
-  background-size: cover;
-  height: 250px;
-  border-radius: 8px 8px 0 0;
-  border-bottom: 3px solid gold; }
+.row1-2b {
+  height: 80px;
+  background-color: #4d4d4d;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .col1-2-1 {
   width: 280px;
@@ -301,9 +310,6 @@ input[type=button] {width: auto; overflow: visible;}
   display: flex;
   justify-content: center;
   align-items: flex-end; }
-
-.imgFit {
-  object-fit: none; }
 
 .col1-2-1a {
   margin-left: 25px;
@@ -335,12 +341,33 @@ input[type=button] {width: auto; overflow: visible;}
   border-radius: 4px;
   background-color: black; }
 
-.btn2 {
-  font-family: 'VT323', monospace;
-  font-size: 20px;
-  height: 80px;
-  width: 127px;
-  border-radius: 5px; }
+.background {
+  background-image: url(0021b161d45c006aac15278aa095b2b1.png);
+  background-size: cover;
+  height: 250px; }
 
-.upperCase {
-  text-transform: uppercase; }
+.battle-menu-border {
+  width: 465px;
+  height: 75px;
+  border: 5px solid #ffcc00;
+  border-radius: 7px; }
+
+.battle-menu-inner-border {
+  border: 3px solid whitesmoke;
+  border-radius: 2px;
+  background-color: #2d5986;
+  height: 65px;
+  display: flex; }
+
+.list-of-attack-buttons {
+  width: 200px;
+  background-color: whitesmoke;
+  display: flex; }
+
+.attack-button {
+  font-size: 20px;
+  color: black; }
+
+.battle-commentary {
+  font-size: 23px;
+  color: white; }
