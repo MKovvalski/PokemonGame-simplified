@@ -25,25 +25,25 @@ class PickPokemon extends React.Component {
 
     generateList = () => {
       return pokemons.map((pokemon) => {
-          return <li className = "pokemon-in-list" key={pokemon.id} onClick ={() => this.props.clickedPokemon(pokemon)}><div className= "background-col"><img src = {pokemon.gif_attack}/><div className = "pokemonName">{pokemon.id}</div></div></li>
+          return <li className = "pokemon-in-list" key={pokemon.id} onClick ={() => this.props.clickedPokemon(pokemon)}><div><img className = "pokemon" src = {pokemon.gif_attack}/><div>{pokemon.id}</div></div></li>
       })
     };
 
     render () {
         return <div className = "game-framing">
                     <div className = "border">
-                        <div className = "row1-2a">
+                        <div className = "row1-2aa">
                             <div className = "col1-2a">
                                 <ul className = "pokemon-list">
                                     {this.generateList()}
                                 </ul>
                             </div>
                             <div className  = "col1-2b">
-                                <div>
+                                <div className = "pokemon-img-and-name">
                                     <h2>{this.props.pokemon.id}</h2>
                                     <img className= "img" src = {this.props.pokemon.gif_calm}/>
                                 </div>
-                                <ul>
+                                <ul className = "pokemon-stat-list">
                                     <li>Attack:<span>{this.props.pokemon.atk}</span></li>
                                     <li>Defense:<span>{this.props.pokemon.def}</span></li>
                                     <li>Special-Attack:<span>{this.props.pokemon.specAtk}</span></li>
@@ -53,7 +53,7 @@ class PickPokemon extends React.Component {
                                 </ul>
                             </div>
                         </div>
-                        <div className = "row1-2b">
+                        <div className = "row1-2bb">
                             <button disabled = {false} onClick = {this.handleClick} >Zatwierdź wybór pokemona</button>
                         </div>
                     </div>

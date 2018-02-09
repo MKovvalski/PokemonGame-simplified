@@ -42,26 +42,59 @@
 
 /* styling pick pokemon */
 
-.row1-2a {
+.row1-2aa {
   display: flex;
   background-color: #999999;
-  border-radius: 11px 11px 0 0 ;
+}
+
+.col1-2b {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.pokemon {
+  width: 132px;
+  height: 132px;
 }
 
 .pokemon-in-list {
   background-color: #2d5986;
 }
+
 .img {
-  background-color: #cccccc;
-  border-radius: 0 0 4px 4px;
-  width: 192px;
-  height: 192px;
+  border: 1.2px solid #aa80ff;
+  border-radius: 3px;
+  background-color: white;
+  width: 160px;
+  height: 160px;
+  margin: 3px 3px 3px 3px;
 }
 
 .pokemon-list {
-  height: 330px;
+  height: 312px;
   overflow-y: scroll;
 }
+
+.pokemon-img-and-name {
+  background-color:  #ccb3ff;
+  border: 3px solid #3d3d5c;
+  height: 190px;
+}
+
+.pokemon-img-and-name h2 {
+  letter-spacing: 1px;
+  text-shadow: 1px 0 gray;
+  margin-top: 2px;
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+.pokemon-stat-list {
+  background-color: yellow;
+}
+
 /* styling main battle */
 
 .row1-2 {
