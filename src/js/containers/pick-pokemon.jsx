@@ -25,36 +25,39 @@ class PickPokemon extends React.Component {
 
     generateList = () => {
       return pokemons.map((pokemon) => {
-          return <li className = "listImgs" key={pokemon.id} onClick ={() => this.props.clickedPokemon(pokemon)}><div className= "background-col"><img src = {pokemon.gif_attack}/><div className = "pokemonName">{pokemon.id}</div></div></li>
+          return <li className = "pokemon-in-list" key={pokemon.id} onClick ={() => this.props.clickedPokemon(pokemon)}><div className= "background-col"><img src = {pokemon.gif_attack}/><div className = "pokemonName">{pokemon.id}</div></div></li>
       })
     };
 
     render () {
-        return <div>
-                    <div>
-                        <div>
-                            <ul>
-                                {this.generateList()}
-                            </ul>
-                        </div>
-                        <div>
-                            <div className = "frame">
-                            <h2>{this.props.pokemon.id}</h2>
-                            <div><img className= "img" src = {this.props.pokemon.gif_calm}/></div>
+        return <div className = "game-framing">
+                    <div className = "border">
+                        <div className = "row1-2a">
+                            <div className = "col1-2a">
+                                <ul className = "pokemon-list">
+                                    {this.generateList()}
+                                </ul>
                             </div>
-                            <ul>
-                                <li>Attack:<span>{this.props.pokemon.atk}</span></li>
-                                <li>Defense:<span>{this.props.pokemon.def}</span></li>
-                                <li>Special-Attack:<span>{this.props.pokemon.specAtk}</span></li>
-                                <li>Special-Defense:<span>{this.props.pokemon.specDef}</span></li>
-                                <li>Speed:<span>{this.props.pokemon.speed}</span></li>
-                                <li>Stamina:<span>{this.props.pokemon.stamina}</span></li>
-                            </ul>
+                            <div className  = "col1-2b">
+                                <div>
+                                    <h2>{this.props.pokemon.id}</h2>
+                                    <img className= "img" src = {this.props.pokemon.gif_calm}/>
+                                </div>
+                                <ul>
+                                    <li>Attack:<span>{this.props.pokemon.atk}</span></li>
+                                    <li>Defense:<span>{this.props.pokemon.def}</span></li>
+                                    <li>Special-Attack:<span>{this.props.pokemon.specAtk}</span></li>
+                                    <li>Special-Defense:<span>{this.props.pokemon.specDef}</span></li>
+                                    <li>Speed:<span>{this.props.pokemon.speed}</span></li>
+                                    <li>Stamina:<span>{this.props.pokemon.stamina}</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className = "row1-2b">
+                            <button disabled = {false} onClick = {this.handleClick} >Zatwierdź wybór pokemona</button>
                         </div>
                     </div>
-                        <div><button disabled = {false} onClick = {this.handleClick} >Zatwierdź wybór pokemona</button></div>
-
-                </div>
+        </div>
     }
 }
 

@@ -18,6 +18,7 @@ class Battle extends React.Component {
             textArea: "battle begins!",
             playerBaseStamina: playerBaseStamina,
             randomBaseStamina: randomBaseStamina,
+            counter: playerBaseStamina
         };
     };
 
@@ -185,8 +186,7 @@ class Battle extends React.Component {
                                        <div className = "random-pokemon-data">
                                            <h4>{this.props.battleReducer.randomPokemon.id}</h4>
                                            <div className= "life-bar-overbar1">
-                                               <h4>{this.props.battleReducer.randomPokemon.id}</h4>
-                                               <div className = "life-bar" style = {{transition: "all 1s ease-out", backgroundColor: this.handleColorChange(handleLifeBar1), height: "3px", width: handleLifeBar1}}></div>
+                                               <div className = "life-bar" style = {{transition: "all 1s ease-out", backgroundColor: this.handleColorChange(handleLifeBar1), height: "8px", width: handleLifeBar1}}></div>
                                            </div>
                                        </div>
                                        <div>{randomPokeStamina}/{this.state.randomBaseStamina}</div>
@@ -203,7 +203,7 @@ class Battle extends React.Component {
                                        <div className = "player-pokemon-data" >
                                            <h4>{this.props.battleReducer.playerPokemon.id}</h4>
                                            <div className= "life-bar-overbar2">
-                                               <div style = {{transition: "all 1s ease-out", backgroundColor: this.handleColorChange(handleLifeBar2), height: "3px", width: handleLifeBar2}}></div>
+                                               <div style = {{transition: "all 1s ease-out", backgroundColor: this.handleColorChange(handleLifeBar2), height: "8px", width: handleLifeBar2}}></div>
                                            </div>
                                            <div>{playerPokeStamina}/{this.state.playerBaseStamina}</div>
                                        </div>
@@ -219,7 +219,7 @@ class Battle extends React.Component {
                             <div className = "battle-menu-border" style = {{display: this.state.displayText}}>
                                 <div className = "battle-menu-inner-border">
                                         <div className = "battle-commentary">{this.state.textArea}</div>
-                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
