@@ -50,6 +50,7 @@
 .col1-2b {
   display: flex;
   flex-direction: row;
+  border: 3px solid #3d3d5c;
 
 }
 
@@ -62,12 +63,18 @@
   background-color: #2d5986;
 }
 
-.img {
+.pokemon-img {
   border: 1.2px solid #aa80ff;
   border-radius: 3px;
-  background-color: white;
+  background: repeating-linear-gradient(
+                  0deg,
+                  #f2f2f2,
+                  #f2f2f2 4px,
+                  white 4px,
+                  white 8px
+  );
   width: 160px;
-  height: 160px;
+  height: 140px;
   margin: 3px 3px 3px 3px;
 }
 
@@ -78,21 +85,88 @@
 
 .pokemon-img-and-name {
   background-color:  #ccb3ff;
-  border: 3px solid #3d3d5c;
-  height: 190px;
+  border-right: 3px solid #3d3d5c;
+  border-bottom: 3px solid #3d3d5c;
+  height: 170px;
 }
 
 .pokemon-img-and-name h2 {
   letter-spacing: 1px;
-  text-shadow: 1px 0 gray;
+  text-shadow: 1px 1px gray;
   margin-top: 2px;
   color: white;
-  font-weight: 400;
+  font-weight: 200;
   text-transform: uppercase;
   text-align: center;
 }
+
+.pokemon-stat-list-box {
+  border-left: 2px solid #fffae6;
+  border-top: 2px solid #fffae6;
+  background: repeating-linear-gradient(
+                  0deg,
+                  #ffdb4d,
+                  #ffdb4d 1px,
+                  #ffeb99 1px,
+                  #ffeb99 2px
+  );
+  width: 163px;
+  height: 170px;
+}
+
 .pokemon-stat-list {
-  background-color: yellow;
+  margin-top: 3px;
+}
+
+.pokemon-stat-list li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hp-stat-name {
+  background-color: #b3b3b3;
+  text-shadow: 0.5px 0.5px lightgrey;
+  border-radius: 5px;
+  width: 50px;
+  margin-bottom: 8px;
+  margin-left: 2px;
+}
+
+.stat-name {
+  background-color: #b3b3b3;
+  text-shadow: 0.5px 0.5px lightgrey;
+  border-radius: 5px;
+  width: 50px;
+  margin-bottom: 2px;
+  margin-left: 2px;
+}
+
+.hp-stat-number {
+  text-align: right;
+  color: #4d4d4d;
+  text-shadow: 0.5px 0.5px lightgrey;
+  width: 100px;
+  background: #fffae6;
+  float: right;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  margin-right: 2px;
+}
+
+.stat-number {
+  text-align: right;
+  color: #4d4d4d;
+  text-shadow: 0.5px 0.5px lightgrey;
+  width: 40px;
+  background: #fffae6;
+  float: right;
+  border-radius: 5px;
+  margin-bottom: 2px;
+  margin-right: 2px;
 }
 
 /* styling main battle */

@@ -41,16 +41,18 @@ class PickPokemon extends React.Component {
                             <div className  = "col1-2b">
                                 <div className = "pokemon-img-and-name">
                                     <h2>{this.props.pokemon.id}</h2>
-                                    <img className= "img" src = {this.props.pokemon.gif_calm}/>
+                                    <img className= "pokemon-img" src = {this.props.pokemon.gif_calm}/>
                                 </div>
-                                <ul className = "pokemon-stat-list">
-                                    <li>Attack:<span>{this.props.pokemon.atk}</span></li>
-                                    <li>Defense:<span>{this.props.pokemon.def}</span></li>
-                                    <li>Special-Attack:<span>{this.props.pokemon.specAtk}</span></li>
-                                    <li>Special-Defense:<span>{this.props.pokemon.specDef}</span></li>
-                                    <li>Speed:<span>{this.props.pokemon.speed}</span></li>
-                                    <li>Stamina:<span>{this.props.pokemon.stamina}</span></li>
-                                </ul>
+                                <div className = "pokemon-stat-list-box">
+                                    <ul className = "pokemon-stat-list">
+                                        <li><span className = "hp-stat-name">hp:</span><span className = "hp-stat-number">{this.props.pokemon.stamina}</span></li>
+                                        <li><span className = "stat-name">attack:</span><span className = "stat-number">{this.props.pokemon.atk}</span></li>
+                                        <li><span className = "stat-name">defence</span><span className = "stat-number">{this.props.pokemon.def}</span></li>
+                                        <li><span className = "stat-name">sp.atk</span><span className = "stat-number">{this.props.pokemon.specAtk}</span></li>
+                                        <li><span className = "stat-name">sp.def</span><span className = "stat-number">{this.props.pokemon.specDef}</span></li>
+                                        <li><span className = "stat-name">speed</span><span className = "stat-number">{this.props.pokemon.speed}</span></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div className = "row1-2bb">
