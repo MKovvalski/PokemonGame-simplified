@@ -29,6 +29,69 @@ class PickPokemon extends React.Component {
       })
     };
 
+    generateListOfTypes = () => {
+        return this.props.pokemon.type.map ((type,i) => {
+           return <li style = {{backgroundColor: this.generateProperBackground(type)}} key = {type+i}>{type}</li>
+        })
+    };
+
+    generateProperBackground = (type) => {
+        if (type === "grass") {
+            return "#00b33c"
+        }
+        if (type === "water") {
+            return "#4dc3ff"
+        }
+        if (type === "fire") {
+            return "#ff6600"
+        }
+        if (type === "normal") {
+            return "#b8b894"
+        }
+        if (type === "electric") {
+            return "#ffd11a"
+        }
+        if (type === "ice") {
+            return "#99ffff"
+        }
+        if (type === "fighting") {
+            return "#cc3300"
+        }
+        if (type === "poison") {
+            return "#9933ff"
+        }
+        if (type === "ground") {
+            return "#cc9900"
+        }
+        if (type === "flying") {
+            return "#d9b3ff"
+        }
+        if (type === "psychic") {
+            return "#ff80bf"
+        }
+        if (type === "bug") {
+            return "#99e600"
+        }
+        if (type === "rock") {
+            return "#aaaa55"
+        }
+        if (type === "ghost") {
+            return "#8a00e6"
+        }
+        if (type === "dark") {
+            return "#55552b"
+        }
+        if (type === "dragon") {
+            return "#6600ff"
+        }
+        if (type === "steel") {
+            return "#a6a6a6"
+        }
+        if (type === "fairy") {
+            return "#ffcccc"
+        }
+    };
+
     render () {
         return <div className = "game-framing">
                     <div className = "border">
@@ -39,18 +102,39 @@ class PickPokemon extends React.Component {
                                 </ul>
                             </div>
                             <div className  = "col1-2b">
-                                <div className = "pokemon-img-and-name">
-                                    <h2>{this.props.pokemon.id}</h2>
-                                    <img className= "pokemon-img" src = {this.props.pokemon.gif_calm}/>
+                                <div className = "inner-row-1">
+                                    <div className = "pokemon-img-and-name">
+                                        <h2>{this.props.pokemon.id}</h2>
+                                        <img className= "pokemon-img" src = {this.props.pokemon.gif_calm}/>
+                                    </div>
+                                    <div className = "pokemon-stat-list-box">
+                                        <ul className = "pokemon-stat-list">
+                                            <li><span className = "hp-stat-name">hp</span><span className = "hp-stat-number">{this.props.pokemon.stamina}<span className = "hp-life-bar"><span className = "hp-hp-title">HP</span><span className = "hp-green-bar"></span></span></span></li>
+                                            <li><span className = "stat-name">attack</span><span className = "stat-number">{this.props.pokemon.atk}</span></li>
+                                            <li><span className = "stat-name">defense</span><span className = "stat-number">{this.props.pokemon.def}</span></li>
+                                            <li><span className = "stat-name">sp.atk</span><span className = "stat-number">{this.props.pokemon.specAtk}</span></li>
+                                            <li><span className = "stat-name">sp.def</span><span className = "stat-number">{this.props.pokemon.specDef}</span></li>
+                                            <li><span className = "stat-name">speed</span><span className = "stat-number">{this.props.pokemon.speed}</span></li>
+                                        </ul>
+                                        <div className = "pokemon-type">
+                                            <h3 className = "type-title">Type</h3>
+                                            <ul className = "pokemon-type-list">
+                                                {this.generateListOfTypes()}
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className = "pokemon-stat-list-box">
-                                    <ul className = "pokemon-stat-list">
-                                        <li><span className = "hp-stat-name">hp:</span><span className = "hp-stat-number">{this.props.pokemon.stamina}</span></li>
-                                        <li><span className = "stat-name">attack:</span><span className = "stat-number">{this.props.pokemon.atk}</span></li>
-                                        <li><span className = "stat-name">defence</span><span className = "stat-number">{this.props.pokemon.def}</span></li>
-                                        <li><span className = "stat-name">sp.atk</span><span className = "stat-number">{this.props.pokemon.specAtk}</span></li>
-                                        <li><span className = "stat-name">sp.def</span><span className = "stat-number">{this.props.pokemon.specDef}</span></li>
-                                        <li><span className = "stat-name">speed</span><span className = "stat-number">{this.props.pokemon.speed}</span></li>
+                                <div className = "inner-row-2">
+                                    <div className = "pokemon-description">{this.props.pokemon.description}</div>
+                                </div>
+                                <div className = "inner-row-3">
+                                    <ul className = "attack-list-1-2">
+                                        <li>{this.props.pokemon.attacks[0].id}</li>
+                                        <li>{this.props.pokemon.attacks[1].id}</li>
+                                    </ul>
+                                    <ul className = "attack-list-1-2">
+                                        <li>{this.props.pokemon.attacks[2].id}</li>
+                                        <li>{this.props.pokemon.attacks[3].id}</li>
                                     </ul>
                                 </div>
                             </div>

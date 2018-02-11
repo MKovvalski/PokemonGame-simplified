@@ -7,6 +7,7 @@ import PickPokemon from "../containers/pick-pokemon.jsx";
 import BattleEvent from "../containers/battle-event.jsx";
 import EndGameScreen from "../containers/end-game-screen.jsx";
 
+//classes
 class TheGame extends React.Component {
     constructor(props) {
         super(props);
@@ -26,7 +27,7 @@ class TheGame extends React.Component {
         }
     };
 
-    render () { // tutaj dostawić obramowanie graficzne w stylu GameBoy
+    render () {
 
         if (this.state.ComponentRenderCounter === 0) {
             return <StartGameScreen onConfirm = {this.handleRender}/>

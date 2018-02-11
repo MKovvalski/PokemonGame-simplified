@@ -48,10 +48,27 @@
 }
 
 .col1-2b {
+  border: 3px solid #3d3d5c;
+}
+
+.inner-row-1 {
   display: flex;
   flex-direction: row;
-  border: 3px solid #3d3d5c;
+}
 
+.inner-row-3 {
+  background: repeating-linear-gradient(
+                  0deg,
+                  #33ffbb,
+                  #33ffbb 1px,
+                  #f2f2f2 1px,
+                  #f2f2f2 2px
+  );
+  height: 95px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .pokemon {
@@ -101,8 +118,7 @@
 }
 
 .pokemon-stat-list-box {
-  border-left: 2px solid #fffae6;
-  border-top: 2px solid #fffae6;
+  border-bottom: 3px solid #3d3d5c;
   background: repeating-linear-gradient(
                   0deg,
                   #ffdb4d,
@@ -116,6 +132,7 @@
 
 .pokemon-stat-list {
   margin-top: 3px;
+  font-size: 17.5px;
 }
 
 .pokemon-stat-list li {
@@ -128,45 +145,164 @@
 }
 
 .hp-stat-name {
-  background-color: #b3b3b3;
-  text-shadow: 0.5px 0.5px lightgrey;
+  text-shadow: -1px 0 #a6a6a6, 0 1px #a6a6a6, 1px 0 #a6a6a6, 0 -1px #a6a6a6;
   border-radius: 5px;
   width: 50px;
-  margin-bottom: 8px;
-  margin-left: 2px;
+  margin-bottom: 9px;
+  margin-left: 9px;
+  position: relative;
+  z-index: 1;
+}
+
+.hp-stat-name:after {
+  content: "";
+  background-color: #a6a6a6;
+  position: absolute;
+  z-index: -1;
+  left: -6.8px;
+  top: 5.35px;
+  width: 57px;
+  height: 9px;
+  border-radius: 7px;
 }
 
 .stat-name {
-  background-color: #b3b3b3;
-  text-shadow: 0.5px 0.5px lightgrey;
+  text-shadow: -1px 0 #a6a6a6, 0 1px #a6a6a6, 1px 0 #a6a6a6, 0 -1px #a6a6a6;
   border-radius: 5px;
   width: 50px;
   margin-bottom: 2px;
-  margin-left: 2px;
+  margin-left: 6px;
+  z-index: 1;
+  position: relative;
+}
+
+.stat-name:after {
+  content: "";
+  background-color: #a6a6a6;
+  position: absolute;
+  z-index: -1;
+  left: -3.8px;
+  top: 5.35px;
+  width: 57px;
+  height: 9px;
+  border-radius: 7px;
 }
 
 .hp-stat-number {
   text-align: right;
   color: #4d4d4d;
   text-shadow: 0.5px 0.5px lightgrey;
-  width: 100px;
+  width: 115px;
   background: #fffae6;
   float: right;
+  margin-top: 1px;
   border-radius: 5px;
   margin-bottom: 8px;
   margin-right: 2px;
+  position: relative;
+}
+
+.hp-life-bar {
+  position: absolute;
+  background-color: #4d4d4d;
+  border-radius: 3px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  top: 15px;
+  left: 6px;
+}
+
+.hp-hp-title {
+  margin-left: 2px;
+  font-size: 7px;
+  font-weight: 900;
+  color: #ff9900;
+  text-shadow: none;
+}
+
+.hp-green-bar {
+  margin-left: 0.5px;
+  margin-right: 1px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  border: 0.5px solid white;
+  border-radius: 2px;
+  width: 85px;
+  height: 7px;
+  background-color: #1aff1a;
 }
 
 .stat-number {
   text-align: right;
   color: #4d4d4d;
   text-shadow: 0.5px 0.5px lightgrey;
-  width: 40px;
+  width: 50px;
   background: #fffae6;
   float: right;
   border-radius: 5px;
   margin-bottom: 2px;
   margin-right: 2px;
+}
+
+.pokemon-type-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pokemon-type-list li {
+  box-shadow: 1px 1px #595959;
+  border-radius: 2px;
+  text-align: center;
+  width: 50px;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #4d4d4d;
+  margin-left: 3px;
+}
+
+.type-title {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: -1px 0 #a6a6a6, 0 1px #a6a6a6, 1px 0 #a6a6a6, 0 -1px #a6a6a6;
+  border-radius: 5px;
+  width: 50px;
+  margin-bottom: 2px;
+  margin-left: 58px;
+  z-index: 1;
+  position: relative;
+}
+
+.type-title:after {
+  content: "";
+  background-color: #a6a6a6;
+  position: absolute;
+  z-index: -1;
+  left: -3.5px;
+  top: 4.3px;
+  width: 57px;
+  height: 9px;
+  border-radius: 7px;
+}
+
+.pokemon-description {
+  font-size: 15px;
+  height: 40px;
+  width: 332px;
+  border-bottom: 3px solid #3d3d5c;
+}
+
+.attack-list-1-2 li {
+  line-height: 30px;
+  vertical-align: middle;
+  width: 140px;
+  height: 30px;
+  border-radius: 3px;
+  background-color: white;
+  text-align: center;
 }
 
 /* styling main battle */

@@ -28,6 +28,8 @@ const pokemons =  [
             gif_attack: a,
             gif_calm: aa,
             gif_back: aaa,
+            type: ["grass", "poison"],
+            description: "bulbasaur is dog sized pokemon who lives in a small packs. Matures after a year",
             attacks: [
                 {
                     id: "ember",
@@ -77,6 +79,7 @@ const pokemons =  [
             gif_attack: b,
             gif_calm: bb,
             gif_back: bbb,
+            type: ["grass", "poison"],
             attacks: [
                 {
                         id: "ember",
@@ -128,6 +131,7 @@ const pokemons =  [
             img_thumbnail: "fill that later as well",
             gif_attack: c,
             gif_calm: cc,
+            type: ["grass", "poison"],
             attacks: [
                 {
                     id: "ember",
@@ -179,6 +183,7 @@ const pokemons =  [
             img_thumbnail: "fill that later as well",
             gif_attack: d,
             gif_calm: dd,
+            type: ["grass", "poison"],
             attacks: [
                 {
                     id: "ember",
@@ -230,6 +235,7 @@ const pokemons =  [
             gif_attack: f,
             gif_calm: ff,
             gif_back: fff,
+            type: ["grass", "poison"],
             attacks: [
                 {
                     id: "ember",
@@ -280,6 +286,7 @@ const pokemons =  [
             img_thumbnail: "fill that later as well",
             gif_attack: e,
             gif_calm: ee,
+            type: ["fairy"],
             attacks: [
                 {
                     id: "ember",
