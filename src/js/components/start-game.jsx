@@ -9,8 +9,12 @@ class StartGameScreen extends React.Component {
     };
 
     render () {
-        return <div className = "container1">
-            <h1 className = "main-page-title" onClick = {this.handleClick}>START GAME</h1>
+        return <div className = "game-framing">
+                <div className = "border">
+                    <div className = "main-screen-background">
+                        <h1 className = "main-page-title" onClick = {this.handleClick}>START GAME</h1>
+                    </div>
+                </div>
             </div>
     }
 }

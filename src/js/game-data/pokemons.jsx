@@ -29,7 +29,7 @@ const pokemons =  [
             gif_calm: aa,
             gif_back: aaa,
             type: ["grass", "poison"],
-            description: "bulbasaur is dog sized pokemon who lives in a small packs. Matures after a year",
+            description: "bulbasaur is dog sized pokemon who lives in a small packs. Matures after a year. The flower on his back rises and changes colour to deeper red.",
             attacks: [
                 {
                     id: "ember",
@@ -41,14 +41,14 @@ const pokemons =  [
                 {
                     id: "scratch",
                     power: 40,
-                    nature: "physical",
+                    nature: "normal",
                     type: "normal",
                     accuracy: 100
                 },
                 {
                     id: "growl",
                     power: 4,
-                    nature: "none",
+                    nature: "normal",
                     target: "atk",
                     targetName: "attack",
                     type: "modifying_myself",
@@ -58,7 +58,7 @@ const pokemons =  [
 
                     id: "smoke screen",
                     power: 4,
-                    nature: "none",
+                    nature: "normal",
                     target: "def",
                     targetName: "defence",
                     type: "modifying_enemy",

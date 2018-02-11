@@ -25,7 +25,7 @@ class PickPokemon extends React.Component {
 
     generateList = () => {
       return pokemons.map((pokemon) => {
-          return <li className = "pokemon-in-list" key={pokemon.id} onClick ={() => this.props.clickedPokemon(pokemon)}><div><img className = "pokemon" src = {pokemon.gif_attack}/><div>{pokemon.id}</div></div></li>
+          return <li className = "pokemon-in-list" key={pokemon.id} onClick ={() => this.props.clickedPokemon(pokemon)}><img className = "pokemon" src = {pokemon.gif_attack}/><div className = "pokemon-name">{pokemon.id}</div></li>
       })
     };
 
@@ -93,6 +93,7 @@ class PickPokemon extends React.Component {
     };
 
     render () {
+        const pokemon = this.props.pokemon;
         return <div className = "game-framing">
                     <div className = "border">
                         <div className = "row1-2aa">
@@ -129,12 +130,23 @@ class PickPokemon extends React.Component {
                                 </div>
                                 <div className = "inner-row-3">
                                     <ul className = "attack-list-1-2">
-                                        <li>{this.props.pokemon.attacks[0].id}</li>
-                                        <li>{this.props.pokemon.attacks[1].id}</li>
+                                        <li>
+                                            <div className = "attack-name">{pokemon.attacks[0].id}</div>
+                                            <div className = "attack-nature" style = {{backgroundColor: this.generateProperBackground(pokemon.attacks[0].nature)}}>{pokemon.attacks[0].nature}</div>
+                                        </li>
+                                        <li>
+                                            <div className = "attack-name">{pokemon.attacks[1].id}</div>
+                                            <div className = "attack-nature" style = {{backgroundColor: this.generateProperBackground(pokemon.attacks[1].nature)}}>{pokemon.attacks[1].nature}</div>
+                                        </li>
                                     </ul>
                                     <ul className = "attack-list-1-2">
-                                        <li>{this.props.pokemon.attacks[2].id}</li>
-                                        <li>{this.props.pokemon.attacks[3].id}</li>
+                                        <li><div className = "attack-name">{pokemon.attacks[2].id}</div>
+                                            <div className = "attack-nature" style = {{backgroundColor: this.generateProperBackground(pokemon.attacks[2].nature)}}>{pokemon.attacks[2].nature}</div>
+                                        </li>
+                                        <li>
+                                            <div className = "attack-name">{pokemon.attacks[3].id}</div>
+                                            <div className = "attack-nature" style = {{backgroundColor: this.generateProperBackground(pokemon.attacks[3].nature)}}>{pokemon.attacks[3].nature}</div>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
