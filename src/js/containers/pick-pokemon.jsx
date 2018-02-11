@@ -152,7 +152,9 @@ class PickPokemon extends React.Component {
                             </div>
                         </div>
                         <div className = "row1-2bb">
-                            <button disabled = {false} onClick = {this.handleClick} >Zatwierdź wybór pokemona</button>
+                            <div className = "button-border">
+                                <div className = "button-changing-container" disabled = {false} onClick = {this.handleClick}>Ready for battle?</div>
+                            </div>
                         </div>
                     </div>
         </div>
