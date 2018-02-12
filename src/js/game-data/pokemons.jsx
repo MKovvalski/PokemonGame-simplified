@@ -13,12 +13,40 @@ let ee = require('../../imgs/toge-calm.gif');
 let f = require('../../imgs/butterfly-calm.gif');
 let ff = require('../../imgs/butterfly-calm.gif');
 let fff = require('../../imgs/Butterfree_back.gif');
-let g = require('../../imgs/Donphan-F_XY.gif');
-let gg = require('../../imgs/Donphan-F_XY.gif');
-let ggg = require('../../imgs/Donphan_Back_XY.gif');
+let g = require('../../imgs/smalldog.gif');
+let gg = require('../../imgs/smalldog.gif');
+let ggg = require('../../imgs/smalldog.gif');
 let h = require('../../imgs/shelgon.gif');
 let hh = require('../../imgs/shelgon.gif');
 let hhh = require('../../imgs/Shelgon_Back_XY.gif');
+let i = require('../../imgs/doduo.gif');
+let ii = require('../../imgs/doduo.gif');
+let iii = require('../../imgs/doduo.gif');
+let j = require('../../imgs/goldeen.gif');
+let jj = require('../../imgs/goldeen.gif');
+let jjj = require('../../imgs/goldeen.gif');
+let k = require('../../imgs/lickitung.gif');
+let kk = require('../../imgs/lickitung.gif');
+let kkk = require('../../imgs/lickitung.gif');
+let o= require('../../imgs/psyduck.gif');
+let oo = require('../../imgs/psyduck.gif');
+let ooo = require('../../imgs/psyduck.gif');
+let p = require('../../imgs/mondog.gif');
+let pp = require('../../imgs/mondog.gif');
+let ppp = require('../../imgs/mondog.gif');
+let r = require('../../imgs/magikarp.gif');
+let rr = require('../../imgs/magikarp.gif');
+let rrr = require('../../imgs/magikarp.gif');
+let s = require('../../imgs/firedog.gif');
+let ss = require('../../imgs/firedog.gif');
+let sss = require('../../imgs/firedog.gif');
+let t = require('../../imgs/Vaporeon-Attack.gif');
+let tt = require('../../imgs/Vaporeon-Attack.gif');
+let ttt = require('../../imgs/Vaporeon-Attack.gif');
+let u = require('../../imgs/Fletchling.gif');
+let uu = require('../../imgs/Fletchling.gif');
+let uuu = require('../../imgs/Fletchling.gif');
+
 
 
 const pokemons =  [
@@ -322,39 +350,179 @@ const pokemons =  [
             ]
         },
         {
-            id: "donphan",
-            atk: 120,
-            def: 120,
-            specAtk: 60,
-            specDef: 60,
-            speed: 50,
-            stamina: 90,
+            id: "eevee",
+            atk: 55,
+            def: 50,
+            specAtk: 45,
+            specDef: 65,
+            speed: 55,
+            stamina: 55,
             gif_attack: g,
             gif_calm: gg,
             gif_back: ggg,
-            description: "Donphan is a gray, elephant-like Pokémon with a thick, black band of hide running down the length of its back and extending to the tip of its long trunk. When this Pokémon curls up, the band resembles a car tire. This tough hide prevents regular attacks from inflicting even a scratch. A pair of white tusks, which are smaller on the female, extend from the corners of its mouth. It has thin, elongated ears held out almost perpendicular to its body. Its four short legs are each encircled with a broken, black band and have three toes.",
-            type: ["ground"],
+            description: "Eevee is a mammalian, quadruped creature with primarily brown fur. The tip of its bushy tail and its large furry collar are cream-colored. It has short, slender legs with three small toes and a pink paw pad on each foot. Eevee has brown eyes, long pointed ears, and a small black nose. This Pokémon is rarely found in the wild, and is mostly only found in cities and towns. However, Eevee is said to have an irregularly shaped genetic structure that allows it to adapt to many different kinds of environments.",
+            type: ["normal"],
             attacks: [
                 {
-                    id: "fire fang",
-                    power: 65,
-                    nature: "fire",
-                    type: "special",
-                    accuracy: 75
-                },
-                {
-                    id: "thunder fang",
-                    power: 65,
-                    nature: "electric",
-                    type: "special",
-                    accuracy: 75
-                },
-                {
-                    id: "horn attack",
+                    id: "covet",
                     power: 60,
                     nature: "normal",
                     type: "normal",
-                    accuracy: 70
+                    accuracy: 90
+                },
+                {
+                    id: "growl",
+                    power: 4,
+                    nature: "normal",
+                    target: "def",
+                    targetName: "defense",
+                    type: "modifying_enemy",
+                    accuracy: 100
+                },
+                {
+                    id: "bite",
+                    power: 60,
+                    nature: "dark",
+                    type: "special",
+                    accuracy: 90
+                },
+                {
+                    id: "sand attack",
+                    power: 5,
+                    nature: "ground",
+                    target: "atk",
+                    targetName: "attack",
+                    type: "modifying_enemy",
+                    accuracy: 100
+                },
+            ]
+        },
+        {
+            id: "doduo",
+            atk: 85,
+            def: 45,
+            specAtk: 35,
+            specDef: 35,
+            speed: 75,
+            stamina: 35,
+            gif_attack: i,
+            gif_calm: ii,
+            gif_back: iii,
+            description: "Doduo is a two-headed, bipedal avian Pokémon. Each head has a long sharp beak and two beady black eyes with no discernible sclerae. It has a soft but bristly, down-like covering of brown feathers on its body and both heads. The males of the species have black flexible necks, whereas females have brown necks; both genders have brown coloring on their legs. It has two feet, each with four digits ending in a sharp claw.",
+            type: ["normal", "flying"],
+            attacks: [
+                {
+                    id: "peck",
+                    power: 35,
+                    nature: "flying",
+                    type: "special",
+                    accuracy: 100
+                },
+                {
+                    id: "pursuit",
+                    power: 40,
+                    nature: "dark",
+                    type: "special",
+                    accuracy: 100
+                },
+                {
+                    id: "quick-attack",
+                    power: 40,
+                    nature: "normal",
+                    type: "normal",
+                    accuracy: 100
+                },
+                {
+                    id: "growl",
+                    power: 4,
+                    nature: "normal",
+                    target: "def",
+                    targetName: "defense",
+                    type: "modifying_enemy",
+                    accuracy: 100
+                }
+            ]
+        },
+        {
+            id: "glodeen",
+            atk: 67,
+            def: 60,
+            specAtk: 35,
+            specDef: 50,
+            speed: 63,
+            stamina: 45,
+            gif_attack: j,
+            gif_calm: jj,
+            gif_back: jjj,
+            description: "Goldeen is a white, fish-like Pokémon with orange markings on its tail, back, and fins. It has a thin dorsal fin and long pectoral fins. Its dorsal and pectoral fins are quite strong, allowing it to maintain a steady speed of five knots while swimming upstream. Goldeen's caudal fin is admired by many for its beauty as it billows very much like a ballroom dress. Its circular eyes are blue, and it has pink lips. On its forehead is a large horn, which is larger on the male than on the female.",
+            type: ["water"],
+            attacks: [
+                {
+                    id: "peck",
+                    power: 35,
+                    nature: "flying",
+                    type: "special",
+                    accuracy: 100
+                },
+                {
+                    id: "water pulse",
+                    power: 65,
+                    nature: "water",
+                    type: "special",
+                    accuracy: 90
+                },
+                {
+                    id: "horn attack",
+                    power: 65,
+                    nature: "normal",
+                    type: "normal",
+                    accuracy: 85
+                },
+                {
+                    id: "tail whip",
+                    power: 4,
+                    nature: "normal",
+                    target: "specAtk",
+                    targetName: "spec-Attack",
+                    type: "modifying_myself",
+                    accuracy: 100
+                }
+            ]
+        },
+        {
+            id: "licktung",
+            atk: 55,
+            def: 75,
+            specAtk: 60,
+            specDef: 75,
+            speed: 30,
+            stamina: 90,
+            gif_attack: k,
+            gif_calm: kk,
+            gif_back: kkk,
+            description: "Lickitung is a bipedal Pokémon with a round body and a thick, powerful tail. It has soft, pink skin with curved yellow lines on its belly and yellow ring markings on its knees. It has a thumb-like claw on each hand, and a single large nail on each foot. There is a yellow spot on its palms and the soles of its feet. It has beady eyes and a long, prehensile tongue. The tongue is likely connected to its tail, which twitches when the tongue is pulled.",
+            type: ["normal"],
+            attacks: [
+                {
+                    id: "lick",
+                    power: 30,
+                    nature: "dark",
+                    type: "special",
+                    accuracy: 100
+                },
+                {
+                    id: "knock off",
+                    power: 65,
+                    nature: "dark",
+                    type: "special",
+                    accuracy: 85
+                },
+                {
+                    id: "stomp",
+                    power: 65,
+                    nature: "normal",
+                    type: "normal",
+                    accuracy: 85
                 },
                 {
                     id: "defense curl",
@@ -368,6 +536,52 @@ const pokemons =  [
             ]
         },
         {
+            id: "psyduck",
+            atk: 52,
+            def: 48,
+            specAtk: 65,
+            specDef: 50,
+            speed: 55,
+            stamina: 50,
+            gif_attack: o,
+            gif_calm: oo,
+            gif_back: ooo,
+            description: "Psyduck is a yellow Pokémon that resembles a duck or bipedal platypus. Three tufts of black hair grow on top of its head, and it has a wide, flat, cream-colored beak and vacant eyes. Its legs, arms, and tail are stubby and its webbed feet are cream-colored. There are three claws on both of its hands.",
+            type: ["water"],
+            attacks: [
+                {
+                    id: "Water gun",
+                    power: 40,
+                    nature: "water",
+                    type: "special",
+                    accuracy: 100
+                },
+                {
+                    id: "confusion",
+                    power: 50,
+                    nature: "psychic",
+                    type: "special",
+                    accuracy: 90
+                },
+                {
+                    id: "scratch",
+                    power: 40,
+                    nature: "normal",
+                    type: "normal",
+                    accuracy: 100
+                },
+                {
+                    id: "tail whip",
+                    power: 4,
+                    nature: "normal",
+                    target: "specAtk",
+                    targetName: "spec-Attack",
+                    type: "modifying_myself",
+                    accuracy: 100
+                }
+            ]
+        },
+        {
             id: "shelgon",
             atk: 95,
             def: 100,
@@ -378,6 +592,244 @@ const pokemons =  [
             gif_attack: h,
             gif_calm: hh,
             gif_back: hhh,
+            description: "Shelgon is a quadruped Pokémon that resembles a pupal stage. There are bone structures covering its body, which form a shell with two openings and three ridges on top. One opening is in front, revealing two yellow eyes, while the other opening is in the back. This bony covering repels enemy attacks, but it makes Shelgon heavy. As a result, this Pokémon moves sluggishly and hardly eats. Inside the shell, its body is busy forming for its next evolution. The moment this Pokémon evolves, its shell peels away. Its grey legs are visible protruding from underneath the shell, each with a short red stripe on the inner surface. It can be found in caverns.",
+            type: ["dragon"],
+            attacks: [
+                {
+                    id: "ember",
+                    power: 40,
+                    nature: "fire",
+                    type: "special",
+                    accuracy: 100
+                },
+                {
+                    id: "leer",
+                    power: 8,
+                    nature: "normal",
+                    target: "specef",
+                    targetName: "spec-defense",
+                    type: "modifying_enemy",
+                    accuracy: 85
+                },
+                {
+                    id: "bite",
+                    power: 60,
+                    nature: "dark",
+                    type: "special",
+                    accuracy: 90
+                },
+                {
+                    id: "protect",
+                    power: 8,
+                    nature: "normal",
+                    target: "specDef",
+                    targetName: "spec-defense",
+                    type: "modifying_myself",
+                    accuracy: 90
+                }
+            ]
+        },
+        {
+            id: "espeon",
+            atk: 65,
+            def: 60,
+            specAtk: 130,
+            specDef: 95,
+            speed: 110,
+            stamina: 65,
+            gif_attack: p,
+            gif_calm: pp,
+            gif_back: ppp,
+            description: "Espeon is a quadruped, mammalian Pokémon with slender legs and dainty paws. It is covered in fine, lilac fur. This velvety fur is sensitive for Espeon to sense minute shifts in the air, thus allowing it to predict the weather. Its ears are large, and it has purple eyes with white pupils. There are tufts of fur near its eyes, and a small, red gem embedded in its forehead. The gem boosts the psychic powers that it gained to protect its Trainer from harm. It also has a thin, forked tail that quivers when it predicts its opponent's moves. Espeon is rare in the wilderness, and is more commonly found in urban areas.",
+            type: ["psychic"],
+            attacks: [
+                {
+                    id: "confusion",
+                    power: 50,
+                    nature: "psychic",
+                    type: "special",
+                    accuracy: 90
+                },
+                {
+                    id: "tackle",
+                    power: 40,
+                    nature: "normal",
+                    type: "normal",
+                    accuracy: 100
+                },
+                {
+                    id: "tail whip",
+                    power: 4,
+                    nature: "normal",
+                    target: "specAtk",
+                    targetName: "spec-Attack",
+                    type: "modifying_myself",
+                    accuracy: 100
+                },
+                {
+                    id: "sand attack",
+                    power: 5,
+                    nature: "ground",
+                    target: "atk",
+                    targetName: "attack",
+                    type: "modifying_enemy",
+                    accuracy: 100
+                },
+            ]
+        },
+        {
+            id: "magikarp",
+            atk: 30,
+            def: 70,
+            specAtk: 35,
+            specDef: 40,
+            speed: 90,
+            stamina: 40,
+            gif_attack: r,
+            gif_calm: rr,
+            gif_back: rrr,
+            description: "Magikarp is a medium-sized fish Pokémon with large, heavy reddish-orange scales. It has large, vacant eyes and pink lips. Its pectoral and tail fins are white, but it has a stiff, three-peaked fin on its back and stomach that are both yellow. It also has long barbels. The barbels are white on a female and tan on a male.",
+            type: ["water"],
+            attacks: [
+                {
+                    id: "tackle",
+                    power: 40,
+                    nature: "normal",
+                    type: "normal",
+                    accuracy: 100
+                },
+                {
+                    id: "splash",
+                    power: 8,
+                    nature: "normal",
+                    target: "atk",
+                    targetName: "attack",
+                    type: "modifying_enemy",
+                    accuracy: 100
+                },
+                {
+                    id: "water spit",
+                    power: 60,
+                    nature: "water",
+                    type: "special",
+                    accuracy: 85
+                },
+                {
+                    id: "tail whip",
+                    power: 4,
+                    nature: "normal",
+                    target: "specAtk",
+                    targetName: "spec-Attack",
+                    type: "modifying_myself",
+                    accuracy: 100
+                }
+            ]
+        },
+        {
+            id: "flareon",
+            atk: 130,
+            def: 60,
+            specAtk: 95,
+            specDef: 110,
+            speed: 65,
+            stamina: 65,
+            gif_attack: s,
+            gif_calm: ss,
+            gif_back: sss,
+            description: "Flareon is a mammalian, quadruped Pokémon covered in short, reddish-orange fur. It has long ears, dark eyes, and a small black nose. There are three small toes and a yellow paw pad on each foot. Fluffy yellow fur forms a small tuft on its head, as well as its bushy tail and a mane around its chest and neck. It will fluff out its collar to cool down its high body temperature. This high temperature is caused by its internal flame sac. Flareon stores and heats inhaled air in this sac, and then exhales it as fire. Flareon is mostly found in populated areas, and is rarely seen in the wilderness.",
+            type: ["fire"],
+            attacks: [
+                {
+                    id: "ember",
+                    power: 40,
+                    nature: "fire",
+                    type: "special",
+                    accuracy: 100
+                },
+                {
+                    id: "fire fang",
+                    power: 65,
+                    nature: "fire",
+                    type: "special",
+                    accuracy: 80
+                },
+                {
+                    id: "bite",
+                    power: 60,
+                    nature: "dark",
+                    type: "special",
+                    accuracy: 90
+                },
+                {
+                    id: "helping hand",
+                    power: 8,
+                    nature: "normal",
+                    target: "specAtk",
+                    targetName: "spec-attack",
+                    type: "modifying_myself",
+                    accuracy: 80
+                }
+            ]
+        },
+        {
+            id: "vaporeon",
+            atk: 65,
+            def: 60,
+            specAtk: 110,
+            specDef: 95,
+            speed: 65,
+            stamina: 130,
+            gif_attack: t,
+            gif_calm: tt,
+            gif_back: ttt,
+            description: "Vaporeon is a composite creature sharing physical traits of aquatic and land animals. It is a quadruped with three small toes on each foot and dark blue paw pads on the hind feet. Vaporeon's body is light blue with dark blue marking around its head and a ridge down its back. This Pokémon has a split tailfin that has been mistaken for a mermaid's in the past. It has a white ruff around its neck, and three fins around its head made of cream-colored webbing. It is said that rain will come within a few hours if Vaporeon's fins begin to vibrate.",
+            type: ["water"],
+            attacks: [
+                {
+                    id: "water gun",
+                    power: 40,
+                    nature: "water",
+                    type: "special",
+                    accuracy: 100
+                },
+                {
+                    id: "tackle",
+                    power: 40,
+                    nature: "normal",
+                    type: "normal",
+                    accuracy: 100
+                },
+                {
+                    id: "sand attack",
+                    power: 5,
+                    nature: "ground",
+                    target: "atk",
+                    targetName: "attack",
+                    type: "modifying_enemy",
+                    accuracy: 100
+                },
+                {
+                    id: "baby-doll eyes",
+                    power: 7,
+                    nature: "fairy",
+                    target: "specDef",
+                    targetName: "spec-defense",
+                    type: "modifying_enemy",
+                    accuracy: 90
+                }
+            ]
+        },
+        {
+            id: "flechling",
+            atk: 95,
+            def: 100,
+            specAtk: 60,
+            specDef: 50,
+            speed: 50,
+            stamina: 65,
+            gif_attack: u,
+            gif_calm: uu,
+            gif_back: uuu,
             description: "Shelgon is a quadruped Pokémon that resembles a pupal stage. There are bone structures covering its body, which form a shell with two openings and three ridges on top. One opening is in front, revealing two yellow eyes, while the other opening is in the back. This bony covering repels enemy attacks, but it makes Shelgon heavy. As a result, this Pokémon moves sluggishly and hardly eats. Inside the shell, its body is busy forming for its next evolution. The moment this Pokémon evolves, its shell peels away. Its grey legs are visible protruding from underneath the shell, each with a short red stripe on the inner surface. It can be found in caverns.",
             type: ["dragon"],
             attacks: [
