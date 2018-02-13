@@ -457,39 +457,39 @@ input[type=button] {width: auto; overflow: visible;}
   font-family: 'VT323', monospace; }
 
 /* styling main battle */
-.row1-2 {
+.row-1-2 {
+  width: 470px; }
+
+.background {
+  background-image: url(0021b161d45c006aac15278aa095b2b1.png);
+  background-size: cover;
+  height: 250px;
   display: flex;
-  height: 170px; }
+  flex-direction: row; }
 
-.row1-2a {
+.col-1-2 {
+  width: 50%;
+  border: 1px solid red; }
+
+.inner-row-1-2 {
+  height: 35%;
+  border: 1px solid red; }
+
+.inner-row-1-2a {
+  height: 65%;
+  border: 1px solid red;
   display: flex;
-  height: 75px; }
+  justify-content: center; }
 
-.row1-2b {
-  height: 80px;
-  background-color: #4d4d4d;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+.testimg {
+  object-fit: none;
+  width: 140px;
+  border: 1px solid red;
+  align-self: flex-end; }
 
-.col1-2-1 {
-  width: 280px; }
-
-.col1-2-2 {
-  height: 168px;
-  width: 192px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end; }
-
-.col1-2-1a {
-  margin-left: 25px;
-  width: 192px;
-  height: 74px; }
-
-.col1-2-2a {
-  margin-left: 90px;
-  position: relative; }
+.testimg2 {
+  border: 1px solid red;
+  align-self: flex-end; }
 
 .player-pokemon {
   position: absolute;
@@ -510,11 +510,6 @@ input[type=button] {width: auto; overflow: visible;}
   border-radius: 4px;
   background-color: black; }
 
-.background {
-  background-image: url(0021b161d45c006aac15278aa095b2b1.png);
-  background-size: cover;
-  height: 250px; }
-
 .battle-menu-border {
   width: 465px;
   height: 75px;
@@ -527,9 +522,13 @@ input[type=button] {width: auto; overflow: visible;}
   background-color: #2d5986;
   height: 65px; }
 
+.attacks-menu {
+  display: flex;
+  align-items: center; }
+
 .list-of-attack-buttons {
   height: 75px;
-  width: 465px;
+  width: 370px;
   border: 4px solid #7575a3;
   border-radius: 3px;
   background-color: whitesmoke;

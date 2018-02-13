@@ -12,7 +12,7 @@ class TheGame extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            ComponentRenderCounter: 2,
+            ComponentRenderCounter: 1,
         }
     }
     handleRender = () => {

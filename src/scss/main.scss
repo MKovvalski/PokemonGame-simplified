@@ -383,48 +383,46 @@
 
 /* styling main battle */
 
-.row1-2 {
-   display: flex;
-   height: 170px;
-   
- }
+.row-1-2 {
+  width: 470px;
+}
 
-.row1-2a {
+.background {
+  background-image: url("../imgs/battle-background3.png");
+  background-size: cover;
+  height: 250px;
   display: flex;
-  height: 75px;
+  flex-direction: row;
 }
 
-.row1-2b {
-  height: 80px;
-  background-color: #4d4d4d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.col-1-2 {
+  width: 50%;
+  border: 1px solid red;
 }
 
-.col1-2-1 {
-  width: 280px;
+.inner-row-1-2 {
+  height: 35%;
+  border: 1px solid red;
 }
 
-.col1-2-2 {
-  height: 168px;
-  width: 192px;
-
+.inner-row-1-2a {
+  height: 65%;
+  border: 1px solid red;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-
 }
 
-.col1-2-1a {
-  margin-left: 25px;
-  width: 192px;
-  height: 74px;
+.testimg {
+  object-fit: none;
+  width: 140px;
+  border: 1px solid red;
+  align-self: flex-end;
 }
 
-.col1-2-2a {
-  margin-left: 90px;
-  position: relative;
+.testimg2 {
+  border: 1px solid red;
+  align-self: flex-end;
+
 }
 
 .player-pokemon {
@@ -449,12 +447,6 @@
   background-color: black;
 }
 
-.background {
-  background-image: url("../imgs/battle-background3.png");
-  background-size: cover;
-  height: 250px;
-}
-
 .battle-menu-border {
   width: 465px;
   height: 75px;
@@ -469,9 +461,14 @@
   height: 65px;
 }
 
+.attacks-menu {
+  display: flex;
+  align-items: center;
+}
+
 .list-of-attack-buttons {
   height: 75px;
-  width: 465px;
+  width: 370px;
   border: 4px solid #7575a3;
   border-radius: 3px;
   background-color: whitesmoke;
