@@ -1,7 +1,6 @@
 import dmgCalc from "../methods/damageCalculator.jsx";
 import pokemons from "../game-data/pokemons.jsx";
 
-
 export function selectedPokemon(state = pokemons[0], action) {
     switch (action.type) {
         case "POKEMON_SELECTED":
@@ -13,7 +12,8 @@ export function selectedPokemon(state = pokemons[0], action) {
 
 const initialState = {
     playerPokemon: pokemons[1],
-    randomPokemon: pokemons[0]
+    randomPokemon: pokemons[0],
+    attackToDisplay: pokemons[0].attacks[0]
 };
 
 export function battleReducer(state = initialState, action) {
@@ -114,6 +114,8 @@ export function battleReducer(state = initialState, action) {
                 return {...state, playerPokemon: {...state.playerPokemon, stamina: state.playerPokemon.stamina - dmgCalc(action.attack, state.randomPokemon, state.playerPokemon)}};
             }
             break;
+        case "PASSING_ATTACK_INFO_TO_DISPLAY":
+            return {...state, attackToDisplay: action.attack};
         default:
             return state;
     }

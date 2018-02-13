@@ -51,6 +51,14 @@ function passingWinnerInfo(pokemon) {
         pokemon
     }
 }
+
+function passingAttackInfo(attack) {
+    return {
+        type: "PASSING_ATTACK_INFO_TO_DISPLAY",
+        attack
+    }
+}
+
 export default {
     clickedPokemon,
     randomPokemon,
@@ -59,4 +67,5 @@ export default {
     passPlayerPokemon,
     passRandomPokemon,
     passingWinnerInfo,
+    passingAttackInfo
 }

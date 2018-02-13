@@ -2,21 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63d01efa-5d5a-4d33-ba1c-74a4af75af18" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/imgs/Ampharos.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/imgs/Electabuzz.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/imgs/Electabuzz_Back.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/imgs/Green_leaf.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/imgs/MrMime.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/imgs/Pokemon_ORAS_Brendan.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/imgs/backgroundForList.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/imgs/battle-background .png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/imgs/character-background.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/imgs/Donphan-F_XY.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/imgs/Donphan_Back_XY.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/imgs/battleground3.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/main.bundle.js" afterPath="$PROJECT_DIR$/dist/main.bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/style.css" afterPath="$PROJECT_DIR$/dist/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/actions/all-actions.jsx" afterPath="$PROJECT_DIR$/src/js/actions/all-actions.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/components/TheGame.jsx" afterPath="$PROJECT_DIR$/src/js/components/TheGame.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/containers/battle-event.jsx" afterPath="$PROJECT_DIR$/src/js/containers/battle-event.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/containers/pick-pokemon.jsx" afterPath="$PROJECT_DIR$/src/js/containers/pick-pokemon.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/game-data/pokemons.jsx" afterPath="$PROJECT_DIR$/src/js/game-data/pokemons.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/reducers/reducers.jsx" afterPath="$PROJECT_DIR$/src/js/reducers/reducers.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scss/main.scss" afterPath="$PROJECT_DIR$/src/scss/main.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -31,17 +28,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pick-pokemon.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/containers/pick-pokemon.jsx">
+      <file leaf-file-name="battle-event.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/js/containers/battle-event.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="1476">
+              <caret line="225" column="17" lean-forward="true" selection-start-line="225" selection-start-column="17" selection-end-line="225" selection-end-column="62" />
               <folding>
-                <element signature="e#441#682#0" expanded="false" />
-                <element signature="e#710#998#0" expanded="false" />
-                <element signature="e#1033#1223#0" expanded="false" />
-                <element signature="e#1267#2558#0" expanded="false" />
+                <element signature="e#10#36#0" expanded="true" />
+                <element signature="e#771#1061#0" expanded="false" />
+                <element signature="n#!!block;n#handleAttackAction#0;n#Battle#0" expanded="false" />
+                <element signature="e#7456#7730#0" expanded="false" />
+                <element signature="e#7772#7950#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reducers.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/reducers/reducers.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="15" column="43" lean-forward="false" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+              <folding>
+                <element signature="e#1005#1155#0" expanded="false" />
+                <element signature="e#1208#1358#0" expanded="false" />
+                <element signature="e#1415#1573#0" expanded="false" />
+                <element signature="e#1630#1788#0" expanded="false" />
+                <element signature="e#1843#1997#0" expanded="false" />
+                <element signature="e#2054#2430#0" expanded="false" />
+                <element signature="e#2146#2273#0" expanded="false" />
+                <element signature="e#2550#2700#0" expanded="false" />
+                <element signature="e#2753#2903#0" expanded="false" />
+                <element signature="e#2960#3118#0" expanded="false" />
+                <element signature="e#3175#3333#0" expanded="false" />
+                <element signature="e#3388#3542#0" expanded="false" />
+                <element signature="e#3938#4088#0" expanded="false" />
+                <element signature="e#4141#4291#0" expanded="false" />
+                <element signature="e#4348#4506#0" expanded="false" />
+                <element signature="e#4563#4721#0" expanded="false" />
+                <element signature="e#4776#4930#0" expanded="false" />
+                <element signature="e#4987#5145#0" expanded="false" />
+                <element signature="e#5202#5584#0" expanded="false" />
+                <element signature="e#5704#5854#0" expanded="false" />
+                <element signature="e#5907#6057#0" expanded="false" />
+                <element signature="e#6114#6272#0" expanded="false" />
+                <element signature="e#6329#6487#0" expanded="false" />
+                <element signature="e#6542#6696#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="all-actions.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/actions/all-actions.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="56" column="14" lean-forward="false" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="46" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -49,18 +92,8 @@
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1458">
-              <caret line="81" column="10" lean-forward="false" selection-start-line="81" selection-start-column="10" selection-end-line="81" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pokemons.jsx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/js/game-data/pokemons.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1286">
-              <caret line="769" column="32" lean-forward="false" selection-start-line="769" selection-start-column="32" selection-end-line="769" selection-end-column="32" />
+            <state relative-caret-position="126">
+              <caret line="388" column="3" lean-forward="false" selection-start-line="388" selection-start-column="3" selection-end-line="388" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -92,14 +125,14 @@
         <option value="$PROJECT_DIR$/src/js/methods/damageTargetTree.jsx.js" />
         <option value="$PROJECT_DIR$/src/js/methods/damageCalculator.jsx" />
         <option value="$PROJECT_DIR$/src/js/reducers/combine-reducers.jsx" />
-        <option value="$PROJECT_DIR$/src/js/actions/all-actions.jsx" />
-        <option value="$PROJECT_DIR$/src/js/reducers/reducers.jsx" />
-        <option value="$PROJECT_DIR$/src/js/containers/battle-event.jsx" />
         <option value="$PROJECT_DIR$/src/js/components/start-game.jsx" />
-        <option value="$PROJECT_DIR$/src/js/containers/pick-pokemon.jsx" />
-        <option value="$PROJECT_DIR$/src/scss/main.scss" />
-        <option value="$PROJECT_DIR$/src/js/components/TheGame.jsx" />
         <option value="$PROJECT_DIR$/src/js/game-data/pokemons.jsx" />
+        <option value="$PROJECT_DIR$/src/js/containers/pick-pokemon.jsx" />
+        <option value="$PROJECT_DIR$/src/js/components/TheGame.jsx" />
+        <option value="$PROJECT_DIR$/src/scss/main.scss" />
+        <option value="$PROJECT_DIR$/src/js/actions/all-actions.jsx" />
+        <option value="$PROJECT_DIR$/src/js/containers/battle-event.jsx" />
+        <option value="$PROJECT_DIR$/src/js/reducers/reducers.jsx" />
       </list>
     </option>
   </component>
@@ -163,6 +196,13 @@
               <item name="PokemonGame-simplified" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PokemonGame-simplified" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PokemonGame-simplified" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -170,7 +210,7 @@
               <item name="PokemonGame-simplified" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="game-data" type="462c0819:PsiDirectoryNode" />
+              <item name="reducers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -217,12 +257,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1517565627460</updated>
-      <workItem from="1517565629910" duration="124764000" />
+      <workItem from="1517565629910" duration="131111000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124764000" />
+    <option name="totallyTimeSpent" value="131111000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -272,35 +312,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="17" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/js/actions/pokemon-sending-action.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/actions/gender-change-action.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/actions/pokemon2-sending-action.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="5" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="4" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/actions/attack-sending-action.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -380,22 +396,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/methods/damageCalculator.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="51" lean-forward="false" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/actions/all-actions.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="33" column="15" lean-forward="true" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/bfc020e0c9ff3c5f5dd6b990eb8f07fb.gif">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -430,52 +430,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/reducers/reducers.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-93">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#961#1111#0" expanded="false" />
-            <element signature="e#1164#1314#0" expanded="false" />
-            <element signature="e#1371#1529#0" expanded="false" />
-            <element signature="e#1586#1744#0" expanded="false" />
-            <element signature="e#1799#1953#0" expanded="false" />
-            <element signature="e#2010#2386#0" expanded="false" />
-            <element signature="e#2102#2229#0" expanded="false" />
-            <element signature="e#2506#2656#0" expanded="false" />
-            <element signature="e#2709#2859#0" expanded="false" />
-            <element signature="e#2916#3074#0" expanded="false" />
-            <element signature="e#3131#3289#0" expanded="false" />
-            <element signature="e#3344#3498#0" expanded="false" />
-            <element signature="e#3894#4044#0" expanded="false" />
-            <element signature="e#4097#4247#0" expanded="false" />
-            <element signature="e#4304#4462#0" expanded="false" />
-            <element signature="e#4519#4677#0" expanded="false" />
-            <element signature="e#4732#4886#0" expanded="false" />
-            <element signature="e#4943#5101#0" expanded="false" />
-            <element signature="e#5158#5540#0" expanded="false" />
-            <element signature="e#5660#5810#0" expanded="false" />
-            <element signature="e#5863#6013#0" expanded="false" />
-            <element signature="e#6070#6228#0" expanded="false" />
-            <element signature="e#6285#6443#0" expanded="false" />
-            <element signature="e#6498#6652#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/containers/battle-event.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1984">
-          <caret line="175" column="15" lean-forward="false" selection-start-line="175" selection-start-column="15" selection-end-line="175" selection-end-column="15" />
-          <folding>
-            <element signature="e#10#36#0" expanded="true" />
-            <element signature="e#771#1003#0" expanded="false" />
-            <element signature="e#7398#7672#0" expanded="false" />
-            <element signature="e#7714#7892#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/imgs/Pikachu_Back_XY.gif">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -487,24 +441,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/imgs/Donphan_Back_XY.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/containers/pick-pokemon.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="e#441#682#0" expanded="false" />
-            <element signature="e#710#998#0" expanded="false" />
-            <element signature="e#1033#1223#0" expanded="false" />
-            <element signature="e#1267#2558#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/imgs/battle-background3.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -525,16 +461,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/imgs/blast-attack.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/imgs/blast-calm.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/imgs/bulba-attack.gif">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -614,17 +540,68 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
+    <entry file="file://$PROJECT_DIR$/src/imgs/squil-attack.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/imgs/battleground3.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/imgs/battleground2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/imgs/bulba-attack.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/imgs/blast-calm.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/imgs/bulba-calm.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/imgs/battle-background3.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/containers/pick-pokemon.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1458">
-          <caret line="81" column="10" lean-forward="false" selection-start-line="81" selection-start-column="10" selection-end-line="81" selection-end-column="10" />
+        <state relative-caret-position="126">
+          <caret line="9" column="49" lean-forward="true" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+          <folding>
+            <element signature="e#468#709#0" expanded="false" />
+            <element signature="e#737#1025#0" expanded="false" />
+            <element signature="e#1060#1250#0" expanded="false" />
+            <element signature="e#1294#2585#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/methods/damageCalculator.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="51" lean-forward="false" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/imgs/squil-attack.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/js/game-data/pokemons.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10702">
+          <caret line="50" column="43" lean-forward="false" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/components/TheGame.jsx">
@@ -635,11 +612,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/game-data/pokemons.jsx">
+    <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1286">
-          <caret line="769" column="32" lean-forward="false" selection-start-line="769" selection-start-column="32" selection-end-line="769" selection-end-column="32" />
+        <state relative-caret-position="126">
+          <caret line="388" column="3" lean-forward="false" selection-start-line="388" selection-start-column="3" selection-end-line="388" selection-end-column="3" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/actions/all-actions.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="56" column="14" lean-forward="false" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/reducers/reducers.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="15" column="43" lean-forward="false" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+          <folding>
+            <element signature="e#1005#1155#0" expanded="false" />
+            <element signature="e#1208#1358#0" expanded="false" />
+            <element signature="e#1415#1573#0" expanded="false" />
+            <element signature="e#1630#1788#0" expanded="false" />
+            <element signature="e#1843#1997#0" expanded="false" />
+            <element signature="e#2054#2430#0" expanded="false" />
+            <element signature="e#2146#2273#0" expanded="false" />
+            <element signature="e#2550#2700#0" expanded="false" />
+            <element signature="e#2753#2903#0" expanded="false" />
+            <element signature="e#2960#3118#0" expanded="false" />
+            <element signature="e#3175#3333#0" expanded="false" />
+            <element signature="e#3388#3542#0" expanded="false" />
+            <element signature="e#3938#4088#0" expanded="false" />
+            <element signature="e#4141#4291#0" expanded="false" />
+            <element signature="e#4348#4506#0" expanded="false" />
+            <element signature="e#4563#4721#0" expanded="false" />
+            <element signature="e#4776#4930#0" expanded="false" />
+            <element signature="e#4987#5145#0" expanded="false" />
+            <element signature="e#5202#5584#0" expanded="false" />
+            <element signature="e#5704#5854#0" expanded="false" />
+            <element signature="e#5907#6057#0" expanded="false" />
+            <element signature="e#6114#6272#0" expanded="false" />
+            <element signature="e#6329#6487#0" expanded="false" />
+            <element signature="e#6542#6696#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/containers/battle-event.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1476">
+          <caret line="225" column="17" lean-forward="true" selection-start-line="225" selection-start-column="17" selection-end-line="225" selection-end-column="62" />
+          <folding>
+            <element signature="e#10#36#0" expanded="true" />
+            <element signature="e#771#1061#0" expanded="false" />
+            <element signature="n#!!block;n#handleAttackAction#0;n#Battle#0" expanded="false" />
+            <element signature="e#7456#7730#0" expanded="false" />
+            <element signature="e#7772#7950#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

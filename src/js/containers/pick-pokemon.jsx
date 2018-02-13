@@ -12,7 +12,7 @@ import actions from "../actions/all-actions.jsx";
 //classes and renders
 class PickPokemon extends React.Component {
     componentDidMount () {
-        this.props.randomPokemonGenerator(pokemons[0]);
+        this.props.randomPokemonGenerator(pokemons[Math.floor(Math.random()*10)]);
     }
 
     handleClick = () => {

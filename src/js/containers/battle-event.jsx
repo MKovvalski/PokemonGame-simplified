@@ -24,7 +24,7 @@ class Battle extends React.Component {
 
     attackListGenerator = () => {
         return this.props.battleReducer.playerPokemon.attacks.map((attack) => {
-            return <li className="attack-button" onClick = {() => this.handleAttackAction(attack)} key = {attack.id}>{attack.id}</li>
+            return <li className="attack-button" onMouseEnter={() => this.props.passingAttackInfo(attack)} onClick = {() => this.handleAttackAction(attack)} key = {attack.id}>{attack.id}</li>
         })
     };
 
@@ -223,6 +223,7 @@ class Battle extends React.Component {
                             </div>
                         </div>
                     </div>
+            <div>{this.props.battleReducer.attackToDisplay.id}</div>
         </div>
     }
 }
@@ -238,6 +239,7 @@ function matchDispatchToProps(dispatch) {
         playerClickedAttack: actions.playerClickedAttack,
         randomSelectedAttack: actions.randomSelectedAttack,
         passingWinnerInfo: actions.passingWinnerInfo,
+        passingAttackInfo: actions.passingAttackInfo
     }, dispatch)
 }
 

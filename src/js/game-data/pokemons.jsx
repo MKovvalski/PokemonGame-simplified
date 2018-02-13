@@ -6,46 +6,49 @@ let bb = require('../../imgs/char-calm.gif');
 let bbb = require('../../imgs/Charmander_Back.gif');
 let c = require('../../imgs/squil-attack.gif');
 let cc = require('../../imgs/squil-calm.gif');
+let ccc = require("../../imgs/Squirtle-back.gif");
 let d = require('../../imgs/pika-attack.gif');
 let dd = require('../../imgs/pika-calm.gif');
+let ddd = require("../../imgs/Pikachu_Back_XY.gif");
 let e = require('../../imgs/toge-attack.gif');
 let ee = require('../../imgs/toge-calm.gif');
+let eee = require('../../imgs/Jigglypuff-back.gif');
 let f = require('../../imgs/butterfly-calm.gif');
 let ff = require('../../imgs/butterfly-calm.gif');
 let fff = require('../../imgs/Butterfree_back.gif');
 let g = require('../../imgs/smalldog.gif');
 let gg = require('../../imgs/smalldog.gif');
-let ggg = require('../../imgs/smalldog.gif');
+let ggg = require('../../imgs/Eevee-back.gif');
 let h = require('../../imgs/shelgon.gif');
 let hh = require('../../imgs/shelgon.gif');
 let hhh = require('../../imgs/Shelgon_Back_XY.gif');
 let i = require('../../imgs/doduo.gif');
 let ii = require('../../imgs/doduo.gif');
-let iii = require('../../imgs/doduo.gif');
+let iii = require('../../imgs/doduo_back.png');
 let j = require('../../imgs/goldeen.gif');
 let jj = require('../../imgs/goldeen.gif');
-let jjj = require('../../imgs/goldeen.gif');
+let jjj = require('../../imgs/goldeen-back.png');
 let k = require('../../imgs/lickitung.gif');
 let kk = require('../../imgs/lickitung.gif');
-let kkk = require('../../imgs/lickitung.gif');
+let kkk = require('../../imgs/licktung_back.png');
 let o= require('../../imgs/psyduck.gif');
 let oo = require('../../imgs/psyduck.gif');
-let ooo = require('../../imgs/psyduck.gif');
+let ooo = require('../../imgs/psyduck-back.png');
 let p = require('../../imgs/mondog.gif');
 let pp = require('../../imgs/mondog.gif');
-let ppp = require('../../imgs/mondog.gif');
+let ppp = require('../../imgs/espeon_back.gif');
 let r = require('../../imgs/magikarp.gif');
 let rr = require('../../imgs/magikarp.gif');
-let rrr = require('../../imgs/magikarp.gif');
+let rrr = require('../../imgs/magikarp-back.png');
 let s = require('../../imgs/firedog.gif');
 let ss = require('../../imgs/firedog.gif');
-let sss = require('../../imgs/firedog.gif');
+let sss = require('../../imgs/flareon-back.png');
 let t = require('../../imgs/Vaporeon-Attack.gif');
-let tt = require('../../imgs/Vaporeon-Attack.gif');
-let ttt = require('../../imgs/Vaporeon-Attack.gif');
+let tt = require('../../imgs/vaporeon-calm.gif');
+let ttt = require('../../imgs/vapreon-back.png');
 let u = require('../../imgs/Fletchling.gif');
 let uu = require('../../imgs/Fletchling.gif');
-let uuu = require('../../imgs/Fletchling.gif');
+let uuu = require('../../imgs/fletching.png');
 
 
 
@@ -163,8 +166,9 @@ const pokemons =  [
             stamina: 44,
             gif_attack: c,
             gif_calm: cc,
+            gif_back: ccc,
             type: ["water"],
-            description: "quirtle is a small Pokémon that resembles a light blue turtle. While it typically walks on its two short legs, it has been shown to run on all fours in Super Smash Bros. Brawl. It has large eyes and a slightly hooked upper lip. Each of its hands and feet have three pointed digits. The end of its long tail curls inward. Its body is encased by a tough shell that forms and hardens after birth. This shell is brown on the top, pale yellow on the bottom, and has a thick white ridge between the two halves.",
+            description: "Squirtle is a small Pokémon that resembles a light blue turtle. While it typically walks on its two short legs, it has been shown to run on all fours in Super Smash Bros. Brawl. It has large eyes and a slightly hooked upper lip. Each of its hands and feet have three pointed digits. The end of its long tail curls inward. Its body is encased by a tough shell that forms and hardens after birth. This shell is brown on the top, pale yellow on the bottom, and has a thick white ridge between the two halves.",
             attacks: [
                 {
                     id: "Water gun",
@@ -213,6 +217,7 @@ const pokemons =  [
             stamina: 35,
             gif_attack: d,
             gif_calm: dd,
+            gif_back: ddd,
             description: "Pikachu is a short, chubby rodent Pokémon. It is covered in yellow fur with two horizontal brown stripes on its back. It has a small mouth, long, pointed ears with black tips, brown eyes, and two red circles on its cheeks. There are pouches inside its cheeks where it stores electricity. It has short forearms with five fingers on each paw, and its feet each have three toes. At the base of its lightning bolt-shaped tail is patch of brown fur at the base. A female will have a V-shaped notch at the end of its tail, which looks like the top of a heart. It is classified as a quadruped, but it has been known to stand and walk on its hind legs.",
             type: ["electric"],
             attacks: [
@@ -310,6 +315,7 @@ const pokemons =  [
             stamina: 115,
             gif_attack: e,
             gif_calm: ee,
+            gif_back: eee,
             description: "Jigglypuff is a round, pink ball with pointed ears and large, blue eyes. It has rubbery, balloon-like skin and small, stubby arms and somewhat long feet.Jigglypuff uses its eyes to mesmerize opponents. Once it achieves this, it will inflate its lungs and begin to sing a soothing lullaby. If the opponent resists falling asleep, Jigglypuff will endanger its own life by continuing to sing until it runs out of air.",
             type: ["normal","fairy"],
             attacks: [
@@ -821,49 +827,47 @@ const pokemons =  [
         },
         {
             id: "flechling",
-            atk: 95,
-            def: 100,
-            specAtk: 60,
-            specDef: 50,
-            speed: 50,
-            stamina: 65,
+            atk: 50,
+            def: 50,
+            specAtk: 40,
+            specDef: 40,
+            speed: 62,
+            stamina: 50,
             gif_attack: u,
             gif_calm: uu,
             gif_back: uuu,
-            description: "Shelgon is a quadruped Pokémon that resembles a pupal stage. There are bone structures covering its body, which form a shell with two openings and three ridges on top. One opening is in front, revealing two yellow eyes, while the other opening is in the back. This bony covering repels enemy attacks, but it makes Shelgon heavy. As a result, this Pokémon moves sluggishly and hardly eats. Inside the shell, its body is busy forming for its next evolution. The moment this Pokémon evolves, its shell peels away. Its grey legs are visible protruding from underneath the shell, each with a short red stripe on the inner surface. It can be found in caverns.",
-            type: ["dragon"],
+            description: "Fletchling are small, avian Pokémon similar in appearance to robins. They have a reddish-orange head with a triangular yellow mark on the back of each eye. Their body and wings are gray, and there are white tips on the wings. They have long, black tail with a white 'v'-shaped marking near the tip. The tail ends in two points, and has two feathers sticking out at the base, giving the impression of the fletching on the end of an arrow. Their legs, beak, and eyes are black. The legs are thin and spindly, with two toes facing forward and one pointing backward on each foot.",
+            type: ["normal", "flying"],
             attacks: [
                 {
-                    id: "ember",
+                    id: "tackle",
                     power: 40,
-                    nature: "fire",
+                    nature: "normal",
+                    type: "normal",
+                    accuracy: 100
+                },
+                {
+                    id: "peck",
+                    power: 35,
+                    nature: "flying",
                     type: "special",
                     accuracy: 100
                 },
                 {
-                    id: "leer",
-                    power: 8,
+                    id: "quick-attack",
+                    power: 40,
                     nature: "normal",
-                    target: "specef",
-                    targetName: "spec-defense",
+                    type: "normal",
+                    accuracy: 100
+                },
+                {
+                    id: "growl",
+                    power: 4,
+                    nature: "normal",
+                    target: "def",
+                    targetName: "defense",
                     type: "modifying_enemy",
-                    accuracy: 85
-                },
-                {
-                    id: "bite",
-                    power: 60,
-                    nature: "dark",
-                    type: "special",
-                    accuracy: 90
-                },
-                {
-                    id: "protect",
-                    power: 8,
-                    nature: "normal",
-                    target: "specDef",
-                    targetName: "spec-defense",
-                    type: "modifying_myself",
-                    accuracy: 90
+                    accuracy: 100
                 }
             ]
         },
