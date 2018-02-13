@@ -22,27 +22,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="battle-event.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="battle-event.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/containers/battle-event.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="189" column="59" lean-forward="false" selection-start-line="189" selection-start-column="59" selection-end-line="189" selection-end-column="59" />
+            <state relative-caret-position="619">
+              <caret line="196" column="46" lean-forward="true" selection-start-line="196" selection-start-column="46" selection-end-line="196" selection-end-column="46" />
               <folding>
                 <element signature="e#10#36#0" expanded="true" />
                 <element signature="e#771#1061#0" expanded="false" />
                 <element signature="n#!!block;n#handleAttackAction#0;n#Battle#0" expanded="false" />
-                <element signature="e#7456#7730#0" expanded="false" />
-                <element signature="e#7772#7950#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1580">
-              <caret line="416" column="11" lean-forward="false" selection-start-line="416" selection-start-column="11" selection-end-line="416" selection-end-column="11" />
+            <state relative-caret-position="233">
+              <caret line="434" column="19" lean-forward="false" selection-start-line="434" selection-start-column="19" selection-end-line="434" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -89,8 +87,8 @@
         <option value="$PROJECT_DIR$/src/js/containers/pick-pokemon.jsx" />
         <option value="$PROJECT_DIR$/src/js/actions/all-actions.jsx" />
         <option value="$PROJECT_DIR$/src/js/reducers/reducers.jsx" />
-        <option value="$PROJECT_DIR$/src/js/containers/battle-event.jsx" />
         <option value="$PROJECT_DIR$/src/js/components/TheGame.jsx" />
+        <option value="$PROJECT_DIR$/src/js/containers/battle-event.jsx" />
         <option value="$PROJECT_DIR$/src/scss/main.scss" />
       </list>
     </option>
@@ -155,14 +153,14 @@
               <item name="PokemonGame-simplified" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="actions" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PokemonGame-simplified" type="b2602c69:ProjectViewProjectNode" />
               <item name="PokemonGame-simplified" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="game-data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PokemonGame-simplified" type="b2602c69:ProjectViewProjectNode" />
@@ -216,12 +214,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1517565627460</updated>
-      <workItem from="1517565629910" duration="133636000" />
+      <workItem from="1517565629910" duration="142143000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133636000" />
+    <option name="totallyTimeSpent" value="142143000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -555,14 +553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/game-data/pokemons.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10702">
-          <caret line="50" column="43" lean-forward="false" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/actions/all-actions.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -604,6 +594,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/game-data/pokemons.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-257">
+          <caret line="50" column="43" lean-forward="false" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/components/TheGame.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -612,25 +610,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="434" column="19" lean-forward="false" selection-start-line="434" selection-start-column="19" selection-end-line="434" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/containers/battle-event.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="189" column="59" lean-forward="false" selection-start-line="189" selection-start-column="59" selection-end-line="189" selection-end-column="59" />
+        <state relative-caret-position="619">
+          <caret line="196" column="46" lean-forward="true" selection-start-line="196" selection-start-column="46" selection-end-line="196" selection-end-column="46" />
           <folding>
             <element signature="e#10#36#0" expanded="true" />
             <element signature="e#771#1061#0" expanded="false" />
             <element signature="n#!!block;n#handleAttackAction#0;n#Battle#0" expanded="false" />
-            <element signature="e#7456#7730#0" expanded="false" />
-            <element signature="e#7772#7950#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1580">
-          <caret line="416" column="11" lean-forward="false" selection-start-line="416" selection-start-column="11" selection-end-line="416" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
