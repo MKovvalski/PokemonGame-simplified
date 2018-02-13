@@ -173,9 +173,67 @@ class Battle extends React.Component {
        }
     };
 
+    generateProperBackground = (type) => {
+        if (type === "grass") {
+            return "#00b33c"
+        }
+        if (type === "water") {
+            return "#4dc3ff"
+        }
+        if (type === "fire") {
+            return "#ff6600"
+        }
+        if (type === "normal") {
+            return "#b8b894"
+        }
+        if (type === "electric") {
+            return "#ffd11a"
+        }
+        if (type === "ice") {
+            return "#99ffff"
+        }
+        if (type === "fighting") {
+            return "#cc3300"
+        }
+        if (type === "poison") {
+            return "#9933ff"
+        }
+        if (type === "ground") {
+            return "#cc9900"
+        }
+        if (type === "flying") {
+            return "#d9b3ff"
+        }
+        if (type === "psychic") {
+            return "#ff80bf"
+        }
+        if (type === "bug") {
+            return "#99e600"
+        }
+        if (type === "rock") {
+            return "#aaaa55"
+        }
+        if (type === "ghost") {
+            return "#8a00e6"
+        }
+        if (type === "dark") {
+            return "#55552b"
+        }
+        if (type === "dragon") {
+            return "#6600ff"
+        }
+        if (type === "steel") {
+            return "#a6a6a6"
+        }
+        if (type === "fairy") {
+            return "#ffcccc"
+        }
+    };
+
     render () {
         const playerPokeStamina = this.props.battleReducer.playerPokemon.stamina;
         const randomPokeStamina = this.props.battleReducer.randomPokemon.stamina;
+        const pickedAttack = this.props.battleReducer.attackToDisplay;
         let handleLifeBar1 = this.handleLifeBarChange(this.state.randomBaseStamina,randomPokeStamina);
         let handleLifeBar2 = this.handleLifeBarChange(this.state.playerBaseStamina,playerPokeStamina);
         return <div className = "game-framing">
@@ -183,20 +241,20 @@ class Battle extends React.Component {
                         <div className = "row-1-2">
                             <div className = "background">
                                 <div className = "col-1-2">
-                                    <div className = "inner-row-1-2" >
+                                    <div className = "inner-row-1-2b" >
                                         <div className = "pokemon-data-border">
                                             <div className = "pokemon-data">
-                                                <h4>{this.props.battleReducer.randomPokemon.id}</h4>
+                                                <div className = "pokemon-name-in-data">{this.props.battleReducer.randomPokemon.id}</div>
                                                 <div className = "life-bar-overbar">
                                                     <div className = "life-bar-inner-line">
-                                                        <div className = "life-bar" style = {{transition: "all 1s ease-out", backgroundColor: this.handleColorChange(handleLifeBar1), height: "8px", width: handleLifeBar1}}></div>
+                                                        <div className = "life-bar" style = {{transition: "all 1s ease-out", backgroundColor: this.handleColorChange(handleLifeBar1), height: "5px", width: handleLifeBar1, borderRadius: "2px"}}></div>
                                                     </div>
                                                 </div>
-                                                <div>{randomPokeStamina}/{this.state.randomBaseStamina}</div>
+                                                <div className = "stamina-points">{randomPokeStamina}/{this.state.randomBaseStamina}</div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className = "inner-row-1-2a" >
+                                    <div className = "inner-row-1-2c" >
                                         <img className="player-pokemon-img" src={this.props.battleReducer.playerPokemon.gif_back} alt=""/>
                                     </div>
                                 </div>
@@ -228,7 +286,7 @@ class Battle extends React.Component {
                                             {this.attackListGenerator()}
                                         </div>
                                         <div className = "attack-info">
-                                            <div>{this.props.battleReducer.attackToDisplay.nature}</div>
+                                            <div className = "attack-type" style = {{backgroundColor: this.generateProperBackground(pickedAttack.nature)}}>{pickedAttack.nature}</div>
                                             <div>power:{this.props.battleReducer.attackToDisplay.power}</div>
                                         </div>
                                     </div>
