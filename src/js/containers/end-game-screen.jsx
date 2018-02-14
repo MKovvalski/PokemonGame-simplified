@@ -13,14 +13,16 @@ class EndGameScreen extends React.Component {
 
     handleWinnerText = () => {
         if (this.props.winnerInfo === this.props.battleReducer.playerPokemon) {
-            return <div className = "winnerInfo">
+            return <div className = "winner-info">
                 <img  src={this.props.battleReducer.playerPokemon.gif_attack}/>
-                <div>Gratulacje! Zwyciężyłeś grając {this.props.battleReducer.playerPokemon.id}em</div>
+                <div className = "end-screen-text">Gratulacje! Zwyciężyłeś grając {this.props.battleReducer.playerPokemon.id}em</div>
+                <div className = "end-screen-button" onClick = {this.handleClick} >zagraj ponowie</div>
             </div>
         } else {
-            return <div>
+            return <div className = "winner-info">
                 <img  src={this.props.battleReducer.randomPokemon.gif_attack}/>
-                <div>Przegrałeś walkę z {this.props.battleReducer.randomPokemon.id}em</div>
+                <div className = "end-screen-text">Przegrałeś walkę z {this.props.battleReducer.randomPokemon.id}em</div>
+                <div className = "end-screen-button" onClick = {this.handleClick} >zagraj ponowie</div>
             </div>
         }
     };
@@ -29,7 +31,6 @@ class EndGameScreen extends React.Component {
         return <div className = "game-framing">
                     <div className = "border">
                         {this.handleWinnerText()}
-                        <button onClick = {this.handleClick} >zagraj ponowie</button>
                     </div>
         </div>
     }

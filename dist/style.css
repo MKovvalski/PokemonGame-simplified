@@ -640,3 +640,26 @@ input[type=button] {width: auto; overflow: visible;}
 
 .commentary-size {
   width: 170px; }
+
+/* styling end-screen */
+.winner-info {
+  height: 330px;
+  background: -webkit-linear-gradient(90deg, #3d3d5c 0%, #3d3d5c 18%, teal 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.end-screen-text {
+  text-transform: uppercase;
+  font-size: 24px;
+  text-shadow: 1px 1px #808080;
+  color: whitesmoke; }
+
+.end-screen-button {
+  margin-top: 20px;
+  color: #ffcc00;
+  text-shadow: 1px 1px #997a00;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: 'VT323', monospace; }
