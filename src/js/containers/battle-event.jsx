@@ -22,12 +22,6 @@ class Battle extends React.Component {
         };
     };
 
-    attackListGenerator = () => {
-        return this.props.battleReducer.playerPokemon.attacks.map((attack) => {
-            return <li className="attack-button" onMouseEnter={() => this.props.passingAttackInfo(attack)} onClick = {() => this.handleAttackAction(attack)} key = {attack.id}>{attack.id}</li>
-        })
-    };
-
     handleAttackAction (attack) { // wymaga optymalizacji
         let playerPokemon = this.props.battleReducer.playerPokemon;
         let randomPokemon = this.props.battleReducer.randomPokemon;
@@ -35,7 +29,7 @@ class Battle extends React.Component {
             this.setState({
                 displayText: "block",
                 displayAttacks: "none",
-                textArea: playerPokemon.id  + " uses " + attack.id
+                textArea: playerPokemon.id + " uses " + attack.id
             })
         } else {this.setState ({
             displayText: "block",
@@ -164,10 +158,10 @@ class Battle extends React.Component {
     };
 
     handleColorChange = (functionA) => {
-       if (functionA <= 25) {
-           return "red";
-       } else if (functionA <= 66) {
-           return "yellow"
+       if (functionA <= 19) {
+           return "#e60000";
+       } else if (functionA <= 50) {
+           return "#ffdb4d"
         } else {
            return "#1aff66"
        }
@@ -231,11 +225,13 @@ class Battle extends React.Component {
     };
 
     render () {
+        const attacks = this.props.battleReducer.playerPokemon.attacks;
         const playerPokeStamina = this.props.battleReducer.playerPokemon.stamina;
         const randomPokeStamina = this.props.battleReducer.randomPokemon.stamina;
         const pickedAttack = this.props.battleReducer.attackToDisplay;
         let handleLifeBar1 = this.handleLifeBarChange(this.state.randomBaseStamina,randomPokeStamina);
         let handleLifeBar2 = this.handleLifeBarChange(this.state.playerBaseStamina,playerPokeStamina);
+        const attackData = (pickedAttack === null? this.props.battleReducer.playerPokemon.attacks[0] : pickedAttack);
         return <div className = "game-framing">
                     <div className = "border">
                         <div className = "row-1-2">
@@ -247,7 +243,7 @@ class Battle extends React.Component {
                                                 <div className = "pokemon-name-in-data">{this.props.battleReducer.randomPokemon.id}</div>
                                                 <div className = "life-bar-overbar">
                                                     <div className = "life-bar-inner-line">
-                                                        <div className = "life-bar" style = {{transition: "all 1s ease-out", backgroundColor: this.handleColorChange(handleLifeBar1), height: "5px", width: handleLifeBar1, borderRadius: "2px"}}></div>
+                                                        <div className = "life-bar" style = {{transition: "all 1s ease-out", backgroundColor: this.handleColorChange(handleLifeBar1), height: "5px", width: handleLifeBar1}}></div>
                                                     </div>
                                                 </div>
                                                 <div className = "stamina-points">{randomPokeStamina}/{this.state.randomBaseStamina}</div>
@@ -268,7 +264,7 @@ class Battle extends React.Component {
                                                 <div className = "pokemon-name-in-data">{this.props.battleReducer.playerPokemon.id}</div>
                                                 <div className= "life-bar-overbar">
                                                     <div className = "life-bar-inner-line">
-                                                        <div style = {{transition: "all 1s ease-out", backgroundColor: this.handleColorChange(handleLifeBar2), height: "5px", width: handleLifeBar2, borderRadius: "2px"}}></div>
+                                                        <div style = {{transition: "all 1s ease-out", backgroundColor: this.handleColorChange(handleLifeBar2), height: "5px", width: handleLifeBar2}}></div>
                                                     </div>
                                                 </div>
                                                 <div className = "stamina-points">{playerPokeStamina}/{this.state.playerBaseStamina}</div>
@@ -283,17 +279,26 @@ class Battle extends React.Component {
                                 <div style = {{display: this.state.displayAttacks}}>
                                     <div className = "attacks-menu">
                                         <div className = "list-of-attack-buttons">
-                                            {this.attackListGenerator()}
+                                            <div>
+                                                <div className ="attack-button" onMouseEnter={() => this.props.passingAttackInfo(attacks[0])} onClick = {() => this.handleAttackAction(attacks[0])}>{attacks[0].id}</div>
+                                                <div className ="attack-button" onMouseEnter={() => this.props.passingAttackInfo(attacks[1])} onClick = {() => this.handleAttackAction(attacks[1])}>{attacks[1].id}</div>
+                                            </div>
+                                            <div>
+                                                <div className ="attack-button" onMouseEnter={() => this.props.passingAttackInfo(attacks[2])} onClick = {() => this.handleAttackAction(attacks[2])}>{attacks[2].id}</div>
+                                                <div className ="attack-button" onMouseEnter={() => this.props.passingAttackInfo(attacks[3])} onClick = {() => this.handleAttackAction(attacks[3])}>{attacks[3].id}</div>
+                                            </div>
                                         </div>
                                         <div className = "attack-info">
-                                            <div className = "attack-type" style = {{backgroundColor: this.generateProperBackground(pickedAttack.nature)}}>{pickedAttack.nature}</div>
-                                            <div>power:{this.props.battleReducer.attackToDisplay.power}</div>
+                                            <div className = "attack-type" style = {{backgroundColor: this.generateProperBackground(attackData.nature)}}>{attackData.nature}</div>
+                                            <div className = "attack-power">power:{attackData.power}</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className = "battle-commentary-border" style = {{display: this.state.displayText}}>
                                     <div className = "battle-commentary-inner-border">
-                                        <div className = "battle-commentary">{this.state.textArea}</div>
+                                        <div className = "commentary-size">
+                                            <div className = "battle-commentary">{this.state.textArea}</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

@@ -4,12 +4,6 @@ import {connect} from "react-redux";
 
 
 class EndGameScreen extends React.Component {
-    constructor(props){
-        super(props);
-        this.state = {
-
-        }
-    }
 
     handleClick = () => {
         if (typeof this.props.onConfirm === "function") {
@@ -17,19 +11,27 @@ class EndGameScreen extends React.Component {
         }
     };
 
-    render () {
-       if (this.props.winnerInfo === this.props.battleReducer.playerPokemon) {
-           return <div>
-               <div>Gratulacje! Zwyciężyłeś grając {this.props.battleReducer.playerPokemon.id}em</div>
-               <button onClick = {this.handleClick} >rozpocznij od nowa</button>
-           </div>
-       } else {
-           return <div>
-               <div>Przegrałeś walkę z {this.props.battleReducer.randomPokemon.id}em</div>
-               <button onClick = {this.handleClick} >spróbuj ponowie</button>
-           </div>
-       }
+    handleWinnerText = () => {
+        if (this.props.winnerInfo === this.props.battleReducer.playerPokemon) {
+            return <div className = "winnerInfo">
+                <img  src={this.props.battleReducer.playerPokemon.gif_attack}/>
+                <div>Gratulacje! Zwyciężyłeś grając {this.props.battleReducer.playerPokemon.id}em</div>
+            </div>
+        } else {
+            return <div>
+                <img  src={this.props.battleReducer.randomPokemon.gif_attack}/>
+                <div>Przegrałeś walkę z {this.props.battleReducer.randomPokemon.id}em</div>
+            </div>
+        }
+    };
 
+    render () {
+        return <div className = "game-framing">
+                    <div className = "border">
+                        {this.handleWinnerText()}
+                        <button onClick = {this.handleClick} >zagraj ponowie</button>
+                    </div>
+        </div>
     }
 }
 

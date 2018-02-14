@@ -13,7 +13,7 @@ export function selectedPokemon(state = pokemons[0], action) {
 const initialState = {
     playerPokemon: pokemons[1],
     randomPokemon: pokemons[0],
-    attackToDisplay: pokemons[0].attacks[0]
+    attackToDisplay: null
 };
 
 export function battleReducer(state = initialState, action) {

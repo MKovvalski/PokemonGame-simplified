@@ -455,7 +455,7 @@
 
 .pokemon-name-in-data {
   text-shadow: 0.5px 0.5px lightgrey;
-  color: #4d4d4d;
+  color: #404040;
   text-transform: uppercase;
   font-size: 18px;
   margin-left: 6px;
@@ -494,8 +494,8 @@
 
 .stamina-points {
   text-shadow: 0.5px 0.5px lightgrey;
-  color: #4d4d4d;
-  width: 34px;
+  color: #404040;
+  width: 53px;
   align-self: flex-end;
 }
 
@@ -519,24 +519,37 @@
   border: 4px solid #7575a3;
   border-radius: 3px;
   background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .attack-type {
-  height: 16px;
-  width: 55px;
+  height: 22px;
+  width: 68px;
   color: white;
   text-shadow: 1px 1px #4d4d4d;
   box-shadow: 1px 1px #595959;
-  line-height: 16px;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 22px;
   text-align: center;
   vertical-align: middle;
   border-radius: 2px;
 }
 
+.attack-power {
+  text-transform: uppercase;
+  font-size: 20px;
+  text-shadow: 0.5px 0.5px lightgrey;
+  color: #404040;
+}
+
 .battle-commentary-border {
   width: 465px;
   height: 75px;
-  border: 5px solid #ffcc00;
+  border: 5px solid #cca300;
   border-radius: 7px;
 }
 
@@ -552,22 +565,39 @@
   width: 325px;
   border: 4px solid #7575a3;
   border-radius: 3px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px lightgrey;
   background-color: whitesmoke;
   display: flex;
-  list-style: none;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
 }
 
 .attack-button {
-  padding: 10px;
+  line-height: 28px;
+  vertical-align: middle;
+  margin-left: 25px;
+  height: 28px;
+  width: 115px;
   font-size: 20px;
-  color: black;
+  color: #404040;
   font-family: 'VT323', monospace;
 }
 
 .battle-commentary {
   padding-left: 3px;
+  font-weight: 100;
+  text-shadow: 1px 1px #666666;
   font-size: 23px;
   color: white;
 }
+
+.commentary-size {
+  width: 170px;
+}
+
+//---------------------------------/
+/* styling end-screen */
+//---------------------------------/
+
+.
