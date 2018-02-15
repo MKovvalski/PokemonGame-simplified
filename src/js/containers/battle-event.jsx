@@ -224,12 +224,7 @@ class Battle extends React.Component {
         }
     };
 
-    checkArray = (a) => {
-        console.log(a.weakTo.indexOf("ice"));
-    };
-
     render () {
-        this.checkArray(this.props.battleReducer.playerPokemon);
         const attacks = this.props.battleReducer.playerPokemon.attacks;
         const playerPokeStamina = this.props.battleReducer.playerPokemon.stamina;
         const randomPokeStamina = this.props.battleReducer.randomPokemon.stamina;
