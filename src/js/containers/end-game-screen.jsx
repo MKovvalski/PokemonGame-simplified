@@ -15,14 +15,14 @@ class EndGameScreen extends React.Component {
         if (this.props.winnerInfo === this.props.battleReducer.playerPokemon) {
             return <div className = "winner-info">
                 <img  src={this.props.battleReducer.playerPokemon.gif_attack}/>
-                <div className = "end-screen-text">Gratulacje! Zwyciężyłeś grając {this.props.battleReducer.playerPokemon.id}em</div>
-                <div className = "end-screen-button" onClick = {this.handleClick} >zagraj ponowie</div>
+                <div className = "end-screen-text">Congratulations! You won playing {this.props.battleReducer.playerPokemon.id}!</div>
+                <div className = "end-screen-button" onClick = {this.handleClick} >play again</div>
             </div>
         } else {
             return <div className = "winner-info">
                 <img  src={this.props.battleReducer.randomPokemon.gif_attack}/>
-                <div className = "end-screen-text">Przegrałeś walkę z {this.props.battleReducer.randomPokemon.id}em</div>
-                <div className = "end-screen-button" onClick = {this.handleClick} >zagraj ponowie</div>
+                <div className = "end-screen-text">You Lost to {this.props.battleReducer.randomPokemon.id}</div>
+                <div className = "end-screen-button" onClick = {this.handleClick} >play again</div>
             </div>
         }
     };

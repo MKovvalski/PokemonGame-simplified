@@ -62,6 +62,7 @@ const pokemons =  [
             specDef: 65,
             speed: 45,
             stamina: 45,
+            weakTo: ["fyling", "fire", "psychic", "ice"],
             gif_attack: a,
             gif_calm: aa,
             gif_back: aaa,
@@ -257,6 +258,7 @@ const pokemons =  [
         },
         {
             id: "Butterfree",
+            lvl: 10,
             atk: 45,
             def: 50,
             specAtk: 90,
@@ -307,6 +309,7 @@ const pokemons =  [
         },
         {
             id: "jigglypuff",
+            lvl: 10,
             atk: 45,
             def: 20,
             specAtk: 45,
@@ -357,6 +360,7 @@ const pokemons =  [
         },
         {
             id: "eevee",
+            lvl: 10,
             atk: 55,
             def: 50,
             specAtk: 45,
@@ -405,6 +409,7 @@ const pokemons =  [
         },
         {
             id: "doduo",
+            lvl: 10,
             atk: 85,
             def: 45,
             specAtk: 35,
@@ -451,6 +456,7 @@ const pokemons =  [
         },
         {
             id: "glodeen",
+            lvl: 10,
             atk: 67,
             def: 60,
             specAtk: 35,
@@ -497,6 +503,7 @@ const pokemons =  [
         },
         {
             id: "licktung",
+            lvl: 10,
             atk: 55,
             def: 75,
             specAtk: 60,
@@ -543,6 +550,7 @@ const pokemons =  [
         },
         {
             id: "psyduck",
+            lvl: 10,
             atk: 52,
             def: 48,
             specAtk: 65,
@@ -589,6 +597,7 @@ const pokemons =  [
         },
         {
             id: "shelgon",
+            lvl: 10,
             atk: 95,
             def: 100,
             specAtk: 60,
@@ -637,6 +646,7 @@ const pokemons =  [
         },
         {
             id: "espeon",
+            lvl: 10,
             atk: 65,
             def: 60,
             specAtk: 130,
@@ -685,6 +695,7 @@ const pokemons =  [
         },
         {
             id: "magikarp",
+            lvl: 10,
             atk: 30,
             def: 70,
             specAtk: 35,
@@ -733,6 +744,7 @@ const pokemons =  [
         },
         {
             id: "flareon",
+            lvl: 10,
             atk: 130,
             def: 60,
             specAtk: 95,
@@ -779,6 +791,7 @@ const pokemons =  [
         },
         {
             id: "vaporeon",
+            lvl: 10,
             atk: 65,
             def: 60,
             specAtk: 110,
@@ -827,6 +840,7 @@ const pokemons =  [
         },
         {
             id: "flechling",
+            lvl: 10,
             atk: 50,
             def: 50,
             specAtk: 40,

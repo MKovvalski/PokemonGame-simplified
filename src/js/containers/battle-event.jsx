@@ -83,19 +83,19 @@ class Battle extends React.Component {
                         let playerPokemonStamina = this.props.battleReducer.playerPokemon.stamina;
                         this.props.randomSelectedAttack(randomAttack, this.state.randomBaseStamina);
                         if (randomAttack.type === "modifying_myself") {
-                            if (attack.targetName === "stamina") {
+                            if (randomAttack.targetName === "stamina") {
                                 if (this.state.randomBaseStamina === randomPokemon.stamina) {
                                     this.setState ({
                                         textArea: randomPokemon.id + " cannot regenerate more stamina then it already has"
                                     })
                                 } else {
                                     this.setState ({
-                                        textArea: randomPokemon.id + " regenerated " + attack.power + " points of stamina"
+                                        textArea: randomPokemon.id + " regenerated " + randomAttack.power + " points of stamina"
                                     })
                                 }
                             } else {
                                 this.setState ({
-                                    textArea: randomPokemon.id + " " + attack.targetName + " rose!"
+                                    textArea: randomPokemon.id + " " + randomAttack.targetName + " rose!"
                                 })
                             }
                         } else if (randomAttack.type === "modifying_enemy") {
@@ -224,7 +224,12 @@ class Battle extends React.Component {
         }
     };
 
+    checkArray = (a) => {
+        console.log(a.weakTo.indexOf("ice"));
+    };
+
     render () {
+        this.checkArray(this.props.battleReducer.playerPokemon);
         const attacks = this.props.battleReducer.playerPokemon.attacks;
         const playerPokeStamina = this.props.battleReducer.playerPokemon.stamina;
         const randomPokeStamina = this.props.battleReducer.randomPokemon.stamina;
