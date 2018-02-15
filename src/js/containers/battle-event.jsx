@@ -224,6 +224,14 @@ class Battle extends React.Component {
         }
     };
 
+    handleStaminaPoints = (a) => {
+      if (a < 0 ) {
+          return 0
+      } else {
+          return Math.floor(a);
+      }
+    };
+
     render () {
         const attacks = this.props.battleReducer.playerPokemon.attacks;
         const playerPokeStamina = this.props.battleReducer.playerPokemon.stamina;
@@ -246,7 +254,7 @@ class Battle extends React.Component {
                                                         <div className = "life-bar" style = {{transition: "all 1s ease-out", backgroundColor: this.handleColorChange(handleLifeBar1), height: "5px", width: handleLifeBar1}}></div>
                                                     </div>
                                                 </div>
-                                                <div className = "stamina-points">{randomPokeStamina}/{this.state.randomBaseStamina}</div>
+                                                <div className = "stamina-points">{this.handleStaminaPoints(randomPokeStamina)}/{this.state.randomBaseStamina}</div>
                                             </div>
                                         </div>
                                     </div>
@@ -267,7 +275,7 @@ class Battle extends React.Component {
                                                         <div style = {{transition: "all 1s ease-out", backgroundColor: this.handleColorChange(handleLifeBar2), height: "5px", width: handleLifeBar2}}></div>
                                                     </div>
                                                 </div>
-                                                <div className = "stamina-points">{playerPokeStamina}/{this.state.playerBaseStamina}</div>
+                                                <div className = "stamina-points">{this.handleStaminaPoints(playerPokeStamina)}/{this.state.playerBaseStamina}</div>
                                             </div>
                                         </div>
                                     </div>
