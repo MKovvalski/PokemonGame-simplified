@@ -626,3 +626,29 @@
   font-family: 'VT323', monospace;
 
 }
+
+//---------------------------------/
+/* animations for attacks */
+//---------------------------------/
+
+@keyframes scratch-player {
+  50% {
+    background-color: red;
+    transform: translate(10px, 0) rotate(20deg);
+  }
+  100% {
+    background-color: transparent;
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes scratch-random {
+  50% {
+    transform-origin: 100% 100%;
+    transform: translate(10px, 0) rotate(20deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+

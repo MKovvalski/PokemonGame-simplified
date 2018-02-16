@@ -18,7 +18,9 @@ class Battle extends React.Component {
             textArea: "battle begins!",
             playerBaseStamina: playerBaseStamina,
             randomBaseStamina: randomBaseStamina,
-            counter: playerBaseStamina
+            counter: playerBaseStamina,
+            playerAnimation: "",
+            randomAnimation: "",
         };
     };
 
@@ -34,7 +36,7 @@ class Battle extends React.Component {
         } else {this.setState ({
             displayText: "block",
             displayAttacks: "none",
-            textArea: playerPokemon.id + " attacks with " + attack.id
+            textArea: playerPokemon.id + " attacks with " + attack.id,
         })
         }
         setTimeout(() => {
@@ -65,11 +67,20 @@ class Battle extends React.Component {
                     this.setState ({
                         textArea: playerPokemon.id + " missed"
                     })
+                } else {
+                    this.setState ({ //tu się aktywuje animacja playerPokemona
+                        playerAnimation: "scratch-player 0.5s linear 1",
+                        randomAnimation: "scratch-random 0.5s linear 1"
+                    })
                 }
             }
             if (this.props.battleReducer.randomPokemon.stamina >= 0) {
                 setTimeout(() => {
                     const randomAttack = randomPokemon.attacks[Math.floor(Math.random()*3)];
+                    this.setState ({ // tu się zeruje animacja playerpokemona
+                        playerAnimation: "",
+                        randomAnimation: ""
+                    });
                     if (randomAttack.type === "modifying_myself" || randomAttack.type === "modifying_enemy") {
                         this.setState({
                             textArea: randomPokemon.id + " uses " + randomAttack.id
@@ -251,7 +262,7 @@ class Battle extends React.Component {
                                                 <div className = "pokemon-name-in-data">{this.props.battleReducer.randomPokemon.id}</div>
                                                 <div className = "life-bar-overbar">
                                                     <div className = "life-bar-inner-line">
-                                                        <div className = "life-bar" style = {{transition: "all 1s ease-out", backgroundColor: this.handleColorChange(handleLifeBar1), height: "5px", width: handleLifeBar1}}></div>
+                                                        <div className = "life-bar" style = {{transition: "all 1s ease-out", backgroundColor: this.handleColorChange(handleLifeBar1), height: "5px", width: handleLifeBar1, borderRadius: "2px 0 0 2px"}}></div>
                                                     </div>
                                                 </div>
                                                 <div className = "stamina-points">{this.handleStaminaPoints(randomPokeStamina)}/{this.state.randomBaseStamina}</div>
@@ -259,12 +270,12 @@ class Battle extends React.Component {
                                         </div>
                                     </div>
                                     <div className = "inner-row-1-2c" >
-                                        <img className="player-pokemon-img" src={this.props.battleReducer.playerPokemon.gif_back} alt=""/>
+                                        <img className="player-pokemon-img" style = {{animation: this.state.playerAnimation}} src={this.props.battleReducer.playerPokemon.gif_back} alt=""/>
                                     </div>
                                 </div>
                                 <div className= "col-1-2">
                                     <div className = "inner-row-1-2a" >
-                                        <img className = "random-pokemon-img" src={this.props.battleReducer.randomPokemon.gif_calm} alt=""/>
+                                        <img className = "random-pokemon-img" style = {{animation: this.state.randomAnimation}} src={this.props.battleReducer.randomPokemon.gif_calm} alt=""/>
                                     </div>
                                     <div className = "inner-row-1-2" >
                                         <div className = "pokemon-data-border">
@@ -272,7 +283,7 @@ class Battle extends React.Component {
                                                 <div className = "pokemon-name-in-data">{this.props.battleReducer.playerPokemon.id}</div>
                                                 <div className= "life-bar-overbar">
                                                     <div className = "life-bar-inner-line">
-                                                        <div style = {{transition: "all 1s ease-out", backgroundColor: this.handleColorChange(handleLifeBar2), height: "5px", width: handleLifeBar2}}></div>
+                                                        <div style = {{transition: "all 1s ease-out", backgroundColor: this.handleColorChange(handleLifeBar2), height: "5px", width: handleLifeBar2, borderRadius: "2px 0 0 2px"}}></div>
                                                     </div>
                                                 </div>
                                                 <div className = "stamina-points">{this.handleStaminaPoints(playerPokeStamina)}/{this.state.playerBaseStamina}</div>
