@@ -13,16 +13,24 @@ class Battle extends React.Component {
         const playerBaseStamina = this.props.battleReducer.playerPokemon.stamina;
         const randomBaseStamina = this.props.battleReducer.randomPokemon.stamina;
         this.state = {
-            displayAttacks: "block",
+            displayAttacks: "none",
             displayText: "none",
             textArea: "battle begins!",
             playerBaseStamina: playerBaseStamina,
             randomBaseStamina: randomBaseStamina,
             counter: playerBaseStamina,
-            playerAnimation: "",
-            randomAnimation: "",
+            playerAnimation: "slide-in-player 1s linear 1",
+            randomAnimation: "slide-in-random 1s linear 1",
         };
     };
+
+    componentDidMount () {
+        setTimeout(() => {
+            this.setState({
+                displayAttacks: "block"
+            })
+        },1300);
+    }
 
     handleAttackAction (attack) { // wymaga optymalizacji
         let playerPokemon = this.props.battleReducer.playerPokemon;
