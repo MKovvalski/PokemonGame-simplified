@@ -1,56 +1,53 @@
+'use strict';
+
 var path = require('path');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+var webpack = require('webpack');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+
+require('es6-promise').polyfill();
 
 module.exports = {
-    devtool: 'cheap-eval-source-map',
-    entry: {
-        main: path.join(__dirname, 'src', 'app.jsx')
+    entry : {
+        'js/app.js': './src/app.jsx'
     },
-    output: {
-        path: path.join(__dirname, 'dist'),
-        filename: '[name].bundle.js'
+
+    output:{
+        filename: '[name]',
+        path: __dirname + '/build'
     },
-    watch: true,
-    devServer: {
-        contentBase: './src',
-        compress: true,
-        port: 9001
-    },
+
+    plugins: [
+        new ExtractTextPlugin('./css/app.css')
+    ],
+
     module: {
-        rules: [
+        loaders: [
             {
-                test: /\.jsx$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: [        'es2015',        'stage-2',        'react']
-                    }
-                }
-            },
-            {
-                test: /\.css/,
-                use: ['style-loader', 'css-loader']
-            },
-            {
-                test: /\.(png|svg|jpe?g|gif)$/,
-                use: ['file-loader']
+                test: /\.jsx?$/,  exclude: /node_modules/,
+                loader: 'babel-loader',
+                query: { presets: ['es2015', 'stage-2' , 'react'] }
             },
             {
                 test: /\.scss$/,
-                use: ExtractTextPlugin.extract({
-                    fallback: "style-loader",
-                    use: ['css-loader', 'sass-loader']
-                })
-            }
-        ]
+                loader: "style-loader!css-loader?url=false!sass-loader"
+            },
+            { test: /\.svg$/, loader: 'svg-loader?pngScale=2' },
+            {
+                test: /\.(png|jpg|mp3)$/,
+                loader: 'file-loader',
+                options: {
+                    name: '[path][name].[ext]'
+                }
+            },
+        ],
+
     },
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: path.join(__dirname, 'src', 'index.html'),
-            hash: true
-        }),
-        new ExtractTextPlugin('style.css')
-    ]
+
+    stats: {
+        // Colored output
+        colors: true
+    },
+
+    // Create Sourcemaps for the bundle
+    devtool: 'source-map'
 };

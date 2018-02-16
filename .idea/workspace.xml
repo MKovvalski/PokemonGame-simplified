@@ -7,8 +7,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/main.bundle.js" afterPath="$PROJECT_DIR$/dist/main.bundle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/style.css" afterPath="$PROJECT_DIR$/dist/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/components/TheGame.jsx" afterPath="$PROJECT_DIR$/src/js/components/TheGame.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/containers/battle-event.jsx" afterPath="$PROJECT_DIR$/src/js/containers/battle-event.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/game-data/pokemons.jsx" afterPath="$PROJECT_DIR$/src/js/game-data/pokemons.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scss/main.scss" afterPath="$PROJECT_DIR$/src/scss/main.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,12 +23,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="46" column="21" lean-forward="false" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+            <state relative-caret-position="561">
+              <caret line="89" column="14" lean-forward="false" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webpack.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="936">
+              <caret line="52" column="2" lean-forward="false" selection-start-line="52" selection-start-column="2" selection-end-line="52" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TheGame.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/components/TheGame.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="71" column="32" lean-forward="false" selection-start-line="71" selection-start-column="32" selection-end-line="71" selection-end-column="32" />
+              <folding>
+                <element signature="e#493#791#0" expanded="false" />
+                <element signature="e#823#1404#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,14 +85,15 @@
         <option value="$PROJECT_DIR$/src/js/containers/end-game-screen.jsx" />
         <option value="$PROJECT_DIR$/src/js/reducers/reducers.jsx" />
         <option value="$PROJECT_DIR$/src/js/actions/all-actions.jsx" />
-        <option value="$PROJECT_DIR$/src/js/game-data/pokemons.jsx" />
         <option value="$PROJECT_DIR$/src/js/methods/damageCalculator.jsx" />
         <option value="$PROJECT_DIR$/src/js/containers/battle-event.jsx" />
         <option value="$PROJECT_DIR$/src/js/index.jsx" />
         <option value="$PROJECT_DIR$/src/js/components/Wrapper-component.jsx.js" />
         <option value="$PROJECT_DIR$/src/js/components/wrapper-component.jsx" />
+        <option value="$PROJECT_DIR$/src/js/game-data/pokemons.jsx" />
         <option value="$PROJECT_DIR$/src/js/components/TheGame.jsx" />
         <option value="$PROJECT_DIR$/src/scss/main.scss" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
       </list>
     </option>
   </component>
@@ -145,6 +170,13 @@
               <item name="PokemonGame-simplified" type="b2602c69:ProjectViewProjectNode" />
               <item name="PokemonGame-simplified" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="game-data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PokemonGame-simplified" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PokemonGame-simplified" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="scss" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -192,12 +224,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1517565627460</updated>
-      <workItem from="1517565629910" duration="172778000" />
+      <workItem from="1517565629910" duration="184832000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172778000" />
+    <option name="totallyTimeSpent" value="184832000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -496,14 +528,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/game-data/pokemons.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12184">
-          <caret line="881" column="39" lean-forward="false" selection-start-line="881" selection-start-column="39" selection-end-line="881" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/containers/pick-pokemon.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
@@ -530,14 +554,6 @@
     <entry file="file://$PROJECT_DIR$/src/imgs/4f6f670df146b1a10f50fa08027ebab8.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app.jsx">
@@ -575,9 +591,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/containers/end-game-screen.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="24" column="93" lean-forward="true" selection-start-line="24" selection-start-column="93" selection-end-line="24" selection-end-column="93" />
+          <folding>
+            <element signature="e#10#36#0" expanded="true" />
+            <element signature="e#147#258#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/containers/battle-event.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
+        <state relative-caret-position="939">
           <caret line="321" column="52" lean-forward="false" selection-start-line="321" selection-start-column="52" selection-end-line="321" selection-end-column="52" />
           <folding>
             <element signature="e#10#36#0" expanded="true" />
@@ -592,10 +619,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/game-data/pokemons.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="637" column="30" lean-forward="true" selection-start-line="637" selection-start-column="30" selection-end-line="637" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/components/TheGame.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+        <state relative-caret-position="459">
+          <caret line="71" column="32" lean-forward="false" selection-start-line="71" selection-start-column="32" selection-end-line="71" selection-end-column="32" />
           <folding>
             <element signature="e#493#791#0" expanded="false" />
             <element signature="e#823#1404#0" expanded="false" />
@@ -603,21 +638,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/containers/end-game-screen.jsx">
+    <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="24" column="93" lean-forward="true" selection-start-line="24" selection-start-column="93" selection-end-line="24" selection-end-column="93" />
-          <folding>
-            <element signature="e#10#36#0" expanded="true" />
-            <element signature="e#147#258#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="561">
+          <caret line="89" column="14" lean-forward="false" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="46" column="21" lean-forward="false" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+        <state relative-caret-position="936">
+          <caret line="52" column="2" lean-forward="false" selection-start-line="52" selection-start-column="2" selection-end-line="52" selection-end-column="2" />
           <folding />
         </state>
       </provider>

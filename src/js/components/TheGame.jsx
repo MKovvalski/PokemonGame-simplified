@@ -49,6 +49,30 @@ class TheGame extends React.Component {
                     </div>
                     <div className = "lower-part" >
                         <div className = "connector"></div>
+                        <div className = "top-button">
+                            <div className = "border-button">
+                                <div className = "brightness-button"></div>
+                            </div>
+                        </div>
+                        <div className = "row-1">
+                            <div className = "col-1-2-a">
+                                <div className = "button-circle">
+                                    <div className = "arrow-buttons"></div>
+                                </div>
+                            </div>
+                            <div className = "col-1-2-a">
+                                <div className = "a-b-buttons">
+                                    <div className = "a-button">A</div>
+                                    <div className = "a-button">B</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className = "row-2">
+                            <div className = "small-buttons">
+                                <div className = "border-small-button"><div className = "small-button"></div></div>
+                                <div className = "border-small-button"><div className = "small-button"></div></div>
+                            </div>
+                        </div>
                     </div>
         </div>
     }

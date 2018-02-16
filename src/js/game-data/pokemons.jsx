@@ -644,7 +644,7 @@ const pokemons =  [
                     id: "leer",
                     power: 8,
                     nature: "normal",
-                    target: "specef",
+                    target: "specDef",
                     targetName: "spec-defense",
                     type: "modifying_enemy",
                     accuracy: 85
