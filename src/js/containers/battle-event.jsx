@@ -50,17 +50,20 @@ class Battle extends React.Component {
                         })
                     } else {
                         this.setState ({
-                            textArea: playerPokemon.id + " regenerated " + attack.power + " points of stamina"
+                            textArea: playerPokemon.id + " regenerated " + attack.power + " points of stamina",
+                            playerAnimation: "stat-modifying 1s linear 1"
                         })
                     }
                 } else {
                     this.setState ({
-                        textArea: playerPokemon.id + " " + attack.targetName + " rose!"
+                        textArea: playerPokemon.id + " " + attack.targetName + " rose!",
+                        playerAnimation: "stat-modifying 1s linear 1"
                     })
                 }
             } else if (attack.type === "modifying_enemy") {
                 this.setState ({
-                    textArea: randomPokemon.id + " " + attack.targetName + " fell!"
+                    textArea: randomPokemon.id + " " + attack.targetName + " fell!",
+                    playerAnimation: "stat-modifying 1s linear 1"
                 })
             } else if (attack.type === "normal" || attack.type === "special") {
                 if (randomPokemonStamina === this.props.battleReducer.randomPokemon.stamina) {
@@ -69,8 +72,8 @@ class Battle extends React.Component {
                     })
                 } else {
                     this.setState ({ //tu się aktywuje animacja playerPokemona
-                        playerAnimation: "scratch-player 0.5s linear 1",
-                        randomAnimation: "scratch-random 0.5s linear 1"
+                        playerAnimation: "scratch-player-send 0.5s linear 1",
+                        randomAnimation: "scratch-random-receive 0.5s linear 1"
                     })
                 }
             }
@@ -83,11 +86,11 @@ class Battle extends React.Component {
                     });
                     if (randomAttack.type === "modifying_myself" || randomAttack.type === "modifying_enemy") {
                         this.setState({
-                            textArea: randomPokemon.id + " uses " + randomAttack.id
+                            textArea: randomPokemon.id + " uses " + randomAttack.id,
                         })
                     } else {
                         this.setState ({
-                            textArea: randomPokemon.id + " attacks with " + randomAttack.id
+                            textArea: randomPokemon.id + " attacks with " + randomAttack.id,
                         })
                     }
                     setTimeout(() => {
@@ -101,30 +104,39 @@ class Battle extends React.Component {
                                     })
                                 } else {
                                     this.setState ({
-                                        textArea: randomPokemon.id + " regenerated " + randomAttack.power + " points of stamina"
+                                        textArea: randomPokemon.id + " regenerated " + randomAttack.power + " points of stamina",
+                                        randomAnimation: "stat-modifying 1s linear 1"
                                     })
                                 }
                             } else {
                                 this.setState ({
-                                    textArea: randomPokemon.id + " " + randomAttack.targetName + " rose!"
+                                    textArea: randomPokemon.id + " " + randomAttack.targetName + " rose!",
+                                    randomAnimation: "stat-modifying 1s linear 1"
                                 })
                             }
                         } else if (randomAttack.type === "modifying_enemy") {
                             this.setState ({
-                                textArea: playerPokemon.id + " " + randomAttack.targetName + " fell!"
+                                textArea: playerPokemon.id + " " + randomAttack.targetName + " fell!",
+                                randomAnimation: "stat-modifying 1s linear 1"
                             })
                         } else if (randomAttack.type === "normal" || randomAttack.type === "special") {
                             if (playerPokemonStamina === this.props.battleReducer.playerPokemon.stamina) {
                                 this.setState ({
                                     textArea: randomPokemon.id + " missed"
                                 })
+                            } else {
+                                this.setState ({
+                                    playerAnimation: "scratch-player-receive 0.5s linear 1",
+                                    randomAnimation: "scratch-random-send 0.5s linear 1"
+                                });
                             }
                         }
                         if (this.props.battleReducer.playerPokemon.stamina <= 0) {
                             setTimeout(() => {
                                 this.setState ({
                                     display: "none",
-                                    textArea: playerPokemon.id + " fainted"
+                                    textArea: playerPokemon.id + " fainted",
+                                    playerAnimation: "dead 0.7s linear 1 forwards"
                                 });
                                 setTimeout(() => {
                                     this.props.passingWinnerInfo(randomPokemon);
@@ -146,7 +158,9 @@ class Battle extends React.Component {
                 setTimeout(() => {
                     this.setState ({
                         displayAttacks: "none",
-                        textArea: randomPokemon.id + " fainted"
+                        textArea: randomPokemon.id + " fainted",
+                        randomAnimation: "dead 0.7s linear 1 forwards"
+
                     });
                     setTimeout(() => {
                         this.props.onConfirm();

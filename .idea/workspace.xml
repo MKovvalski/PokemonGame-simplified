@@ -6,7 +6,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/main.bundle.js" afterPath="$PROJECT_DIR$/dist/main.bundle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/style.css" afterPath="$PROJECT_DIR$/dist/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/components/TheGame.jsx" afterPath="$PROJECT_DIR$/src/js/components/TheGame.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/containers/battle-event.jsx" afterPath="$PROJECT_DIR$/src/js/containers/battle-event.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scss/main.scss" afterPath="$PROJECT_DIR$/src/scss/main.scss" />
     </list>
@@ -25,15 +24,16 @@
       <file leaf-file-name="battle-event.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/containers/battle-event.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="81" column="42" lean-forward="false" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
+            <state relative-caret-position="207">
+              <caret line="26" column="32" lean-forward="false" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
               <folding>
                 <element signature="e#10#36#0" expanded="true" />
-                <element signature="e#7679#7953#0" expanded="false" />
-                <element signature="e#7995#8180#0" expanded="false" />
-                <element signature="e#8224#9515#0" expanded="false" />
-                <element signature="e#9551#9652#0" expanded="false" />
-                <marker date="1518778867343" expanded="true" signature="11986:11987" ph="..." />
+                <element signature="n#!!block;n#handleAttackAction#0;n#Battle#0" expanded="false" />
+                <element signature="e#8617#8891#0" expanded="false" />
+                <element signature="e#8933#9118#0" expanded="false" />
+                <element signature="e#9162#10453#0" expanded="false" />
+                <element signature="e#10489#10590#0" expanded="false" />
+                <marker date="1518782078207" expanded="true" signature="12924:12925" ph="..." />
               </folding>
             </state>
           </provider>
@@ -42,8 +42,8 @@
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3501">
-              <caret line="429" column="21" lean-forward="false" selection-start-line="429" selection-start-column="21" selection-end-line="429" selection-end-column="21" />
+            <state relative-caret-position="265">
+              <caret line="657" column="3" lean-forward="true" selection-start-line="657" selection-start-column="3" selection-end-line="657" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -202,12 +202,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1517565627460</updated>
-      <workItem from="1517565629910" duration="164542000" />
+      <workItem from="1517565629910" duration="166830000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164542000" />
+    <option name="totallyTimeSpent" value="166830000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -257,33 +257,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/js/containers/battle-event.jsx</url>
-          <line>79</line>
-          <properties />
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/js/containers/battle-event.jsx</url>
-          <line>70</line>
-          <properties />
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="26" />
+      <option name="time" value="28" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/js/methods">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/methods/attackEvent.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -359,11 +337,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/imgs/blast-attack.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/imgs/char-attack.gif">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -444,11 +417,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/imgs/battleground3.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/imgs/battleground2.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -601,6 +569,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/imgs/battleground2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/imgs/char-attack.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/imgs/4f6f670df146b1a10f50fa08027ebab8.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/components/TheGame.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -611,23 +594,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/containers/battle-event.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="81" column="42" lean-forward="false" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
+        <state relative-caret-position="207">
+          <caret line="26" column="32" lean-forward="false" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
           <folding>
             <element signature="e#10#36#0" expanded="true" />
-            <element signature="e#7679#7953#0" expanded="false" />
-            <element signature="e#7995#8180#0" expanded="false" />
-            <element signature="e#8224#9515#0" expanded="false" />
-            <element signature="e#9551#9652#0" expanded="false" />
-            <marker date="1518778867343" expanded="true" signature="11986:11987" ph="..." />
+            <element signature="n#!!block;n#handleAttackAction#0;n#Battle#0" expanded="false" />
+            <element signature="e#8617#8891#0" expanded="false" />
+            <element signature="e#8933#9118#0" expanded="false" />
+            <element signature="e#9162#10453#0" expanded="false" />
+            <element signature="e#10489#10590#0" expanded="false" />
+            <marker date="1518782078207" expanded="true" signature="12924:12925" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3501">
-          <caret line="429" column="21" lean-forward="false" selection-start-line="429" selection-start-column="21" selection-end-line="429" selection-end-column="21" />
+        <state relative-caret-position="265">
+          <caret line="657" column="3" lean-forward="true" selection-start-line="657" selection-start-column="3" selection-end-line="657" selection-end-column="3" />
           <folding />
         </state>
       </provider>
