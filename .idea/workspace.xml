@@ -2,13 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63d01efa-5d5a-4d33-ba1c-74a4af75af18" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/src/imgs/doduo_back.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/src/imgs/flareon-back.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/src/imgs/fletching.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/src/imgs/goldeen-back.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/src/imgs/licktung_back.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/src/imgs/magikarp-back.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/src/imgs/psyduck-back.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/src/imgs/vapreon-back.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sounds/11 Battle (VS Trainer).mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/js/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/js/app.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/main.bundle.js" afterPath="$PROJECT_DIR$/dist/main.bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/style.css" afterPath="$PROJECT_DIR$/dist/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/components/TheGame.jsx" afterPath="$PROJECT_DIR$/src/js/components/TheGame.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/containers/battle-event.jsx" afterPath="$PROJECT_DIR$/src/js/containers/battle-event.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/game-data/pokemons.jsx" afterPath="$PROJECT_DIR$/src/js/game-data/pokemons.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scss/main.scss" afterPath="$PROJECT_DIR$/src/scss/main.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -22,36 +31,41 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="battle-event.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/containers/battle-event.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="482">
+              <caret line="287" column="76" lean-forward="true" selection-start-line="287" selection-start-column="76" selection-end-line="287" selection-end-column="76" />
+              <folding>
+                <element signature="e#10#36#0" expanded="true" />
+                <element signature="n#!!block;n#componentDidMount#0;n#Battle#0" expanded="false" />
+                <element signature="n#!!block;n#handleAttackAction#0;n#Battle#0" expanded="false" />
+                <element signature="e#8951#9225#0" expanded="false" />
+                <element signature="e#9267#9452#0" expanded="false" />
+                <element signature="e#9496#10787#0" expanded="false" />
+                <element signature="e#10823#10924#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pokemons.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/js/game-data/pokemons.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="549">
+              <caret line="922" column="24" lean-forward="true" selection-start-line="922" selection-start-column="24" selection-end-line="922" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="89" column="14" lean-forward="false" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
+            <state relative-caret-position="13968">
+              <caret line="776" column="12" lean-forward="false" selection-start-line="776" selection-start-column="12" selection-end-line="776" selection-end-column="12" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/webpack.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="936">
-              <caret line="52" column="2" lean-forward="false" selection-start-line="52" selection-start-column="2" selection-end-line="52" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TheGame.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/components/TheGame.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="71" column="32" lean-forward="false" selection-start-line="71" selection-start-column="32" selection-end-line="71" selection-end-column="32" />
-              <folding>
-                <element signature="e#493#791#0" expanded="false" />
-                <element signature="e#823#1404#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -86,14 +100,14 @@
         <option value="$PROJECT_DIR$/src/js/reducers/reducers.jsx" />
         <option value="$PROJECT_DIR$/src/js/actions/all-actions.jsx" />
         <option value="$PROJECT_DIR$/src/js/methods/damageCalculator.jsx" />
-        <option value="$PROJECT_DIR$/src/js/containers/battle-event.jsx" />
         <option value="$PROJECT_DIR$/src/js/index.jsx" />
         <option value="$PROJECT_DIR$/src/js/components/Wrapper-component.jsx.js" />
         <option value="$PROJECT_DIR$/src/js/components/wrapper-component.jsx" />
-        <option value="$PROJECT_DIR$/src/js/game-data/pokemons.jsx" />
         <option value="$PROJECT_DIR$/src/js/components/TheGame.jsx" />
-        <option value="$PROJECT_DIR$/src/scss/main.scss" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/src/scss/main.scss" />
+        <option value="$PROJECT_DIR$/src/js/containers/battle-event.jsx" />
+        <option value="$PROJECT_DIR$/src/js/game-data/pokemons.jsx" />
       </list>
     </option>
   </component>
@@ -113,9 +127,10 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="y" value="22" />
     <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="height" value="704" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -157,27 +172,7 @@
               <item name="PokemonGame-simplified" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PokemonGame-simplified" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PokemonGame-simplified" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PokemonGame-simplified" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PokemonGame-simplified" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="game-data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PokemonGame-simplified" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PokemonGame-simplified" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -225,31 +220,35 @@
       <option name="presentableId" value="Default" />
       <updated>1517565627460</updated>
       <workItem from="1517565629910" duration="184832000" />
+      <workItem from="1518863873290" duration="1065000" />
+      <workItem from="1519051829783" duration="807000" />
+      <workItem from="1519055134728" duration="56000" />
+      <workItem from="1519121823050" duration="643000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="184832000" />
+    <option name="totallyTimeSpent" value="187403000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23272438" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59517044" sideWeight="0.50277996" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59517044" sideWeight="0.50277996" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3721591" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.9005682" sideWeight="0.49722" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.765625" sideWeight="0.49722" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -283,25 +282,24 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/js/index.jsx</url>
           <line>11</line>
-          <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/js/containers/battle-event.jsx</url>
+          <line>280</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="29" />
+      <option name="time" value="30" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/imgs/GBSP-log.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/components/start-game.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -310,51 +308,19 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/imgs/Donphan-F_XY.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/imgs/Donphan_Back_XY.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/imgs/battle-background .png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/imgs/backgroundForList.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/imgs/Ampharos.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/imgs/Donphan-F_XY.gif" />
+    <entry file="file://$PROJECT_DIR$/src/imgs/Donphan_Back_XY.gif" />
+    <entry file="file://$PROJECT_DIR$/src/imgs/battle-background .png" />
+    <entry file="file://$PROJECT_DIR$/src/imgs/backgroundForList.png" />
+    <entry file="file://$PROJECT_DIR$/src/imgs/Ampharos.gif" />
     <entry file="file://$PROJECT_DIR$/src/imgs/blast-attack.gif">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/imgs/character-background.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/imgs/Electabuzz.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/imgs/Green_leaf.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/imgs/character-background.png" />
+    <entry file="file://$PROJECT_DIR$/src/imgs/Electabuzz.gif" />
+    <entry file="file://$PROJECT_DIR$/src/imgs/Green_leaf.png" />
     <entry file="file://$PROJECT_DIR$/src/imgs/main-page-start-screen.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -370,11 +336,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/imgs/Pokemon_ORAS_Brendan.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/imgs/Pokemon_ORAS_Brendan.png" />
     <entry file="file://$PROJECT_DIR$/src/imgs/pokeArena1.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -405,21 +367,13 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/imgs/MrMime.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/imgs/MrMime.png" />
     <entry file="file://$PROJECT_DIR$/src/imgs/squil-attack.gif">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/imgs/battleground3.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/imgs/battleground3.png" />
     <entry file="file://$PROJECT_DIR$/src/imgs/bulba-attack.gif">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -444,7 +398,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -467,7 +420,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -475,7 +427,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3104">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -491,32 +442,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="66" column="20" lean-forward="false" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
-          <folding>
-            <element signature="e#987#1137#0" expanded="false" />
-            <element signature="e#1190#1340#0" expanded="false" />
-            <element signature="e#1397#1555#0" expanded="false" />
-            <element signature="e#1612#1770#0" expanded="false" />
-            <element signature="e#1825#1979#0" expanded="false" />
-            <element signature="e#2036#2412#0" expanded="false" />
-            <element signature="e#2128#2255#0" expanded="false" />
-            <element signature="e#2532#2682#0" expanded="false" />
-            <element signature="e#2735#2885#0" expanded="false" />
-            <element signature="e#2942#3100#0" expanded="false" />
-            <element signature="e#3157#3315#0" expanded="false" />
-            <element signature="e#3370#3524#0" expanded="false" />
-            <element signature="e#3920#4070#0" expanded="false" />
-            <element signature="e#4123#4273#0" expanded="false" />
-            <element signature="e#4330#4488#0" expanded="false" />
-            <element signature="e#4545#4703#0" expanded="false" />
-            <element signature="e#4758#4912#0" expanded="false" />
-            <element signature="e#4969#5127#0" expanded="false" />
-            <element signature="e#5184#5566#0" expanded="false" />
-            <element signature="e#5686#5836#0" expanded="false" />
-            <element signature="e#5889#6039#0" expanded="false" />
-            <element signature="e#6096#6254#0" expanded="false" />
-            <element signature="e#6311#6469#0" expanded="false" />
-            <element signature="e#6524#6678#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -524,7 +449,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="68" lean-forward="false" selection-start-line="11" selection-start-column="68" selection-end-line="11" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -532,12 +456,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
           <caret line="93" column="0" lean-forward="true" selection-start-line="37" selection-start-column="4" selection-end-line="93" selection-end-column="0" />
-          <folding>
-            <element signature="e#468#709#0" expanded="false" />
-            <element signature="e#737#1025#0" expanded="false" />
-            <element signature="e#1060#1250#0" expanded="false" />
-            <element signature="e#1294#2585#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -560,18 +478,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/components/Wrapper-component.jsx.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/Wrapper-component.jsx.js" />
     <entry file="file://$PROJECT_DIR$/src/js/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -583,53 +493,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/components/wrapper-component.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/wrapper-component.jsx" />
     <entry file="file://$PROJECT_DIR$/src/js/containers/end-game-screen.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
           <caret line="24" column="93" lean-forward="true" selection-start-line="24" selection-start-column="93" selection-end-line="24" selection-end-column="93" />
-          <folding>
-            <element signature="e#10#36#0" expanded="true" />
-            <element signature="e#147#258#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/containers/battle-event.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="939">
-          <caret line="321" column="52" lean-forward="false" selection-start-line="321" selection-start-column="52" selection-end-line="321" selection-end-column="52" />
-          <folding>
-            <element signature="e#10#36#0" expanded="true" />
-            <element signature="n#!!block;n#componentDidMount#0;n#Battle#0" expanded="false" />
-            <element signature="n#!!block;n#handleAttackAction#0;n#Battle#0" expanded="false" />
-            <element signature="e#8831#9105#0" expanded="false" />
-            <element signature="e#9147#9332#0" expanded="false" />
-            <element signature="e#9376#10667#0" expanded="false" />
-            <element signature="e#10703#10804#0" expanded="false" />
-            <marker date="1518784474090" expanded="true" signature="13138:13139" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/game-data/pokemons.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="637" column="30" lean-forward="true" selection-start-line="637" selection-start-column="30" selection-end-line="637" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/components/TheGame.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
+        <state relative-caret-position="137">
           <caret line="71" column="32" lean-forward="false" selection-start-line="71" selection-start-column="32" selection-end-line="71" selection-end-column="32" />
           <folding>
             <element signature="e#493#791#0" expanded="false" />
@@ -638,18 +512,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="89" column="14" lean-forward="false" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
+        <state relative-caret-position="13968">
+          <caret line="776" column="12" lean-forward="false" selection-start-line="776" selection-start-column="12" selection-end-line="776" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="52" column="2" lean-forward="false" selection-start-line="52" selection-start-column="2" selection-end-line="52" selection-end-column="2" />
+        <state relative-caret-position="198">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/containers/battle-event.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="287" column="76" lean-forward="true" selection-start-line="287" selection-start-column="76" selection-end-line="287" selection-end-column="76" />
+          <folding>
+            <element signature="e#10#36#0" expanded="true" />
+            <element signature="n#!!block;n#componentDidMount#0;n#Battle#0" expanded="false" />
+            <element signature="n#!!block;n#handleAttackAction#0;n#Battle#0" expanded="false" />
+            <element signature="e#8951#9225#0" expanded="false" />
+            <element signature="e#9267#9452#0" expanded="false" />
+            <element signature="e#9496#10787#0" expanded="false" />
+            <element signature="e#10823#10924#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/game-data/pokemons.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="922" column="24" lean-forward="true" selection-start-line="922" selection-start-column="24" selection-end-line="922" selection-end-column="24" />
           <folding />
         </state>
       </provider>

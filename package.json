@@ -35,6 +35,8 @@
   },
   "dependencies": {
     "@types/react": "^16.0.34",
-    "pokemon-font": "^1.8.1"
+    "es6-promise": "^4.2.4",
+    "pokemon-font": "^1.8.1",
+    "react-sound": "^1.1.0"
   }
 }

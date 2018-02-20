@@ -1,5 +1,4 @@
 'use strict';
-
 var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
@@ -50,4 +49,4 @@ module.exports = {
 
     // Create Sourcemaps for the bundle
     devtool: 'source-map'
-};
+};;
