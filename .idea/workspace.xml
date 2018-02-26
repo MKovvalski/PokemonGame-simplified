@@ -2,75 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63d01efa-5d5a-4d33-ba1c-74a4af75af18" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sound/sound.mp3" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/0021b161d45c006aac15278aa095b2b1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/079f76ef459a8f0a61c6d30819187d6d.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/10748dfe168f83f11048fad96bfa7831.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/1b5df9a6591acf906bb4637e96360d95.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/2a2068605d255c1e1732f5a6ac2d0f1b.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/3c8e752c1c5da3a99ab12e8a3d774230.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/5549884170292dd6b69104a8c180782e.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/5f2047d715bec179e7322ba9d678ef5f.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/611b911c5ec3cec6d4ba7cd3cad8cd7d.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/6c041e4e5515f836666ac66e5fcbc07b.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/6fa286403e38074cffcb7efe3cdfd8cb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/8059811d5f9424f9c60e5a97b119b91e.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/820518eab0ae0b623e1769e2a577a6f0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/98f2c10e836f3ce89251bdad4d097578.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/ae2447e73c043bfb1767b2645c4df5e0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/bb7b2097d86933da0a223cf0e4333fc7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/d0487ac90f3dc9788f0e942ba046ac90.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/df4e8ba28f912bf9cdf9fa0dfc196411.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/e58aed2178a68e842fe22e41b16d9352.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/f2619fd5ccf38718c9504baa08bf0894.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/f72a8086b1b9e4a7d440e24e33b5c67e.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/main.bundle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/style.css" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/010fce1897905bdcf52926b67bd0bab3.gif" afterPath="$PROJECT_DIR$/build/src/imgs/mondog.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/0b4d3a8f03a92b3f0941f442b8327dc5.gif" afterPath="$PROJECT_DIR$/build/src/imgs/Fletchling.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/1efeecd76bcf1f22b5792a5439ddb6a3.gif" afterPath="$PROJECT_DIR$/build/src/imgs/Charmander_Back.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/1fd723502e6777bdc2bbc8a4a67b337b.gif" afterPath="$PROJECT_DIR$/build/src/imgs/espeon_back.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/23dd648a2b28e2762824db2c026504b1.gif" afterPath="$PROJECT_DIR$/build/src/imgs/smalldog.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/2d3dda526c2a27a6c4af3a637fde59dd.gif" afterPath="$PROJECT_DIR$/build/src/imgs/Squirtle-back.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/30c64dcf1d5504759f8c9abf2aac23d3.gif" afterPath="$PROJECT_DIR$/build/src/imgs/bulba-calm.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/3e3cec45ff2cdb94b6389ddf780e1e52.gif" afterPath="$PROJECT_DIR$/build/src/imgs/goldeen.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/46658b17151bcde94b52d3acd742516a.gif" afterPath="$PROJECT_DIR$/build/src/imgs/Pikachu_Back_XY.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/47da3979705788ae2b5bb057a1c69892.gif" afterPath="$PROJECT_DIR$/build/src/imgs/char-attack.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/4b2d567a24207539e65ff85f83dfc360.gif" afterPath="$PROJECT_DIR$/build/src/imgs/Bulbasaur_Back.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/4d459593af5f29c77f334639a5ae1705.gif" afterPath="$PROJECT_DIR$/build/src/imgs/Jigglypuff-back.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/558673187cfaaa35fcc82357684273ea.gif" afterPath="$PROJECT_DIR$/build/src/imgs/bulba-attack.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/5f20c2d01680b6870796bccef1857b20.gif" afterPath="$PROJECT_DIR$/build/src/imgs/pika-attack.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/691450a4336ceaf6fc0c04830ff3a21d.gif" afterPath="$PROJECT_DIR$/build/src/imgs/toge-attack.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/739bf2d58540dcd1f2cb3653b0612256.gif" afterPath="$PROJECT_DIR$/build/src/imgs/doduo.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/73d8cb165bba990182738acc88da4a12.gif" afterPath="$PROJECT_DIR$/build/src/imgs/Butterfree_back.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/80e5d9eee5e50cafdb0302372fa8d7fc.gif" afterPath="$PROJECT_DIR$/build/src/imgs/Vaporeon-Attack.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/9119575ff647aa57128918b0b5434da1.gif" afterPath="$PROJECT_DIR$/build/src/imgs/magikarp.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/9454f82d83bf23c5b5daf6e6df50dc3e.gif" afterPath="$PROJECT_DIR$/build/src/imgs/lickitung.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/958d1638fb1380c247847d12ddf86d5f.gif" afterPath="$PROJECT_DIR$/build/src/imgs/squil-calm.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/980278f84c0854d7e95718fd4c0b1f2e.gif" afterPath="$PROJECT_DIR$/build/src/imgs/butterfly-calm.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/9f6ea1c407c9212a29732314365cfae1.gif" afterPath="$PROJECT_DIR$/build/src/imgs/Shelgon_Back_XY.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/a861fe205107490e3ac56a92fd3eb8e7.gif" afterPath="$PROJECT_DIR$/build/src/imgs/firedog.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/b22de8bfbedaaa035304667318ee99e9.gif" afterPath="$PROJECT_DIR$/build/src/imgs/toge-calm.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/becc283ddd75eff336083e323a07cea2.gif" afterPath="$PROJECT_DIR$/build/src/imgs/psyduck.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/bfc020e0c9ff3c5f5dd6b990eb8f07fb.gif" afterPath="$PROJECT_DIR$/build/src/imgs/squil-attack.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/c8dc93d3374e53532c28a2ebcec3d5be.gif" afterPath="$PROJECT_DIR$/build/src/imgs/shelgon.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/d452b5f33310bb81c33aa896ac5a0925.gif" afterPath="$PROJECT_DIR$/build/src/imgs/char-calm.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/e78fd88d1a9abde7445b8c096ddb5141.gif" afterPath="$PROJECT_DIR$/build/src/imgs/pika-calm.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/e8d3d43e7c8421a9b2b903c29b473f66.gif" afterPath="$PROJECT_DIR$/build/src/imgs/Eevee-back.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/fa7d4397b488b1ea9e1d217321e82150.gif" afterPath="$PROJECT_DIR$/build/src/imgs/vaporeon-calm.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/sounds/11 Battle (VS Trainer).mp3" afterPath="$PROJECT_DIR$/build/src/sound/sound.mp3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/js/app.js" afterPath="$PROJECT_DIR$/build/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/js/app.js.map" afterPath="$PROJECT_DIR$/build/js/app.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/containers/battle-event.jsx" afterPath="$PROJECT_DIR$/src/js/containers/battle-event.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/game-data/pokemons.jsx" afterPath="$PROJECT_DIR$/src/js/game-data/pokemons.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/index.jsx" afterPath="$PROJECT_DIR$/src/js/index.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/components/TheGame.jsx" afterPath="$PROJECT_DIR$/src/js/components/TheGame.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/containers/pick-pokemon.jsx" afterPath="$PROJECT_DIR$/src/js/containers/pick-pokemon.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scss/main.scss" afterPath="$PROJECT_DIR$/src/scss/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -83,7 +20,53 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="pick-pokemon.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/containers/pick-pokemon.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+              <folding>
+                <element signature="e#521#762#0" expanded="false" />
+                <element signature="e#790#1078#0" expanded="false" />
+                <element signature="e#1113#1303#0" expanded="false" />
+                <element signature="e#1347#2638#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TheGame.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/js/components/TheGame.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="26" column="14" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="335" column="27" lean-forward="true" selection-start-line="335" selection-start-column="27" selection-end-line="335" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webpack.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -107,7 +90,6 @@
         <option value="$PROJECT_DIR$/src/js/methods/damageTargetTree.jsx.js" />
         <option value="$PROJECT_DIR$/src/js/reducers/combine-reducers.jsx" />
         <option value="$PROJECT_DIR$/src/js/components/start-game.jsx" />
-        <option value="$PROJECT_DIR$/src/js/containers/pick-pokemon.jsx" />
         <option value="$PROJECT_DIR$/src/js/containers/end-game-screen.jsx" />
         <option value="$PROJECT_DIR$/src/js/reducers/reducers.jsx" />
         <option value="$PROJECT_DIR$/src/js/actions/all-actions.jsx" />
@@ -115,12 +97,13 @@
         <option value="$PROJECT_DIR$/src/js/index.jsx" />
         <option value="$PROJECT_DIR$/src/js/components/Wrapper-component.jsx.js" />
         <option value="$PROJECT_DIR$/src/js/components/wrapper-component.jsx" />
-        <option value="$PROJECT_DIR$/src/js/components/TheGame.jsx" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
-        <option value="$PROJECT_DIR$/src/scss/main.scss" />
         <option value="$PROJECT_DIR$/src/js/containers/battle-event.jsx" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/js/game-data/pokemons.jsx" />
+        <option value="$PROJECT_DIR$/src/scss/main.scss" />
+        <option value="$PROJECT_DIR$/src/js/containers/pick-pokemon.jsx" />
+        <option value="$PROJECT_DIR$/src/js/components/TheGame.jsx" />
       </list>
     </option>
   </component>
@@ -168,6 +151,37 @@
             <path>
               <item name="PokemonGame-simplified" type="b2602c69:ProjectViewProjectNode" />
               <item name="PokemonGame-simplified" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PokemonGame-simplified" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PokemonGame-simplified" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PokemonGame-simplified" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PokemonGame-simplified" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PokemonGame-simplified" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PokemonGame-simplified" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PokemonGame-simplified" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PokemonGame-simplified" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PokemonGame-simplified" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PokemonGame-simplified" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -219,23 +233,24 @@
       <workItem from="1519051829783" duration="807000" />
       <workItem from="1519055134728" duration="56000" />
       <workItem from="1519121823050" duration="1000000" />
-      <workItem from="1519223931263" duration="2416000" />
+      <workItem from="1519223931263" duration="4788000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190176000" />
+    <option name="totallyTimeSpent" value="192548000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23272438" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23272438" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59517044" sideWeight="0.50277996" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3721591" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.765625" sideWeight="0.49722" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29261363" sideWeight="0.49722" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -421,13 +436,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/containers/pick-pokemon.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="93" column="0" lean-forward="true" selection-start-line="37" selection-start-column="4" selection-end-line="93" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/imgs/battleground2.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -467,22 +475,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
           <caret line="24" column="93" lean-forward="true" selection-start-line="24" selection-start-column="93" selection-end-line="24" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/components/TheGame.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="71" column="32" lean-forward="false" selection-start-line="71" selection-start-column="32" selection-end-line="71" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2068">
-          <caret line="776" column="12" lean-forward="false" selection-start-line="776" selection-start-column="12" selection-end-line="776" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -542,14 +534,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="5" lean-forward="false" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -558,10 +542,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="5" lean-forward="false" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
+        <state relative-caret-position="198">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="335" column="27" lean-forward="true" selection-start-line="335" selection-start-column="27" selection-end-line="335" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/containers/pick-pokemon.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding>
+            <element signature="e#521#762#0" expanded="false" />
+            <element signature="e#790#1078#0" expanded="false" />
+            <element signature="e#1113#1303#0" expanded="false" />
+            <element signature="e#1347#2638#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/TheGame.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="26" column="14" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
           <folding />
         </state>
       </provider>

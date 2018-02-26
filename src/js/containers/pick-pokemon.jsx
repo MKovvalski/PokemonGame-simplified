@@ -11,6 +11,9 @@ import actions from "../actions/all-actions.jsx";
 
 //classes and renders
 class PickPokemon extends React.Component {
+    constructor(props) {
+        super(props);
+    }
     componentDidMount () {
         this.props.randomPokemonGenerator(pokemons[Math.floor(Math.random()*10)]);
     }
@@ -98,6 +101,8 @@ class PickPokemon extends React.Component {
                     <div className = "border">
                         <div className = "row1-2aa">
                             <div className = "col1-2a">
+                                <div className = "element-explanation">click on pokemon to get more details</div>
+                                <div className = "pointing-line"></div>
                                 <ul className = "pokemon-list">
                                     {this.generateList()}
                                 </ul>

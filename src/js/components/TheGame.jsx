@@ -12,7 +12,8 @@ class TheGame extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            ComponentRenderCounter: 0,
+            ComponentRenderCounter: 1,
+            displayHelpInformation: "block"
         }
     }
     handleRender = () => {
@@ -32,7 +33,7 @@ class TheGame extends React.Component {
             return <div><StartGameScreen onConfirm = {this.handleRender}/></div>
         }
         if (this.state.ComponentRenderCounter === 1) {
-            return <div><PickPokemon onConfirm = {this.handleRender}/></div>
+            return <div><PickPokemon helpInfo = {this.state.displayHelpInformation} onConfirm = {this.handleRender}/></div>
         }
         if (this.state.ComponentRenderCounter === 2) {
             return <div><BattleEvent onConfirm = {this.handleRender}/></div>
