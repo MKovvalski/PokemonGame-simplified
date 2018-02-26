@@ -2,13 +2,11 @@
 import React from "react";
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
-import Sound from "react-sound";
+import Sound from 'react-sound';
+let battleMusic = require('../../sound/sound.mp3');
 
 //importing actions
 import actions from "../actions/all-actions.jsx";
-
-//importing sounds
-import battleMusic from "../../sounds/11 Battle (VS Trainer).mp3";
 
 //classes
 class Battle extends React.Component {
@@ -278,7 +276,7 @@ class Battle extends React.Component {
         let handleLifeBar2 = this.handleLifeBarChange(this.state.playerBaseStamina,playerPokeStamina);
         const attackData = (pickedAttack === null? this.props.battleReducer.playerPokemon.attacks[0] : pickedAttack);
         return <div className = "game-framing">
-            <Sound url={battleMusic} playStatus={Sound.status.PLAYING}/>
+               <Sound url={battleMusic} playStatus={Sound.status.PLAYING}/>
                     <div className = "border">
                         <div className = "row-1-2">
                             <div className = "background">

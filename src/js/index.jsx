@@ -16,11 +16,15 @@ import TheGame from "./components/TheGame.jsx";
 
 const store = createStore(CombinedReducers);
 
-ReactDOM.render(
 
-        <Provider store= {store}>
-            <TheGame/>
-        </Provider>,
-    document.getElementById("root")
-);
+document.addEventListener("DOMContentLoaded", function() {
+    ReactDOM.render(
+        
+                <Provider store= {store}>
+                    <TheGame/>
+                </Provider>,
+            document.getElementById("root")
+        );
+})
+
 

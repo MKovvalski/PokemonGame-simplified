@@ -227,7 +227,7 @@ body {
   align-items: center;
   width: 479px;
   height: 331px;
-  background-image: url("../imgs/main-page-start-screen.png");
+  background-image: url("./src/imgs/main-page-start-screen.png");
   background-size: cover;
   font-family: 'VT323', monospace;
 }
@@ -583,7 +583,7 @@ body {
 }
 
 .background {
-  background-image: url("../imgs/battle-background3.png");
+  background-image: url("../src/imgs/battle-background3.png");
   background-size: cover;
   height: 250px;
   display: flex;

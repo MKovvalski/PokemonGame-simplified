@@ -420,202 +420,202 @@ const pokemons =  [
                 },
             ]
         },
-        // {
-        //     id: "doduo",
-        //     lvl: 10,
-        //     atk: 85,
-        //     def: 45,
-        //     specAtk: 35,
-        //     specDef: 35,
-        //     speed: 75,
-        //     stamina: 35,
-        //     weakTo: ["rock", "ice", "electric"],
-        //     resistantTo: ["bug", "grass"],
-        //     gif_attack: i,
-        //     gif_calm: ii,
-        //     gif_back: iii,
-        //     description: "Doduo is a two-headed, bipedal avian Pokémon. Each head has a long sharp beak and two beady black eyes with no discernible sclerae. It has a soft but bristly, down-like covering of brown feathers on its body and both heads. The males of the species have black flexible necks, whereas females have brown necks; both genders have brown coloring on their legs. It has two feet, each with four digits ending in a sharp claw.",
-        //     type: ["normal", "flying"],
-        //     attacks: [
-        //         {
-        //             id: "peck",
-        //             power: 35,
-        //             nature: "flying",
-        //             type: "special",
-        //             accuracy: 100
-        //         },
-        //         {
-        //             id: "pursuit",
-        //             power: 40,
-        //             nature: "dark",
-        //             type: "special",
-        //             accuracy: 100
-        //         },
-        //         {
-        //             id: "quick-attack",
-        //             power: 40,
-        //             nature: "normal",
-        //             type: "normal",
-        //             accuracy: 100
-        //         },
-        //         {
-        //             id: "growl",
-        //             power: 4,
-        //             nature: "normal",
-        //             target: "def",
-        //             targetName: "defense",
-        //             type: "modifying_enemy",
-        //             accuracy: 100
-        //         }
-        //     ]
-        // },
-        // {
-        //     id: "glodeen",
-        //     lvl: 10,
-        //     atk: 67,
-        //     def: 60,
-        //     specAtk: 35,
-        //     specDef: 50,
-        //     speed: 63,
-        //     stamina: 45,
-        //     weakTo: ["electric", "grass"],
-        //     resistantTo: ["steel", "fire", "water", "ice"],
-        //     gif_attack: j,
-        //     gif_calm: jj,
-        //     gif_back: jjj,
-        //     description: "Goldeen is a white, fish-like Pokémon with orange markings on its tail, back, and fins. It has a thin dorsal fin and long pectoral fins. Its dorsal and pectoral fins are quite strong, allowing it to maintain a steady speed of five knots while swimming upstream. Goldeen's caudal fin is admired by many for its beauty as it billows very much like a ballroom dress. Its circular eyes are blue, and it has pink lips. On its forehead is a large horn, which is larger on the male than on the female.",
-        //     type: ["water"],
-        //     attacks: [
-        //         {
-        //             id: "peck",
-        //             power: 35,
-        //             nature: "flying",
-        //             type: "special",
-        //             accuracy: 100
-        //         },
-        //         {
-        //             id: "water pulse",
-        //             power: 65,
-        //             nature: "water",
-        //             type: "special",
-        //             accuracy: 90
-        //         },
-        //         {
-        //             id: "horn attack",
-        //             power: 65,
-        //             nature: "normal",
-        //             type: "normal",
-        //             accuracy: 85
-        //         },
-        //         {
-        //             id: "tail whip",
-        //             power: 4,
-        //             nature: "normal",
-        //             target: "specAtk",
-        //             targetName: "spec-Attack",
-        //             type: "modifying_myself",
-        //             accuracy: 100
-        //         }
-        //     ]
-        // },
-        // {
-        //     id: "lickitung",
-        //     lvl: 10,
-        //     atk: 55,
-        //     def: 75,
-        //     specAtk: 60,
-        //     specDef: 75,
-        //     speed: 30,
-        //     stamina: 90,
-        //     weakTo: ["fighting"],
-        //     resistantTo: [],
-        //     gif_attack: k,
-        //     gif_calm: kk,
-        //     gif_back: kkk,
-        //     description: "Lickitung is a bipedal Pokémon with a round body and a thick, powerful tail. It has soft, pink skin with curved yellow lines on its belly and yellow ring markings on its knees. It has a thumb-like claw on each hand, and a single large nail on each foot. There is a yellow spot on its palms and the soles of its feet. It has beady eyes and a long, prehensile tongue. The tongue is likely connected to its tail, which twitches when the tongue is pulled.",
-        //     type: ["normal"],
-        //     attacks: [
-        //         {
-        //             id: "lick",
-        //             power: 30,
-        //             nature: "dark",
-        //             type: "special",
-        //             accuracy: 100
-        //         },
-        //         {
-        //             id: "knock off",
-        //             power: 65,
-        //             nature: "dark",
-        //             type: "special",
-        //             accuracy: 85
-        //         },
-        //         {
-        //             id: "stomp",
-        //             power: 65,
-        //             nature: "normal",
-        //             type: "normal",
-        //             accuracy: 85
-        //         },
-        //         {
-        //             id: "defense curl",
-        //             power: 7,
-        //             nature: "normal",
-        //             target: "def",
-        //             targetName: "defense",
-        //             type: "modifying_myself",
-        //             accuracy: 100
-        //         },
-        //     ]
-        // },
-        // {
-        //     id: "psyduck",
-        //     lvl: 10,
-        //     atk: 52,
-        //     def: 48,
-        //     specAtk: 65,
-        //     specDef: 50,
-        //     speed: 55,
-        //     stamina: 50,
-        //     weakTo: ["grass", "electric"],
-        //     resistantTo: ["steel", "fire", "water", "ice"],
-        //     gif_attack: o,
-        //     gif_calm: oo,
-        //     gif_back: ooo,
-        //     description: "Psyduck is a yellow Pokémon that resembles a duck or bipedal platypus. Three tufts of black hair grow on top of its head, and it has a wide, flat, cream-colored beak and vacant eyes. Its legs, arms, and tail are stubby and its webbed feet are cream-colored. There are three claws on both of its hands.",
-        //     type: ["water"],
-        //     attacks: [
-        //         {
-        //             id: "Water gun",
-        //             power: 40,
-        //             nature: "water",
-        //             type: "special",
-        //             accuracy: 100
-        //         },
-        //         {
-        //             id: "confusion",
-        //             power: 50,
-        //             nature: "psychic",
-        //             type: "special",
-        //             accuracy: 90
-        //         },
-        //         {
-        //             id: "scratch",
-        //             power: 40,
-        //             nature: "normal",
-        //             type: "normal",
-        //             accuracy: 100
-        //         },
-        //         {
-        //             id: "tail whip",
-        //             power: 4,
-        //             nature: "normal",
-        //             target: "specAtk",
-        //             targetName: "spec-Attack",
-        //             type: "modifying_myself",
-        //             accuracy: 100
-        //         }
-        //     ]
-        // },
+        {
+            id: "doduo",
+            lvl: 10,
+            atk: 85,
+            def: 45,
+            specAtk: 35,
+            specDef: 35,
+            speed: 75,
+            stamina: 35,
+            weakTo: ["rock", "ice", "electric"],
+            resistantTo: ["bug", "grass"],
+            gif_attack: i,
+            gif_calm: ii,
+            gif_back: iii,
+            description: "Doduo is a two-headed, bipedal avian Pokémon. Each head has a long sharp beak and two beady black eyes with no discernible sclerae. It has a soft but bristly, down-like covering of brown feathers on its body and both heads. The males of the species have black flexible necks, whereas females have brown necks; both genders have brown coloring on their legs. It has two feet, each with four digits ending in a sharp claw.",
+            type: ["normal", "flying"],
+            attacks: [
+                {
+                    id: "peck",
+                    power: 35,
+                    nature: "flying",
+                    type: "special",
+                    accuracy: 100
+                },
+                {
+                    id: "pursuit",
+                    power: 40,
+                    nature: "dark",
+                    type: "special",
+                    accuracy: 100
+                },
+                {
+                    id: "quick-attack",
+                    power: 40,
+                    nature: "normal",
+                    type: "normal",
+                    accuracy: 100
+                },
+                {
+                    id: "growl",
+                    power: 4,
+                    nature: "normal",
+                    target: "def",
+                    targetName: "defense",
+                    type: "modifying_enemy",
+                    accuracy: 100
+                }
+            ]
+        },
+        {
+            id: "glodeen",
+            lvl: 10,
+            atk: 67,
+            def: 60,
+            specAtk: 35,
+            specDef: 50,
+            speed: 63,
+            stamina: 45,
+            weakTo: ["electric", "grass"],
+            resistantTo: ["steel", "fire", "water", "ice"],
+            gif_attack: j,
+            gif_calm: jj,
+            gif_back: jjj,
+            description: "Goldeen is a white, fish-like Pokémon with orange markings on its tail, back, and fins. It has a thin dorsal fin and long pectoral fins. Its dorsal and pectoral fins are quite strong, allowing it to maintain a steady speed of five knots while swimming upstream. Goldeen's caudal fin is admired by many for its beauty as it billows very much like a ballroom dress. Its circular eyes are blue, and it has pink lips. On its forehead is a large horn, which is larger on the male than on the female.",
+            type: ["water"],
+            attacks: [
+                {
+                    id: "peck",
+                    power: 35,
+                    nature: "flying",
+                    type: "special",
+                    accuracy: 100
+                },
+                {
+                    id: "water pulse",
+                    power: 65,
+                    nature: "water",
+                    type: "special",
+                    accuracy: 90
+                },
+                {
+                    id: "horn attack",
+                    power: 65,
+                    nature: "normal",
+                    type: "normal",
+                    accuracy: 85
+                },
+                {
+                    id: "tail whip",
+                    power: 4,
+                    nature: "normal",
+                    target: "specAtk",
+                    targetName: "spec-Attack",
+                    type: "modifying_myself",
+                    accuracy: 100
+                }
+            ]
+        },
+        {
+            id: "lickitung",
+            lvl: 10,
+            atk: 55,
+            def: 75,
+            specAtk: 60,
+            specDef: 75,
+            speed: 30,
+            stamina: 90,
+            weakTo: ["fighting"],
+            resistantTo: [],
+            gif_attack: k,
+            gif_calm: kk,
+            gif_back: kkk,
+            description: "Lickitung is a bipedal Pokémon with a round body and a thick, powerful tail. It has soft, pink skin with curved yellow lines on its belly and yellow ring markings on its knees. It has a thumb-like claw on each hand, and a single large nail on each foot. There is a yellow spot on its palms and the soles of its feet. It has beady eyes and a long, prehensile tongue. The tongue is likely connected to its tail, which twitches when the tongue is pulled.",
+            type: ["normal"],
+            attacks: [
+                {
+                    id: "lick",
+                    power: 30,
+                    nature: "dark",
+                    type: "special",
+                    accuracy: 100
+                },
+                {
+                    id: "knock off",
+                    power: 65,
+                    nature: "dark",
+                    type: "special",
+                    accuracy: 85
+                },
+                {
+                    id: "stomp",
+                    power: 65,
+                    nature: "normal",
+                    type: "normal",
+                    accuracy: 85
+                },
+                {
+                    id: "defense curl",
+                    power: 7,
+                    nature: "normal",
+                    target: "def",
+                    targetName: "defense",
+                    type: "modifying_myself",
+                    accuracy: 100
+                },
+            ]
+        },
+        {
+            id: "psyduck",
+            lvl: 10,
+            atk: 52,
+            def: 48,
+            specAtk: 65,
+            specDef: 50,
+            speed: 55,
+            stamina: 50,
+            weakTo: ["grass", "electric"],
+            resistantTo: ["steel", "fire", "water", "ice"],
+            gif_attack: o,
+            gif_calm: oo,
+            gif_back: ooo,
+            description: "Psyduck is a yellow Pokémon that resembles a duck or bipedal platypus. Three tufts of black hair grow on top of its head, and it has a wide, flat, cream-colored beak and vacant eyes. Its legs, arms, and tail are stubby and its webbed feet are cream-colored. There are three claws on both of its hands.",
+            type: ["water"],
+            attacks: [
+                {
+                    id: "Water gun",
+                    power: 40,
+                    nature: "water",
+                    type: "special",
+                    accuracy: 100
+                },
+                {
+                    id: "confusion",
+                    power: 50,
+                    nature: "psychic",
+                    type: "special",
+                    accuracy: 90
+                },
+                {
+                    id: "scratch",
+                    power: 40,
+                    nature: "normal",
+                    type: "normal",
+                    accuracy: 100
+                },
+                {
+                    id: "tail whip",
+                    power: 4,
+                    nature: "normal",
+                    target: "specAtk",
+                    targetName: "spec-Attack",
+                    type: "modifying_myself",
+                    accuracy: 100
+                }
+            ]
+        },
         {
             id: "shelgon",
             lvl: 10,
@@ -718,206 +718,206 @@ const pokemons =  [
                 },
             ]
         },
-        // {
-        //     id: "magikarp",
-        //     lvl: 10,
-        //     atk: 30,
-        //     def: 70,
-        //     specAtk: 35,
-        //     specDef: 40,
-        //     speed: 90,
-        //     stamina: 40,
-        //     weakTo: ["electric", "grass"],
-        //     resistantTo: ["steel", "fire", "water", "ice"],
-        //     gif_attack: r,
-        //     gif_calm: rr,
-        //     gif_back: rrr,
-        //     description: "Magikarp is a medium-sized fish Pokémon with large, heavy reddish-orange scales. It has large, vacant eyes and pink lips. Its pectoral and tail fins are white, but it has a stiff, three-peaked fin on its back and stomach that are both yellow. It also has long barbels. The barbels are white on a female and tan on a male.",
-        //     type: ["water"],
-        //     attacks: [
-        //         {
-        //             id: "tackle",
-        //             power: 40,
-        //             nature: "normal",
-        //             type: "normal",
-        //             accuracy: 100
-        //         },
-        //         {
-        //             id: "splash",
-        //             power: 8,
-        //             nature: "normal",
-        //             target: "atk",
-        //             targetName: "attack",
-        //             type: "modifying_enemy",
-        //             accuracy: 100
-        //         },
-        //         {
-        //             id: "water spit",
-        //             power: 60,
-        //             nature: "water",
-        //             type: "special",
-        //             accuracy: 85
-        //         },
-        //         {
-        //             id: "tail whip",
-        //             power: 4,
-        //             nature: "normal",
-        //             target: "specAtk",
-        //             targetName: "spec-Attack",
-        //             type: "modifying_myself",
-        //             accuracy: 100
-        //         }
-        //     ]
-        // },
-        // {
-        //     id: "flareon",
-        //     lvl: 10,
-        //     atk: 130,
-        //     def: 60,
-        //     specAtk: 95,
-        //     specDef: 110,
-        //     speed: 65,
-        //     stamina: 65,
-        //     weakTo: ["ground", "rock", "water"],
-        //     resistantTo: ["bug", "steel", "fire", "grass", "ice", "fairy"],
-        //     gif_attack: s,
-        //     gif_calm: ss,
-        //     gif_back: sss,
-        //     description: "Flareon is a mammalian, quadruped Pokémon covered in short, reddish-orange fur. It has long ears, dark eyes, and a small black nose. There are three small toes and a yellow paw pad on each foot. Fluffy yellow fur forms a small tuft on its head, as well as its bushy tail and a mane around its chest and neck. It will fluff out its collar to cool down its high body temperature. This high temperature is caused by its internal flame sac. Flareon stores and heats inhaled air in this sac, and then exhales it as fire. Flareon is mostly found in populated areas, and is rarely seen in the wilderness.",
-        //     type: ["fire"],
-        //     attacks: [
-        //         {
-        //             id: "ember",
-        //             power: 40,
-        //             nature: "fire",
-        //             type: "special",
-        //             accuracy: 100
-        //         },
-        //         {
-        //             id: "fire fang",
-        //             power: 65,
-        //             nature: "fire",
-        //             type: "special",
-        //             accuracy: 80
-        //         },
-        //         {
-        //             id: "bite",
-        //             power: 60,
-        //             nature: "dark",
-        //             type: "special",
-        //             accuracy: 90
-        //         },
-        //         {
-        //             id: "helping hand",
-        //             power: 8,
-        //             nature: "normal",
-        //             target: "specAtk",
-        //             targetName: "spec-attack",
-        //             type: "modifying_myself",
-        //             accuracy: 80
-        //         }
-        //     ]
-        // },
-        // {
-        //     id: "vaporeon",
-        //     lvl: 10,
-        //     atk: 65,
-        //     def: 60,
-        //     specAtk: 110,
-        //     specDef: 95,
-        //     speed: 65,
-        //     stamina: 130,
-        //     weakTo: ["electric", "grass"],
-        //     resistantTo: ["steel", "fire", "water", "ice"],
-        //     gif_attack: t,
-        //     gif_calm: tt,
-        //     gif_back: ttt,
-        //     description: "Vaporeon is a composite creature sharing physical traits of aquatic and land animals. It is a quadruped with three small toes on each foot and dark blue paw pads on the hind feet. Vaporeon's body is light blue with dark blue marking around its head and a ridge down its back. This Pokémon has a split tailfin that has been mistaken for a mermaid's in the past. It has a white ruff around its neck, and three fins around its head made of cream-colored webbing. It is said that rain will come within a few hours if Vaporeon's fins begin to vibrate.",
-        //     type: ["water"],
-        //     attacks: [
-        //         {
-        //             id: "water gun",
-        //             power: 40,
-        //             nature: "water",
-        //             type: "special",
-        //             accuracy: 100
-        //         },
-        //         {
-        //             id: "tackle",
-        //             power: 40,
-        //             nature: "normal",
-        //             type: "normal",
-        //             accuracy: 100
-        //         },
-        //         {
-        //             id: "sand attack",
-        //             power: 5,
-        //             nature: "ground",
-        //             target: "atk",
-        //             targetName: "attack",
-        //             type: "modifying_enemy",
-        //             accuracy: 100
-        //         },
-        //         {
-        //             id: "baby-doll eyes",
-        //             power: 7,
-        //             nature: "fairy",
-        //             target: "specDef",
-        //             targetName: "spec-defense",
-        //             type: "modifying_enemy",
-        //             accuracy: 90
-        //         }
-        //     ]
-        // },
-        // {
-        //     id: "flechling",
-        //     lvl: 10,
-        //     atk: 50,
-        //     def: 50,
-        //     specAtk: 40,
-        //     specDef: 40,
-        //     speed: 62,
-        //     stamina: 50,
-        //     weakTo: ["rock","electric", "ice"],
-        //     resistantTo: ["bug", "grass"],
-        //     gif_attack: u,
-        //     gif_calm: uu,
-        //     gif_back: uuu,
-        //     description: "Fletchling are small, avian Pokémon similar in appearance to robins. They have a reddish-orange head with a triangular yellow mark on the back of each eye. Their body and wings are gray, and there are white tips on the wings. They have long, black tail with a white 'v'-shaped marking near the tip. The tail ends in two points, and has two feathers sticking out at the base, giving the impression of the fletching on the end of an arrow. Their legs, beak, and eyes are black. The legs are thin and spindly, with two toes facing forward and one pointing backward on each foot.",
-        //     type: ["normal", "flying"],
-        //     attacks: [
-        //         {
-        //             id: "tackle",
-        //             power: 40,
-        //             nature: "normal",
-        //             type: "normal",
-        //             accuracy: 100
-        //         },
-        //         {
-        //             id: "peck",
-        //             power: 35,
-        //             nature: "flying",
-        //             type: "special",
-        //             accuracy: 100
-        //         },
-        //         {
-        //             id: "quick-attack",
-        //             power: 40,
-        //             nature: "normal",
-        //             type: "normal",
-        //             accuracy: 100
-        //         },
-        //         {
-        //             id: "growl",
-        //             power: 4,
-        //             nature: "normal",
-        //             target: "def",
-        //             targetName: "defense",
-        //             type: "modifying_enemy",
-        //             accuracy: 100
-        //         }
-        //     ]
-        // },
+        {
+            id: "magikarp",
+            lvl: 10,
+            atk: 30,
+            def: 70,
+            specAtk: 35,
+            specDef: 40,
+            speed: 90,
+            stamina: 40,
+            weakTo: ["electric", "grass"],
+            resistantTo: ["steel", "fire", "water", "ice"],
+            gif_attack: r,
+            gif_calm: rr,
+            gif_back: rrr,
+            description: "Magikarp is a medium-sized fish Pokémon with large, heavy reddish-orange scales. It has large, vacant eyes and pink lips. Its pectoral and tail fins are white, but it has a stiff, three-peaked fin on its back and stomach that are both yellow. It also has long barbels. The barbels are white on a female and tan on a male.",
+            type: ["water"],
+            attacks: [
+                {
+                    id: "tackle",
+                    power: 40,
+                    nature: "normal",
+                    type: "normal",
+                    accuracy: 100
+                },
+                {
+                    id: "splash",
+                    power: 8,
+                    nature: "normal",
+                    target: "atk",
+                    targetName: "attack",
+                    type: "modifying_enemy",
+                    accuracy: 100
+                },
+                {
+                    id: "water spit",
+                    power: 60,
+                    nature: "water",
+                    type: "special",
+                    accuracy: 85
+                },
+                {
+                    id: "tail whip",
+                    power: 4,
+                    nature: "normal",
+                    target: "specAtk",
+                    targetName: "spec-Attack",
+                    type: "modifying_myself",
+                    accuracy: 100
+                }
+            ]
+        },
+        {
+            id: "flareon",
+            lvl: 10,
+            atk: 130,
+            def: 60,
+            specAtk: 95,
+            specDef: 110,
+            speed: 65,
+            stamina: 65,
+            weakTo: ["ground", "rock", "water"],
+            resistantTo: ["bug", "steel", "fire", "grass", "ice", "fairy"],
+            gif_attack: s,
+            gif_calm: ss,
+            gif_back: sss,
+            description: "Flareon is a mammalian, quadruped Pokémon covered in short, reddish-orange fur. It has long ears, dark eyes, and a small black nose. There are three small toes and a yellow paw pad on each foot. Fluffy yellow fur forms a small tuft on its head, as well as its bushy tail and a mane around its chest and neck. It will fluff out its collar to cool down its high body temperature. This high temperature is caused by its internal flame sac. Flareon stores and heats inhaled air in this sac, and then exhales it as fire. Flareon is mostly found in populated areas, and is rarely seen in the wilderness.",
+            type: ["fire"],
+            attacks: [
+                {
+                    id: "ember",
+                    power: 40,
+                    nature: "fire",
+                    type: "special",
+                    accuracy: 100
+                },
+                {
+                    id: "fire fang",
+                    power: 65,
+                    nature: "fire",
+                    type: "special",
+                    accuracy: 80
+                },
+                {
+                    id: "bite",
+                    power: 60,
+                    nature: "dark",
+                    type: "special",
+                    accuracy: 90
+                },
+                {
+                    id: "helping hand",
+                    power: 8,
+                    nature: "normal",
+                    target: "specAtk",
+                    targetName: "spec-attack",
+                    type: "modifying_myself",
+                    accuracy: 80
+                }
+            ]
+        },
+        {
+            id: "vaporeon",
+            lvl: 10,
+            atk: 65,
+            def: 60,
+            specAtk: 110,
+            specDef: 95,
+            speed: 65,
+            stamina: 130,
+            weakTo: ["electric", "grass"],
+            resistantTo: ["steel", "fire", "water", "ice"],
+            gif_attack: t,
+            gif_calm: tt,
+            gif_back: ttt,
+            description: "Vaporeon is a composite creature sharing physical traits of aquatic and land animals. It is a quadruped with three small toes on each foot and dark blue paw pads on the hind feet. Vaporeon's body is light blue with dark blue marking around its head and a ridge down its back. This Pokémon has a split tailfin that has been mistaken for a mermaid's in the past. It has a white ruff around its neck, and three fins around its head made of cream-colored webbing. It is said that rain will come within a few hours if Vaporeon's fins begin to vibrate.",
+            type: ["water"],
+            attacks: [
+                {
+                    id: "water gun",
+                    power: 40,
+                    nature: "water",
+                    type: "special",
+                    accuracy: 100
+                },
+                {
+                    id: "tackle",
+                    power: 40,
+                    nature: "normal",
+                    type: "normal",
+                    accuracy: 100
+                },
+                {
+                    id: "sand attack",
+                    power: 5,
+                    nature: "ground",
+                    target: "atk",
+                    targetName: "attack",
+                    type: "modifying_enemy",
+                    accuracy: 100
+                },
+                {
+                    id: "baby-doll eyes",
+                    power: 7,
+                    nature: "fairy",
+                    target: "specDef",
+                    targetName: "spec-defense",
+                    type: "modifying_enemy",
+                    accuracy: 90
+                }
+            ]
+        },
+        {
+            id: "flechling",
+            lvl: 10,
+            atk: 50,
+            def: 50,
+            specAtk: 40,
+            specDef: 40,
+            speed: 62,
+            stamina: 50,
+            weakTo: ["rock","electric", "ice"],
+            resistantTo: ["bug", "grass"],
+            gif_attack: u,
+            gif_calm: uu,
+            gif_back: uuu,
+            description: "Fletchling are small, avian Pokémon similar in appearance to robins. They have a reddish-orange head with a triangular yellow mark on the back of each eye. Their body and wings are gray, and there are white tips on the wings. They have long, black tail with a white 'v'-shaped marking near the tip. The tail ends in two points, and has two feathers sticking out at the base, giving the impression of the fletching on the end of an arrow. Their legs, beak, and eyes are black. The legs are thin and spindly, with two toes facing forward and one pointing backward on each foot.",
+            type: ["normal", "flying"],
+            attacks: [
+                {
+                    id: "tackle",
+                    power: 40,
+                    nature: "normal",
+                    type: "normal",
+                    accuracy: 100
+                },
+                {
+                    id: "peck",
+                    power: 35,
+                    nature: "flying",
+                    type: "special",
+                    accuracy: 100
+                },
+                {
+                    id: "quick-attack",
+                    power: 40,
+                    nature: "normal",
+                    type: "normal",
+                    accuracy: 100
+                },
+                {
+                    id: "growl",
+                    power: 4,
+                    nature: "normal",
+                    target: "def",
+                    targetName: "defense",
+                    type: "modifying_enemy",
+                    accuracy: 100
+                }
+            ]
+        },
     ];
 
 export default pokemons;

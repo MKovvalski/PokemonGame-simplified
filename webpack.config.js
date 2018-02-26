@@ -1,4 +1,5 @@
 'use strict';
+
 var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
@@ -32,7 +33,7 @@ module.exports = {
             },
             { test: /\.svg$/, loader: 'svg-loader?pngScale=2' },
             {
-                test: /\.(png|jpg|mp3)$/,
+                test: /\.(png|jpg|gif|mp3)$/,
                 loader: 'file-loader',
                 options: {
                     name: '[path][name].[ext]'
@@ -49,4 +50,4 @@ module.exports = {
 
     // Create Sourcemaps for the bundle
     devtool: 'source-map'
-};;
+};
