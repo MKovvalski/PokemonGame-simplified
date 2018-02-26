@@ -2349,179 +2349,204 @@ var pokemons = [{
         type: "modifying_enemy",
         accuracy: 100
     }]
-}, {
-    id: "doduo",
-    lvl: 10,
-    atk: 85,
-    def: 45,
-    specAtk: 35,
-    specDef: 35,
-    speed: 75,
-    stamina: 35,
-    weakTo: ["rock", "ice", "electric"],
-    resistantTo: ["bug", "grass"],
-    gif_attack: i,
-    gif_calm: ii,
-    gif_back: iii,
-    description: "Doduo is a two-headed, bipedal avian Pokémon. Each head has a long sharp beak and two beady black eyes with no discernible sclerae. It has a soft but bristly, down-like covering of brown feathers on its body and both heads. The males of the species have black flexible necks, whereas females have brown necks; both genders have brown coloring on their legs. It has two feet, each with four digits ending in a sharp claw.",
-    type: ["normal", "flying"],
-    attacks: [{
-        id: "peck",
-        power: 35,
-        nature: "flying",
-        type: "special",
-        accuracy: 100
-    }, {
-        id: "pursuit",
-        power: 40,
-        nature: "dark",
-        type: "special",
-        accuracy: 100
-    }, {
-        id: "quick-attack",
-        power: 40,
-        nature: "normal",
-        type: "normal",
-        accuracy: 100
-    }, {
-        id: "growl",
-        power: 4,
-        nature: "normal",
-        target: "def",
-        targetName: "defense",
-        type: "modifying_enemy",
-        accuracy: 100
-    }]
-}, {
-    id: "glodeen",
-    lvl: 10,
-    atk: 67,
-    def: 60,
-    specAtk: 35,
-    specDef: 50,
-    speed: 63,
-    stamina: 45,
-    weakTo: ["electric", "grass"],
-    resistantTo: ["steel", "fire", "water", "ice"],
-    gif_attack: j,
-    gif_calm: jj,
-    gif_back: jjj,
-    description: "Goldeen is a white, fish-like Pokémon with orange markings on its tail, back, and fins. It has a thin dorsal fin and long pectoral fins. Its dorsal and pectoral fins are quite strong, allowing it to maintain a steady speed of five knots while swimming upstream. Goldeen's caudal fin is admired by many for its beauty as it billows very much like a ballroom dress. Its circular eyes are blue, and it has pink lips. On its forehead is a large horn, which is larger on the male than on the female.",
-    type: ["water"],
-    attacks: [{
-        id: "peck",
-        power: 35,
-        nature: "flying",
-        type: "special",
-        accuracy: 100
-    }, {
-        id: "water pulse",
-        power: 65,
-        nature: "water",
-        type: "special",
-        accuracy: 90
-    }, {
-        id: "horn attack",
-        power: 65,
-        nature: "normal",
-        type: "normal",
-        accuracy: 85
-    }, {
-        id: "tail whip",
-        power: 4,
-        nature: "normal",
-        target: "specAtk",
-        targetName: "spec-Attack",
-        type: "modifying_myself",
-        accuracy: 100
-    }]
-}, {
-    id: "lickitung",
-    lvl: 10,
-    atk: 55,
-    def: 75,
-    specAtk: 60,
-    specDef: 75,
-    speed: 30,
-    stamina: 90,
-    weakTo: ["fighting"],
-    resistantTo: [],
-    gif_attack: k,
-    gif_calm: kk,
-    gif_back: kkk,
-    description: "Lickitung is a bipedal Pokémon with a round body and a thick, powerful tail. It has soft, pink skin with curved yellow lines on its belly and yellow ring markings on its knees. It has a thumb-like claw on each hand, and a single large nail on each foot. There is a yellow spot on its palms and the soles of its feet. It has beady eyes and a long, prehensile tongue. The tongue is likely connected to its tail, which twitches when the tongue is pulled.",
-    type: ["normal"],
-    attacks: [{
-        id: "lick",
-        power: 30,
-        nature: "dark",
-        type: "special",
-        accuracy: 100
-    }, {
-        id: "knock off",
-        power: 65,
-        nature: "dark",
-        type: "special",
-        accuracy: 85
-    }, {
-        id: "stomp",
-        power: 65,
-        nature: "normal",
-        type: "normal",
-        accuracy: 85
-    }, {
-        id: "defense curl",
-        power: 7,
-        nature: "normal",
-        target: "def",
-        targetName: "defense",
-        type: "modifying_myself",
-        accuracy: 100
-    }]
-}, {
-    id: "psyduck",
-    lvl: 10,
-    atk: 52,
-    def: 48,
-    specAtk: 65,
-    specDef: 50,
-    speed: 55,
-    stamina: 50,
-    weakTo: ["grass", "electric"],
-    resistantTo: ["steel", "fire", "water", "ice"],
-    gif_attack: o,
-    gif_calm: oo,
-    gif_back: ooo,
-    description: "Psyduck is a yellow Pokémon that resembles a duck or bipedal platypus. Three tufts of black hair grow on top of its head, and it has a wide, flat, cream-colored beak and vacant eyes. Its legs, arms, and tail are stubby and its webbed feet are cream-colored. There are three claws on both of its hands.",
-    type: ["water"],
-    attacks: [{
-        id: "Water gun",
-        power: 40,
-        nature: "water",
-        type: "special",
-        accuracy: 100
-    }, {
-        id: "confusion",
-        power: 50,
-        nature: "psychic",
-        type: "special",
-        accuracy: 90
-    }, {
-        id: "scratch",
-        power: 40,
-        nature: "normal",
-        type: "normal",
-        accuracy: 100
-    }, {
-        id: "tail whip",
-        power: 4,
-        nature: "normal",
-        target: "specAtk",
-        targetName: "spec-Attack",
-        type: "modifying_myself",
-        accuracy: 100
-    }]
-}, {
+},
+// {
+//     id: "doduo",
+//     lvl: 10,
+//     atk: 85,
+//     def: 45,
+//     specAtk: 35,
+//     specDef: 35,
+//     speed: 75,
+//     stamina: 35,
+//     weakTo: ["rock", "ice", "electric"],
+//     resistantTo: ["bug", "grass"],
+//     gif_attack: i,
+//     gif_calm: ii,
+//     gif_back: iii,
+//     description: "Doduo is a two-headed, bipedal avian Pokémon. Each head has a long sharp beak and two beady black eyes with no discernible sclerae. It has a soft but bristly, down-like covering of brown feathers on its body and both heads. The males of the species have black flexible necks, whereas females have brown necks; both genders have brown coloring on their legs. It has two feet, each with four digits ending in a sharp claw.",
+//     type: ["normal", "flying"],
+//     attacks: [
+//         {
+//             id: "peck",
+//             power: 35,
+//             nature: "flying",
+//             type: "special",
+//             accuracy: 100
+//         },
+//         {
+//             id: "pursuit",
+//             power: 40,
+//             nature: "dark",
+//             type: "special",
+//             accuracy: 100
+//         },
+//         {
+//             id: "quick-attack",
+//             power: 40,
+//             nature: "normal",
+//             type: "normal",
+//             accuracy: 100
+//         },
+//         {
+//             id: "growl",
+//             power: 4,
+//             nature: "normal",
+//             target: "def",
+//             targetName: "defense",
+//             type: "modifying_enemy",
+//             accuracy: 100
+//         }
+//     ]
+// },
+// {
+//     id: "glodeen",
+//     lvl: 10,
+//     atk: 67,
+//     def: 60,
+//     specAtk: 35,
+//     specDef: 50,
+//     speed: 63,
+//     stamina: 45,
+//     weakTo: ["electric", "grass"],
+//     resistantTo: ["steel", "fire", "water", "ice"],
+//     gif_attack: j,
+//     gif_calm: jj,
+//     gif_back: jjj,
+//     description: "Goldeen is a white, fish-like Pokémon with orange markings on its tail, back, and fins. It has a thin dorsal fin and long pectoral fins. Its dorsal and pectoral fins are quite strong, allowing it to maintain a steady speed of five knots while swimming upstream. Goldeen's caudal fin is admired by many for its beauty as it billows very much like a ballroom dress. Its circular eyes are blue, and it has pink lips. On its forehead is a large horn, which is larger on the male than on the female.",
+//     type: ["water"],
+//     attacks: [
+//         {
+//             id: "peck",
+//             power: 35,
+//             nature: "flying",
+//             type: "special",
+//             accuracy: 100
+//         },
+//         {
+//             id: "water pulse",
+//             power: 65,
+//             nature: "water",
+//             type: "special",
+//             accuracy: 90
+//         },
+//         {
+//             id: "horn attack",
+//             power: 65,
+//             nature: "normal",
+//             type: "normal",
+//             accuracy: 85
+//         },
+//         {
+//             id: "tail whip",
+//             power: 4,
+//             nature: "normal",
+//             target: "specAtk",
+//             targetName: "spec-Attack",
+//             type: "modifying_myself",
+//             accuracy: 100
+//         }
+//     ]
+// },
+// {
+//     id: "lickitung",
+//     lvl: 10,
+//     atk: 55,
+//     def: 75,
+//     specAtk: 60,
+//     specDef: 75,
+//     speed: 30,
+//     stamina: 90,
+//     weakTo: ["fighting"],
+//     resistantTo: [],
+//     gif_attack: k,
+//     gif_calm: kk,
+//     gif_back: kkk,
+//     description: "Lickitung is a bipedal Pokémon with a round body and a thick, powerful tail. It has soft, pink skin with curved yellow lines on its belly and yellow ring markings on its knees. It has a thumb-like claw on each hand, and a single large nail on each foot. There is a yellow spot on its palms and the soles of its feet. It has beady eyes and a long, prehensile tongue. The tongue is likely connected to its tail, which twitches when the tongue is pulled.",
+//     type: ["normal"],
+//     attacks: [
+//         {
+//             id: "lick",
+//             power: 30,
+//             nature: "dark",
+//             type: "special",
+//             accuracy: 100
+//         },
+//         {
+//             id: "knock off",
+//             power: 65,
+//             nature: "dark",
+//             type: "special",
+//             accuracy: 85
+//         },
+//         {
+//             id: "stomp",
+//             power: 65,
+//             nature: "normal",
+//             type: "normal",
+//             accuracy: 85
+//         },
+//         {
+//             id: "defense curl",
+//             power: 7,
+//             nature: "normal",
+//             target: "def",
+//             targetName: "defense",
+//             type: "modifying_myself",
+//             accuracy: 100
+//         },
+//     ]
+// },
+// {
+//     id: "psyduck",
+//     lvl: 10,
+//     atk: 52,
+//     def: 48,
+//     specAtk: 65,
+//     specDef: 50,
+//     speed: 55,
+//     stamina: 50,
+//     weakTo: ["grass", "electric"],
+//     resistantTo: ["steel", "fire", "water", "ice"],
+//     gif_attack: o,
+//     gif_calm: oo,
+//     gif_back: ooo,
+//     description: "Psyduck is a yellow Pokémon that resembles a duck or bipedal platypus. Three tufts of black hair grow on top of its head, and it has a wide, flat, cream-colored beak and vacant eyes. Its legs, arms, and tail are stubby and its webbed feet are cream-colored. There are three claws on both of its hands.",
+//     type: ["water"],
+//     attacks: [
+//         {
+//             id: "Water gun",
+//             power: 40,
+//             nature: "water",
+//             type: "special",
+//             accuracy: 100
+//         },
+//         {
+//             id: "confusion",
+//             power: 50,
+//             nature: "psychic",
+//             type: "special",
+//             accuracy: 90
+//         },
+//         {
+//             id: "scratch",
+//             power: 40,
+//             nature: "normal",
+//             type: "normal",
+//             accuracy: 100
+//         },
+//         {
+//             id: "tail whip",
+//             power: 4,
+//             nature: "normal",
+//             target: "specAtk",
+//             targetName: "spec-Attack",
+//             type: "modifying_myself",
+//             accuracy: 100
+//         }
+//     ]
+// },
+{
     id: "shelgon",
     lvl: 10,
     atk: 95,
@@ -2608,182 +2633,6 @@ var pokemons = [{
         nature: "ground",
         target: "atk",
         targetName: "attack",
-        type: "modifying_enemy",
-        accuracy: 100
-    }]
-}, {
-    id: "magikarp",
-    lvl: 10,
-    atk: 30,
-    def: 70,
-    specAtk: 35,
-    specDef: 40,
-    speed: 90,
-    stamina: 40,
-    weakTo: ["electric", "grass"],
-    resistantTo: ["steel", "fire", "water", "ice"],
-    gif_attack: r,
-    gif_calm: rr,
-    gif_back: rrr,
-    description: "Magikarp is a medium-sized fish Pokémon with large, heavy reddish-orange scales. It has large, vacant eyes and pink lips. Its pectoral and tail fins are white, but it has a stiff, three-peaked fin on its back and stomach that are both yellow. It also has long barbels. The barbels are white on a female and tan on a male.",
-    type: ["water"],
-    attacks: [{
-        id: "tackle",
-        power: 40,
-        nature: "normal",
-        type: "normal",
-        accuracy: 100
-    }, {
-        id: "splash",
-        power: 8,
-        nature: "normal",
-        target: "atk",
-        targetName: "attack",
-        type: "modifying_enemy",
-        accuracy: 100
-    }, {
-        id: "water spit",
-        power: 60,
-        nature: "water",
-        type: "special",
-        accuracy: 85
-    }, {
-        id: "tail whip",
-        power: 4,
-        nature: "normal",
-        target: "specAtk",
-        targetName: "spec-Attack",
-        type: "modifying_myself",
-        accuracy: 100
-    }]
-}, {
-    id: "flareon",
-    lvl: 10,
-    atk: 130,
-    def: 60,
-    specAtk: 95,
-    specDef: 110,
-    speed: 65,
-    stamina: 65,
-    weakTo: ["ground", "rock", "water"],
-    resistantTo: ["bug", "steel", "fire", "grass", "ice", "fairy"],
-    gif_attack: s,
-    gif_calm: ss,
-    gif_back: sss,
-    description: "Flareon is a mammalian, quadruped Pokémon covered in short, reddish-orange fur. It has long ears, dark eyes, and a small black nose. There are three small toes and a yellow paw pad on each foot. Fluffy yellow fur forms a small tuft on its head, as well as its bushy tail and a mane around its chest and neck. It will fluff out its collar to cool down its high body temperature. This high temperature is caused by its internal flame sac. Flareon stores and heats inhaled air in this sac, and then exhales it as fire. Flareon is mostly found in populated areas, and is rarely seen in the wilderness.",
-    type: ["fire"],
-    attacks: [{
-        id: "ember",
-        power: 40,
-        nature: "fire",
-        type: "special",
-        accuracy: 100
-    }, {
-        id: "fire fang",
-        power: 65,
-        nature: "fire",
-        type: "special",
-        accuracy: 80
-    }, {
-        id: "bite",
-        power: 60,
-        nature: "dark",
-        type: "special",
-        accuracy: 90
-    }, {
-        id: "helping hand",
-        power: 8,
-        nature: "normal",
-        target: "specAtk",
-        targetName: "spec-attack",
-        type: "modifying_myself",
-        accuracy: 80
-    }]
-}, {
-    id: "vaporeon",
-    lvl: 10,
-    atk: 65,
-    def: 60,
-    specAtk: 110,
-    specDef: 95,
-    speed: 65,
-    stamina: 130,
-    weakTo: ["electric", "grass"],
-    resistantTo: ["steel", "fire", "water", "ice"],
-    gif_attack: t,
-    gif_calm: tt,
-    gif_back: ttt,
-    description: "Vaporeon is a composite creature sharing physical traits of aquatic and land animals. It is a quadruped with three small toes on each foot and dark blue paw pads on the hind feet. Vaporeon's body is light blue with dark blue marking around its head and a ridge down its back. This Pokémon has a split tailfin that has been mistaken for a mermaid's in the past. It has a white ruff around its neck, and three fins around its head made of cream-colored webbing. It is said that rain will come within a few hours if Vaporeon's fins begin to vibrate.",
-    type: ["water"],
-    attacks: [{
-        id: "water gun",
-        power: 40,
-        nature: "water",
-        type: "special",
-        accuracy: 100
-    }, {
-        id: "tackle",
-        power: 40,
-        nature: "normal",
-        type: "normal",
-        accuracy: 100
-    }, {
-        id: "sand attack",
-        power: 5,
-        nature: "ground",
-        target: "atk",
-        targetName: "attack",
-        type: "modifying_enemy",
-        accuracy: 100
-    }, {
-        id: "baby-doll eyes",
-        power: 7,
-        nature: "fairy",
-        target: "specDef",
-        targetName: "spec-defense",
-        type: "modifying_enemy",
-        accuracy: 90
-    }]
-}, {
-    id: "flechling",
-    lvl: 10,
-    atk: 50,
-    def: 50,
-    specAtk: 40,
-    specDef: 40,
-    speed: 62,
-    stamina: 50,
-    weakTo: ["rock", "electric", "ice"],
-    resistantTo: ["bug", "grass"],
-    gif_attack: u,
-    gif_calm: uu,
-    gif_back: uuu,
-    description: "Fletchling are small, avian Pokémon similar in appearance to robins. They have a reddish-orange head with a triangular yellow mark on the back of each eye. Their body and wings are gray, and there are white tips on the wings. They have long, black tail with a white 'v'-shaped marking near the tip. The tail ends in two points, and has two feathers sticking out at the base, giving the impression of the fletching on the end of an arrow. Their legs, beak, and eyes are black. The legs are thin and spindly, with two toes facing forward and one pointing backward on each foot.",
-    type: ["normal", "flying"],
-    attacks: [{
-        id: "tackle",
-        power: 40,
-        nature: "normal",
-        type: "normal",
-        accuracy: 100
-    }, {
-        id: "peck",
-        power: 35,
-        nature: "flying",
-        type: "special",
-        accuracy: 100
-    }, {
-        id: "quick-attack",
-        power: 40,
-        nature: "normal",
-        type: "normal",
-        accuracy: 100
-    }, {
-        id: "growl",
-        power: 4,
-        nature: "normal",
-        target: "def",
-        targetName: "defense",
         type: "modifying_enemy",
         accuracy: 100
     }]
@@ -2928,6 +2777,12 @@ function passingAttackInfo(attack) {
     };
 }
 
+function passingInfoAboutHelpDisplay() {
+    return {
+        type: "PASSING_INFO_ABOUT_HELP_DISPLAY"
+    };
+}
+
 exports.default = {
     clickedPokemon: clickedPokemon,
     randomPokemon: randomPokemon,
@@ -2936,7 +2791,8 @@ exports.default = {
     passPlayerPokemon: passPlayerPokemon,
     passRandomPokemon: passRandomPokemon,
     passingWinnerInfo: passingWinnerInfo,
-    passingAttackInfo: passingAttackInfo
+    passingAttackInfo: passingAttackInfo,
+    passingInfoAboutHelpDisplay: passingInfoAboutHelpDisplay
 };
 
 /***/ }),
@@ -22264,7 +22120,8 @@ var allReducers = (0, _redux.combineReducers)({
     selectedPokemon: _reducers.selectedPokemon,
     selectedRandomPokemon: _reducers.selectedRandomPokemon,
     battleReducer: _reducers.battleReducer,
-    passedWinnerInfo: _reducers.passedWinnerInfo
+    passedWinnerInfo: _reducers.passedWinnerInfo,
+    passedDisplaySetting: _reducers.passedDisplaySetting
 });
 
 // importing reducers
@@ -22287,6 +22144,7 @@ exports.selectedPokemon = selectedPokemon;
 exports.battleReducer = battleReducer;
 exports.selectedRandomPokemon = selectedRandomPokemon;
 exports.passedWinnerInfo = passedWinnerInfo;
+exports.passedDisplaySetting = passedDisplaySetting;
 
 var _damageCalculator = __webpack_require__(86);
 
@@ -22327,7 +22185,6 @@ function battleReducer() {
         case "PASS_RANDOM_POKEMON_TO_BATTLE":
             return _extends({}, state, { randomPokemon: action.randomPokemon });
             break;
-
         case "PLAYER_POKEMON_ATTACK_SELECTED":
             if (action.attack.type === "modifying_myself") {
                 //jak przekazać to do jakieś funkcji?
@@ -22444,6 +22301,22 @@ function passedWinnerInfo() {
     switch (action.type) {
         case "PASSING_WINNER_INFO":
             return action.pokemon;
+        default:
+            return state;
+    }
+}
+
+function passedDisplaySetting() {
+    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "block";
+    var action = arguments[1];
+
+    switch (action.type) {
+        case "PASSING_INFO_ABOUT_HELP_DISPLAY":
+            if (state === "block") {
+                return "none";
+            } else {
+                return "block";
+            }
         default:
             return state;
     }
@@ -22684,6 +22557,10 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _redux = __webpack_require__(5);
+
+var _reactRedux = __webpack_require__(8);
+
 var _startGame = __webpack_require__(117);
 
 var _startGame2 = _interopRequireDefault(_startGame);
@@ -22700,6 +22577,10 @@ var _endGameScreen = __webpack_require__(124);
 
 var _endGameScreen2 = _interopRequireDefault(_endGameScreen);
 
+var _allActions = __webpack_require__(42);
+
+var _allActions2 = _interopRequireDefault(_allActions);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22710,6 +22591,9 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 //file imports
+
+
+//importing actions
 
 
 //classes
@@ -22745,7 +22629,7 @@ var TheGame = function (_React$Component) {
                 return _react2.default.createElement(
                     "div",
                     null,
-                    _react2.default.createElement(_pickPokemon2.default, { helpInfo: _this.state.displayHelpInformation, onConfirm: _this.handleRender })
+                    _react2.default.createElement(_pickPokemon2.default, { onConfirm: _this.handleRender })
                 );
             }
             if (_this.state.ComponentRenderCounter === 2) {
@@ -22765,8 +22649,7 @@ var TheGame = function (_React$Component) {
         };
 
         _this.state = {
-            ComponentRenderCounter: 1,
-            displayHelpInformation: "block"
+            ComponentRenderCounter: 1
         };
         return _this;
     }
@@ -22774,9 +22657,18 @@ var TheGame = function (_React$Component) {
     _createClass(TheGame, [{
         key: "render",
         value: function render() {
+            var _this2 = this;
+
             return _react2.default.createElement(
                 "div",
                 { className: "main-hero" },
+                _react2.default.createElement(
+                    "button",
+                    { onClick: function onClick() {
+                            return _this2.props.showHelp();
+                        } },
+                    "help on/off"
+                ),
                 _react2.default.createElement(
                     "div",
                     { className: "over-frame" },
@@ -22852,7 +22744,17 @@ var TheGame = function (_React$Component) {
     return TheGame;
 }(_react2.default.Component);
 
-exports.default = TheGame;
+function mapStateToProps(state) {
+    return {};
+}
+
+function matchDispatchToProps(dispatch) {
+    return (0, _redux.bindActionCreators)({
+        showHelp: _allActions2.default.passingInfoAboutHelpDisplay
+    }, dispatch);
+}
+
+exports.default = (0, _reactRedux.connect)(mapStateToProps, matchDispatchToProps)(TheGame);
 
 /***/ }),
 /* 117 */
@@ -23084,6 +22986,7 @@ var PickPokemon = function (_React$Component) {
     }, {
         key: "render",
         value: function render() {
+            var displayHelp = this.props.displayHelp;
             var pokemon = this.props.pokemon;
             return _react2.default.createElement(
                 "div",
@@ -23099,10 +23002,10 @@ var PickPokemon = function (_React$Component) {
                             { className: "col1-2a" },
                             _react2.default.createElement(
                                 "div",
-                                { className: "element-explanation" },
-                                "click on pokemon to get more details"
+                                { className: "element-explanation", style: { display: this.props.displayHelp } },
+                                "click on pokemon to select him for battle and display his characteristics"
                             ),
-                            _react2.default.createElement("div", { className: "pointing-line" }),
+                            _react2.default.createElement("div", { className: "pointing-line", style: { display: this.props.displayHelp } }),
                             _react2.default.createElement(
                                 "ul",
                                 { className: "pokemon-list" },
@@ -23345,7 +23248,8 @@ var PickPokemon = function (_React$Component) {
 function mapStateToProps(state) {
     return {
         pokemon: state.selectedPokemon,
-        randomPokemon: state.selectedRandomPokemon
+        randomPokemon: state.selectedRandomPokemon,
+        displayHelp: state.passedDisplaySetting
     };
 }
 
@@ -33358,7 +33262,7 @@ exports = module.exports = __webpack_require__(43)(false);
 exports.i(__webpack_require__(127), "");
 
 // module
-exports.push([module.i, "/* global classes */\nbody {\n  background-color: #ffcc00;\n  font-family: 'VT323', monospace; }\n\n.game-framing {\n  border-radius: 15px;\n  font-family: 'VT323', monospace;\n  border-left: 20px solid silver;\n  border-right: 20px solid silver;\n  border-top: 30px solid silver;\n  border-bottom: 35px solid silver;\n  background-color: silver; }\n\n.border {\n  border: 15px solid black;\n  border-bottom: 30px solid black;\n  border-radius: 8px; }\n\n/* styling main-hero */\n.over-frame {\n  border-radius: 16px;\n  border: 1px solid #737373;\n  box-shadow: 1px 1px #808080, 2px 2px #808080, 3px 3px #808080, 4px 4px #808080, 5px 5px #808080, 5px 5px #737373, 6px 6px #737373, 7px 7px #737373, 8px 8px #595959; }\n\n.connector {\n  width: 547px;\n  height: 33px;\n  border-radius: 9px;\n  background-color: silver;\n  border: 0.5px solid #737373;\n  box-shadow: 1px 1px #808080, 2px 2px #737373;\n  display: flex; }\n\n.lower-part {\n  width: 549px;\n  height: 441px;\n  background-color: silver;\n  margin-top: 1px;\n  margin-bottom: 10px;\n  border: 0.5px solid #737373;\n  border-radius: 12px;\n  box-shadow: 1px 1px #808080, 2px 2px #808080, 3px 3px #808080, 4px 4px #808080, 5px 5px #808080, 5px 5px #737373, 6px 6px #737373, 7px 7px #737373, 8px 8px #595959; }\n\n.top-button {\n  width: 548px;\n  height: 70px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.border-button {\n  width: 22px;\n  height: 22px;\n  border-radius: 50%;\n  border: 1px solid #d9d9d9;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.brightness-button {\n  width: 20px;\n  height: 20px;\n  border-radius: 50%;\n  background-color: #262626;\n  border: 2px solid #404040; }\n\n.row-1 {\n  width: 100%;\n  height: 200px;\n  display: flex; }\n\n.row-2 {\n  width: 100%;\n  display: flex;\n  justify-content: center; }\n\n.col-1-2-a {\n  width: 50%;\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.button-circle {\n  width: 190px;\n  height: 190px;\n  border-radius: 50%;\n  background-color: #b3b3b3;\n  border: 4px solid #666666;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.arrow-buttons {\n  border-radius: 5px;\n  background-color: #262626;\n  width: 135px;\n  height: 48px;\n  position: relative;\n  border: 1px solid #1a1a1a;\n  box-shadow: 3px 3px #1a1a1a, 4px 4px #000000; }\n\n.arrow-buttons::after {\n  content: \"\";\n  top: -48px;\n  right: 45px;\n  border-radius: 5px 5px 0 0;\n  background-color: #262626;\n  width: 48px;\n  height: 48px;\n  position: absolute;\n  box-shadow: 3px 0px #1a1a1a, 4px 0 #000000; }\n\n.arrow-buttons::before {\n  content: \"\";\n  top: 46px;\n  right: 45px;\n  border-radius: 0 0 5px 5px;\n  background-color: #262626;\n  width: 48px;\n  height: 48px;\n  position: absolute;\n  box-shadow: 2px 2px #1a1a1a, 3px 3px #000000; }\n\n.a-b-buttons {\n  width: 170px;\n  height: 73px;\n  background-color: #b3b3b3;\n  border: 4px solid #666666;\n  margin-top: 10px;\n  margin-left: 20px;\n  border-radius: 40px;\n  transform-origin: 0 100%;\n  transform: rotate(-15deg);\n  display: flex;\n  justify-content: space-around;\n  align-items: center; }\n\n.a-button {\n  font-size: 50px;\n  font-weight: 900;\n  text-align: center;\n  line-height: 48px;\n  vertical-align: middle;\n  width: 57px;\n  height: 57px;\n  border: 2px solid #800000;\n  border-radius: 50%;\n  color: #b30000;\n  background-color: #b30000;\n  text-shadow: -2px 0 #800000, 0 2px #800000, 2px 0 #800000, 0 -2px #800000;\n  box-shadow: 2px 2px #800000; }\n\n.small-buttons {\n  margin-top: 35px;\n  width: 130px;\n  height: 100px;\n  display: flex;\n  justify-content: space-around;\n  align-items: center; }\n\n.border-small-button {\n  width: 30px;\n  height: 30px;\n  border-radius: 50%;\n  border: 5px solid #d9d9d9;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.small-button {\n  width: 20px;\n  height: 20px;\n  border-radius: 50%;\n  background-color: #262626;\n  border: 2px solid #404040; }\n\n.main-hero {\n  margin-top: 10px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center; }\n\n/* styling main-page */\n.main-page-title {\n  font-weight: 900;\n  font-size: 45px;\n  color: #ffcc00;\n  text-shadow: -1px 0 #a6a6a6, 0 1px #a6a6a6, 1px 0 #a6a6a6, 0 -1px #a6a6a6; }\n\n.main-screen-background {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 479px;\n  height: 331px;\n  background-image: url(\"./src/imgs/main-page-start-screen.png\");\n  background-size: cover;\n  font-family: 'VT323', monospace; }\n\n/* styling pick pokemon */\n.row1-2aa {\n  display: flex;\n  background-color: #999999; }\n\n.col1-2b {\n  border: 3px solid #3d3d5c; }\n\n.inner-row-1 {\n  display: flex;\n  flex-direction: row; }\n\n.inner-row-2 {\n  border-bottom: 3px solid #3d3d5c; }\n\n.inner-row-3 {\n  background: repeating-linear-gradient(0deg, #33ffbb, #33ffbb 1px, #f2f2f2 1px, #f2f2f2 2px);\n  height: 95px;\n  display: flex;\n  flex-direction: row; }\n\n.pokemon-list {\n  background-color: #3d3d5c;\n  border-top: 3px solid #3d3d5c;\n  border-bottom: 3px solid #3d3d5c;\n  border-left: 3px solid #3d3d5c; }\n\n.pokemon {\n  width: 132px;\n  height: 132px;\n  background-color: #e6f2ff;\n  background-image: linear-gradient(45deg, #b3d9ff 25%, transparent 25%, transparent 75%, #b3d9ff 75%, #b3d9ff), linear-gradient(45deg, #b3d9ff 25%, transparent 25%, transparent 75%, #b3d9ff 75%, #b3d9ff);\n  background-size: 15px 15px;\n  background-position: 0 0, 7.5px 7.5px;\n  border: 2px solid #999999;\n  border-radius: 2px 2px 0 0; }\n\n.pokemon-name {\n  background-color: #e6e6e6;\n  color: white;\n  text-shadow: 1px 1px grey;\n  text-align: center;\n  letter-spacing: 1px;\n  text-transform: uppercase;\n  border-radius: 0 0 2px 2px;\n  margin-top: -3px; }\n\n.pokemon-in-list {\n  border: 3px solid #7575a3;\n  border-radius: 5px; }\n\n.pokemon-img {\n  border: 1.2px solid #aa80ff;\n  border-radius: 3px;\n  background: repeating-linear-gradient(0deg, #f2f2f2, #f2f2f2 4px, white 4px, white 8px);\n  width: 160px;\n  height: 140px;\n  margin: 3px 3px 3px 3px; }\n\n.pokemon-list {\n  height: 312px;\n  overflow-y: scroll; }\n\n.col1-2a {\n  position: relative; }\n\n.element-explanation {\n  border-radius: 4px;\n  border: 3px solid #33ffbb;\n  text-align: center;\n  width: 130px;\n  position: absolute;\n  background-color: white;\n  top: 40px;\n  left: -200px;\n  box-shadow: 2px 2px grey; }\n\n.pointing-line {\n  width: 85px;\n  height: 4px;\n  background-color: #33ffbb;\n  position: absolute;\n  left: -70px;\n  top: 58px;\n  border-radius: 0 10px 10px 0;\n  box-shadow: 2px 2px grey; }\n\n.pokemon-img-and-name {\n  background-color: #ccb3ff;\n  border-right: 3px solid #3d3d5c;\n  border-bottom: 3px solid #3d3d5c;\n  height: 170px; }\n\n.pokemon-img-and-name h2 {\n  letter-spacing: 1px;\n  text-shadow: 1px 1px gray;\n  margin-top: 2px;\n  color: white;\n  font-weight: 200;\n  text-transform: uppercase;\n  text-align: center; }\n\n.pokemon-stat-list-box {\n  border-bottom: 3px solid #3d3d5c;\n  background: repeating-linear-gradient(0deg, #ffdb4d, #ffdb4d 1px, #ffeb99 1px, #ffeb99 2px);\n  width: 163px;\n  height: 170px; }\n\n.pokemon-stat-list {\n  margin-top: 3px;\n  font-size: 17.5px; }\n\n.pokemon-stat-list li {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  color: white;\n  text-transform: uppercase;\n  text-align: center; }\n\n.hp-stat-name {\n  text-shadow: -1px 0 #a6a6a6, 0 1px #a6a6a6, 1px 0 #a6a6a6, 0 -1px #a6a6a6;\n  border-radius: 5px;\n  width: 50px;\n  margin-bottom: 9px;\n  margin-left: 9px;\n  position: relative;\n  z-index: 1; }\n\n.hp-stat-name:after {\n  content: \"\";\n  background-color: #a6a6a6;\n  position: absolute;\n  z-index: -1;\n  left: -6.8px;\n  top: 5.35px;\n  width: 57px;\n  height: 9px;\n  border-radius: 7px; }\n\n.stat-name {\n  text-shadow: -1px 0 #a6a6a6, 0 1px #a6a6a6, 1px 0 #a6a6a6, 0 -1px #a6a6a6;\n  border-radius: 5px;\n  width: 50px;\n  margin-bottom: 2px;\n  margin-left: 6px;\n  z-index: 1;\n  position: relative; }\n\n.stat-name:after {\n  content: \"\";\n  background-color: #a6a6a6;\n  position: absolute;\n  z-index: -1;\n  left: -3.8px;\n  top: 5.35px;\n  width: 57px;\n  height: 9px;\n  border-radius: 7px; }\n\n.hp-stat-number {\n  text-align: right;\n  color: #4d4d4d;\n  text-shadow: 0.5px 0.5px lightgrey;\n  width: 115px;\n  background: #fffae6;\n  float: right;\n  margin-top: 1px;\n  border-radius: 5px;\n  margin-bottom: 8px;\n  margin-right: 2px;\n  position: relative; }\n\n.hp-life-bar {\n  position: absolute;\n  background-color: #4d4d4d;\n  border-radius: 3px;\n  text-align: left;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  top: 15px;\n  left: 6px; }\n\n.hp-hp-title {\n  margin-left: 2px;\n  font-size: 7px;\n  font-weight: 900;\n  color: #ff9900;\n  text-shadow: none; }\n\n.hp-green-bar {\n  margin-left: 0.5px;\n  margin-right: 1px;\n  margin-top: 1px;\n  margin-bottom: 1px;\n  border: 0.5px solid white;\n  border-radius: 2px;\n  width: 85px;\n  height: 7px;\n  background-color: #1aff1a; }\n\n.stat-number {\n  text-align: right;\n  color: #4d4d4d;\n  text-shadow: 0.5px 0.5px lightgrey;\n  width: 50px;\n  background: #fffae6;\n  float: right;\n  border-radius: 5px;\n  margin-bottom: 2px;\n  margin-right: 2px; }\n\n.pokemon-type-list {\n  display: flex;\n  flex-direction: row;\n  justify-content: center; }\n\n.pokemon-type-list li {\n  box-shadow: 1px 1px #595959;\n  border-radius: 2px;\n  text-align: center;\n  width: 55px;\n  color: white;\n  text-transform: uppercase;\n  text-shadow: 1px 1px #4d4d4d;\n  margin-left: 3px; }\n\n.type-title {\n  text-align: center;\n  text-transform: uppercase;\n  color: white;\n  text-shadow: -1px 0 #a6a6a6, 0 1px #a6a6a6, 1px 0 #a6a6a6, 0 -1px #a6a6a6;\n  border-radius: 5px;\n  width: 50px;\n  margin-bottom: 2px;\n  margin-left: 58px;\n  z-index: 1;\n  position: relative; }\n\n.type-title:after {\n  content: \"\";\n  background-color: #a6a6a6;\n  position: absolute;\n  z-index: -1;\n  left: -3.5px;\n  top: 4.3px;\n  width: 57px;\n  height: 9px;\n  border-radius: 7px; }\n\n.pokemon-description {\n  font-size: 15px;\n  height: 37px;\n  width: 332px;\n  border: 2px solid #7575a3;\n  border-radius: 3px;\n  background-color: white;\n  overflow-y: scroll; }\n\n.attack-list-1-2 li {\n  width: 150px;\n  height: 30px;\n  margin-top: 12px;\n  margin-left: 12px;\n  line-height: 30px;\n  vertical-align: middle;\n  border-radius: 3px;\n  background-color: white;\n  text-transform: uppercase;\n  color: #4d4d4d;\n  text-shadow: 0.5px 0.5px lightgrey;\n  position: relative; }\n\n.attack-name {\n  font-size: 15px;\n  width: 93px;\n  margin-left: 54px; }\n\n.attack-nature {\n  position: absolute;\n  top: -2px;\n  left: -5px;\n  background-color: #999999;\n  height: 16px;\n  width: 55px;\n  color: white;\n  text-shadow: 1px 1px #4d4d4d;\n  box-shadow: 1px 1px #595959;\n  line-height: 16px;\n  text-align: center;\n  vertical-align: middle;\n  border-radius: 2px; }\n\n.button-border {\n  background-color: white;\n  border-left: 3px solid #3d3d5c;\n  border-right: 3px solid #3d3d5c;\n  border-bottom: 3px solid #3d3d5c;\n  display: flex;\n  justify-content: center; }\n\n.button-changing-container {\n  font-weight: 800;\n  color: #4d4d4d;\n  text-transform: uppercase;\n  text-shadow: 0.5px 0.5px lightgrey;\n  font-family: 'VT323', monospace; }\n\n/* styling main battle */\n.row-1-2 {\n  width: 479px; }\n\n.background {\n  background-image: url(\"./src/imgs/battle-background3.png\");\n  background-size: cover;\n  height: 250px;\n  display: flex;\n  flex-direction: row;\n  z-index: 1; }\n\n.col-1-2 {\n  width: 50%; }\n\n.inner-row-1-2 {\n  height: 35%;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.inner-row-1-2b {\n  height: 50%;\n  display: flex;\n  justify-content: center;\n  align-items: flex-end; }\n\n.inner-row-1-2a {\n  height: 65%;\n  display: flex;\n  justify-content: center; }\n\n.inner-row-1-2c {\n  height: 50%;\n  display: flex;\n  justify-content: center;\n  z-index: 2; }\n\n.random-pokemon-img {\n  object-fit: none;\n  width: 140px;\n  align-self: flex-end; }\n\n.player-pokemon-img {\n  margin-bottom: 5px;\n  align-self: flex-end; }\n\n.pokemon-data-border {\n  border: 3px solid #737373;\n  border-radius: 11px 7px 11px 7px; }\n\n.pokemon-data {\n  width: 150px;\n  height: 52px;\n  background-color: whitesmoke;\n  border: 1.5px solid #404040;\n  border-radius: 8px 4px 8px 4px;\n  display: flex;\n  flex-direction: column; }\n\n.pokemon-name-in-data {\n  text-shadow: 0.5px 0.5px lightgrey;\n  color: #404040;\n  text-transform: uppercase;\n  font-size: 18px;\n  margin-left: 6px; }\n\n.life-bar-overbar {\n  width: 117px;\n  border: 1px solid #595959;\n  border-radius: 4px;\n  background-color: #595959;\n  margin-right: 2px;\n  display: flex;\n  justify-content: flex-end;\n  align-self: flex-end;\n  position: relative; }\n\n.life-bar-overbar:before {\n  font-stretch: ultra-expanded;\n  text-transform: uppercase;\n  color: #ffb31a;\n  font-weight: 900;\n  font-size: 11px;\n  content: \"hp\";\n  position: absolute;\n  left: 2.5px;\n  top: -2.6px; }\n\n.life-bar-inner-line {\n  width: 102px;\n  border-radius: 3px;\n  border: 1px solid white;\n  display: flex; }\n\n.stamina-points {\n  text-shadow: 0.5px 0.5px lightgrey;\n  color: #404040;\n  width: 53px;\n  align-self: flex-end; }\n\n.display-window {\n  height: 81px;\n  background-color: #3d3d5c;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.attacks-menu {\n  width: 476px;\n  display: flex;\n  flex-direction: row; }\n\n.attack-info {\n  margin-left: 1px;\n  height: 75px;\n  width: 35%;\n  border: 4px solid #7575a3;\n  border-radius: 3px;\n  background-color: whitesmoke;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center; }\n\n.attack-type {\n  height: 22px;\n  width: 68px;\n  color: white;\n  text-shadow: 1px 1px #4d4d4d;\n  box-shadow: 1px 1px #595959;\n  font-size: 20px;\n  text-transform: uppercase;\n  line-height: 22px;\n  text-align: center;\n  vertical-align: middle;\n  border-radius: 2px; }\n\n.attack-power {\n  text-transform: uppercase;\n  font-size: 20px;\n  text-shadow: 0.5px 0.5px lightgrey;\n  color: #404040; }\n\n.battle-commentary-border {\n  width: 465px;\n  height: 75px;\n  border: 5px solid #cca300;\n  border-radius: 7px; }\n\n.battle-commentary-inner-border {\n  border: 3px solid whitesmoke;\n  border-radius: 2px;\n  background-color: #2d5986;\n  height: 65px; }\n\n.list-of-attack-buttons {\n  height: 75px;\n  width: 65%;\n  border: 4px solid #7575a3;\n  border-radius: 3px;\n  text-transform: uppercase;\n  text-shadow: 1px 1px lightgrey;\n  background-color: whitesmoke;\n  display: flex;\n  flex-direction: row;\n  align-items: center; }\n\n.attack-button {\n  line-height: 28px;\n  vertical-align: middle;\n  margin-left: 25px;\n  height: 28px;\n  width: 115px;\n  font-size: 20px;\n  color: #404040;\n  font-family: 'VT323', monospace; }\n\n.battle-commentary {\n  padding-left: 3px;\n  font-weight: 100;\n  text-shadow: 1px 1px #666666;\n  font-size: 23px;\n  color: white; }\n\n.commentary-size {\n  width: 170px; }\n\n/* styling end-screen */\n.winner-info {\n  width: 479px;\n  height: 331px;\n  background: -webkit-linear-gradient(90deg, #3d3d5c 0%, #3d3d5c 18%, teal 100%);\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center; }\n\n.end-screen-text {\n  text-transform: uppercase;\n  font-size: 24px;\n  text-shadow: 1px 1px #808080;\n  color: whitesmoke; }\n\n.end-screen-button {\n  margin-top: 20px;\n  color: #ffcc00;\n  text-shadow: 1px 1px #997a00;\n  text-transform: uppercase;\n  font-size: 20px;\n  font-family: 'VT323', monospace; }\n\n/* animations for attacks */\n@keyframes slide-in-player {\n  0% {\n    visibility: hidden;\n    transform: translate(-170px, 0); }\n  50% {\n    visibility: hidden; }\n  100% {\n    visibility: visible;\n    transform: translate(0, 0); } }\n\n@keyframes slide-in-random {\n  0% {\n    visibility: hidden;\n    transform: translate(170px, 0); }\n  50% {\n    visibility: hidden; }\n  100% {\n    visibility: visible;\n    transform: translate(0, 0); } }\n\n@keyframes scratch-player-send {\n  50% {\n    transform-origin: 100% 100%;\n    transform: rotate(20deg); }\n  100% {\n    transform: rotate(0deg); } }\n\n@keyframes scratch-random-receive {\n  50% {\n    transform-origin: 100% 100%;\n    transform: rotate(20deg); }\n  100% {\n    transform: rotate(0deg); } }\n\n@keyframes scratch-player-receive {\n  50% {\n    transform-origin: 0 100%;\n    transform: rotate(-20deg); }\n  100% {\n    transform: rotate(0deg); } }\n\n@keyframes scratch-random-send {\n  50% {\n    transform-origin: 100% 100%;\n    transform: rotate(-10deg); }\n  100% {\n    transform: rotate(0deg); } }\n\n@keyframes stat-modifying {\n  25% {\n    transform-origin: 50% 100%;\n    transform: rotate(10deg); }\n  50% {\n    transform: rotate(0deg); }\n  75% {\n    transform: rotate(-10deg); }\n  100% {\n    transform: rotate(0deg); } }\n\n@keyframes dead {\n  0% {\n    visibility: visible; }\n  20% {\n    z-index: -1; }\n  100% {\n    z-index: -1;\n    visibility: hidden;\n    transform: translate(0, 100px); } }\n", ""]);
+exports.push([module.i, "/* global classes */\nbody {\n  background-color: #ffcc00;\n  font-family: 'VT323', monospace; }\n\n.game-framing {\n  border-radius: 15px;\n  font-family: 'VT323', monospace;\n  border-left: 20px solid silver;\n  border-right: 20px solid silver;\n  border-top: 30px solid silver;\n  border-bottom: 35px solid silver;\n  background-color: silver; }\n\n.border {\n  border: 15px solid black;\n  border-bottom: 30px solid black;\n  border-radius: 8px; }\n\n/* styling main-hero */\n.over-frame {\n  border-radius: 16px;\n  border: 1px solid #737373;\n  box-shadow: 1px 1px #808080, 2px 2px #808080, 3px 3px #808080, 4px 4px #808080, 5px 5px #808080, 5px 5px #737373, 6px 6px #737373, 7px 7px #737373, 8px 8px #595959; }\n\n.connector {\n  width: 547px;\n  height: 33px;\n  border-radius: 9px;\n  background-color: silver;\n  border: 0.5px solid #737373;\n  box-shadow: 1px 1px #808080, 2px 2px #737373;\n  display: flex; }\n\n.lower-part {\n  width: 549px;\n  height: 441px;\n  background-color: silver;\n  margin-top: 1px;\n  margin-bottom: 10px;\n  border: 0.5px solid #737373;\n  border-radius: 12px;\n  box-shadow: 1px 1px #808080, 2px 2px #808080, 3px 3px #808080, 4px 4px #808080, 5px 5px #808080, 5px 5px #737373, 6px 6px #737373, 7px 7px #737373, 8px 8px #595959; }\n\n.top-button {\n  width: 548px;\n  height: 70px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border: 1px solid red; }\n\n.border-button {\n  width: 22px;\n  height: 22px;\n  border-radius: 50%;\n  border: 1px solid #d9d9d9;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.brightness-button {\n  width: 20px;\n  height: 20px;\n  border-radius: 50%;\n  background-color: #262626;\n  border: 2px solid #404040; }\n\n.row-1 {\n  width: 100%;\n  height: 200px;\n  display: flex; }\n\n.row-2 {\n  width: 100%;\n  display: flex;\n  justify-content: center; }\n\n.col-1-2-a {\n  width: 50%;\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.button-circle {\n  width: 190px;\n  height: 190px;\n  border-radius: 50%;\n  background-color: #b3b3b3;\n  border: 4px solid #666666;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.arrow-buttons {\n  border-radius: 5px;\n  background-color: #262626;\n  width: 135px;\n  height: 48px;\n  position: relative;\n  border: 1px solid #1a1a1a;\n  box-shadow: 3px 3px #1a1a1a, 4px 4px #000000; }\n\n.arrow-buttons::after {\n  content: \"\";\n  top: -48px;\n  right: 45px;\n  border-radius: 5px 5px 0 0;\n  background-color: #262626;\n  width: 48px;\n  height: 48px;\n  position: absolute;\n  box-shadow: 3px 0px #1a1a1a, 4px 0 #000000; }\n\n.arrow-buttons::before {\n  content: \"\";\n  top: 46px;\n  right: 45px;\n  border-radius: 0 0 5px 5px;\n  background-color: #262626;\n  width: 48px;\n  height: 48px;\n  position: absolute;\n  box-shadow: 2px 2px #1a1a1a, 3px 3px #000000; }\n\n.a-b-buttons {\n  width: 170px;\n  height: 73px;\n  background-color: #b3b3b3;\n  border: 4px solid #666666;\n  margin-top: 10px;\n  margin-left: 20px;\n  border-radius: 40px;\n  transform-origin: 0 100%;\n  transform: rotate(-15deg);\n  display: flex;\n  justify-content: space-around;\n  align-items: center; }\n\n.a-button {\n  font-size: 50px;\n  font-weight: 900;\n  text-align: center;\n  line-height: 48px;\n  vertical-align: middle;\n  width: 57px;\n  height: 57px;\n  border: 2px solid #800000;\n  border-radius: 50%;\n  color: #b30000;\n  background-color: #b30000;\n  text-shadow: -2px 0 #800000, 0 2px #800000, 2px 0 #800000, 0 -2px #800000;\n  box-shadow: 2px 2px #800000; }\n\n.small-buttons {\n  margin-top: 35px;\n  width: 130px;\n  height: 100px;\n  display: flex;\n  justify-content: space-around;\n  align-items: center; }\n\n.border-small-button {\n  width: 30px;\n  height: 30px;\n  border-radius: 50%;\n  border: 5px solid #d9d9d9;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.small-button {\n  width: 20px;\n  height: 20px;\n  border-radius: 50%;\n  background-color: #262626;\n  border: 2px solid #404040; }\n\n.main-hero {\n  margin-top: 10px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center; }\n\n/* styling main-page */\n.main-page-title {\n  font-weight: 900;\n  font-size: 45px;\n  color: #ffcc00;\n  text-shadow: -1px 0 #a6a6a6, 0 1px #a6a6a6, 1px 0 #a6a6a6, 0 -1px #a6a6a6; }\n\n.main-screen-background {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 479px;\n  height: 331px;\n  background-image: url(\"./src/imgs/main-page-start-screen.png\");\n  background-size: cover;\n  font-family: 'VT323', monospace; }\n\n/* styling pick pokemon */\n.row1-2aa {\n  display: flex;\n  background-color: #999999; }\n\n.col1-2b {\n  border: 3px solid #3d3d5c; }\n\n.col1-2a {\n  position: relative; }\n\n.inner-row-1 {\n  display: flex;\n  flex-direction: row; }\n\n.inner-row-2 {\n  border-bottom: 3px solid #3d3d5c; }\n\n.inner-row-3 {\n  background: repeating-linear-gradient(0deg, #33ffbb, #33ffbb 1px, #f2f2f2 1px, #f2f2f2 2px);\n  height: 95px;\n  display: flex;\n  flex-direction: row; }\n\n.pokemon-list {\n  background-color: #3d3d5c;\n  border-top: 3px solid #3d3d5c;\n  border-bottom: 3px solid #3d3d5c;\n  border-left: 3px solid #3d3d5c; }\n\n.pokemon {\n  width: 132px;\n  height: 132px;\n  background-color: #e6f2ff;\n  background-image: linear-gradient(45deg, #b3d9ff 25%, transparent 25%, transparent 75%, #b3d9ff 75%, #b3d9ff), linear-gradient(45deg, #b3d9ff 25%, transparent 25%, transparent 75%, #b3d9ff 75%, #b3d9ff);\n  background-size: 15px 15px;\n  background-position: 0 0, 7.5px 7.5px;\n  border: 2px solid #999999;\n  border-radius: 2px 2px 0 0; }\n\n.pokemon-name {\n  background-color: #e6e6e6;\n  color: white;\n  text-shadow: 1px 1px grey;\n  text-align: center;\n  letter-spacing: 1px;\n  text-transform: uppercase;\n  border-radius: 0 0 2px 2px;\n  margin-top: -3px; }\n\n.pokemon-in-list {\n  border: 3px solid #7575a3;\n  border-radius: 5px; }\n\n.pokemon-img {\n  border: 1.2px solid #aa80ff;\n  border-radius: 3px;\n  background: repeating-linear-gradient(0deg, #f2f2f2, #f2f2f2 4px, white 4px, white 8px);\n  width: 160px;\n  height: 140px;\n  margin: 3px 3px 3px 3px; }\n\n.pokemon-list {\n  height: 312px;\n  overflow-y: scroll; }\n\n.element-explanation {\n  border-radius: 4px;\n  border: 3px solid #33ffbb;\n  text-align: center;\n  width: 130px;\n  position: absolute;\n  background-color: white;\n  top: 40px;\n  left: -200px;\n  box-shadow: 2px 2px grey; }\n\n.pointing-line {\n  width: 85px;\n  height: 4px;\n  background-color: #33ffbb;\n  position: absolute;\n  left: -70px;\n  top: 58px;\n  border-radius: 0 10px 10px 0;\n  box-shadow: 2px 2px grey; }\n\n.pokemon-img-and-name {\n  background-color: #ccb3ff;\n  border-right: 3px solid #3d3d5c;\n  border-bottom: 3px solid #3d3d5c;\n  height: 170px; }\n\n.pokemon-img-and-name h2 {\n  letter-spacing: 1px;\n  text-shadow: 1px 1px gray;\n  margin-top: 2px;\n  color: white;\n  font-weight: 200;\n  text-transform: uppercase;\n  text-align: center; }\n\n.pokemon-stat-list-box {\n  border-bottom: 3px solid #3d3d5c;\n  background: repeating-linear-gradient(0deg, #ffdb4d, #ffdb4d 1px, #ffeb99 1px, #ffeb99 2px);\n  width: 163px;\n  height: 170px; }\n\n.pokemon-stat-list {\n  margin-top: 3px;\n  font-size: 17.5px; }\n\n.pokemon-stat-list li {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  color: white;\n  text-transform: uppercase;\n  text-align: center; }\n\n.hp-stat-name {\n  text-shadow: -1px 0 #a6a6a6, 0 1px #a6a6a6, 1px 0 #a6a6a6, 0 -1px #a6a6a6;\n  border-radius: 5px;\n  width: 50px;\n  margin-bottom: 9px;\n  margin-left: 9px;\n  position: relative;\n  z-index: 1; }\n\n.hp-stat-name:after {\n  content: \"\";\n  background-color: #a6a6a6;\n  position: absolute;\n  z-index: -1;\n  left: -6.8px;\n  top: 5.35px;\n  width: 57px;\n  height: 9px;\n  border-radius: 7px; }\n\n.stat-name {\n  text-shadow: -1px 0 #a6a6a6, 0 1px #a6a6a6, 1px 0 #a6a6a6, 0 -1px #a6a6a6;\n  border-radius: 5px;\n  width: 50px;\n  margin-bottom: 2px;\n  margin-left: 6px;\n  z-index: 1;\n  position: relative; }\n\n.stat-name:after {\n  content: \"\";\n  background-color: #a6a6a6;\n  position: absolute;\n  z-index: -1;\n  left: -3.8px;\n  top: 5.35px;\n  width: 57px;\n  height: 9px;\n  border-radius: 7px; }\n\n.hp-stat-number {\n  text-align: right;\n  color: #4d4d4d;\n  text-shadow: 0.5px 0.5px lightgrey;\n  width: 115px;\n  background: #fffae6;\n  float: right;\n  margin-top: 1px;\n  border-radius: 5px;\n  margin-bottom: 8px;\n  margin-right: 2px;\n  position: relative; }\n\n.hp-life-bar {\n  position: absolute;\n  background-color: #4d4d4d;\n  border-radius: 3px;\n  text-align: left;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  top: 15px;\n  left: 6px; }\n\n.hp-hp-title {\n  margin-left: 2px;\n  font-size: 7px;\n  font-weight: 900;\n  color: #ff9900;\n  text-shadow: none; }\n\n.hp-green-bar {\n  margin-left: 0.5px;\n  margin-right: 1px;\n  margin-top: 1px;\n  margin-bottom: 1px;\n  border: 0.5px solid white;\n  border-radius: 2px;\n  width: 85px;\n  height: 7px;\n  background-color: #1aff1a; }\n\n.stat-number {\n  text-align: right;\n  color: #4d4d4d;\n  text-shadow: 0.5px 0.5px lightgrey;\n  width: 50px;\n  background: #fffae6;\n  float: right;\n  border-radius: 5px;\n  margin-bottom: 2px;\n  margin-right: 2px; }\n\n.pokemon-type-list {\n  display: flex;\n  flex-direction: row;\n  justify-content: center; }\n\n.pokemon-type-list li {\n  box-shadow: 1px 1px #595959;\n  border-radius: 2px;\n  text-align: center;\n  width: 55px;\n  color: white;\n  text-transform: uppercase;\n  text-shadow: 1px 1px #4d4d4d;\n  margin-left: 3px; }\n\n.type-title {\n  text-align: center;\n  text-transform: uppercase;\n  color: white;\n  text-shadow: -1px 0 #a6a6a6, 0 1px #a6a6a6, 1px 0 #a6a6a6, 0 -1px #a6a6a6;\n  border-radius: 5px;\n  width: 50px;\n  margin-bottom: 2px;\n  margin-left: 58px;\n  z-index: 1;\n  position: relative; }\n\n.type-title:after {\n  content: \"\";\n  background-color: #a6a6a6;\n  position: absolute;\n  z-index: -1;\n  left: -3.5px;\n  top: 4.3px;\n  width: 57px;\n  height: 9px;\n  border-radius: 7px; }\n\n.pokemon-description {\n  font-size: 15px;\n  height: 37px;\n  width: 332px;\n  border: 2px solid #7575a3;\n  border-radius: 3px;\n  background-color: white;\n  overflow-y: scroll; }\n\n.attack-list-1-2 li {\n  width: 150px;\n  height: 30px;\n  margin-top: 12px;\n  margin-left: 12px;\n  line-height: 30px;\n  vertical-align: middle;\n  border-radius: 3px;\n  background-color: white;\n  text-transform: uppercase;\n  color: #4d4d4d;\n  text-shadow: 0.5px 0.5px lightgrey;\n  position: relative; }\n\n.attack-name {\n  font-size: 15px;\n  width: 93px;\n  margin-left: 54px; }\n\n.attack-nature {\n  position: absolute;\n  top: -2px;\n  left: -5px;\n  background-color: #999999;\n  height: 16px;\n  width: 55px;\n  color: white;\n  text-shadow: 1px 1px #4d4d4d;\n  box-shadow: 1px 1px #595959;\n  line-height: 16px;\n  text-align: center;\n  vertical-align: middle;\n  border-radius: 2px; }\n\n.button-border {\n  background-color: white;\n  border-left: 3px solid #3d3d5c;\n  border-right: 3px solid #3d3d5c;\n  border-bottom: 3px solid #3d3d5c;\n  display: flex;\n  justify-content: center; }\n\n.button-changing-container {\n  font-weight: 800;\n  color: #4d4d4d;\n  text-transform: uppercase;\n  text-shadow: 0.5px 0.5px lightgrey;\n  font-family: 'VT323', monospace; }\n\n/* styling main battle */\n.row-1-2 {\n  width: 479px; }\n\n.background {\n  background-image: url(\"./src/imgs/battle-background3.png\");\n  background-size: cover;\n  height: 250px;\n  display: flex;\n  flex-direction: row;\n  z-index: 1; }\n\n.col-1-2 {\n  width: 50%; }\n\n.inner-row-1-2 {\n  height: 35%;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.inner-row-1-2b {\n  height: 50%;\n  display: flex;\n  justify-content: center;\n  align-items: flex-end; }\n\n.inner-row-1-2a {\n  height: 65%;\n  display: flex;\n  justify-content: center; }\n\n.inner-row-1-2c {\n  height: 50%;\n  display: flex;\n  justify-content: center;\n  z-index: 2; }\n\n.random-pokemon-img {\n  object-fit: none;\n  width: 140px;\n  align-self: flex-end; }\n\n.player-pokemon-img {\n  margin-bottom: 5px;\n  align-self: flex-end; }\n\n.pokemon-data-border {\n  border: 3px solid #737373;\n  border-radius: 11px 7px 11px 7px; }\n\n.pokemon-data {\n  width: 150px;\n  height: 52px;\n  background-color: whitesmoke;\n  border: 1.5px solid #404040;\n  border-radius: 8px 4px 8px 4px;\n  display: flex;\n  flex-direction: column; }\n\n.pokemon-name-in-data {\n  text-shadow: 0.5px 0.5px lightgrey;\n  color: #404040;\n  text-transform: uppercase;\n  font-size: 18px;\n  margin-left: 6px; }\n\n.life-bar-overbar {\n  width: 117px;\n  border: 1px solid #595959;\n  border-radius: 4px;\n  background-color: #595959;\n  margin-right: 2px;\n  display: flex;\n  justify-content: flex-end;\n  align-self: flex-end;\n  position: relative; }\n\n.life-bar-overbar:before {\n  font-stretch: ultra-expanded;\n  text-transform: uppercase;\n  color: #ffb31a;\n  font-weight: 900;\n  font-size: 11px;\n  content: \"hp\";\n  position: absolute;\n  left: 2.5px;\n  top: -2.6px; }\n\n.life-bar-inner-line {\n  width: 102px;\n  border-radius: 3px;\n  border: 1px solid white;\n  display: flex; }\n\n.stamina-points {\n  text-shadow: 0.5px 0.5px lightgrey;\n  color: #404040;\n  width: 53px;\n  align-self: flex-end; }\n\n.display-window {\n  height: 81px;\n  background-color: #3d3d5c;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.attacks-menu {\n  width: 476px;\n  display: flex;\n  flex-direction: row; }\n\n.attack-info {\n  margin-left: 1px;\n  height: 75px;\n  width: 35%;\n  border: 4px solid #7575a3;\n  border-radius: 3px;\n  background-color: whitesmoke;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center; }\n\n.attack-type {\n  height: 22px;\n  width: 68px;\n  color: white;\n  text-shadow: 1px 1px #4d4d4d;\n  box-shadow: 1px 1px #595959;\n  font-size: 20px;\n  text-transform: uppercase;\n  line-height: 22px;\n  text-align: center;\n  vertical-align: middle;\n  border-radius: 2px; }\n\n.attack-power {\n  text-transform: uppercase;\n  font-size: 20px;\n  text-shadow: 0.5px 0.5px lightgrey;\n  color: #404040; }\n\n.battle-commentary-border {\n  width: 465px;\n  height: 75px;\n  border: 5px solid #cca300;\n  border-radius: 7px; }\n\n.battle-commentary-inner-border {\n  border: 3px solid whitesmoke;\n  border-radius: 2px;\n  background-color: #2d5986;\n  height: 65px; }\n\n.list-of-attack-buttons {\n  height: 75px;\n  width: 65%;\n  border: 4px solid #7575a3;\n  border-radius: 3px;\n  text-transform: uppercase;\n  text-shadow: 1px 1px lightgrey;\n  background-color: whitesmoke;\n  display: flex;\n  flex-direction: row;\n  align-items: center; }\n\n.attack-button {\n  line-height: 28px;\n  vertical-align: middle;\n  margin-left: 25px;\n  height: 28px;\n  width: 115px;\n  font-size: 20px;\n  color: #404040;\n  font-family: 'VT323', monospace; }\n\n.battle-commentary {\n  padding-left: 3px;\n  font-weight: 100;\n  text-shadow: 1px 1px #666666;\n  font-size: 23px;\n  color: white; }\n\n.commentary-size {\n  width: 170px; }\n\n/* styling end-screen */\n.winner-info {\n  width: 479px;\n  height: 331px;\n  background: -webkit-linear-gradient(90deg, #3d3d5c 0%, #3d3d5c 18%, teal 100%);\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center; }\n\n.end-screen-text {\n  text-transform: uppercase;\n  font-size: 24px;\n  text-shadow: 1px 1px #808080;\n  color: whitesmoke; }\n\n.end-screen-button {\n  margin-top: 20px;\n  color: #ffcc00;\n  text-shadow: 1px 1px #997a00;\n  text-transform: uppercase;\n  font-size: 20px;\n  font-family: 'VT323', monospace; }\n\n/* animations for attacks */\n@keyframes slide-in-player {\n  0% {\n    visibility: hidden;\n    transform: translate(-170px, 0); }\n  50% {\n    visibility: hidden; }\n  100% {\n    visibility: visible;\n    transform: translate(0, 0); } }\n\n@keyframes slide-in-random {\n  0% {\n    visibility: hidden;\n    transform: translate(170px, 0); }\n  50% {\n    visibility: hidden; }\n  100% {\n    visibility: visible;\n    transform: translate(0, 0); } }\n\n@keyframes scratch-player-send {\n  50% {\n    transform-origin: 100% 100%;\n    transform: rotate(20deg); }\n  100% {\n    transform: rotate(0deg); } }\n\n@keyframes scratch-random-receive {\n  50% {\n    transform-origin: 100% 100%;\n    transform: rotate(20deg); }\n  100% {\n    transform: rotate(0deg); } }\n\n@keyframes scratch-player-receive {\n  50% {\n    transform-origin: 0 100%;\n    transform: rotate(-20deg); }\n  100% {\n    transform: rotate(0deg); } }\n\n@keyframes scratch-random-send {\n  50% {\n    transform-origin: 100% 100%;\n    transform: rotate(-10deg); }\n  100% {\n    transform: rotate(0deg); } }\n\n@keyframes stat-modifying {\n  25% {\n    transform-origin: 50% 100%;\n    transform: rotate(10deg); }\n  50% {\n    transform: rotate(0deg); }\n  75% {\n    transform: rotate(-10deg); }\n  100% {\n    transform: rotate(0deg); } }\n\n@keyframes dead {\n  0% {\n    visibility: visible; }\n  20% {\n    z-index: -1; }\n  100% {\n    z-index: -1;\n    visibility: hidden;\n    transform: translate(0, 100px); } }\n", ""]);
 
 // exports
 

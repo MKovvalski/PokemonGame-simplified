@@ -96,13 +96,14 @@ class PickPokemon extends React.Component {
     };
 
     render () {
+        const displayHelp = this.props.displayHelp;
         const pokemon = this.props.pokemon;
         return <div className = "game-framing">
                     <div className = "border">
                         <div className = "row1-2aa">
                             <div className = "col1-2a">
-                                <div className = "element-explanation">click on pokemon to get more details</div>
-                                <div className = "pointing-line"></div>
+                                <div className = "element-explanation" style = {{display: this.props.displayHelp}}>click on pokemon to select him for battle and display his characteristics</div>
+                                <div className = "pointing-line" style = {{display: this.props.displayHelp}}></div>
                                 <ul className = "pokemon-list">
                                     {this.generateList()}
                                 </ul>
@@ -170,6 +171,7 @@ function mapStateToProps(state) {
     return {
         pokemon: state.selectedPokemon,
         randomPokemon: state.selectedRandomPokemon,
+        displayHelp: state.passedDisplaySetting
     }
 }
 

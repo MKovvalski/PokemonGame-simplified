@@ -1,5 +1,7 @@
 //presets
 import React from "react";
+import {bindActionCreators} from "redux";
+import {connect} from "react-redux";
 
 //file imports
 import StartGameScreen from "../components/start-game.jsx";
@@ -7,13 +9,15 @@ import PickPokemon from "../containers/pick-pokemon.jsx";
 import BattleEvent from "../containers/battle-event.jsx";
 import EndGameScreen from "../containers/end-game-screen.jsx";
 
+//importing actions
+import actions from "../actions/all-actions.jsx";
+
 //classes
 class TheGame extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             ComponentRenderCounter: 1,
-            displayHelpInformation: "block"
         }
     }
     handleRender = () => {
@@ -28,12 +32,13 @@ class TheGame extends React.Component {
         }
     };
 
+
     handleComponents = () => {
         if (this.state.ComponentRenderCounter === 0) {
             return <div><StartGameScreen onConfirm = {this.handleRender}/></div>
         }
         if (this.state.ComponentRenderCounter === 1) {
-            return <div><PickPokemon helpInfo = {this.state.displayHelpInformation} onConfirm = {this.handleRender}/></div>
+            return <div><PickPokemon onConfirm = {this.handleRender}/></div>
         }
         if (this.state.ComponentRenderCounter === 2) {
             return <div><BattleEvent onConfirm = {this.handleRender}/></div>
@@ -45,6 +50,7 @@ class TheGame extends React.Component {
 
     render () {
         return <div className = "main-hero">
+                    <button onClick = {() => this.props.showHelp()}>help on/off</button>
                     <div className = "over-frame">
                         {this.handleComponents()}
                     </div>
@@ -79,4 +85,17 @@ class TheGame extends React.Component {
     }
 }
 
-export default TheGame;
+function mapStateToProps(state) {
+    return {
+    }
+}
+
+function matchDispatchToProps(dispatch) {
+    return bindActionCreators({
+        showHelp: actions.passingInfoAboutHelpDisplay
+    }, dispatch)
+}
+
+
+
+export default connect(mapStateToProps, matchDispatchToProps)(TheGame);

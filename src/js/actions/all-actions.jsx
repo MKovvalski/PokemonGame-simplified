@@ -59,6 +59,12 @@ function passingAttackInfo(attack) {
     }
 }
 
+function passingInfoAboutHelpDisplay () {
+    return {
+        type: "PASSING_INFO_ABOUT_HELP_DISPLAY"
+    }
+}
+
 export default {
     clickedPokemon,
     randomPokemon,
@@ -67,5 +73,6 @@ export default {
     passPlayerPokemon,
     passRandomPokemon,
     passingWinnerInfo,
-    passingAttackInfo
+    passingAttackInfo,
+    passingInfoAboutHelpDisplay
 }

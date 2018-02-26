@@ -13,7 +13,7 @@ export function selectedPokemon(state = pokemons[0], action) {
 const initialState = {
     playerPokemon: pokemons[1],
     randomPokemon: pokemons[0],
-    attackToDisplay: null
+    attackToDisplay: null,
 };
 
 export function battleReducer(state = initialState, action) {
@@ -24,7 +24,6 @@ export function battleReducer(state = initialState, action) {
         case "PASS_RANDOM_POKEMON_TO_BATTLE":
             return {...state, randomPokemon: action.randomPokemon};
             break;
-
         case "PLAYER_POKEMON_ATTACK_SELECTED":
             if (action.attack.type === "modifying_myself") { //jak przekazać to do jakieś funkcji?
                 if (action.attack.target === "atk") {
@@ -134,6 +133,19 @@ export function passedWinnerInfo(state = null, action) {
     switch (action.type) {
         case "PASSING_WINNER_INFO":
             return action.pokemon;
+        default:
+            return state
+    }
+}
+
+export function passedDisplaySetting(state = "block", action) {
+    switch (action.type) {
+        case "PASSING_INFO_ABOUT_HELP_DISPLAY":
+            if (state === "block") {
+                return "none"
+            } else {
+                return "block"
+            }
         default:
             return state
     }
