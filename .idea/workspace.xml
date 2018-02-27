@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63d01efa-5d5a-4d33-ba1c-74a4af75af18" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/js/app.js" afterPath="$PROJECT_DIR$/build/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/js/app.js.map" afterPath="$PROJECT_DIR$/build/js/app.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/actions/all-actions.jsx" afterPath="$PROJECT_DIR$/src/js/actions/all-actions.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/components/TheGame.jsx" afterPath="$PROJECT_DIR$/src/js/components/TheGame.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/containers/pick-pokemon.jsx" afterPath="$PROJECT_DIR$/src/js/containers/pick-pokemon.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/game-data/pokemons.jsx" afterPath="$PROJECT_DIR$/src/js/game-data/pokemons.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/reducers/combine-reducers.jsx" afterPath="$PROJECT_DIR$/src/js/reducers/combine-reducers.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/reducers/reducers.jsx" afterPath="$PROJECT_DIR$/src/js/reducers/reducers.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scss/main.scss" afterPath="$PROJECT_DIR$/src/scss/main.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -25,23 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TheGame.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/components/TheGame.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-87">
-              <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-              <folding>
-                <element signature="e#10#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pick-pokemon.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pick-pokemon.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/containers/pick-pokemon.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="105" column="108" lean-forward="false" selection-start-line="105" selection-start-column="108" selection-end-line="105" selection-end-column="108" />
+            <state relative-caret-position="228">
+              <caret line="104" column="117" lean-forward="false" selection-start-line="104" selection-start-column="117" selection-end-line="104" selection-end-column="117" />
               <folding>
                 <element signature="e#10#36#0" expanded="true" />
                 <element signature="e#521#762#0" expanded="false" />
@@ -52,27 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reducers.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/reducers/reducers.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="146" column="29" lean-forward="false" selection-start-line="146" selection-start-column="29" selection-end-line="146" selection-end-column="29" />
-              <folding>
-                <element signature="e#531#655#0" expanded="false" />
-                <element signature="e#664#788#0" expanded="false" />
-                <element signature="e#797#3759#0" expanded="false" />
-                <element signature="e#3768#6913#0" expanded="false" />
-                <element signature="e#6922#7023#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="62" column="24" lean-forward="false" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+            <state relative-caret-position="306">
+              <caret line="377" column="10" lean-forward="false" selection-start-line="377" selection-start-column="10" selection-end-line="377" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -109,13 +75,13 @@
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/src/js/containers/battle-event.jsx" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/scss/main.scss" />
         <option value="$PROJECT_DIR$/src/js/game-data/pokemons.jsx" />
         <option value="$PROJECT_DIR$/src/js/reducers/combine-reducers.jsx" />
         <option value="$PROJECT_DIR$/src/js/components/TheGame.jsx" />
         <option value="$PROJECT_DIR$/src/js/actions/all-actions.jsx" />
         <option value="$PROJECT_DIR$/src/js/reducers/reducers.jsx" />
         <option value="$PROJECT_DIR$/src/js/containers/pick-pokemon.jsx" />
+        <option value="$PROJECT_DIR$/src/scss/main.scss" />
       </list>
     </option>
   </component>
@@ -266,12 +232,12 @@
       <workItem from="1519051829783" duration="807000" />
       <workItem from="1519055134728" duration="56000" />
       <workItem from="1519121823050" duration="1000000" />
-      <workItem from="1519223931263" duration="8055000" />
+      <workItem from="1519223931263" duration="10107000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="195815000" />
+    <option name="totallyTimeSpent" value="197867000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
@@ -567,14 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="62" column="24" lean-forward="false" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/game-data/pokemons.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5873">
@@ -588,17 +546,7 @@
         <state relative-caret-position="288">
           <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
           <folding>
-            <element signature="e#73#220#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/components/TheGame.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-87">
-          <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-          <folding>
-            <element signature="e#10#36#0" expanded="true" />
+            <element signature="e#73#220#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -608,6 +556,16 @@
         <state relative-caret-position="1098">
           <caret line="61" column="41" lean-forward="false" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/TheGame.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-87">
+          <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          <folding>
+            <element signature="e#10#36#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -627,14 +585,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/containers/pick-pokemon.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="105" column="108" lean-forward="false" selection-start-line="105" selection-start-column="108" selection-end-line="105" selection-end-column="108" />
+        <state relative-caret-position="228">
+          <caret line="104" column="117" lean-forward="false" selection-start-line="104" selection-start-column="117" selection-end-line="104" selection-end-column="117" />
           <folding>
             <element signature="e#10#36#0" expanded="true" />
             <element signature="e#521#762#0" expanded="false" />
             <element signature="e#1113#1303#0" expanded="false" />
             <element signature="e#1347#2638#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="377" column="10" lean-forward="false" selection-start-line="377" selection-start-column="10" selection-end-line="377" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -96,19 +96,24 @@ class PickPokemon extends React.Component {
     };
 
     render () {
-        const displayHelp = this.props.displayHelp;
         const pokemon = this.props.pokemon;
         return <div className = "game-framing">
                     <div className = "border">
                         <div className = "row1-2aa">
                             <div className = "col1-2a">
-                                <div className = "element-explanation" style = {{display: this.props.displayHelp}}>click on pokemon to select him for battle and display his characteristics</div>
-                                <div className = "pointing-line" style = {{display: this.props.displayHelp}}></div>
+                                <div className = "element-explanation-0" style = {{display: this.props.displayHelp}}>click on the button to begin the battle</div>
+                                <div className = "pointing-line-0" style = {{display: this.props.displayHelp}}></div>
+                                <div className = "element-explanation-1" style = {{display: this.props.displayHelp}}>click on pokemon to select him for battle and display his characteristics</div>
+                                <div className = "pointing-line-1" style = {{display: this.props.displayHelp}}></div>
                                 <ul className = "pokemon-list">
                                     {this.generateList()}
                                 </ul>
                             </div>
                             <div className  = "col1-2b">
+                                <div className = "element-explanation-2" style = {{display: this.props.displayHelp}}>statistics and type of pokemon affect his effectiveness against other</div>
+                                <div className = "element-explanation-3" style = {{display: this.props.displayHelp}}>those are the moves your pokemon can use in battle</div>
+                                <div className = "pointing-line-2" style = {{display: this.props.displayHelp}}></div>
+                                <div className = "pointing-line-3" style = {{display: this.props.displayHelp}}></div>
                                 <div className = "inner-row-1">
                                     <div className = "pokemon-img-and-name">
                                         <h2>{this.props.pokemon.id}</h2>
