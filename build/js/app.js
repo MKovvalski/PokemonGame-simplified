@@ -22677,6 +22677,7 @@ var TheGame = function (_React$Component) {
         value: function render() {
             var _this2 = this;
 
+            this.handleInitialButton();
             return _react2.default.createElement(
                 "div",
                 { className: "main-hero" },
@@ -22770,7 +22771,9 @@ var TheGame = function (_React$Component) {
 }(_react2.default.Component);
 
 function mapStateToProps(state) {
-    return {};
+    return {
+        displayHelp: state.passedDisplaySetting
+    };
 }
 
 function matchDispatchToProps(dispatch) {
@@ -22913,6 +22916,7 @@ var PickPokemon = function (_React$Component) {
                 _this.props.onConfirm();
                 _this.props.passPlayerPokemon(_this.props.pokemon);
                 _this.props.passRandomPokemon(_this.props.randomPokemon);
+                _this.props.showHelp("none");
             }
         };
 
@@ -23468,7 +23472,6 @@ var Battle = function (_React$Component) {
                 _this2.setState({
                     displayAttacks: "block"
                 });
-                _this2.props.showHelp("translate(0, 0)");
             }, 1300);
         }
     }, {

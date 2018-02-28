@@ -22,6 +22,7 @@ class TheGame extends React.Component {
             buttonPosition: "translate(0, 0)"
         }
     }
+
     handleRender = () => {
         if (this.state.ComponentRenderCounter === 3) {
             this.setState ({
@@ -33,7 +34,6 @@ class TheGame extends React.Component {
             })
         }
     };
-
 
     handleComponents = () => {
         if (this.state.ComponentRenderCounter === 0) {
@@ -66,6 +66,7 @@ class TheGame extends React.Component {
     };
 
     render () {
+        this.handleInitialButton();
         return <div className = "main-hero">
                     <div className = "over-frame">
                         {this.handleComponents()}
@@ -107,6 +108,7 @@ class TheGame extends React.Component {
 
 function mapStateToProps(state) {
     return {
+        displayHelp: state.passedDisplaySetting
     }
 }
 

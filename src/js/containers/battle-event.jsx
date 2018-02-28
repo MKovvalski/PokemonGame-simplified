@@ -31,7 +31,6 @@ class Battle extends React.Component {
             this.setState({
                 displayAttacks: "block"
             });
-            this.props.showHelp("translate(0, 0)");
         },1300);
     }
 
