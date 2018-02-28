@@ -111,7 +111,7 @@ class PickPokemon extends React.Component {
                             </div>
                             <div className  = "col1-2b">
                                 <div className = "element-explanation-2" style = {{display: this.props.displayHelp}}>statistics and type of pokemon affect his effectiveness against other</div>
-                                <div className = "element-explanation-3" style = {{display: this.props.displayHelp}}>those are the moves your pokemon can use in battle</div>
+                                <div className = "element-explanation-3" style = {{display: this.props.displayHelp}}>each pokemon has four moves he can execute in battle. Some moves instead dealing dmg, modify pokemon statistics</div>
                                 <div className = "pointing-line-2" style = {{display: this.props.displayHelp}}></div>
                                 <div className = "pointing-line-3" style = {{display: this.props.displayHelp}}></div>
                                 <div className = "inner-row-1">
@@ -185,7 +185,8 @@ function matchDispatchToProps(dispatch) {
         clickedPokemon: actions.clickedPokemon,
         randomPokemonGenerator: actions.randomPokemon,
         passPlayerPokemon: actions.passPlayerPokemon,
-        passRandomPokemon: actions.passRandomPokemon
+        passRandomPokemon: actions.passRandomPokemon,
+        showHelp: actions.passingInfoAboutHelpDisplay
     }, dispatch)
 }
 

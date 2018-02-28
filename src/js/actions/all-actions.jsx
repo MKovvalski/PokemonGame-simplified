@@ -59,9 +59,10 @@ function passingAttackInfo(attack) {
     }
 }
 
-function passingInfoAboutHelpDisplay () {
+function passingInfoAboutHelpDisplay (buttonPosition) {
     return {
-        type: "PASSING_INFO_ABOUT_HELP_DISPLAY"
+        type: "PASSING_INFO_ABOUT_HELP_DISPLAY",
+        buttonPosition
     }
 }
 

@@ -19,12 +19,11 @@ const store = createStore(CombinedReducers);
 
 document.addEventListener("DOMContentLoaded", function() {
     ReactDOM.render(
-        
-                <Provider store= {store}>
+                <Provider store = {store}>
                     <TheGame/>
                 </Provider>,
             document.getElementById("root")
         );
-})
+});
 
 

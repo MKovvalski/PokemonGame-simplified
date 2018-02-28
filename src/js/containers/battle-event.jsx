@@ -30,7 +30,8 @@ class Battle extends React.Component {
         setTimeout(() => {
             this.setState({
                 displayAttacks: "block"
-            })
+            });
+            this.props.showHelp("translate(0, 0)");
         },1300);
     }
 
@@ -279,6 +280,10 @@ class Battle extends React.Component {
                <Sound url={battleMusic} playStatus={Sound.status.PLAYING}/>
                     <div className = "border">
                         <div className = "row-1-2">
+                            <div className = "element-explanation-5" style = {{display: this.props.displayHelp}}>Life-bar represents pokemon vitality. If it drops below zero, pokemon will faint</div>
+                            <div className = "pointing-line-5" style = {{display: this.props.displayHelp}}></div>
+                            <div className = "element-explanation-6" style = {{display: this.props.displayHelp}}>click any move to execute it. All moves have propability of hit and sometimes your pokemon will miss</div>
+                            <div className = "pointing-line-6" style = {{display: this.props.displayHelp}}></div>
                             <div className = "background">
                                 <div className = "col-1-2">
                                     <div className = "inner-row-1-2b" >
@@ -319,6 +324,8 @@ class Battle extends React.Component {
                             </div>
                         </div>
                         <div className = "row-1-2">
+                            <div className = "element-explanation-7" style = {{display: this.props.displayHelp}}>move type and power define its effectiveness against others</div>
+                            <div className = "pointing-line-7" style = {{display: this.props.displayHelp}}></div>
                             <div className = "display-window">
                                 <div style = {{display: this.state.displayAttacks}}>
                                     <div className = "attacks-menu">
@@ -354,7 +361,8 @@ class Battle extends React.Component {
 
 function mapStateToProps(state) {
     return {
-        battleReducer: state.battleReducer
+        battleReducer: state.battleReducer,
+        displayHelp: state.passedDisplaySetting
     }
 }
 
@@ -363,7 +371,8 @@ function matchDispatchToProps(dispatch) {
         playerClickedAttack: actions.playerClickedAttack,
         randomSelectedAttack: actions.randomSelectedAttack,
         passingWinnerInfo: actions.passingWinnerInfo,
-        passingAttackInfo: actions.passingAttackInfo
+        passingAttackInfo: actions.passingAttackInfo,
+        showHelp: actions.passingInfoAboutHelpDisplay
     }, dispatch)
 }
 

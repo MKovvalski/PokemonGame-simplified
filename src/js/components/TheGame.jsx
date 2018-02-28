@@ -18,12 +18,14 @@ class TheGame extends React.Component {
         super(props);
         this.state = {
             ComponentRenderCounter: 1,
+            buttonColorChange: "#ff0000",
+            buttonPosition: "translate(0, 0)"
         }
     }
     handleRender = () => {
         if (this.state.ComponentRenderCounter === 3) {
             this.setState ({
-                ComponentRenderCounter: 0
+                ComponentRenderCounter: 0,
             })
         } else {
             this.setState ({
@@ -48,14 +50,32 @@ class TheGame extends React.Component {
         }
     };
 
+    handleButtonChange = () => {
+        this.props.showHelp(this.state.buttonPosition);
+      if (this.state.buttonColorChange === "#ff0000") {
+          this.setState ({
+              buttonColorChange: "#2eb82e",
+              buttonPosition: "translate(14px, 0)"
+          })
+      } else {
+          this.setState({
+              buttonColorChange: "#ff0000",
+              buttonPosition: "translate(0, 0)"
+          })
+      }
+    };
+
     render () {
         return <div className = "main-hero">
-                    <button onClick = {() => this.props.showHelp()}>help on/off</button>
                     <div className = "over-frame">
                         {this.handleComponents()}
                     </div>
                     <div className = "lower-part" >
-                        <div className = "connector"></div>
+                        <div className = "connector">
+                            <div className = "help-button-border" style = {{backgroundColor: this.state.buttonColorChange}}>
+                                <div className = "help-button" onClick = {() => this.handleButtonChange()} style = {{transform: this.state.buttonPosition, transition: "all 0.1s ease-out"}}>Help</div>
+                            </div>
+                        </div>
                         <div className = "top-button">
                             <div className = "border-button">
                                 <div className = "brightness-button"></div>
@@ -95,7 +115,5 @@ function matchDispatchToProps(dispatch) {
         showHelp: actions.passingInfoAboutHelpDisplay
     }, dispatch)
 }
-
-
 
 export default connect(mapStateToProps, matchDispatchToProps)(TheGame);

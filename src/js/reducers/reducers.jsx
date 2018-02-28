@@ -138,13 +138,13 @@ export function passedWinnerInfo(state = null, action) {
     }
 }
 
-export function passedDisplaySetting(state = "block", action) {
+export function passedDisplaySetting(state = "none", action) {
     switch (action.type) {
         case "PASSING_INFO_ABOUT_HELP_DISPLAY":
-            if (state === "block") {
-                return "none"
-            } else {
+            if (action.buttonPosition === "translate(0, 0)") {
                 return "block"
+            } else {
+                return "none"
             }
         default:
             return state
