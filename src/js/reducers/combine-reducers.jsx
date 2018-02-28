@@ -8,7 +8,8 @@ import {
     battleReducer,
     passedWinnerInfo,
     passedDisplaySetting,
-    passedTransformationInfo
+    passedTransformationInfo,
+    passedColorInfo
 } from "./reducers.jsx";
 
 // combined reducers
@@ -18,7 +19,8 @@ const allReducers = combineReducers({
         battleReducer,
         passedWinnerInfo,
         passedDisplaySetting,
-        passedTransformationInfo
+        passedTransformationInfo,
+        passedColorInfo
     });
 
 export default allReducers;

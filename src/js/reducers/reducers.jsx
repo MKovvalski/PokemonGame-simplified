@@ -170,3 +170,17 @@ export function passedTransformationInfo(state = "translate(0, 0)", action) {
             return state
     }
 }
+
+export function passedColorInfo(state = "#ff0000", action) {
+    switch(action.type) {
+        case "PASSING_COLOR_INFO":
+            if (action.color === "left") {
+                return "#ff0000"
+            } else if (action.color === "switching") {
+                return "#2eb82e"
+            }
+            break;
+        default:
+            return state
+    }
+}

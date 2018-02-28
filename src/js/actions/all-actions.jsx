@@ -73,6 +73,13 @@ function passingButtonTransformState (transformState) {
     }
 }
 
+function passingColorInfo (color) {
+    return {
+        type: "PASSING_COLOR_INFO",
+        color
+    }
+}
+
 export default {
     clickedPokemon,
     randomPokemon,
@@ -83,5 +90,6 @@ export default {
     passingWinnerInfo,
     passingAttackInfo,
     passingInfoAboutHelpDisplay,
-    passingButtonTransformState
+    passingButtonTransformState,
+    passingColorInfo
 }

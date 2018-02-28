@@ -18,8 +18,6 @@ class TheGame extends React.Component {
         super(props);
         this.state = {
             ComponentRenderCounter: 1,
-            buttonColorChange: "#ff0000",
-            buttonPosition: "translate(0, 0)"
         }
     }
 
@@ -53,28 +51,17 @@ class TheGame extends React.Component {
     handleButtonChange = () => {
         this.props.transformState("switching");
         this.props.showHelp(this.props.positionInfo);
-      if (this.state.buttonColorChange === "#ff0000") {
-          this.setState ({
-              buttonColorChange: "#2eb82e",
-              buttonPosition: "translate(14px, 0)"
-          })
-      } else {
-          this.setState({
-              buttonColorChange: "#ff0000",
-              buttonPosition: "translate(0, 0)"
-          })
-      }
+        this.props.colorState("switching");
     };
 
     render () {
-        console.log(this.props.positionInfo);
         return <div className = "main-hero">
                     <div className = "over-frame">
                         {this.handleComponents()}
                     </div>
                     <div className = "lower-part" >
                         <div className = "connector">
-                            <div className = "help-button-border" style = {{backgroundColor: this.state.buttonColorChange}}>
+                            <div className = "help-button-border" style = {{backgroundColor: this.props.colorInfo}}>
                                 <div className = "help-button" onClick = {() => this.handleButtonChange()} style = {{transform: this.props.positionInfo, transition: "all 0.1s ease-out"}}>Help</div>
                             </div>
                         </div>
@@ -110,7 +97,8 @@ class TheGame extends React.Component {
 function mapStateToProps(state) {
     return {
         displayHelp: state.passedDisplaySetting,
-        positionInfo: state.passedTransformationInfo
+        positionInfo: state.passedTransformationInfo,
+        colorInfo: state.passedColorInfo
     }
 }
 
@@ -118,6 +106,7 @@ function matchDispatchToProps(dispatch) {
     return bindActionCreators({
         showHelp: actions.passingInfoAboutHelpDisplay,
         transformState: actions.passingButtonTransformState,
+        colorState: actions.passingColorInfo
     }, dispatch)
 }
 

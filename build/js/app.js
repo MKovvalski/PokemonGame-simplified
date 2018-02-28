@@ -2791,6 +2791,13 @@ function passingButtonTransformState(transformState) {
     };
 }
 
+function passingColorInfo(color) {
+    return {
+        type: "PASSING_COLOR_INFO",
+        color: color
+    };
+}
+
 exports.default = {
     clickedPokemon: clickedPokemon,
     randomPokemon: randomPokemon,
@@ -2801,7 +2808,8 @@ exports.default = {
     passingWinnerInfo: passingWinnerInfo,
     passingAttackInfo: passingAttackInfo,
     passingInfoAboutHelpDisplay: passingInfoAboutHelpDisplay,
-    passingButtonTransformState: passingButtonTransformState
+    passingButtonTransformState: passingButtonTransformState,
+    passingColorInfo: passingColorInfo
 };
 
 /***/ }),
@@ -22131,7 +22139,8 @@ var allReducers = (0, _redux.combineReducers)({
     battleReducer: _reducers.battleReducer,
     passedWinnerInfo: _reducers.passedWinnerInfo,
     passedDisplaySetting: _reducers.passedDisplaySetting,
-    passedTransformationInfo: _reducers.passedTransformationInfo
+    passedTransformationInfo: _reducers.passedTransformationInfo,
+    passedColorInfo: _reducers.passedColorInfo
 });
 
 // importing reducers
@@ -22156,6 +22165,7 @@ exports.selectedRandomPokemon = selectedRandomPokemon;
 exports.passedWinnerInfo = passedWinnerInfo;
 exports.passedDisplaySetting = passedDisplaySetting;
 exports.passedTransformationInfo = passedTransformationInfo;
+exports.passedColorInfo = passedColorInfo;
 
 var _damageCalculator = __webpack_require__(86);
 
@@ -22349,6 +22359,23 @@ function passedTransformationInfo() {
                 } else {
                     return "translate(0, 0)";
                 }
+            }
+            break;
+        default:
+            return state;
+    }
+}
+
+function passedColorInfo() {
+    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "#ff0000";
+    var action = arguments[1];
+
+    switch (action.type) {
+        case "PASSING_COLOR_INFO":
+            if (action.color === "left") {
+                return "#ff0000";
+            } else if (action.color === "switching") {
+                return "#2eb82e";
             }
             break;
         default:
@@ -22685,23 +22712,11 @@ var TheGame = function (_React$Component) {
         _this.handleButtonChange = function () {
             _this.props.transformState("switching");
             _this.props.showHelp(_this.props.positionInfo);
-            if (_this.state.buttonColorChange === "#ff0000") {
-                _this.setState({
-                    buttonColorChange: "#2eb82e",
-                    buttonPosition: "translate(14px, 0)"
-                });
-            } else {
-                _this.setState({
-                    buttonColorChange: "#ff0000",
-                    buttonPosition: "translate(0, 0)"
-                });
-            }
+            _this.props.colorState("switching");
         };
 
         _this.state = {
-            ComponentRenderCounter: 1,
-            buttonColorChange: "#ff0000",
-            buttonPosition: "translate(0, 0)"
+            ComponentRenderCounter: 1
         };
         return _this;
     }
@@ -22711,7 +22726,6 @@ var TheGame = function (_React$Component) {
         value: function render() {
             var _this2 = this;
 
-            console.log(this.props.positionInfo);
             return _react2.default.createElement(
                 "div",
                 { className: "main-hero" },
@@ -22728,7 +22742,7 @@ var TheGame = function (_React$Component) {
                         { className: "connector" },
                         _react2.default.createElement(
                             "div",
-                            { className: "help-button-border", style: { backgroundColor: this.state.buttonColorChange } },
+                            { className: "help-button-border", style: { backgroundColor: this.props.colorInfo } },
                             _react2.default.createElement(
                                 "div",
                                 { className: "help-button", onClick: function onClick() {
@@ -22807,14 +22821,16 @@ var TheGame = function (_React$Component) {
 function mapStateToProps(state) {
     return {
         displayHelp: state.passedDisplaySetting,
-        positionInfo: state.passedTransformationInfo
+        positionInfo: state.passedTransformationInfo,
+        colorInfo: state.passedColorInfo
     };
 }
 
 function matchDispatchToProps(dispatch) {
     return (0, _redux.bindActionCreators)({
         showHelp: _allActions2.default.passingInfoAboutHelpDisplay,
-        transformState: _allActions2.default.passingButtonTransformState
+        transformState: _allActions2.default.passingButtonTransformState,
+        colorState: _allActions2.default.passingColorInfo
     }, dispatch);
 }
 
@@ -22954,6 +22970,7 @@ var PickPokemon = function (_React$Component) {
                 _this.props.passPlayerPokemon(_this.props.pokemon);
                 _this.props.passRandomPokemon(_this.props.randomPokemon);
                 _this.props.showHelp("none");
+                _this.props.colorState("left");
             }
         };
 
@@ -23343,7 +23360,8 @@ function matchDispatchToProps(dispatch) {
         passPlayerPokemon: _allActions2.default.passPlayerPokemon,
         passRandomPokemon: _allActions2.default.passRandomPokemon,
         showHelp: _allActions2.default.passingInfoAboutHelpDisplay,
-        transformState: _allActions2.default.passingButtonTransformState
+        transformState: _allActions2.default.passingButtonTransformState,
+        colorState: _allActions2.default.passingColorInfo
     }, dispatch);
 }
 
@@ -23635,6 +23653,7 @@ var Battle = function (_React$Component) {
                                     setTimeout(function () {
                                         _this3.props.passingWinnerInfo(randomPokemon);
                                         _this3.props.onConfirm();
+                                        _this3.props.transformState("left");
                                     }, 3500);
                                 }, 3000);
                             } else {
@@ -23659,6 +23678,7 @@ var Battle = function (_React$Component) {
                         setTimeout(function () {
                             _this3.props.onConfirm();
                             _this3.props.passingWinnerInfo(playerPokemon);
+                            _this3.props.transformState("left");
                         }, 2500);
                     }, 2000);
                 }

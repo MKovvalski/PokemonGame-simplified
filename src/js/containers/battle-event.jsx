@@ -151,6 +151,7 @@ class Battle extends React.Component {
                                 setTimeout(() => {
                                     this.props.passingWinnerInfo(randomPokemon);
                                     this.props.onConfirm();
+                                    this.props.transformState("left");
                                 },3500);
                             },3000)
                         } else {
@@ -175,6 +176,7 @@ class Battle extends React.Component {
                     setTimeout(() => {
                         this.props.onConfirm();
                         this.props.passingWinnerInfo(playerPokemon);
+                        this.props.transformState("left");
                     },2500);
                 },2000)
             }
