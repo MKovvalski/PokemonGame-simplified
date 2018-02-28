@@ -66,6 +66,13 @@ function passingInfoAboutHelpDisplay (buttonPosition) {
     }
 }
 
+function passingButtonTransformState (transformState) {
+    return {
+        type: "PASSING_INFO_ABOUT_TRANSFORM",
+        transformState
+    }
+}
+
 export default {
     clickedPokemon,
     randomPokemon,
@@ -75,5 +82,6 @@ export default {
     passRandomPokemon,
     passingWinnerInfo,
     passingAttackInfo,
-    passingInfoAboutHelpDisplay
+    passingInfoAboutHelpDisplay,
+    passingButtonTransformState
 }

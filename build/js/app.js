@@ -2784,6 +2784,13 @@ function passingInfoAboutHelpDisplay(buttonPosition) {
     };
 }
 
+function passingButtonTransformState(transformState) {
+    return {
+        type: "PASSING_INFO_ABOUT_TRANSFORM",
+        transformState: transformState
+    };
+}
+
 exports.default = {
     clickedPokemon: clickedPokemon,
     randomPokemon: randomPokemon,
@@ -2793,7 +2800,8 @@ exports.default = {
     passRandomPokemon: passRandomPokemon,
     passingWinnerInfo: passingWinnerInfo,
     passingAttackInfo: passingAttackInfo,
-    passingInfoAboutHelpDisplay: passingInfoAboutHelpDisplay
+    passingInfoAboutHelpDisplay: passingInfoAboutHelpDisplay,
+    passingButtonTransformState: passingButtonTransformState
 };
 
 /***/ }),
@@ -22122,7 +22130,8 @@ var allReducers = (0, _redux.combineReducers)({
     selectedRandomPokemon: _reducers.selectedRandomPokemon,
     battleReducer: _reducers.battleReducer,
     passedWinnerInfo: _reducers.passedWinnerInfo,
-    passedDisplaySetting: _reducers.passedDisplaySetting
+    passedDisplaySetting: _reducers.passedDisplaySetting,
+    passedTransformationInfo: _reducers.passedTransformationInfo
 });
 
 // importing reducers
@@ -22146,6 +22155,7 @@ exports.battleReducer = battleReducer;
 exports.selectedRandomPokemon = selectedRandomPokemon;
 exports.passedWinnerInfo = passedWinnerInfo;
 exports.passedDisplaySetting = passedDisplaySetting;
+exports.passedTransformationInfo = passedTransformationInfo;
 
 var _damageCalculator = __webpack_require__(86);
 
@@ -22318,6 +22328,29 @@ function passedDisplaySetting() {
             } else {
                 return "none";
             }
+        default:
+            return state;
+    }
+}
+
+function passedTransformationInfo() {
+    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "translate(0, 0)";
+    var action = arguments[1];
+
+    switch (action.type) {
+        case "PASSING_INFO_ABOUT_TRANSFORM":
+            if (action.transformState === "right") {
+                return "translate(14px, 0)";
+            } else if (action.transformState === "left") {
+                return "translate(0, 0)";
+            } else if (action.transformState === "switching") {
+                if (state === "translate(0, 0)") {
+                    return "translate(14px, 0)";
+                } else {
+                    return "translate(0, 0)";
+                }
+            }
+            break;
         default:
             return state;
     }
@@ -22650,7 +22683,8 @@ var TheGame = function (_React$Component) {
         };
 
         _this.handleButtonChange = function () {
-            _this.props.showHelp(_this.state.buttonPosition);
+            _this.props.transformState("switching");
+            _this.props.showHelp(_this.props.positionInfo);
             if (_this.state.buttonColorChange === "#ff0000") {
                 _this.setState({
                     buttonColorChange: "#2eb82e",
@@ -22677,7 +22711,7 @@ var TheGame = function (_React$Component) {
         value: function render() {
             var _this2 = this;
 
-            this.handleInitialButton();
+            console.log(this.props.positionInfo);
             return _react2.default.createElement(
                 "div",
                 { className: "main-hero" },
@@ -22699,7 +22733,7 @@ var TheGame = function (_React$Component) {
                                 "div",
                                 { className: "help-button", onClick: function onClick() {
                                         return _this2.handleButtonChange();
-                                    }, style: { transform: this.state.buttonPosition, transition: "all 0.1s ease-out" } },
+                                    }, style: { transform: this.props.positionInfo, transition: "all 0.1s ease-out" } },
                                 "Help"
                             )
                         )
@@ -22772,13 +22806,15 @@ var TheGame = function (_React$Component) {
 
 function mapStateToProps(state) {
     return {
-        displayHelp: state.passedDisplaySetting
+        displayHelp: state.passedDisplaySetting,
+        positionInfo: state.passedTransformationInfo
     };
 }
 
 function matchDispatchToProps(dispatch) {
     return (0, _redux.bindActionCreators)({
-        showHelp: _allActions2.default.passingInfoAboutHelpDisplay
+        showHelp: _allActions2.default.passingInfoAboutHelpDisplay,
+        transformState: _allActions2.default.passingButtonTransformState
     }, dispatch);
 }
 
@@ -22913,6 +22949,7 @@ var PickPokemon = function (_React$Component) {
 
         _this.handleClick = function () {
             if (typeof _this.props.onConfirm === "function") {
+                _this.props.transformState("left");
                 _this.props.onConfirm();
                 _this.props.passPlayerPokemon(_this.props.pokemon);
                 _this.props.passRandomPokemon(_this.props.randomPokemon);
@@ -23305,7 +23342,8 @@ function matchDispatchToProps(dispatch) {
         randomPokemonGenerator: _allActions2.default.randomPokemon,
         passPlayerPokemon: _allActions2.default.passPlayerPokemon,
         passRandomPokemon: _allActions2.default.passRandomPokemon,
-        showHelp: _allActions2.default.passingInfoAboutHelpDisplay
+        showHelp: _allActions2.default.passingInfoAboutHelpDisplay,
+        transformState: _allActions2.default.passingButtonTransformState
     }, dispatch);
 }
 

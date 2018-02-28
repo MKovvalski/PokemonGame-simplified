@@ -20,6 +20,7 @@ class PickPokemon extends React.Component {
 
     handleClick = () => {
         if (typeof this.props.onConfirm === "function") {
+            this.props.transformState("left");
             this.props.onConfirm();
             this.props.passPlayerPokemon(this.props.pokemon);
             this.props.passRandomPokemon(this.props.randomPokemon);
@@ -187,7 +188,8 @@ function matchDispatchToProps(dispatch) {
         randomPokemonGenerator: actions.randomPokemon,
         passPlayerPokemon: actions.passPlayerPokemon,
         passRandomPokemon: actions.passRandomPokemon,
-        showHelp: actions.passingInfoAboutHelpDisplay
+        showHelp: actions.passingInfoAboutHelpDisplay,
+        transformState: actions.passingButtonTransformState,
     }, dispatch)
 }
 

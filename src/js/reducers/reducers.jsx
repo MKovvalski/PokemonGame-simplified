@@ -150,3 +150,23 @@ export function passedDisplaySetting(state = "none", action) {
             return state
     }
 }
+
+export function passedTransformationInfo(state = "translate(0, 0)", action) {
+    switch(action.type) {
+        case "PASSING_INFO_ABOUT_TRANSFORM":
+            if (action.transformState === "right") {
+                return "translate(14px, 0)"
+            } else if (action.transformState === "left") {
+                return "translate(0, 0)"
+            } else if (action.transformState === "switching") {
+                if (state === "translate(0, 0)") {
+                    return "translate(14px, 0)"
+                } else {
+                    return "translate(0, 0)"
+                }
+            }
+            break;
+        default:
+            return state
+    }
+}

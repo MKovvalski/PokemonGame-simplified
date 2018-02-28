@@ -51,7 +51,8 @@ class TheGame extends React.Component {
     };
 
     handleButtonChange = () => {
-        this.props.showHelp(this.state.buttonPosition);
+        this.props.transformState("switching");
+        this.props.showHelp(this.props.positionInfo);
       if (this.state.buttonColorChange === "#ff0000") {
           this.setState ({
               buttonColorChange: "#2eb82e",
@@ -66,7 +67,7 @@ class TheGame extends React.Component {
     };
 
     render () {
-        this.handleInitialButton();
+        console.log(this.props.positionInfo);
         return <div className = "main-hero">
                     <div className = "over-frame">
                         {this.handleComponents()}
@@ -74,7 +75,7 @@ class TheGame extends React.Component {
                     <div className = "lower-part" >
                         <div className = "connector">
                             <div className = "help-button-border" style = {{backgroundColor: this.state.buttonColorChange}}>
-                                <div className = "help-button" onClick = {() => this.handleButtonChange()} style = {{transform: this.state.buttonPosition, transition: "all 0.1s ease-out"}}>Help</div>
+                                <div className = "help-button" onClick = {() => this.handleButtonChange()} style = {{transform: this.props.positionInfo, transition: "all 0.1s ease-out"}}>Help</div>
                             </div>
                         </div>
                         <div className = "top-button">
@@ -108,13 +109,15 @@ class TheGame extends React.Component {
 
 function mapStateToProps(state) {
     return {
-        displayHelp: state.passedDisplaySetting
+        displayHelp: state.passedDisplaySetting,
+        positionInfo: state.passedTransformationInfo
     }
 }
 
 function matchDispatchToProps(dispatch) {
     return bindActionCreators({
-        showHelp: actions.passingInfoAboutHelpDisplay
+        showHelp: actions.passingInfoAboutHelpDisplay,
+        transformState: actions.passingButtonTransformState,
     }, dispatch)
 }
 
