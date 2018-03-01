@@ -10,7 +10,7 @@ require('../scss/main.scss');
 
 // //importing various files:
 import CombinedReducers from "./reducers/combine-reducers.jsx";
-import TheGame from "./components/TheGame.jsx";
+import TheGame from "./containers/TheGame.jsx";
 
 //Store creator
 

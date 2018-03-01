@@ -24,7 +24,7 @@ class PickPokemon extends React.Component {
             this.props.onConfirm();
             this.props.passPlayerPokemon(this.props.pokemon);
             this.props.passRandomPokemon(this.props.randomPokemon);
-            this.props.showHelp("none");
+            this.props.showHelp("left");
             this.props.colorState("left");
 
         }

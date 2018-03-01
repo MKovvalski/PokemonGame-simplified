@@ -312,6 +312,43 @@ module.exports = emptyFunction;
 
 /***/ }),
 /* 3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__combineReducers__ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__ = __webpack_require__(69);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__applyMiddleware__ = __webpack_require__(70);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__compose__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_warning__ = __webpack_require__(25);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createStore", function() { return __WEBPACK_IMPORTED_MODULE_0__createStore__["b"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "combineReducers", function() { return __WEBPACK_IMPORTED_MODULE_1__combineReducers__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "bindActionCreators", function() { return __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "applyMiddleware", function() { return __WEBPACK_IMPORTED_MODULE_3__applyMiddleware__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "compose", function() { return __WEBPACK_IMPORTED_MODULE_4__compose__["a"]; });
+
+
+
+
+
+
+
+/*
+* This is a dummy function to check if the function name has been altered by minification.
+* If the function has been minified and NODE_ENV !== 'production', warn the user.
+*/
+function isCrushed() {}
+
+if (process.env.NODE_ENV !== 'production' && typeof isCrushed.name === 'string' && isCrushed.name !== 'isCrushed') {
+  Object(__WEBPACK_IMPORTED_MODULE_5__utils_warning__["a" /* default */])('You are currently using minified code outside of NODE_ENV === \'production\'. ' + 'This means that you are running a slower development build of Redux. ' + 'You can use loose-envify (https://github.com/zertosh/loose-envify) for browserify ' + 'or DefinePlugin for webpack (http://stackoverflow.com/questions/30030031) ' + 'to ensure you have the correct code for your production build.');
+}
+
+
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
+
+/***/ }),
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -408,7 +445,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -468,44 +505,26 @@ module.exports = invariant;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__combineReducers__ = __webpack_require__(68);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__ = __webpack_require__(69);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__applyMiddleware__ = __webpack_require__(70);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__compose__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_warning__ = __webpack_require__(24);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createStore", function() { return __WEBPACK_IMPORTED_MODULE_0__createStore__["b"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "combineReducers", function() { return __WEBPACK_IMPORTED_MODULE_1__combineReducers__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "bindActionCreators", function() { return __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "applyMiddleware", function() { return __WEBPACK_IMPORTED_MODULE_3__applyMiddleware__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "compose", function() { return __WEBPACK_IMPORTED_MODULE_4__compose__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Provider__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__connect_connect__ = __webpack_require__(77);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Provider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["b"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createProvider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connectAdvanced", function() { return __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connect", function() { return __WEBPACK_IMPORTED_MODULE_2__connect_connect__["a"]; });
 
 
 
 
 
-
-
-/*
-* This is a dummy function to check if the function name has been altered by minification.
-* If the function has been minified and NODE_ENV !== 'production', warn the user.
-*/
-function isCrushed() {}
-
-if (process.env.NODE_ENV !== 'production' && typeof isCrushed.name === 'string' && isCrushed.name !== 'isCrushed') {
-  Object(__WEBPACK_IMPORTED_MODULE_5__utils_warning__["a" /* default */])('You are currently using minified code outside of NODE_ENV === \'production\'. ' + 'This means that you are running a slower development build of Redux. ' + 'You can use loose-envify (https://github.com/zertosh/loose-envify) for browserify ' + 'or DefinePlugin for webpack (http://stackoverflow.com/questions/30030031) ' + 'to ensure you have the correct code for your production build.');
-}
-
-
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -529,7 +548,7 @@ module.exports = emptyObject;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -598,25 +617,6 @@ module.exports = warning;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 8 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Provider__ = __webpack_require__(71);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__connect_connect__ = __webpack_require__(77);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Provider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["b"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createProvider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connectAdvanced", function() { return __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connect", function() { return __WEBPACK_IMPORTED_MODULE_2__connect_connect__["a"]; });
-
-
-
-
-
-
-/***/ }),
 /* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -631,8 +631,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 if (process.env.NODE_ENV !== 'production') {
-  var invariant = __webpack_require__(4);
-  var warning = __webpack_require__(7);
+  var invariant = __webpack_require__(5);
+  var warning = __webpack_require__(8);
   var ReactPropTypesSecret = __webpack_require__(10);
   var loggedTypeFailures = {};
 }
@@ -870,6 +870,112 @@ function warning(message) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+//all actions in one file
+
+function clickedPokemon(pokemon) {
+    return {
+        type: "POKEMON_SELECTED",
+        pokemon: pokemon
+    };
+}
+
+function randomPokemon(pokemon) {
+    return {
+        type: "RANDOM_POKEMON_SELECTED",
+        pokemon: pokemon
+    };
+}
+
+function passPlayerPokemon(playerPokemon) {
+    return {
+        type: "PASS_PLAYER_POKEMON_TO_BATTLE",
+        playerPokemon: playerPokemon
+    };
+}
+
+function passRandomPokemon(randomPokemon) {
+    return {
+        type: "PASS_RANDOM_POKEMON_TO_BATTLE",
+        randomPokemon: randomPokemon
+    };
+}
+
+function playerClickedAttack(attack, stamina) {
+    return {
+        type: "PLAYER_POKEMON_ATTACK_SELECTED",
+        attack: attack,
+        stamina: stamina
+
+    };
+}
+
+function randomSelectedAttack(attack, stamina) {
+    return {
+        type: "RANDOM_POKEMON_ATTACK_SELECTED",
+        attack: attack,
+        stamina: stamina
+    };
+}
+
+function passingWinnerInfo(pokemon) {
+    return {
+        type: "PASSING_WINNER_INFO",
+        pokemon: pokemon
+    };
+}
+
+function passingAttackInfo(attack) {
+    return {
+        type: "PASSING_ATTACK_INFO_TO_DISPLAY",
+        attack: attack
+    };
+}
+
+function passingInfoAboutHelpDisplay(buttonPosition) {
+    return {
+        type: "PASSING_INFO_ABOUT_HELP_DISPLAY",
+        buttonPosition: buttonPosition
+    };
+}
+
+function passingButtonTransformState(transformState) {
+    return {
+        type: "PASSING_INFO_ABOUT_TRANSFORM",
+        transformState: transformState
+    };
+}
+
+function passingColorInfo(color) {
+    return {
+        type: "PASSING_COLOR_INFO",
+        color: color
+    };
+}
+
+exports.default = {
+    clickedPokemon: clickedPokemon,
+    randomPokemon: randomPokemon,
+    playerClickedAttack: playerClickedAttack,
+    randomSelectedAttack: randomSelectedAttack,
+    passPlayerPokemon: passPlayerPokemon,
+    passRandomPokemon: passRandomPokemon,
+    passingWinnerInfo: passingWinnerInfo,
+    passingAttackInfo: passingAttackInfo,
+    passingInfoAboutHelpDisplay: passingInfoAboutHelpDisplay,
+    passingButtonTransformState: passingButtonTransformState,
+    passingColorInfo: passingColorInfo
+};
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -905,7 +1011,7 @@ var ExecutionEnvironment = {
 module.exports = ExecutionEnvironment;
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -986,7 +1092,7 @@ module.exports = EventListener;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1028,7 +1134,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 module.exports = getActiveElement;
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1099,7 +1205,7 @@ function shallowEqual(objA, objB) {
 module.exports = shallowEqual;
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1142,7 +1248,7 @@ function containsNode(outerNode, innerNode) {
 module.exports = containsNode;
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1172,7 +1278,7 @@ function focusNode(node) {
 module.exports = focusNode;
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1431,7 +1537,7 @@ var ActionTypes = {
 }
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1445,7 +1551,7 @@ var Symbol = __WEBPACK_IMPORTED_MODULE_0__root_js__["a" /* default */].Symbol;
 
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports) {
 
 var g;
@@ -1472,7 +1578,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1500,7 +1606,7 @@ function warning(message) {
 }
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1539,7 +1645,7 @@ function compose() {
 }
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1563,7 +1669,7 @@ var storeShape = __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.shape({
 });
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1575,7 +1681,7 @@ var storeShape = __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.shape({
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_Subscription__ = __webpack_require__(76);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_PropTypes__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_PropTypes__ = __webpack_require__(27);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -1868,14 +1974,14 @@ selectorFactory) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony export (immutable) */ __webpack_exports__["a"] = wrapMapToPropsConstant;
 /* unused harmony export getDependsOnOwnProps */
 /* harmony export (immutable) */ __webpack_exports__["b"] = wrapMapToPropsFunc;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_verifyPlainObject__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_verifyPlainObject__ = __webpack_require__(30);
 
 
 function wrapMapToPropsConstant(getConstant) {
@@ -1946,7 +2052,7 @@ function wrapMapToPropsFunc(mapToProps, methodName) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1963,7 +2069,7 @@ function verifyPlainObject(value, displayName, methodName) {
 }
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1987,41 +2093,41 @@ var ddd = __webpack_require__(98);
 var e = __webpack_require__(99);
 var ee = __webpack_require__(100);
 var eee = __webpack_require__(101);
-var f = __webpack_require__(31);
-var ff = __webpack_require__(31);
+var f = __webpack_require__(32);
+var ff = __webpack_require__(32);
 var fff = __webpack_require__(102);
-var g = __webpack_require__(32);
-var gg = __webpack_require__(32);
+var g = __webpack_require__(33);
+var gg = __webpack_require__(33);
 var ggg = __webpack_require__(103);
-var h = __webpack_require__(33);
-var hh = __webpack_require__(33);
+var h = __webpack_require__(34);
+var hh = __webpack_require__(34);
 var hhh = __webpack_require__(104);
-var i = __webpack_require__(34);
-var ii = __webpack_require__(34);
+var i = __webpack_require__(35);
+var ii = __webpack_require__(35);
 var iii = __webpack_require__(105);
-var j = __webpack_require__(35);
-var jj = __webpack_require__(35);
+var j = __webpack_require__(36);
+var jj = __webpack_require__(36);
 var jjj = __webpack_require__(106);
-var k = __webpack_require__(36);
-var kk = __webpack_require__(36);
+var k = __webpack_require__(37);
+var kk = __webpack_require__(37);
 var kkk = __webpack_require__(107);
-var o = __webpack_require__(37);
-var oo = __webpack_require__(37);
+var o = __webpack_require__(38);
+var oo = __webpack_require__(38);
 var ooo = __webpack_require__(108);
-var p = __webpack_require__(38);
-var pp = __webpack_require__(38);
+var p = __webpack_require__(39);
+var pp = __webpack_require__(39);
 var ppp = __webpack_require__(109);
-var r = __webpack_require__(39);
-var rr = __webpack_require__(39);
+var r = __webpack_require__(40);
+var rr = __webpack_require__(40);
 var rrr = __webpack_require__(110);
-var s = __webpack_require__(40);
-var ss = __webpack_require__(40);
+var s = __webpack_require__(41);
+var ss = __webpack_require__(41);
 var sss = __webpack_require__(111);
 var t = __webpack_require__(112);
 var tt = __webpack_require__(113);
 var ttt = __webpack_require__(114);
-var u = __webpack_require__(41);
-var uu = __webpack_require__(41);
+var u = __webpack_require__(42);
+var uu = __webpack_require__(42);
 var uuu = __webpack_require__(115);
 
 var pokemons = [{
@@ -2641,176 +2747,70 @@ var pokemons = [{
 exports.default = pokemons;
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "src/imgs/butterfly-calm.gif";
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "src/imgs/smalldog.gif";
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "src/imgs/shelgon.gif";
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "src/imgs/doduo.gif";
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "src/imgs/goldeen.gif";
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "src/imgs/lickitung.gif";
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "src/imgs/psyduck.gif";
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "src/imgs/mondog.gif";
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "src/imgs/magikarp.gif";
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "src/imgs/firedog.gif";
 
 /***/ }),
-/* 41 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "src/imgs/Fletchling.gif";
-
-/***/ }),
 /* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-//all actions in one file
-
-function clickedPokemon(pokemon) {
-    return {
-        type: "POKEMON_SELECTED",
-        pokemon: pokemon
-    };
-}
-
-function randomPokemon(pokemon) {
-    return {
-        type: "RANDOM_POKEMON_SELECTED",
-        pokemon: pokemon
-    };
-}
-
-function passPlayerPokemon(playerPokemon) {
-    return {
-        type: "PASS_PLAYER_POKEMON_TO_BATTLE",
-        playerPokemon: playerPokemon
-    };
-}
-
-function passRandomPokemon(randomPokemon) {
-    return {
-        type: "PASS_RANDOM_POKEMON_TO_BATTLE",
-        randomPokemon: randomPokemon
-    };
-}
-
-function playerClickedAttack(attack, stamina) {
-    return {
-        type: "PLAYER_POKEMON_ATTACK_SELECTED",
-        attack: attack,
-        stamina: stamina
-
-    };
-}
-
-function randomSelectedAttack(attack, stamina) {
-    return {
-        type: "RANDOM_POKEMON_ATTACK_SELECTED",
-        attack: attack,
-        stamina: stamina
-    };
-}
-
-function passingWinnerInfo(pokemon) {
-    return {
-        type: "PASSING_WINNER_INFO",
-        pokemon: pokemon
-    };
-}
-
-function passingAttackInfo(attack) {
-    return {
-        type: "PASSING_ATTACK_INFO_TO_DISPLAY",
-        attack: attack
-    };
-}
-
-function passingInfoAboutHelpDisplay(buttonPosition) {
-    return {
-        type: "PASSING_INFO_ABOUT_HELP_DISPLAY",
-        buttonPosition: buttonPosition
-    };
-}
-
-function passingButtonTransformState(transformState) {
-    return {
-        type: "PASSING_INFO_ABOUT_TRANSFORM",
-        transformState: transformState
-    };
-}
-
-function passingColorInfo(color) {
-    return {
-        type: "PASSING_COLOR_INFO",
-        color: color
-    };
-}
-
-exports.default = {
-    clickedPokemon: clickedPokemon,
-    randomPokemon: randomPokemon,
-    playerClickedAttack: playerClickedAttack,
-    randomSelectedAttack: randomSelectedAttack,
-    passPlayerPokemon: passPlayerPokemon,
-    passRandomPokemon: passRandomPokemon,
-    passingWinnerInfo: passingWinnerInfo,
-    passingAttackInfo: passingAttackInfo,
-    passingInfoAboutHelpDisplay: passingInfoAboutHelpDisplay,
-    passingButtonTransformState: passingButtonTransformState,
-    passingColorInfo: passingColorInfo
-};
+module.exports = __webpack_require__.p + "src/imgs/Fletchling.gif";
 
 /***/ }),
 /* 43 */
@@ -2918,15 +2918,15 @@ var _reactDom = __webpack_require__(48);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _redux = __webpack_require__(5);
+var _redux = __webpack_require__(3);
 
-var _reactRedux = __webpack_require__(8);
+var _reactRedux = __webpack_require__(6);
 
 var _combineReducers = __webpack_require__(84);
 
 var _combineReducers2 = _interopRequireDefault(_combineReducers);
 
-var _TheGame = __webpack_require__(116);
+var _TheGame = __webpack_require__(130);
 
 var _TheGame2 = _interopRequireDefault(_TheGame);
 
@@ -2964,7 +2964,7 @@ document.addEventListener("DOMContentLoaded", function () {
  * LICENSE file in the root directory of this source tree.
  */
 
-var m=__webpack_require__(3),n=__webpack_require__(6),p=__webpack_require__(2),q="function"===typeof Symbol&&Symbol["for"],r=q?Symbol["for"]("react.element"):60103,t=q?Symbol["for"]("react.call"):60104,u=q?Symbol["for"]("react.return"):60105,v=q?Symbol["for"]("react.portal"):60106,w=q?Symbol["for"]("react.fragment"):60107,x="function"===typeof Symbol&&Symbol.iterator;
+var m=__webpack_require__(4),n=__webpack_require__(7),p=__webpack_require__(2),q="function"===typeof Symbol&&Symbol["for"],r=q?Symbol["for"]("react.element"):60103,t=q?Symbol["for"]("react.call"):60104,u=q?Symbol["for"]("react.return"):60105,v=q?Symbol["for"]("react.portal"):60106,w=q?Symbol["for"]("react.fragment"):60107,x="function"===typeof Symbol&&Symbol.iterator;
 function y(a){for(var b=arguments.length-1,e="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,c=0;c<b;c++)e+="\x26args[]\x3d"+encodeURIComponent(arguments[c+1]);b=Error(e+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}
 var z={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}};function A(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}A.prototype.isReactComponent={};A.prototype.setState=function(a,b){"object"!==typeof a&&"function"!==typeof a&&null!=a?y("85"):void 0;this.updater.enqueueSetState(this,a,b,"setState")};A.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};
 function B(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}function C(){}C.prototype=A.prototype;var D=B.prototype=new C;D.constructor=B;m(D,A.prototype);D.isPureReactComponent=!0;function E(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}var F=E.prototype=new C;F.constructor=E;m(F,A.prototype);F.unstable_isAsyncReactComponent=!0;F.render=function(){return this.props.children};var G={current:null},H=Object.prototype.hasOwnProperty,I={key:!0,ref:!0,__self:!0,__source:!0};
@@ -3000,10 +3000,10 @@ if (process.env.NODE_ENV !== "production") {
   (function() {
 'use strict';
 
-var _assign = __webpack_require__(3);
-var emptyObject = __webpack_require__(6);
-var invariant = __webpack_require__(4);
-var warning = __webpack_require__(7);
+var _assign = __webpack_require__(4);
+var emptyObject = __webpack_require__(7);
+var invariant = __webpack_require__(5);
+var warning = __webpack_require__(8);
 var emptyFunction = __webpack_require__(2);
 var checkPropTypes = __webpack_require__(9);
 
@@ -4406,7 +4406,7 @@ if (process.env.NODE_ENV === 'production') {
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(1),l=__webpack_require__(15),B=__webpack_require__(3),C=__webpack_require__(2),ba=__webpack_require__(16),da=__webpack_require__(17),ea=__webpack_require__(18),fa=__webpack_require__(19),ia=__webpack_require__(20),D=__webpack_require__(6);
+var aa=__webpack_require__(1),l=__webpack_require__(16),B=__webpack_require__(4),C=__webpack_require__(2),ba=__webpack_require__(17),da=__webpack_require__(18),ea=__webpack_require__(19),fa=__webpack_require__(20),ia=__webpack_require__(21),D=__webpack_require__(7);
 function E(a){for(var b=arguments.length-1,c="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,d=0;d<b;d++)c+="\x26args[]\x3d"+encodeURIComponent(arguments[d+1]);b=Error(c+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}aa?void 0:E("227");
 var oa={children:!0,dangerouslySetInnerHTML:!0,defaultValue:!0,defaultChecked:!0,innerHTML:!0,suppressContentEditableWarning:!0,suppressHydrationWarning:!0,style:!0};function pa(a,b){return(a&b)===b}
 var ta={MUST_USE_PROPERTY:1,HAS_BOOLEAN_VALUE:4,HAS_NUMERIC_VALUE:8,HAS_POSITIVE_NUMERIC_VALUE:24,HAS_OVERLOADED_BOOLEAN_VALUE:32,HAS_STRING_BOOLEAN_VALUE:64,injectDOMPropertyConfig:function(a){var b=ta,c=a.Properties||{},d=a.DOMAttributeNamespaces||{},e=a.DOMAttributeNames||{};a=a.DOMMutationMethods||{};for(var f in c){ua.hasOwnProperty(f)?E("48",f):void 0;var g=f.toLowerCase(),h=c[f];g={attributeName:g,attributeNamespace:null,propertyName:f,mutationMethod:null,mustUseProperty:pa(h,b.MUST_USE_PROPERTY),
@@ -4704,17 +4704,17 @@ if (process.env.NODE_ENV !== "production") {
 'use strict';
 
 var React = __webpack_require__(1);
-var invariant = __webpack_require__(4);
-var warning = __webpack_require__(7);
-var ExecutionEnvironment = __webpack_require__(15);
-var _assign = __webpack_require__(3);
+var invariant = __webpack_require__(5);
+var warning = __webpack_require__(8);
+var ExecutionEnvironment = __webpack_require__(16);
+var _assign = __webpack_require__(4);
 var emptyFunction = __webpack_require__(2);
-var EventListener = __webpack_require__(16);
-var getActiveElement = __webpack_require__(17);
-var shallowEqual = __webpack_require__(18);
-var containsNode = __webpack_require__(19);
-var focusNode = __webpack_require__(20);
-var emptyObject = __webpack_require__(6);
+var EventListener = __webpack_require__(17);
+var getActiveElement = __webpack_require__(18);
+var shallowEqual = __webpack_require__(19);
+var containsNode = __webpack_require__(20);
+var focusNode = __webpack_require__(21);
+var emptyObject = __webpack_require__(7);
 var checkPropTypes = __webpack_require__(9);
 var hyphenateStyleName = __webpack_require__(53);
 var camelizeStyleName = __webpack_require__(55);
@@ -20244,7 +20244,7 @@ module.exports = camelize;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getRawTag_js__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__objectToString_js__ = __webpack_require__(61);
 
@@ -20304,14 +20304,14 @@ var freeGlobal = typeof global == 'object' && global && global.Object === Object
 
 /* harmony default export */ __webpack_exports__["a"] = (freeGlobal);
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(23)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(24)))
 
 /***/ }),
 /* 60 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(23);
 
 
 /** Used for built-in method references. */
@@ -20502,7 +20502,7 @@ if (typeof self !== 'undefined') {
 
 var result = (0, _ponyfill2['default'])(root);
 exports['default'] = result;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(23), __webpack_require__(12)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(24), __webpack_require__(12)(module)))
 
 /***/ }),
 /* 67 */
@@ -20539,9 +20539,9 @@ function symbolObservablePonyfill(root) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony export (immutable) */ __webpack_exports__["a"] = combineReducers;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash_es_isPlainObject__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_warning__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_warning__ = __webpack_require__(25);
 
 
 
@@ -20734,7 +20734,7 @@ function bindActionCreators(actionCreators, dispatch) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = applyMiddleware;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compose__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compose__ = __webpack_require__(26);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -20794,7 +20794,7 @@ function applyMiddleware() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_PropTypes__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_PropTypes__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_warning__ = __webpack_require__(14);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -20885,9 +20885,9 @@ function createProvider() {
 
 
 var emptyFunction = __webpack_require__(2);
-var invariant = __webpack_require__(4);
-var warning = __webpack_require__(7);
-var assign = __webpack_require__(3);
+var invariant = __webpack_require__(5);
+var warning = __webpack_require__(8);
+var assign = __webpack_require__(4);
 
 var ReactPropTypesSecret = __webpack_require__(10);
 var checkPropTypes = __webpack_require__(9);
@@ -21435,7 +21435,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
 
 var emptyFunction = __webpack_require__(2);
-var invariant = __webpack_require__(4);
+var invariant = __webpack_require__(5);
 var ReactPropTypesSecret = __webpack_require__(10);
 
 module.exports = function() {
@@ -21721,7 +21721,7 @@ var Subscription = function () {
 
 "use strict";
 /* unused harmony export createConnect */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_connectAdvanced__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_connectAdvanced__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_shallowEqual__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mapDispatchToProps__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mapStateToProps__ = __webpack_require__(80);
@@ -21876,8 +21876,8 @@ function shallowEqual(objA, objB) {
 /* unused harmony export whenMapDispatchToPropsIsFunction */
 /* unused harmony export whenMapDispatchToPropsIsMissing */
 /* unused harmony export whenMapDispatchToPropsIsObject */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__wrapMapToProps__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__wrapMapToProps__ = __webpack_require__(29);
 
 
 
@@ -21906,7 +21906,7 @@ function whenMapDispatchToPropsIsObject(mapDispatchToProps) {
 "use strict";
 /* unused harmony export whenMapStateToPropsIsFunction */
 /* unused harmony export whenMapStateToPropsIsMissing */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wrapMapToProps__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wrapMapToProps__ = __webpack_require__(29);
 
 
 function whenMapStateToPropsIsFunction(mapStateToProps) {
@@ -21930,7 +21930,7 @@ function whenMapStateToPropsIsMissing(mapStateToProps) {
 /* unused harmony export wrapMergePropsFunc */
 /* unused harmony export whenMergePropsIsFunction */
 /* unused harmony export whenMergePropsIsOmitted */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_verifyPlainObject__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_verifyPlainObject__ = __webpack_require__(30);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -22127,7 +22127,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _redux = __webpack_require__(5);
+var _redux = __webpack_require__(3);
 
 var _reducers = __webpack_require__(85);
 
@@ -22171,7 +22171,7 @@ var _damageCalculator = __webpack_require__(86);
 
 var _damageCalculator2 = _interopRequireDefault(_damageCalculator);
 
-var _pokemons = __webpack_require__(30);
+var _pokemons = __webpack_require__(31);
 
 var _pokemons2 = _interopRequireDefault(_pokemons);
 
@@ -22375,7 +22375,11 @@ function passedColorInfo() {
             if (action.color === "left") {
                 return "#ff0000";
             } else if (action.color === "switching") {
-                return "#2eb82e";
+                if (state === "#ff0000") {
+                    return "#2eb82e";
+                } else {
+                    return "#ff0000";
+                }
             }
             break;
         default:
@@ -22602,315 +22606,8 @@ module.exports = __webpack_require__.p + "src/imgs/vapreon-back.png";
 module.exports = __webpack_require__.p + "src/imgs/fletching.png";
 
 /***/ }),
-/* 116 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _redux = __webpack_require__(5);
-
-var _reactRedux = __webpack_require__(8);
-
-var _startGame = __webpack_require__(117);
-
-var _startGame2 = _interopRequireDefault(_startGame);
-
-var _pickPokemon = __webpack_require__(118);
-
-var _pickPokemon2 = _interopRequireDefault(_pickPokemon);
-
-var _battleEvent = __webpack_require__(119);
-
-var _battleEvent2 = _interopRequireDefault(_battleEvent);
-
-var _endGameScreen = __webpack_require__(124);
-
-var _endGameScreen2 = _interopRequireDefault(_endGameScreen);
-
-var _allActions = __webpack_require__(42);
-
-var _allActions2 = _interopRequireDefault(_allActions);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } //presets
-
-
-//file imports
-
-
-//importing actions
-
-
-//classes
-var TheGame = function (_React$Component) {
-    _inherits(TheGame, _React$Component);
-
-    function TheGame(props) {
-        _classCallCheck(this, TheGame);
-
-        var _this = _possibleConstructorReturn(this, (TheGame.__proto__ || Object.getPrototypeOf(TheGame)).call(this, props));
-
-        _this.handleRender = function () {
-            if (_this.state.ComponentRenderCounter === 3) {
-                _this.setState({
-                    ComponentRenderCounter: 0
-                });
-            } else {
-                _this.setState({
-                    ComponentRenderCounter: _this.state.ComponentRenderCounter + 1
-                });
-            }
-        };
-
-        _this.handleComponents = function () {
-            if (_this.state.ComponentRenderCounter === 0) {
-                return _react2.default.createElement(
-                    "div",
-                    null,
-                    _react2.default.createElement(_startGame2.default, { onConfirm: _this.handleRender })
-                );
-            }
-            if (_this.state.ComponentRenderCounter === 1) {
-                return _react2.default.createElement(
-                    "div",
-                    null,
-                    _react2.default.createElement(_pickPokemon2.default, { onConfirm: _this.handleRender })
-                );
-            }
-            if (_this.state.ComponentRenderCounter === 2) {
-                return _react2.default.createElement(
-                    "div",
-                    null,
-                    _react2.default.createElement(_battleEvent2.default, { onConfirm: _this.handleRender })
-                );
-            }
-            if (_this.state.ComponentRenderCounter === 3) {
-                return _react2.default.createElement(
-                    "div",
-                    null,
-                    _react2.default.createElement(_endGameScreen2.default, { onConfirm: _this.handleRender })
-                );
-            }
-        };
-
-        _this.handleButtonChange = function () {
-            _this.props.transformState("switching");
-            _this.props.showHelp(_this.props.positionInfo);
-            _this.props.colorState("switching");
-        };
-
-        _this.state = {
-            ComponentRenderCounter: 1
-        };
-        return _this;
-    }
-
-    _createClass(TheGame, [{
-        key: "render",
-        value: function render() {
-            var _this2 = this;
-
-            return _react2.default.createElement(
-                "div",
-                { className: "main-hero" },
-                _react2.default.createElement(
-                    "div",
-                    { className: "over-frame" },
-                    this.handleComponents()
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { className: "lower-part" },
-                    _react2.default.createElement(
-                        "div",
-                        { className: "connector" },
-                        _react2.default.createElement(
-                            "div",
-                            { className: "help-button-border", style: { backgroundColor: this.props.colorInfo } },
-                            _react2.default.createElement(
-                                "div",
-                                { className: "help-button", onClick: function onClick() {
-                                        return _this2.handleButtonChange();
-                                    }, style: { transform: this.props.positionInfo, transition: "all 0.1s ease-out" } },
-                                "Help"
-                            )
-                        )
-                    ),
-                    _react2.default.createElement(
-                        "div",
-                        { className: "top-button" },
-                        _react2.default.createElement(
-                            "div",
-                            { className: "border-button" },
-                            _react2.default.createElement("div", { className: "brightness-button" })
-                        )
-                    ),
-                    _react2.default.createElement(
-                        "div",
-                        { className: "row-1" },
-                        _react2.default.createElement(
-                            "div",
-                            { className: "col-1-2-a" },
-                            _react2.default.createElement(
-                                "div",
-                                { className: "button-circle" },
-                                _react2.default.createElement("div", { className: "arrow-buttons" })
-                            )
-                        ),
-                        _react2.default.createElement(
-                            "div",
-                            { className: "col-1-2-a" },
-                            _react2.default.createElement(
-                                "div",
-                                { className: "a-b-buttons" },
-                                _react2.default.createElement(
-                                    "div",
-                                    { className: "a-button" },
-                                    "A"
-                                ),
-                                _react2.default.createElement(
-                                    "div",
-                                    { className: "a-button" },
-                                    "B"
-                                )
-                            )
-                        )
-                    ),
-                    _react2.default.createElement(
-                        "div",
-                        { className: "row-2" },
-                        _react2.default.createElement(
-                            "div",
-                            { className: "small-buttons" },
-                            _react2.default.createElement(
-                                "div",
-                                { className: "border-small-button" },
-                                _react2.default.createElement("div", { className: "small-button" })
-                            ),
-                            _react2.default.createElement(
-                                "div",
-                                { className: "border-small-button" },
-                                _react2.default.createElement("div", { className: "small-button" })
-                            )
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return TheGame;
-}(_react2.default.Component);
-
-function mapStateToProps(state) {
-    return {
-        displayHelp: state.passedDisplaySetting,
-        positionInfo: state.passedTransformationInfo,
-        colorInfo: state.passedColorInfo
-    };
-}
-
-function matchDispatchToProps(dispatch) {
-    return (0, _redux.bindActionCreators)({
-        showHelp: _allActions2.default.passingInfoAboutHelpDisplay,
-        transformState: _allActions2.default.passingButtonTransformState,
-        colorState: _allActions2.default.passingColorInfo
-    }, dispatch);
-}
-
-exports.default = (0, _reactRedux.connect)(mapStateToProps, matchDispatchToProps)(TheGame);
-
-/***/ }),
-/* 117 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var StartGameScreen = function (_React$Component) {
-    _inherits(StartGameScreen, _React$Component);
-
-    function StartGameScreen() {
-        var _ref;
-
-        var _temp, _this, _ret;
-
-        _classCallCheck(this, StartGameScreen);
-
-        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-            args[_key] = arguments[_key];
-        }
-
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = StartGameScreen.__proto__ || Object.getPrototypeOf(StartGameScreen)).call.apply(_ref, [this].concat(args))), _this), _this.handleClick = function () {
-            if (typeof _this.props.onConfirm === "function") {
-                _this.props.onConfirm();
-            }
-        }, _temp), _possibleConstructorReturn(_this, _ret);
-    }
-
-    _createClass(StartGameScreen, [{
-        key: "render",
-        value: function render() {
-            return _react2.default.createElement(
-                "div",
-                { className: "game-framing" },
-                _react2.default.createElement(
-                    "div",
-                    { className: "border" },
-                    _react2.default.createElement(
-                        "div",
-                        { className: "main-screen-background" },
-                        _react2.default.createElement(
-                            "h1",
-                            { className: "main-page-title", onClick: this.handleClick },
-                            "START GAME"
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return StartGameScreen;
-}(_react2.default.Component);
-
-exports.default = StartGameScreen;
-
-/***/ }),
+/* 116 */,
+/* 117 */,
 /* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22927,15 +22624,15 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _redux = __webpack_require__(5);
+var _redux = __webpack_require__(3);
 
-var _reactRedux = __webpack_require__(8);
+var _reactRedux = __webpack_require__(6);
 
-var _pokemons = __webpack_require__(30);
+var _pokemons = __webpack_require__(31);
 
 var _pokemons2 = _interopRequireDefault(_pokemons);
 
-var _allActions = __webpack_require__(42);
+var _allActions = __webpack_require__(15);
 
 var _allActions2 = _interopRequireDefault(_allActions);
 
@@ -22969,7 +22666,7 @@ var PickPokemon = function (_React$Component) {
                 _this.props.onConfirm();
                 _this.props.passPlayerPokemon(_this.props.pokemon);
                 _this.props.passRandomPokemon(_this.props.randomPokemon);
-                _this.props.showHelp("none");
+                _this.props.showHelp("left");
                 _this.props.colorState("left");
             }
         };
@@ -23384,15 +23081,15 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _redux = __webpack_require__(5);
+var _redux = __webpack_require__(3);
 
-var _reactRedux = __webpack_require__(8);
+var _reactRedux = __webpack_require__(6);
 
 var _reactSound = __webpack_require__(120);
 
 var _reactSound2 = _interopRequireDefault(_reactSound);
 
-var _allActions = __webpack_require__(42);
+var _allActions = __webpack_require__(15);
 
 var _allActions2 = _interopRequireDefault(_allActions);
 
@@ -33251,7 +32948,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRedux = __webpack_require__(8);
+var _reactRedux = __webpack_require__(6);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -33387,7 +33084,7 @@ exports = module.exports = __webpack_require__(43)(false);
 exports.i(__webpack_require__(127), "");
 
 // module
-exports.push([module.i, "/* global classes */\nbody {\n  background-color: #ffcc00;\n  font-family: 'VT323', monospace; }\n\n.game-framing {\n  border-radius: 15px;\n  font-family: 'VT323', monospace;\n  border-left: 20px solid silver;\n  border-right: 20px solid silver;\n  border-top: 30px solid silver;\n  border-bottom: 35px solid silver;\n  background-color: silver; }\n\n.border {\n  border: 15px solid black;\n  border-bottom: 30px solid black;\n  border-radius: 8px; }\n\n/* styling main-hero */\n.over-frame {\n  border-radius: 16px;\n  border: 1px solid #737373;\n  box-shadow: 1px 1px #808080, 2px 2px #808080, 3px 3px #808080, 4px 4px #808080, 5px 5px #808080, 5px 5px #737373, 6px 6px #737373, 7px 7px #737373, 8px 8px #595959; }\n\n.connector {\n  width: 547px;\n  height: 33px;\n  border-radius: 9px;\n  background-color: silver;\n  border: 0.5px solid #737373;\n  box-shadow: 1px 1px #808080, 2px 2px #737373;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.help-button-border {\n  height: 30px;\n  width: 70px;\n  border-radius: 15px;\n  border: 3px solid #737373;\n  display: flex;\n  align-items: center; }\n\n.help-button {\n  text-shadow: 0.5px 0.5px #737373;\n  font-weight: 700;\n  color: #262626;\n  text-transform: uppercase;\n  line-height: 22px;\n  vertical-align: middle;\n  height: 24px;\n  width: 50px;\n  background-color: lightgray;\n  border-radius: 15px;\n  border: 1px solid #404040;\n  text-align: center; }\n\n.lower-part {\n  width: 549px;\n  height: 441px;\n  background-color: silver;\n  margin-top: 1px;\n  margin-bottom: 10px;\n  border: 0.5px solid #737373;\n  border-radius: 12px;\n  box-shadow: 1px 1px #808080, 2px 2px #808080, 3px 3px #808080, 4px 4px #808080, 5px 5px #808080, 5px 5px #737373, 6px 6px #737373, 7px 7px #737373, 8px 8px #595959; }\n\n.top-button {\n  width: 548px;\n  height: 70px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.border-button {\n  width: 22px;\n  height: 22px;\n  border-radius: 50%;\n  border: 1px solid #d9d9d9;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.brightness-button {\n  width: 20px;\n  height: 20px;\n  border-radius: 50%;\n  background-color: #262626;\n  border: 2px solid #404040; }\n\n.row-1 {\n  width: 100%;\n  height: 200px;\n  display: flex; }\n\n.row-2 {\n  width: 100%;\n  display: flex;\n  justify-content: center; }\n\n.col-1-2-a {\n  width: 50%;\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.button-circle {\n  width: 190px;\n  height: 190px;\n  border-radius: 50%;\n  background-color: #b3b3b3;\n  border: 4px solid #666666;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.arrow-buttons {\n  border-radius: 5px;\n  background-color: #262626;\n  width: 135px;\n  height: 48px;\n  position: relative;\n  border: 1px solid #1a1a1a;\n  box-shadow: 3px 3px #1a1a1a, 4px 4px #000000; }\n\n.arrow-buttons::after {\n  content: \"\";\n  top: -48px;\n  right: 45px;\n  border-radius: 5px 5px 0 0;\n  background-color: #262626;\n  width: 48px;\n  height: 48px;\n  position: absolute;\n  box-shadow: 3px 0px #1a1a1a, 4px 0 #000000; }\n\n.arrow-buttons::before {\n  content: \"\";\n  top: 46px;\n  right: 45px;\n  border-radius: 0 0 5px 5px;\n  background-color: #262626;\n  width: 48px;\n  height: 48px;\n  position: absolute;\n  box-shadow: 2px 2px #1a1a1a, 3px 3px #000000; }\n\n.a-b-buttons {\n  width: 170px;\n  height: 73px;\n  background-color: #b3b3b3;\n  border: 4px solid #666666;\n  margin-top: 10px;\n  margin-left: 20px;\n  border-radius: 40px;\n  transform-origin: 0 100%;\n  transform: rotate(-15deg);\n  display: flex;\n  justify-content: space-around;\n  align-items: center; }\n\n.a-button {\n  font-size: 50px;\n  font-weight: 900;\n  text-align: center;\n  line-height: 48px;\n  vertical-align: middle;\n  width: 57px;\n  height: 57px;\n  border: 2px solid #800000;\n  border-radius: 50%;\n  color: #b30000;\n  background-color: #b30000;\n  text-shadow: -2px 0 #800000, 0 2px #800000, 2px 0 #800000, 0 -2px #800000;\n  box-shadow: 2px 2px #800000; }\n\n.small-buttons {\n  margin-top: 35px;\n  width: 130px;\n  height: 100px;\n  display: flex;\n  justify-content: space-around;\n  align-items: center; }\n\n.border-small-button {\n  width: 30px;\n  height: 30px;\n  border-radius: 50%;\n  border: 5px solid #d9d9d9;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.small-button {\n  width: 20px;\n  height: 20px;\n  border-radius: 50%;\n  background-color: #262626;\n  border: 2px solid #404040; }\n\n.main-hero {\n  margin-top: 10px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center; }\n\n/* styling main-page */\n.main-page-title {\n  font-weight: 900;\n  font-size: 45px;\n  color: #ffcc00;\n  text-shadow: -1px 0 #a6a6a6, 0 1px #a6a6a6, 1px 0 #a6a6a6, 0 -1px #a6a6a6; }\n\n.main-screen-background {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 479px;\n  height: 331px;\n  background-image: url(\"./src/imgs/main-page-start-screen.png\");\n  background-size: cover;\n  font-family: 'VT323', monospace; }\n\n/* styling pick pokemon */\n.row1-2aa {\n  display: flex;\n  background-color: #999999; }\n\n.col1-2b {\n  border: 3px solid #3d3d5c;\n  position: relative; }\n\n.col1-2a {\n  position: relative; }\n\n.inner-row-1 {\n  display: flex;\n  flex-direction: row; }\n\n.inner-row-2 {\n  border-bottom: 3px solid #3d3d5c; }\n\n.inner-row-3 {\n  background: repeating-linear-gradient(0deg, #33ffbb, #33ffbb 1px, #f2f2f2 1px, #f2f2f2 2px);\n  height: 95px;\n  display: flex;\n  flex-direction: row; }\n\n.pokemon-list {\n  background-color: #3d3d5c;\n  border-top: 3px solid #3d3d5c;\n  border-bottom: 3px solid #3d3d5c;\n  border-left: 3px solid #3d3d5c; }\n\n.pokemon {\n  width: 132px;\n  height: 132px;\n  background-color: #e6f2ff;\n  background-image: linear-gradient(45deg, #b3d9ff 25%, transparent 25%, transparent 75%, #b3d9ff 75%, #b3d9ff), linear-gradient(45deg, #b3d9ff 25%, transparent 25%, transparent 75%, #b3d9ff 75%, #b3d9ff);\n  background-size: 15px 15px;\n  background-position: 0 0, 7.5px 7.5px;\n  border: 2px solid #999999;\n  border-radius: 2px 2px 0 0; }\n\n.pokemon-name {\n  background-color: #e6e6e6;\n  color: white;\n  text-shadow: 1px 1px grey;\n  text-align: center;\n  letter-spacing: 1px;\n  text-transform: uppercase;\n  border-radius: 0 0 2px 2px;\n  margin-top: -3px; }\n\n.pokemon-in-list {\n  border: 3px solid #7575a3;\n  border-radius: 5px; }\n\n.pokemon-img {\n  border: 1.2px solid #aa80ff;\n  border-radius: 3px;\n  background: repeating-linear-gradient(0deg, #f2f2f2, #f2f2f2 4px, white 4px, white 8px);\n  width: 160px;\n  height: 140px;\n  margin: 3px 3px 3px 3px; }\n\n.pokemon-list {\n  height: 312px;\n  overflow-y: scroll; }\n\n.element-explanation-0 {\n  top: 300px;\n  left: -200px;\n  border-radius: 4px;\n  border: 3px solid #33ffbb;\n  text-align: center;\n  width: 130px;\n  position: absolute;\n  background-color: white;\n  box-shadow: 2px 2px grey; }\n\n.element-explanation-1 {\n  border-radius: 4px;\n  border: 3px solid #33ffbb;\n  text-align: center;\n  width: 130px;\n  position: absolute;\n  background-color: white;\n  top: 40px;\n  left: -200px;\n  box-shadow: 2px 2px grey; }\n\n.element-explanation-2 {\n  top: 80px;\n  left: 400px;\n  text-align: center;\n  width: 130px;\n  background-color: white;\n  border-radius: 4px;\n  border: 3px solid #33ffbb;\n  box-shadow: 2px 2px grey;\n  position: absolute; }\n\n.element-explanation-3 {\n  top: 230px;\n  left: 400px;\n  text-align: center;\n  width: 130px;\n  background-color: white;\n  border-radius: 4px;\n  border: 3px solid #33ffbb;\n  box-shadow: 2px 2px grey;\n  position: absolute; }\n\n.pointing-line-0 {\n  left: -70px;\n  top: 317px;\n  width: 85px;\n  height: 4px;\n  background-color: #33ffbb;\n  position: absolute;\n  border-radius: 0 10px 10px 0;\n  box-shadow: 2px 2px grey; }\n\n.pointing-line-1 {\n  width: 85px;\n  height: 4px;\n  background-color: #33ffbb;\n  position: absolute;\n  left: -70px;\n  top: 58px;\n  border-radius: 0 10px 10px 0;\n  box-shadow: 2px 2px grey; }\n\n.pointing-line-2 {\n  width: 85px;\n  height: 4px;\n  background-color: #33ffbb;\n  position: absolute;\n  left: 318px;\n  top: 135px;\n  border-radius: 10px 0 0 10px;\n  box-shadow: -2.9px 2px grey; }\n\n.pointing-line-3 {\n  left: 318px;\n  top: 255px;\n  width: 85px;\n  height: 4px;\n  background-color: #33ffbb;\n  position: absolute;\n  border-radius: 10px 0 0 10px;\n  box-shadow: -2.9px 2px grey; }\n\n.pokemon-img-and-name {\n  background-color: #ccb3ff;\n  border-right: 3px solid #3d3d5c;\n  border-bottom: 3px solid #3d3d5c;\n  height: 170px; }\n\n.pokemon-img-and-name h2 {\n  letter-spacing: 1px;\n  text-shadow: 1px 1px gray;\n  margin-top: 2px;\n  color: white;\n  font-weight: 200;\n  text-transform: uppercase;\n  text-align: center; }\n\n.pokemon-stat-list-box {\n  border-bottom: 3px solid #3d3d5c;\n  background: repeating-linear-gradient(0deg, #ffdb4d, #ffdb4d 1px, #ffeb99 1px, #ffeb99 2px);\n  width: 163px;\n  height: 170px; }\n\n.pokemon-stat-list {\n  margin-top: 3px;\n  font-size: 17.5px; }\n\n.pokemon-stat-list li {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  color: white;\n  text-transform: uppercase;\n  text-align: center; }\n\n.hp-stat-name {\n  text-shadow: -1px 0 #a6a6a6, 0 1px #a6a6a6, 1px 0 #a6a6a6, 0 -1px #a6a6a6;\n  border-radius: 5px;\n  width: 50px;\n  margin-bottom: 9px;\n  margin-left: 9px;\n  position: relative;\n  z-index: 1; }\n\n.hp-stat-name:after {\n  content: \"\";\n  background-color: #a6a6a6;\n  position: absolute;\n  z-index: -1;\n  left: -6.8px;\n  top: 5.35px;\n  width: 57px;\n  height: 9px;\n  border-radius: 7px; }\n\n.stat-name {\n  text-shadow: -1px 0 #a6a6a6, 0 1px #a6a6a6, 1px 0 #a6a6a6, 0 -1px #a6a6a6;\n  border-radius: 5px;\n  width: 50px;\n  margin-bottom: 2px;\n  margin-left: 6px;\n  z-index: 1;\n  position: relative; }\n\n.stat-name:after {\n  content: \"\";\n  background-color: #a6a6a6;\n  position: absolute;\n  z-index: -1;\n  left: -3.8px;\n  top: 5.35px;\n  width: 57px;\n  height: 9px;\n  border-radius: 7px; }\n\n.hp-stat-number {\n  text-align: right;\n  color: #4d4d4d;\n  text-shadow: 0.5px 0.5px lightgrey;\n  width: 115px;\n  background: #fffae6;\n  float: right;\n  margin-top: 1px;\n  border-radius: 5px;\n  margin-bottom: 8px;\n  margin-right: 2px;\n  position: relative; }\n\n.hp-life-bar {\n  position: absolute;\n  background-color: #4d4d4d;\n  border-radius: 3px;\n  text-align: left;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  top: 15px;\n  left: 6px; }\n\n.hp-hp-title {\n  margin-left: 2px;\n  font-size: 7px;\n  font-weight: 900;\n  color: #ff9900;\n  text-shadow: none; }\n\n.hp-green-bar {\n  margin-left: 0.5px;\n  margin-right: 1px;\n  margin-top: 1px;\n  margin-bottom: 1px;\n  border: 0.5px solid white;\n  border-radius: 2px;\n  width: 85px;\n  height: 7px;\n  background-color: #1aff1a; }\n\n.stat-number {\n  text-align: right;\n  color: #4d4d4d;\n  text-shadow: 0.5px 0.5px lightgrey;\n  width: 50px;\n  background: #fffae6;\n  float: right;\n  border-radius: 5px;\n  margin-bottom: 2px;\n  margin-right: 2px; }\n\n.pokemon-type-list {\n  display: flex;\n  flex-direction: row;\n  justify-content: center; }\n\n.pokemon-type-list li {\n  box-shadow: 1px 1px #595959;\n  border-radius: 2px;\n  text-align: center;\n  width: 55px;\n  color: white;\n  text-transform: uppercase;\n  text-shadow: 1px 1px #4d4d4d;\n  margin-left: 3px; }\n\n.type-title {\n  text-align: center;\n  text-transform: uppercase;\n  color: white;\n  text-shadow: -1px 0 #a6a6a6, 0 1px #a6a6a6, 1px 0 #a6a6a6, 0 -1px #a6a6a6;\n  border-radius: 5px;\n  width: 50px;\n  margin-bottom: 2px;\n  margin-left: 58px;\n  z-index: 1;\n  position: relative; }\n\n.type-title:after {\n  content: \"\";\n  background-color: #a6a6a6;\n  position: absolute;\n  z-index: -1;\n  left: -3.5px;\n  top: 4.3px;\n  width: 57px;\n  height: 9px;\n  border-radius: 7px; }\n\n.pokemon-description {\n  font-size: 15px;\n  height: 37px;\n  width: 332px;\n  border: 2px solid #7575a3;\n  border-radius: 3px;\n  background-color: white;\n  overflow-y: scroll; }\n\n.attack-list-1-2 li {\n  width: 150px;\n  height: 30px;\n  margin-top: 12px;\n  margin-left: 12px;\n  line-height: 30px;\n  vertical-align: middle;\n  border-radius: 3px;\n  background-color: white;\n  text-transform: uppercase;\n  color: #4d4d4d;\n  text-shadow: 0.5px 0.5px lightgrey;\n  position: relative; }\n\n.attack-name {\n  font-size: 15px;\n  width: 93px;\n  margin-left: 54px; }\n\n.attack-nature {\n  position: absolute;\n  top: -2px;\n  left: -5px;\n  background-color: #999999;\n  height: 16px;\n  width: 55px;\n  color: white;\n  text-shadow: 1px 1px #4d4d4d;\n  box-shadow: 1px 1px #595959;\n  line-height: 16px;\n  text-align: center;\n  vertical-align: middle;\n  border-radius: 2px; }\n\n.button-border {\n  background-color: white;\n  border-left: 3px solid #3d3d5c;\n  border-right: 3px solid #3d3d5c;\n  border-bottom: 3px solid #3d3d5c;\n  display: flex;\n  justify-content: center; }\n\n.button-changing-container {\n  font-weight: 800;\n  color: #4d4d4d;\n  text-transform: uppercase;\n  text-shadow: 0.5px 0.5px lightgrey;\n  font-family: 'VT323', monospace; }\n\n/* styling main battle */\n.row-1-2 {\n  width: 479px;\n  position: relative; }\n\n.background {\n  background-image: url(\"./src/imgs/battle-background3.png\");\n  background-size: cover;\n  height: 250px;\n  display: flex;\n  flex-direction: row;\n  z-index: 1; }\n\n.col-1-2 {\n  width: 50%; }\n\n.inner-row-1-2 {\n  height: 35%;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.inner-row-1-2b {\n  height: 50%;\n  display: flex;\n  justify-content: center;\n  align-items: flex-end; }\n\n.inner-row-1-2a {\n  height: 65%;\n  display: flex;\n  justify-content: center; }\n\n.inner-row-1-2c {\n  height: 50%;\n  display: flex;\n  justify-content: center;\n  z-index: 2; }\n\n.element-explanation-5 {\n  top: 53px;\n  left: -200px;\n  border-radius: 4px;\n  border: 3px solid #33ffbb;\n  text-align: center;\n  width: 130px;\n  position: absolute;\n  background-color: white;\n  box-shadow: 2px 2px grey; }\n\n.element-explanation-6 {\n  top: 241px;\n  left: -200px;\n  border-radius: 4px;\n  border: 3px solid #33ffbb;\n  text-align: center;\n  width: 130px;\n  position: absolute;\n  background-color: white;\n  box-shadow: 2px 2px grey; }\n\n.element-explanation-7 {\n  top: 5px;\n  left: 565px;\n  border-radius: 4px;\n  border: 3px solid #33ffbb;\n  text-align: center;\n  width: 130px;\n  position: absolute;\n  background-color: white;\n  box-shadow: 2px 2px grey; }\n\n.pointing-line-5 {\n  top: 95px;\n  left: -70px;\n  width: 130px;\n  height: 4px;\n  background-color: #33ffbb;\n  position: absolute;\n  border-radius: 0 10px 10px 0;\n  box-shadow: 2px 2px grey; }\n\n.pointing-line-6 {\n  top: 288px;\n  left: -70px;\n  width: 80px;\n  height: 4px;\n  background-color: #33ffbb;\n  position: absolute;\n  border-radius: 0 10px 10px 0;\n  box-shadow: 2px 2px grey;\n  z-index: 1; }\n\n.pointing-line-7 {\n  top: 35px;\n  left: 456px;\n  width: 110px;\n  height: 4px;\n  background-color: #33ffbb;\n  position: absolute;\n  border-radius: 10px 0 0 10px;\n  box-shadow: -2px 2px grey;\n  z-index: 1; }\n\n.random-pokemon-img {\n  object-fit: none;\n  width: 140px;\n  align-self: flex-end; }\n\n.player-pokemon-img {\n  margin-bottom: 5px;\n  align-self: flex-end; }\n\n.pokemon-data-border {\n  border: 3px solid #737373;\n  border-radius: 11px 7px 11px 7px; }\n\n.pokemon-data {\n  width: 150px;\n  height: 52px;\n  background-color: whitesmoke;\n  border: 1.5px solid #404040;\n  border-radius: 8px 4px 8px 4px;\n  display: flex;\n  flex-direction: column; }\n\n.pokemon-name-in-data {\n  text-shadow: 0.5px 0.5px lightgrey;\n  color: #404040;\n  text-transform: uppercase;\n  font-size: 18px;\n  margin-left: 6px; }\n\n.life-bar-overbar {\n  width: 117px;\n  border: 1px solid #595959;\n  border-radius: 4px;\n  background-color: #595959;\n  margin-right: 2px;\n  display: flex;\n  justify-content: flex-end;\n  align-self: flex-end;\n  position: relative; }\n\n.life-bar-overbar:before {\n  font-stretch: ultra-expanded;\n  text-transform: uppercase;\n  color: #ffb31a;\n  font-weight: 900;\n  font-size: 11px;\n  content: \"hp\";\n  position: absolute;\n  left: 2.5px;\n  top: -2.6px; }\n\n.life-bar-inner-line {\n  width: 102px;\n  border-radius: 3px;\n  border: 1px solid white;\n  display: flex; }\n\n.stamina-points {\n  text-shadow: 0.5px 0.5px lightgrey;\n  color: #404040;\n  width: 53px;\n  align-self: flex-end; }\n\n.display-window {\n  height: 81px;\n  background-color: #3d3d5c;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.attacks-menu {\n  width: 476px;\n  display: flex;\n  flex-direction: row; }\n\n.attack-info {\n  margin-left: 1px;\n  height: 75px;\n  width: 35%;\n  border: 4px solid #7575a3;\n  border-radius: 3px;\n  background-color: whitesmoke;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center; }\n\n.attack-type {\n  height: 22px;\n  width: 68px;\n  color: white;\n  text-shadow: 1px 1px #4d4d4d;\n  box-shadow: 1px 1px #595959;\n  font-size: 20px;\n  text-transform: uppercase;\n  line-height: 22px;\n  text-align: center;\n  vertical-align: middle;\n  border-radius: 2px; }\n\n.attack-power {\n  text-transform: uppercase;\n  font-size: 20px;\n  text-shadow: 0.5px 0.5px lightgrey;\n  color: #404040; }\n\n.battle-commentary-border {\n  width: 475px;\n  height: 75px;\n  border: 5px solid #cca300;\n  border-radius: 7px; }\n\n.battle-commentary-inner-border {\n  border: 3px solid whitesmoke;\n  border-radius: 2px;\n  background-color: #2d5986;\n  height: 65px; }\n\n.list-of-attack-buttons {\n  height: 75px;\n  width: 65%;\n  border: 4px solid #7575a3;\n  border-radius: 3px;\n  text-transform: uppercase;\n  text-shadow: 1px 1px lightgrey;\n  background-color: whitesmoke;\n  display: flex;\n  flex-direction: row;\n  align-items: center; }\n\n.attack-button {\n  line-height: 28px;\n  vertical-align: middle;\n  margin-left: 25px;\n  height: 28px;\n  width: 115px;\n  font-size: 20px;\n  color: #404040;\n  font-family: 'VT323', monospace; }\n\n.battle-commentary {\n  padding-left: 3px;\n  font-weight: 100;\n  text-shadow: 1px 1px #666666;\n  font-size: 23px;\n  color: white; }\n\n.commentary-size {\n  width: 170px; }\n\n/* styling end-screen */\n.winner-info {\n  width: 479px;\n  height: 331px;\n  background: -webkit-linear-gradient(90deg, #3d3d5c 0%, #3d3d5c 18%, teal 100%);\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center; }\n\n.end-screen-text {\n  text-transform: uppercase;\n  font-size: 24px;\n  text-shadow: 1px 1px #808080;\n  color: whitesmoke; }\n\n.end-screen-button {\n  margin-top: 20px;\n  color: #ffcc00;\n  text-shadow: 1px 1px #997a00;\n  text-transform: uppercase;\n  font-size: 20px;\n  font-family: 'VT323', monospace; }\n\n/* animations for attacks */\n@keyframes slide-in-player {\n  0% {\n    visibility: hidden;\n    transform: translate(-170px, 0); }\n  50% {\n    visibility: hidden; }\n  100% {\n    visibility: visible;\n    transform: translate(0, 0); } }\n\n@keyframes slide-in-random {\n  0% {\n    visibility: hidden;\n    transform: translate(170px, 0); }\n  50% {\n    visibility: hidden; }\n  100% {\n    visibility: visible;\n    transform: translate(0, 0); } }\n\n@keyframes scratch-player-send {\n  50% {\n    transform-origin: 100% 100%;\n    transform: rotate(20deg); }\n  100% {\n    transform: rotate(0deg); } }\n\n@keyframes scratch-random-receive {\n  50% {\n    transform-origin: 100% 100%;\n    transform: rotate(20deg); }\n  100% {\n    transform: rotate(0deg); } }\n\n@keyframes scratch-player-receive {\n  50% {\n    transform-origin: 0 100%;\n    transform: rotate(-20deg); }\n  100% {\n    transform: rotate(0deg); } }\n\n@keyframes scratch-random-send {\n  50% {\n    transform-origin: 100% 100%;\n    transform: rotate(-10deg); }\n  100% {\n    transform: rotate(0deg); } }\n\n@keyframes stat-modifying {\n  25% {\n    transform-origin: 50% 100%;\n    transform: rotate(10deg); }\n  50% {\n    transform: rotate(0deg); }\n  75% {\n    transform: rotate(-10deg); }\n  100% {\n    transform: rotate(0deg); } }\n\n@keyframes dead {\n  0% {\n    visibility: visible; }\n  20% {\n    z-index: -1; }\n  100% {\n    z-index: -1;\n    visibility: hidden;\n    transform: translate(0, 100px); } }\n", ""]);
+exports.push([module.i, "/* global classes */\nbody {\n  background-color: #ffcc00;\n  font-family: 'VT323', monospace; }\n\n.game-framing {\n  border-radius: 15px;\n  font-family: 'VT323', monospace;\n  border-left: 20px solid silver;\n  border-right: 20px solid silver;\n  border-top: 30px solid silver;\n  border-bottom: 35px solid silver;\n  background-color: silver; }\n\n.border {\n  border: 15px solid black;\n  border-bottom: 30px solid black;\n  border-radius: 8px; }\n\n/* styling main-hero */\n.over-frame {\n  border-radius: 16px;\n  border: 1px solid #737373;\n  box-shadow: 1px 1px #808080, 2px 2px #808080, 3px 3px #808080, 4px 4px #808080, 5px 5px #808080, 5px 5px #737373, 6px 6px #737373, 7px 7px #737373, 8px 8px #595959; }\n\n.connector {\n  width: 547px;\n  height: 33px;\n  border-radius: 9px;\n  background-color: silver;\n  border: 0.5px solid #737373;\n  box-shadow: 1px 1px #808080, 2px 2px #737373;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.help-button-border {\n  height: 30px;\n  width: 70px;\n  border-radius: 15px;\n  border: 3px solid #737373;\n  display: flex;\n  align-items: center; }\n\n.help-button {\n  text-shadow: 0.5px 0.5px #737373;\n  font-weight: 700;\n  color: #262626;\n  text-transform: uppercase;\n  line-height: 22px;\n  vertical-align: middle;\n  height: 24px;\n  width: 50px;\n  background-color: lightgray;\n  border-radius: 15px;\n  border: 1px solid #404040;\n  text-align: center; }\n\n.lower-part {\n  width: 549px;\n  height: 441px;\n  background-color: silver;\n  margin-top: 1px;\n  margin-bottom: 10px;\n  border: 0.5px solid #737373;\n  border-radius: 12px;\n  box-shadow: 1px 1px #808080, 2px 2px #808080, 3px 3px #808080, 4px 4px #808080, 5px 5px #808080, 5px 5px #737373, 6px 6px #737373, 7px 7px #737373, 8px 8px #595959; }\n\n.top-button {\n  width: 548px;\n  height: 70px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.border-button {\n  width: 22px;\n  height: 22px;\n  border-radius: 50%;\n  border: 1px solid #d9d9d9;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.brightness-button {\n  width: 20px;\n  height: 20px;\n  border-radius: 50%;\n  background-color: #262626;\n  border: 2px solid #404040; }\n\n.row-1 {\n  width: 100%;\n  height: 200px;\n  display: flex; }\n\n.row-2 {\n  width: 100%;\n  display: flex;\n  justify-content: center; }\n\n.col-1-2-a {\n  width: 50%;\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.button-circle {\n  width: 190px;\n  height: 190px;\n  border-radius: 50%;\n  background-color: #b3b3b3;\n  border: 4px solid #666666;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.arrow-buttons {\n  border-radius: 5px;\n  background-color: #262626;\n  width: 135px;\n  height: 48px;\n  position: relative;\n  border: 1px solid #1a1a1a;\n  box-shadow: 3px 3px #1a1a1a, 4px 4px #000000; }\n\n.arrow-buttons::after {\n  content: \"\";\n  top: -48px;\n  right: 45px;\n  border-radius: 5px 5px 0 0;\n  background-color: #262626;\n  width: 48px;\n  height: 48px;\n  position: absolute;\n  box-shadow: 3px 0px #1a1a1a, 4px 0 #000000; }\n\n.arrow-buttons::before {\n  content: \"\";\n  top: 46px;\n  right: 45px;\n  border-radius: 0 0 5px 5px;\n  background-color: #262626;\n  width: 48px;\n  height: 48px;\n  position: absolute;\n  box-shadow: 2px 2px #1a1a1a, 3px 3px #000000; }\n\n.a-b-buttons {\n  width: 170px;\n  height: 73px;\n  background-color: #b3b3b3;\n  border: 4px solid #666666;\n  margin-top: 10px;\n  margin-left: 20px;\n  border-radius: 40px;\n  transform-origin: 0 100%;\n  transform: rotate(-15deg);\n  display: flex;\n  justify-content: space-around;\n  align-items: center; }\n\n.a-button {\n  font-size: 50px;\n  font-weight: 900;\n  text-align: center;\n  line-height: 48px;\n  vertical-align: middle;\n  width: 57px;\n  height: 57px;\n  border: 2px solid #800000;\n  border-radius: 50%;\n  color: #b30000;\n  background-color: #b30000;\n  text-shadow: -2px 0 #800000, 0 2px #800000, 2px 0 #800000, 0 -2px #800000;\n  box-shadow: 2px 2px #800000; }\n\n.small-buttons {\n  margin-top: 35px;\n  width: 130px;\n  height: 100px;\n  display: flex;\n  justify-content: space-around;\n  align-items: center; }\n\n.border-small-button {\n  width: 30px;\n  height: 30px;\n  border-radius: 50%;\n  border: 5px solid #d9d9d9;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.small-button {\n  width: 20px;\n  height: 20px;\n  border-radius: 50%;\n  background-color: #262626;\n  border: 2px solid #404040; }\n\n.main-hero {\n  margin-top: 10px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center; }\n\n/* styling main-page */\n.main-page-title {\n  font-weight: 900;\n  font-size: 45px;\n  color: #ffcc00;\n  text-shadow: -1px 0 #a6a6a6, 0 1px #a6a6a6, 1px 0 #a6a6a6, 0 -1px #a6a6a6; }\n\n.main-screen-background {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 479px;\n  height: 331px;\n  background-image: url(\"./src/imgs/main-page-start-screen.png\");\n  background-size: cover;\n  font-family: 'VT323', monospace; }\n\n.element-explanation-8 {\n  left: 30px;\n  text-align: center;\n  width: 130px;\n  background-color: white;\n  border-radius: 4px;\n  border: 3px solid #33ffbb;\n  box-shadow: 2px 2px grey;\n  position: absolute;\n  z-index: 1; }\n\n.pointing-line-8 {\n  left: 159px;\n  width: 225px;\n  height: 4px;\n  background-color: #33ffbb;\n  position: absolute;\n  border-radius: 0 10px 10px 0;\n  box-shadow: 2px 2px grey;\n  z-index: 1; }\n\n/* styling pick pokemon */\n.row1-2aa {\n  display: flex;\n  background-color: #999999; }\n\n.col1-2b {\n  border: 3px solid #3d3d5c;\n  position: relative; }\n\n.col1-2a {\n  position: relative; }\n\n.inner-row-1 {\n  display: flex;\n  flex-direction: row; }\n\n.inner-row-2 {\n  border-bottom: 3px solid #3d3d5c; }\n\n.inner-row-3 {\n  background: repeating-linear-gradient(0deg, #33ffbb, #33ffbb 1px, #f2f2f2 1px, #f2f2f2 2px);\n  height: 95px;\n  display: flex;\n  flex-direction: row; }\n\n.pokemon-list {\n  background-color: #3d3d5c;\n  border-top: 3px solid #3d3d5c;\n  border-bottom: 3px solid #3d3d5c;\n  border-left: 3px solid #3d3d5c; }\n\n.pokemon {\n  width: 132px;\n  height: 132px;\n  background-color: #e6f2ff;\n  background-image: linear-gradient(45deg, #b3d9ff 25%, transparent 25%, transparent 75%, #b3d9ff 75%, #b3d9ff), linear-gradient(45deg, #b3d9ff 25%, transparent 25%, transparent 75%, #b3d9ff 75%, #b3d9ff);\n  background-size: 15px 15px;\n  background-position: 0 0, 7.5px 7.5px;\n  border: 2px solid #999999;\n  border-radius: 2px 2px 0 0; }\n\n.pokemon-name {\n  background-color: #e6e6e6;\n  color: white;\n  text-shadow: 1px 1px grey;\n  text-align: center;\n  letter-spacing: 1px;\n  text-transform: uppercase;\n  border-radius: 0 0 2px 2px;\n  margin-top: -3px; }\n\n.pokemon-in-list {\n  border: 3px solid #7575a3;\n  border-radius: 5px; }\n\n.pokemon-img {\n  border: 1.2px solid #aa80ff;\n  border-radius: 3px;\n  background: repeating-linear-gradient(0deg, #f2f2f2, #f2f2f2 4px, white 4px, white 8px);\n  width: 160px;\n  height: 140px;\n  margin: 3px 3px 3px 3px; }\n\n.pokemon-list {\n  height: 312px;\n  overflow-y: scroll; }\n\n.element-explanation-0 {\n  top: 300px;\n  left: -200px;\n  border-radius: 4px;\n  border: 3px solid #33ffbb;\n  text-align: center;\n  width: 130px;\n  position: absolute;\n  background-color: white;\n  box-shadow: 2px 2px grey; }\n\n.element-explanation-1 {\n  border-radius: 4px;\n  border: 3px solid #33ffbb;\n  text-align: center;\n  width: 130px;\n  position: absolute;\n  background-color: white;\n  top: 40px;\n  left: -200px;\n  box-shadow: 2px 2px grey; }\n\n.element-explanation-2 {\n  top: 80px;\n  left: 400px;\n  text-align: center;\n  width: 130px;\n  background-color: white;\n  border-radius: 4px;\n  border: 3px solid #33ffbb;\n  box-shadow: 2px 2px grey;\n  position: absolute; }\n\n.element-explanation-3 {\n  top: 230px;\n  left: 400px;\n  text-align: center;\n  width: 130px;\n  background-color: white;\n  border-radius: 4px;\n  border: 3px solid #33ffbb;\n  box-shadow: 2px 2px grey;\n  position: absolute; }\n\n.pointing-line-0 {\n  left: -70px;\n  top: 317px;\n  width: 85px;\n  height: 4px;\n  background-color: #33ffbb;\n  position: absolute;\n  border-radius: 0 10px 10px 0;\n  box-shadow: 2px 2px grey; }\n\n.pointing-line-1 {\n  width: 85px;\n  height: 4px;\n  background-color: #33ffbb;\n  position: absolute;\n  left: -70px;\n  top: 58px;\n  border-radius: 0 10px 10px 0;\n  box-shadow: 2px 2px grey; }\n\n.pointing-line-2 {\n  width: 85px;\n  height: 4px;\n  background-color: #33ffbb;\n  position: absolute;\n  left: 318px;\n  top: 135px;\n  border-radius: 10px 0 0 10px;\n  box-shadow: -2.9px 2px grey; }\n\n.pointing-line-3 {\n  left: 318px;\n  top: 255px;\n  width: 85px;\n  height: 4px;\n  background-color: #33ffbb;\n  position: absolute;\n  border-radius: 10px 0 0 10px;\n  box-shadow: -2.9px 2px grey; }\n\n.pokemon-img-and-name {\n  background-color: #ccb3ff;\n  border-right: 3px solid #3d3d5c;\n  border-bottom: 3px solid #3d3d5c;\n  height: 170px; }\n\n.pokemon-img-and-name h2 {\n  letter-spacing: 1px;\n  text-shadow: 1px 1px gray;\n  margin-top: 2px;\n  color: white;\n  font-weight: 200;\n  text-transform: uppercase;\n  text-align: center; }\n\n.pokemon-stat-list-box {\n  border-bottom: 3px solid #3d3d5c;\n  background: repeating-linear-gradient(0deg, #ffdb4d, #ffdb4d 1px, #ffeb99 1px, #ffeb99 2px);\n  width: 163px;\n  height: 170px; }\n\n.pokemon-stat-list {\n  margin-top: 3px;\n  font-size: 17.5px; }\n\n.pokemon-stat-list li {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  color: white;\n  text-transform: uppercase;\n  text-align: center; }\n\n.hp-stat-name {\n  text-shadow: -1px 0 #a6a6a6, 0 1px #a6a6a6, 1px 0 #a6a6a6, 0 -1px #a6a6a6;\n  border-radius: 5px;\n  width: 50px;\n  margin-bottom: 9px;\n  margin-left: 9px;\n  position: relative;\n  z-index: 1; }\n\n.hp-stat-name:after {\n  content: \"\";\n  background-color: #a6a6a6;\n  position: absolute;\n  z-index: -1;\n  left: -6.8px;\n  top: 5.35px;\n  width: 57px;\n  height: 9px;\n  border-radius: 7px; }\n\n.stat-name {\n  text-shadow: -1px 0 #a6a6a6, 0 1px #a6a6a6, 1px 0 #a6a6a6, 0 -1px #a6a6a6;\n  border-radius: 5px;\n  width: 50px;\n  margin-bottom: 2px;\n  margin-left: 6px;\n  z-index: 1;\n  position: relative; }\n\n.stat-name:after {\n  content: \"\";\n  background-color: #a6a6a6;\n  position: absolute;\n  z-index: -1;\n  left: -3.8px;\n  top: 5.35px;\n  width: 57px;\n  height: 9px;\n  border-radius: 7px; }\n\n.hp-stat-number {\n  text-align: right;\n  color: #4d4d4d;\n  text-shadow: 0.5px 0.5px lightgrey;\n  width: 115px;\n  background: #fffae6;\n  float: right;\n  margin-top: 1px;\n  border-radius: 5px;\n  margin-bottom: 8px;\n  margin-right: 2px;\n  position: relative; }\n\n.hp-life-bar {\n  position: absolute;\n  background-color: #4d4d4d;\n  border-radius: 3px;\n  text-align: left;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  top: 15px;\n  left: 6px; }\n\n.hp-hp-title {\n  margin-left: 2px;\n  font-size: 7px;\n  font-weight: 900;\n  color: #ff9900;\n  text-shadow: none; }\n\n.hp-green-bar {\n  margin-left: 0.5px;\n  margin-right: 1px;\n  margin-top: 1px;\n  margin-bottom: 1px;\n  border: 0.5px solid white;\n  border-radius: 2px;\n  width: 85px;\n  height: 7px;\n  background-color: #1aff1a; }\n\n.stat-number {\n  text-align: right;\n  color: #4d4d4d;\n  text-shadow: 0.5px 0.5px lightgrey;\n  width: 50px;\n  background: #fffae6;\n  float: right;\n  border-radius: 5px;\n  margin-bottom: 2px;\n  margin-right: 2px; }\n\n.pokemon-type-list {\n  display: flex;\n  flex-direction: row;\n  justify-content: center; }\n\n.pokemon-type-list li {\n  box-shadow: 1px 1px #595959;\n  border-radius: 2px;\n  text-align: center;\n  width: 55px;\n  color: white;\n  text-transform: uppercase;\n  text-shadow: 1px 1px #4d4d4d;\n  margin-left: 3px; }\n\n.type-title {\n  text-align: center;\n  text-transform: uppercase;\n  color: white;\n  text-shadow: -1px 0 #a6a6a6, 0 1px #a6a6a6, 1px 0 #a6a6a6, 0 -1px #a6a6a6;\n  border-radius: 5px;\n  width: 50px;\n  margin-bottom: 2px;\n  margin-left: 58px;\n  z-index: 1;\n  position: relative; }\n\n.type-title:after {\n  content: \"\";\n  background-color: #a6a6a6;\n  position: absolute;\n  z-index: -1;\n  left: -3.5px;\n  top: 4.3px;\n  width: 57px;\n  height: 9px;\n  border-radius: 7px; }\n\n.pokemon-description {\n  font-size: 15px;\n  height: 37px;\n  width: 332px;\n  border: 2px solid #7575a3;\n  border-radius: 3px;\n  background-color: white;\n  overflow-y: scroll; }\n\n.attack-list-1-2 li {\n  width: 150px;\n  height: 30px;\n  margin-top: 12px;\n  margin-left: 12px;\n  line-height: 30px;\n  vertical-align: middle;\n  border-radius: 3px;\n  background-color: white;\n  text-transform: uppercase;\n  color: #4d4d4d;\n  text-shadow: 0.5px 0.5px lightgrey;\n  position: relative; }\n\n.attack-name {\n  font-size: 15px;\n  width: 93px;\n  margin-left: 54px; }\n\n.attack-nature {\n  position: absolute;\n  top: -2px;\n  left: -5px;\n  background-color: #999999;\n  height: 16px;\n  width: 55px;\n  color: white;\n  text-shadow: 1px 1px #4d4d4d;\n  box-shadow: 1px 1px #595959;\n  line-height: 16px;\n  text-align: center;\n  vertical-align: middle;\n  border-radius: 2px; }\n\n.button-border {\n  background-color: white;\n  border-left: 3px solid #3d3d5c;\n  border-right: 3px solid #3d3d5c;\n  border-bottom: 3px solid #3d3d5c;\n  display: flex;\n  justify-content: center; }\n\n.button-changing-container {\n  font-weight: 800;\n  color: #4d4d4d;\n  text-transform: uppercase;\n  text-shadow: 0.5px 0.5px lightgrey;\n  font-family: 'VT323', monospace; }\n\n/* styling main battle */\n.row-1-2 {\n  width: 479px;\n  position: relative; }\n\n.background {\n  background-image: url(\"./src/imgs/battle-background3.png\");\n  background-size: cover;\n  height: 250px;\n  display: flex;\n  flex-direction: row;\n  z-index: 1; }\n\n.col-1-2 {\n  width: 50%; }\n\n.inner-row-1-2 {\n  height: 35%;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.inner-row-1-2b {\n  height: 50%;\n  display: flex;\n  justify-content: center;\n  align-items: flex-end; }\n\n.inner-row-1-2a {\n  height: 65%;\n  display: flex;\n  justify-content: center; }\n\n.inner-row-1-2c {\n  height: 50%;\n  display: flex;\n  justify-content: center;\n  z-index: 2; }\n\n.element-explanation-5 {\n  top: 53px;\n  left: -200px;\n  border-radius: 4px;\n  border: 3px solid #33ffbb;\n  text-align: center;\n  width: 130px;\n  position: absolute;\n  background-color: white;\n  box-shadow: 2px 2px grey; }\n\n.element-explanation-6 {\n  top: 241px;\n  left: -200px;\n  border-radius: 4px;\n  border: 3px solid #33ffbb;\n  text-align: center;\n  width: 130px;\n  position: absolute;\n  background-color: white;\n  box-shadow: 2px 2px grey; }\n\n.element-explanation-7 {\n  top: 5px;\n  left: 565px;\n  border-radius: 4px;\n  border: 3px solid #33ffbb;\n  text-align: center;\n  width: 130px;\n  position: absolute;\n  background-color: white;\n  box-shadow: 2px 2px grey; }\n\n.pointing-line-5 {\n  top: 95px;\n  left: -70px;\n  width: 130px;\n  height: 4px;\n  background-color: #33ffbb;\n  position: absolute;\n  border-radius: 0 10px 10px 0;\n  box-shadow: 2px 2px grey; }\n\n.pointing-line-6 {\n  top: 288px;\n  left: -70px;\n  width: 80px;\n  height: 4px;\n  background-color: #33ffbb;\n  position: absolute;\n  border-radius: 0 10px 10px 0;\n  box-shadow: 2px 2px grey;\n  z-index: 1; }\n\n.pointing-line-7 {\n  top: 35px;\n  left: 456px;\n  width: 110px;\n  height: 4px;\n  background-color: #33ffbb;\n  position: absolute;\n  border-radius: 10px 0 0 10px;\n  box-shadow: -2px 2px grey;\n  z-index: 1; }\n\n.random-pokemon-img {\n  object-fit: none;\n  width: 140px;\n  align-self: flex-end; }\n\n.player-pokemon-img {\n  margin-bottom: 5px;\n  align-self: flex-end; }\n\n.pokemon-data-border {\n  border: 3px solid #737373;\n  border-radius: 11px 7px 11px 7px; }\n\n.pokemon-data {\n  width: 150px;\n  height: 52px;\n  background-color: whitesmoke;\n  border: 1.5px solid #404040;\n  border-radius: 8px 4px 8px 4px;\n  display: flex;\n  flex-direction: column; }\n\n.pokemon-name-in-data {\n  text-shadow: 0.5px 0.5px lightgrey;\n  color: #404040;\n  text-transform: uppercase;\n  font-size: 18px;\n  margin-left: 6px; }\n\n.life-bar-overbar {\n  width: 117px;\n  border: 1px solid #595959;\n  border-radius: 4px;\n  background-color: #595959;\n  margin-right: 2px;\n  display: flex;\n  justify-content: flex-end;\n  align-self: flex-end;\n  position: relative; }\n\n.life-bar-overbar:before {\n  font-stretch: ultra-expanded;\n  text-transform: uppercase;\n  color: #ffb31a;\n  font-weight: 900;\n  font-size: 11px;\n  content: \"hp\";\n  position: absolute;\n  left: 2.5px;\n  top: -2.6px; }\n\n.life-bar-inner-line {\n  width: 102px;\n  border-radius: 3px;\n  border: 1px solid white;\n  display: flex; }\n\n.stamina-points {\n  text-shadow: 0.5px 0.5px lightgrey;\n  color: #404040;\n  width: 53px;\n  align-self: flex-end; }\n\n.display-window {\n  height: 81px;\n  background-color: #3d3d5c;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.attacks-menu {\n  width: 476px;\n  display: flex;\n  flex-direction: row; }\n\n.attack-info {\n  margin-left: 1px;\n  height: 75px;\n  width: 35%;\n  border: 4px solid #7575a3;\n  border-radius: 3px;\n  background-color: whitesmoke;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center; }\n\n.attack-type {\n  height: 22px;\n  width: 68px;\n  color: white;\n  text-shadow: 1px 1px #4d4d4d;\n  box-shadow: 1px 1px #595959;\n  font-size: 20px;\n  text-transform: uppercase;\n  line-height: 22px;\n  text-align: center;\n  vertical-align: middle;\n  border-radius: 2px; }\n\n.attack-power {\n  text-transform: uppercase;\n  font-size: 20px;\n  text-shadow: 0.5px 0.5px lightgrey;\n  color: #404040; }\n\n.battle-commentary-border {\n  width: 475px;\n  height: 75px;\n  border: 5px solid #cca300;\n  border-radius: 7px; }\n\n.battle-commentary-inner-border {\n  border: 3px solid whitesmoke;\n  border-radius: 2px;\n  background-color: #2d5986;\n  height: 65px; }\n\n.list-of-attack-buttons {\n  height: 75px;\n  width: 65%;\n  border: 4px solid #7575a3;\n  border-radius: 3px;\n  text-transform: uppercase;\n  text-shadow: 1px 1px lightgrey;\n  background-color: whitesmoke;\n  display: flex;\n  flex-direction: row;\n  align-items: center; }\n\n.attack-button {\n  line-height: 28px;\n  vertical-align: middle;\n  margin-left: 25px;\n  height: 28px;\n  width: 115px;\n  font-size: 20px;\n  color: #404040;\n  font-family: 'VT323', monospace; }\n\n.battle-commentary {\n  padding-left: 3px;\n  font-weight: 100;\n  text-shadow: 1px 1px #666666;\n  font-size: 23px;\n  color: white; }\n\n.commentary-size {\n  width: 170px; }\n\n/* styling end-screen */\n.winner-info {\n  width: 479px;\n  height: 331px;\n  background: -webkit-linear-gradient(90deg, #3d3d5c 0%, #3d3d5c 18%, teal 100%);\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center; }\n\n.end-screen-text {\n  text-transform: uppercase;\n  font-size: 24px;\n  text-shadow: 1px 1px #808080;\n  color: whitesmoke; }\n\n.end-screen-button {\n  margin-top: 20px;\n  color: #ffcc00;\n  text-shadow: 1px 1px #997a00;\n  text-transform: uppercase;\n  font-size: 20px;\n  font-family: 'VT323', monospace; }\n\n/* animations for attacks */\n@keyframes slide-in-player {\n  0% {\n    visibility: hidden;\n    transform: translate(-170px, 0); }\n  50% {\n    visibility: hidden; }\n  100% {\n    visibility: visible;\n    transform: translate(0, 0); } }\n\n@keyframes slide-in-random {\n  0% {\n    visibility: hidden;\n    transform: translate(170px, 0); }\n  50% {\n    visibility: hidden; }\n  100% {\n    visibility: visible;\n    transform: translate(0, 0); } }\n\n@keyframes scratch-player-send {\n  50% {\n    transform-origin: 100% 100%;\n    transform: rotate(20deg); }\n  100% {\n    transform: rotate(0deg); } }\n\n@keyframes scratch-random-receive {\n  50% {\n    transform-origin: 100% 100%;\n    transform: rotate(20deg); }\n  100% {\n    transform: rotate(0deg); } }\n\n@keyframes scratch-player-receive {\n  50% {\n    transform-origin: 0 100%;\n    transform: rotate(-20deg); }\n  100% {\n    transform: rotate(0deg); } }\n\n@keyframes scratch-random-send {\n  50% {\n    transform-origin: 100% 100%;\n    transform: rotate(-10deg); }\n  100% {\n    transform: rotate(0deg); } }\n\n@keyframes stat-modifying {\n  25% {\n    transform-origin: 50% 100%;\n    transform: rotate(10deg); }\n  50% {\n    transform: rotate(0deg); }\n  75% {\n    transform: rotate(-10deg); }\n  100% {\n    transform: rotate(0deg); } }\n\n@keyframes dead {\n  0% {\n    visibility: visible; }\n  20% {\n    z-index: -1; }\n  100% {\n    z-index: -1;\n    visibility: hidden;\n    transform: translate(0, 100px); } }\n", ""]);
 
 // exports
 
@@ -33872,6 +33569,351 @@ module.exports = function (css) {
 	return fixedCss;
 };
 
+
+/***/ }),
+/* 130 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _redux = __webpack_require__(3);
+
+var _reactRedux = __webpack_require__(6);
+
+var _startGame = __webpack_require__(131);
+
+var _startGame2 = _interopRequireDefault(_startGame);
+
+var _pickPokemon = __webpack_require__(118);
+
+var _pickPokemon2 = _interopRequireDefault(_pickPokemon);
+
+var _battleEvent = __webpack_require__(119);
+
+var _battleEvent2 = _interopRequireDefault(_battleEvent);
+
+var _endGameScreen = __webpack_require__(124);
+
+var _endGameScreen2 = _interopRequireDefault(_endGameScreen);
+
+var _allActions = __webpack_require__(15);
+
+var _allActions2 = _interopRequireDefault(_allActions);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } //presets
+
+
+//file imports
+
+
+//importing actions
+
+
+//classes
+var TheGame = function (_React$Component) {
+    _inherits(TheGame, _React$Component);
+
+    function TheGame(props) {
+        _classCallCheck(this, TheGame);
+
+        var _this = _possibleConstructorReturn(this, (TheGame.__proto__ || Object.getPrototypeOf(TheGame)).call(this, props));
+
+        _this.handleRender = function () {
+            if (_this.state.ComponentRenderCounter === 3) {
+                _this.setState({
+                    ComponentRenderCounter: 0
+                });
+            } else {
+                _this.setState({
+                    ComponentRenderCounter: _this.state.ComponentRenderCounter + 1
+                });
+            }
+        };
+
+        _this.handleComponents = function () {
+            if (_this.state.ComponentRenderCounter === 0) {
+                return _react2.default.createElement(
+                    "div",
+                    null,
+                    _react2.default.createElement(_startGame2.default, { onConfirm: _this.handleRender })
+                );
+            }
+            if (_this.state.ComponentRenderCounter === 1) {
+                return _react2.default.createElement(
+                    "div",
+                    null,
+                    _react2.default.createElement(_pickPokemon2.default, { onConfirm: _this.handleRender })
+                );
+            }
+            if (_this.state.ComponentRenderCounter === 2) {
+                return _react2.default.createElement(
+                    "div",
+                    null,
+                    _react2.default.createElement(_battleEvent2.default, { onConfirm: _this.handleRender })
+                );
+            }
+            if (_this.state.ComponentRenderCounter === 3) {
+                return _react2.default.createElement(
+                    "div",
+                    null,
+                    _react2.default.createElement(_endGameScreen2.default, { onConfirm: _this.handleRender })
+                );
+            }
+        };
+
+        _this.handleButtonChange = function () {
+            _this.props.transformState("switching");
+            _this.props.showHelp(_this.props.positionInfo);
+            _this.props.colorState("switching");
+        };
+
+        _this.state = {
+            ComponentRenderCounter: 0
+        };
+        return _this;
+    }
+
+    _createClass(TheGame, [{
+        key: "render",
+        value: function render() {
+            var _this2 = this;
+
+            return _react2.default.createElement(
+                "div",
+                { className: "main-hero" },
+                _react2.default.createElement(
+                    "div",
+                    { className: "over-frame" },
+                    this.handleComponents()
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "lower-part" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "connector" },
+                        _react2.default.createElement(
+                            "div",
+                            { className: "help-button-border", style: { backgroundColor: this.props.colorInfo } },
+                            _react2.default.createElement(
+                                "div",
+                                { className: "help-button", onClick: function onClick() {
+                                        return _this2.handleButtonChange();
+                                    }, style: { transform: this.props.positionInfo, transition: "all 0.1s ease-out" } },
+                                "Help"
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "top-button" },
+                        _react2.default.createElement(
+                            "div",
+                            { className: "border-button" },
+                            _react2.default.createElement("div", { className: "brightness-button" })
+                        )
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "row-1" },
+                        _react2.default.createElement(
+                            "div",
+                            { className: "col-1-2-a" },
+                            _react2.default.createElement(
+                                "div",
+                                { className: "button-circle" },
+                                _react2.default.createElement("div", { className: "arrow-buttons" })
+                            )
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            { className: "col-1-2-a" },
+                            _react2.default.createElement(
+                                "div",
+                                { className: "a-b-buttons" },
+                                _react2.default.createElement(
+                                    "div",
+                                    { className: "a-button" },
+                                    "A"
+                                ),
+                                _react2.default.createElement(
+                                    "div",
+                                    { className: "a-button" },
+                                    "B"
+                                )
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "row-2" },
+                        _react2.default.createElement(
+                            "div",
+                            { className: "small-buttons" },
+                            _react2.default.createElement(
+                                "div",
+                                { className: "border-small-button" },
+                                _react2.default.createElement("div", { className: "small-button" })
+                            ),
+                            _react2.default.createElement(
+                                "div",
+                                { className: "border-small-button" },
+                                _react2.default.createElement("div", { className: "small-button" })
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return TheGame;
+}(_react2.default.Component);
+
+function mapStateToProps(state) {
+    return {
+        displayHelp: state.passedDisplaySetting,
+        positionInfo: state.passedTransformationInfo,
+        colorInfo: state.passedColorInfo
+    };
+}
+
+function matchDispatchToProps(dispatch) {
+    return (0, _redux.bindActionCreators)({
+        showHelp: _allActions2.default.passingInfoAboutHelpDisplay,
+        transformState: _allActions2.default.passingButtonTransformState,
+        colorState: _allActions2.default.passingColorInfo
+    }, dispatch);
+}
+
+exports.default = (0, _reactRedux.connect)(mapStateToProps, matchDispatchToProps)(TheGame);
+
+/***/ }),
+/* 131 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _redux = __webpack_require__(3);
+
+var _reactRedux = __webpack_require__(6);
+
+var _allActions = __webpack_require__(15);
+
+var _allActions2 = _interopRequireDefault(_allActions);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } //presets
+
+
+//importing actions
+
+
+var StartGameScreen = function (_React$Component) {
+    _inherits(StartGameScreen, _React$Component);
+
+    function StartGameScreen() {
+        var _ref;
+
+        var _temp, _this, _ret;
+
+        _classCallCheck(this, StartGameScreen);
+
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+        }
+
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = StartGameScreen.__proto__ || Object.getPrototypeOf(StartGameScreen)).call.apply(_ref, [this].concat(args))), _this), _this.handleClick = function () {
+            if (typeof _this.props.onConfirm === "function") {
+                _this.props.onConfirm();
+                _this.props.colorState("left");
+                _this.props.showHelp("none");
+                _this.props.transformState("left");
+            }
+        }, _temp), _possibleConstructorReturn(_this, _ret);
+    }
+
+    _createClass(StartGameScreen, [{
+        key: "render",
+        value: function render() {
+            return _react2.default.createElement(
+                "div",
+                { className: "game-framing" },
+                _react2.default.createElement(
+                    "div",
+                    { className: "border" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "main-screen-background" },
+                        _react2.default.createElement(
+                            "div",
+                            { className: "element-explanation-8", style: { display: this.props.displayHelp } },
+                            "click to start the game"
+                        ),
+                        _react2.default.createElement("div", { className: "pointing-line-8", style: { display: this.props.displayHelp } }),
+                        _react2.default.createElement(
+                            "h1",
+                            { className: "main-page-title", onClick: this.handleClick },
+                            "START GAME"
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return StartGameScreen;
+}(_react2.default.Component);
+
+function mapStateToProps(state) {
+    return {
+        displayHelp: state.passedDisplaySetting
+    };
+}
+
+function matchDispatchToProps(dispatch) {
+    return (0, _redux.bindActionCreators)({
+        showHelp: _allActions2.default.passingInfoAboutHelpDisplay,
+        colorState: _allActions2.default.passingColorInfo,
+        transformState: _allActions2.default.passingButtonTransformState
+
+    }, dispatch);
+}
+
+exports.default = (0, _reactRedux.connect)(mapStateToProps, matchDispatchToProps)(StartGameScreen);
 
 /***/ })
 /******/ ]);

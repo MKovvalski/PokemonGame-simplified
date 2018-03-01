@@ -177,7 +177,11 @@ export function passedColorInfo(state = "#ff0000", action) {
             if (action.color === "left") {
                 return "#ff0000"
             } else if (action.color === "switching") {
-                return "#2eb82e"
+                if (state === "#ff0000") {
+                    return "#2eb82e"
+                } else {
+                    return "#ff0000"
+                }
             }
             break;
         default:

@@ -4,10 +4,10 @@ import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 
 //file imports
-import StartGameScreen from "../components/start-game.jsx";
-import PickPokemon from "../containers/pick-pokemon.jsx";
-import BattleEvent from "../containers/battle-event.jsx";
-import EndGameScreen from "../containers/end-game-screen.jsx";
+import StartGameScreen from "./start-game.jsx";
+import PickPokemon from "./pick-pokemon.jsx";
+import BattleEvent from "./battle-event.jsx";
+import EndGameScreen from "./end-game-screen.jsx";
 
 //importing actions
 import actions from "../actions/all-actions.jsx";
@@ -17,7 +17,7 @@ class TheGame extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            ComponentRenderCounter: 1,
+            ComponentRenderCounter: 0,
         }
     }
 
