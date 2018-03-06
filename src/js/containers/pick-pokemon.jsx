@@ -15,7 +15,7 @@ class PickPokemon extends React.Component {
         super(props);
     }
     componentDidMount () {
-        this.props.randomPokemonGenerator(pokemons[Math.floor(Math.random()*10)]);
+        this.props.randomPokemonGenerator(pokemons[Math.floor(Math.random()*8)]);
     }
 
     handleClick = () => {

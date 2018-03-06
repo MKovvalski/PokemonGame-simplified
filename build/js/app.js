@@ -23104,7 +23104,7 @@ var PickPokemon = function (_React$Component) {
     _createClass(PickPokemon, [{
         key: "componentDidMount",
         value: function componentDidMount() {
-            this.props.randomPokemonGenerator(_pokemons2.default[Math.floor(Math.random() * 10)]);
+            this.props.randomPokemonGenerator(_pokemons2.default[Math.floor(Math.random() * 8)]);
         }
     }, {
         key: "render",
