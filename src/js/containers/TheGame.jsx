@@ -34,17 +34,21 @@ class TheGame extends React.Component {
     };
 
     handleComponents = () => {
-        if (this.state.ComponentRenderCounter === 0) {
-            return <div><StartGameScreen onConfirm = {this.handleRender}/></div>
-        }
-        if (this.state.ComponentRenderCounter === 1) {
-            return <div><PickPokemon onConfirm = {this.handleRender}/></div>
-        }
-        if (this.state.ComponentRenderCounter === 2) {
-            return <div><BattleEvent onConfirm = {this.handleRender}/></div>
-        }
-        if (this.state.ComponentRenderCounter === 3) {
-            return <div><EndGameScreen onConfirm = {this.handleRender}/></div>
+        switch (this.state.ComponentRenderCounter) {
+            case 0:
+                return <div><StartGameScreen onConfirm = {this.handleRender}/></div>;
+            break;
+            case 1:
+                return <div><PickPokemon onConfirm = {this.handleRender}/></div>;
+            break;
+            case 2:
+                return <div><BattleEvent onConfirm = {this.handleRender}/></div>;
+            break;
+            case 3:
+                return <div><EndGameScreen onConfirm = {this.handleRender}/></div>;
+            break;
+            default:
+                return <div><StartGameScreen onConfirm = {this.handleRender}/></div>;
         }
     };
 
