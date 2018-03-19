@@ -22,7 +22,7 @@ class StartGameScreen extends React.Component {
                 <div className = "border">
                     <div className = "main-screen-background">
                         <div className = "element-explanation-8" style = {{display: this.props.displayHelp}}>click to start the game</div>
-                        <div className = "pointing-line-8" style = {{display: this.props.displayHelp}}></div>
+                        <div className = "pointing-line-8" style = {{display: this.props.displayHelp}}/>
                         <h1 className = "main-page-title" onClick = {this.handleClick}>START GAME</h1>
                     </div>
                 </div>

@@ -106,9 +106,9 @@ class PickPokemon extends React.Component {
                         <div className = "row1-2aa">
                             <div className = "col1-2a">
                                 <div className = "element-explanation-0" style = {{display: this.props.displayHelp}}>click on the button to begin the battle</div>
-                                <div className = "pointing-line-0" style = {{display: this.props.displayHelp}}></div>
+                                <div className = "pointing-line-0" style = {{display: this.props.displayHelp}}/>
                                 <div className = "element-explanation-1" style = {{display: this.props.displayHelp}}>click on pokemon to select him for battle and display his characteristics</div>
-                                <div className = "pointing-line-1" style = {{display: this.props.displayHelp}}></div>
+                                <div className = "pointing-line-1" style = {{display: this.props.displayHelp}}/>
                                 <ul className = "pokemon-list">
                                     {this.generateList()}
                                 </ul>
@@ -116,8 +116,8 @@ class PickPokemon extends React.Component {
                             <div className  = "col1-2b">
                                 <div className = "element-explanation-2" style = {{display: this.props.displayHelp}}>statistics and type of pokemon affect his effectiveness against other</div>
                                 <div className = "element-explanation-3" style = {{display: this.props.displayHelp}}>each pokemon has four moves he can execute in battle. Some moves instead dealing dmg, modify pokemon statistics</div>
-                                <div className = "pointing-line-2" style = {{display: this.props.displayHelp}}></div>
-                                <div className = "pointing-line-3" style = {{display: this.props.displayHelp}}></div>
+                                <div className = "pointing-line-2" style = {{display: this.props.displayHelp}}/>
+                                <div className = "pointing-line-3" style = {{display: this.props.displayHelp}}/>
                                 <div className = "inner-row-1">
                                     <div className = "pokemon-img-and-name">
                                         <h2>{this.props.pokemon.id}</h2>

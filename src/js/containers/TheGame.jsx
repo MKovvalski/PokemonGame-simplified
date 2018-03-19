@@ -67,13 +67,13 @@ class TheGame extends React.Component {
                         </div>
                         <div className = "top-button">
                             <div className = "border-button">
-                                <div className = "brightness-button"></div>
+                                <div className = "brightness-button"/>
                             </div>
                         </div>
                         <div className = "row-1">
                             <div className = "col-1-2-a">
                                 <div className = "button-circle">
-                                    <div className = "arrow-buttons"></div>
+                                    <div className = "arrow-buttons"/>
                                 </div>
                             </div>
                             <div className = "col-1-2-a">
@@ -85,8 +85,8 @@ class TheGame extends React.Component {
                         </div>
                         <div className = "row-2">
                             <div className = "small-buttons">
-                                <div className = "border-small-button"><div className = "small-button"></div></div>
-                                <div className = "border-small-button"><div className = "small-button"></div></div>
+                                <div className = "border-small-button"><div className = "small-button"/></div>
+                                <div className = "border-small-button"><div className = "small-button"/></div>
                             </div>
                         </div>
                     </div>

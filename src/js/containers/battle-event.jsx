@@ -282,9 +282,9 @@ class Battle extends React.Component {
                     <div className = "border">
                         <div className = "row-1-2">
                             <div className = "element-explanation-5" style = {{display: this.props.displayHelp}}>Life-bar represents pokemon vitality. If it drops below zero, pokemon will faint</div>
-                            <div className = "pointing-line-5" style = {{display: this.props.displayHelp}}></div>
+                            <div className = "pointing-line-5" style = {{display: this.props.displayHelp}}/>
                             <div className = "element-explanation-6" style = {{display: this.props.displayHelp}}>click any move to execute it. All moves have propability of hit and sometimes your pokemon will miss</div>
-                            <div className = "pointing-line-6" style = {{display: this.props.displayHelp}}></div>
+                            <div className = "pointing-line-6" style = {{display: this.props.displayHelp}}/>
                             <div className = "background">
                                 <div className = "col-1-2">
                                     <div className = "inner-row-1-2b" >
@@ -293,7 +293,7 @@ class Battle extends React.Component {
                                                 <div className = "pokemon-name-in-data">{this.props.battleReducer.randomPokemon.id}</div>
                                                 <div className = "life-bar-overbar">
                                                     <div className = "life-bar-inner-line">
-                                                        <div className = "life-bar" style = {{transition: "all 1s ease-out", backgroundColor: this.handleColorChange(handleLifeBar1), height: "5px", width: handleLifeBar1, borderRadius: "2px 0 0 2px"}}></div>
+                                                        <div className = "life-bar" style = {{transition: "all 1s ease-out", backgroundColor: this.handleColorChange(handleLifeBar1), height: "5px", width: handleLifeBar1, borderRadius: "2px 0 0 2px"}}/>
                                                     </div>
                                                 </div>
                                                 <div className = "stamina-points">{this.handleStaminaPoints(randomPokeStamina)}/{this.state.randomBaseStamina}</div>
@@ -314,7 +314,7 @@ class Battle extends React.Component {
                                                 <div className = "pokemon-name-in-data">{this.props.battleReducer.playerPokemon.id}</div>
                                                 <div className= "life-bar-overbar">
                                                     <div className = "life-bar-inner-line">
-                                                        <div style = {{transition: "all 1s ease-out", backgroundColor: this.handleColorChange(handleLifeBar2), height: "5px", width: handleLifeBar2, borderRadius: "2px 0 0 2px"}}></div>
+                                                        <div style = {{transition: "all 1s ease-out", backgroundColor: this.handleColorChange(handleLifeBar2), height: "5px", width: handleLifeBar2, borderRadius: "2px 0 0 2px"}}/>
                                                     </div>
                                                 </div>
                                                 <div className = "stamina-points">{this.handleStaminaPoints(playerPokeStamina)}/{this.state.playerBaseStamina}</div>
@@ -326,7 +326,7 @@ class Battle extends React.Component {
                         </div>
                         <div className = "row-1-2">
                             <div className = "element-explanation-7" style = {{display: this.props.displayHelp}}>move type and power define its effectiveness against others</div>
-                            <div className = "pointing-line-7" style = {{display: this.props.displayHelp}}></div>
+                            <div className = "pointing-line-7" style = {{display: this.props.displayHelp}}/>
                             <div className = "display-window">
                                 <div style = {{display: this.state.displayAttacks}}>
                                     <div className = "attacks-menu">
