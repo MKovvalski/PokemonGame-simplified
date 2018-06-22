@@ -6,7 +6,7 @@ Game was a final project of Coder’s Lab Boot Camp. Main goal was to recreate t
 - npm install 
 - npm start or npm run dev 
 
-## In Future 
+## In The Future 
 The game requires some work and propably will receive rework in near future. 
 The aspects that I want to better or expand:
   - add attack animations 
